@@ -101,7 +101,7 @@ function draft(players, bans, drafts, max_players = 8, min_players = 2) {
         loadedBans = JSON.parse(fs.readFileSync('data/bans.json', 'utf8'));
     } catch (err) {
         console.error("Unable to load ban file, using defaults.");
-        console.debug(err);
+        console.error(err);
     }
     for (let banGroup in loadedBans){
         if(!loadedBans.hasOwnProperty(banGroup)){
@@ -166,7 +166,7 @@ CivFFADrafter.on("message", message => {
     draftTeam <Teams> <Players Per Team>
     */
 
-    if (['draftFFA', 'draftTeam', 'civList', 'civListOP'].indexOf(command[0]) === -1){
+    if (['draftFFA', 'draftTeam', 'civList', 'civListOP', 'draftChannel'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
