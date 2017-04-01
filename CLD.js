@@ -199,6 +199,9 @@ CivFFADrafter.on("message", message => {
                 if (!channelList.hasOwnProperty(channel)){
                     continue;
                 }
+                if(messageString !== ""){
+                    continue;
+                }
                 channel = channelList[channel];
                 if (channel.type === 'text'){
                     continue;
@@ -209,6 +212,9 @@ CivFFADrafter.on("message", message => {
                 let channelMembers = channel.members.array();
                 for (let user in channelMembers){
                     if (!channelMembers.hasOwnProperty(user)){
+                        continue;
+                    }
+                    if(messageString !== ""){
                         continue;
                     }
                     user = channelMembers[user];
@@ -225,7 +231,9 @@ CivFFADrafter.on("message", message => {
                     }
                 }
             }
-            messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
+            if (messageString === ""){
+                messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
+            }
             break;
         case 'draftTeam':
             if (command.length !== 3){
