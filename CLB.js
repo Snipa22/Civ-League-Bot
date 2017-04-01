@@ -32,4 +32,4 @@ CivLeagueBot.on("guildMemberRemove", member => {
     );
 });
 
-CivLeagueBot.login(Config.tokenCivilizationVILeagueBot);
+CivLeagueBot.login(Config.tokens.CivilizationVILeagueBot);
