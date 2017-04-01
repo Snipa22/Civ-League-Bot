@@ -88,21 +88,47 @@ let teamIcons = [icons['white'], icons['blue'], icons['purple'], icons['pink']],
 
 let civListOP = ['Australia', 'Macedon', 'Rome', 'Persia', 'Scythia', 'Sumeria'];
 
-function draft(players, bans, drafts, max_players = 8, min_players = 2) {
-    // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
-    // Return an object if there's no error.  If there's an error, return back a string
-    let messageString = "";
-    if (players > max_players || players < min_players){
-        return '\n**Invalid Number for Draft!\n  *draft x = 2-8 Players (As with more players, the game can be less reliable.*';
-    }
-    let validCivs = [];
+function readBanFile(){
     let loadedBans = {'OP': civListOP};
     try{
         loadedBans = JSON.parse(fs.readFileSync('data/bans.json', 'utf8'));
     } catch (err) {
         console.error("Unable to load ban file, using defaults.");
         console.error(err);
+        writeBanFile(loadedBans);
     }
+    return loadedBans;
+}
+
+function writeBanFile(bans){
+    try{
+        fs.writeFileSync('data/bans.json', JSON.stringify(bans));
+    } catch (err) {
+        console.error("Unable to load ban file, using defaults.");
+        console.error(err);
+    }
+}
+
+function validateBans(bans, drafts){
+    bans = bans.filter(onlyUnique);
+    let invalidBans = [];
+    for (let banCheckCount = 0; banCheckCount < bans.length; banCheckCount++){
+        if(!drafts.hasOwnProperty(bans[banCheckCount])){
+            invalidBans.push(bans[banCheckCount]);
+        }
+    }
+    return invalidBans;
+}
+
+function draft(players, bans, drafts, max_players = 8, min_players = 2) {
+    // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
+    // Return an object if there's no error.  If there's an error, return back a string
+    let messageString = "";
+    if (players.length > max_players || players.length < min_players){
+        return '\n**Invalid Number for Draft!\n  *draft x = 2-8 Players (As with more players, the game can be less reliable.*';
+    }
+    let validCivs = [];
+    let loadedBans = readBanFile();
     for (let banGroup in loadedBans){
         if(!loadedBans.hasOwnProperty(banGroup)){
             continue;
@@ -112,13 +138,7 @@ function draft(players, bans, drafts, max_players = 8, min_players = 2) {
             bans = bans.concat(loadedBans[banGroup]);
         }
     }
-    bans = bans.filter(onlyUnique);
-    let invalidBans = [];
-    for (let banCheckCount = 0; banCheckCount < bans.length; banCheckCount++){
-        if(!drafts.hasOwnProperty(bans[banCheckCount])){
-            invalidBans.push(bans[banCheckCount]);
-        }
-    }
+    let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
         return "\nInvalid ban(s) provided: "+invalidBans.join(".");
     }
@@ -166,12 +186,12 @@ CivFFADrafter.on("message", message => {
     draftTeam <Teams> <Players Per Team>
     */
 
-    if (['draftFFA', 'draftTeam', 'civList', 'civListOP', 'draftChannel'].indexOf(command[0]) === -1){
+    if (['draftFFA', 'draftTeam', 'civList', 'civListOP', 'draftChannel', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
 
-    let messageString = "", bans = [], players = [], playerCount = 1;
+    let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
         case 'draftFFA':
@@ -275,6 +295,82 @@ CivFFADrafter.on("message", message => {
         case 'civListOP':
             messageString = '\n•|• **__Current OP Civilizations__** •|•\n  •' + '**' + civListOP.join('**' + '\n  •' + '**');
             break;
+        case 'banList':
+            if (command.length === 1 || ['delete', 'add', 'replace', 'list', 'details'].indexOf(command[1]) === -1){
+                if (message.channel.id === Config.channels.Admin){
+                    messageString = 'Invalid arguments for banList.  Valid arguments: add, list, delete, details, replace';
+                }else{
+                    messageString = 'Invalid arguments for banList.  Valid arguments: list, details';
+                }
+                break;
+            }
+            if (message.channel.id !== Config.channels.Admin && ['delete', 'add', 'replace'].indexOf(command[1]) !== -1){
+                messageString = 'Invalid argument for this channel, please try again!';
+                break;
+            }
+            bans = readBanFile();
+            switch(command[1]){
+                case 'list':
+                    messageString = 'Current Ban Lists in the system are: ' + Object.keys(bans).join(", ");
+                    break;
+                case 'details':
+                    if (typeof(command[2]) === 'undefined'){
+                        messageString = 'Need to pass in a valid ban list!';
+                    } else if (bans.hasOwnProperty(command[2])){
+                        messageString = 'Civs banned in the list: '+command[2]+' are: ' + bans[command[2]].join(", ");
+                    } else {
+                        messageString = 'Invalid ban list provided!  Please provide a valid ban list for details';
+                    }
+                    break;
+                case 'add':
+                    if (typeof(command[2]) === 'undefined'){
+                        messageString = 'Need to pass in a valid ban list!';
+                    } else if (bans.hasOwnProperty(command[2])){
+                        messageString('Ban list: '+ command[2] + ' already exists, use replace to replace this list');
+                    } else if (allCivs.indexOf(command[2]) !== -1) {
+                        messageString = 'Name of banlist matches a civ.  Needs to be unique.';
+                    } else {
+                        newBans = command.slice(3);
+                        let invalidBans = validateBans(newBans, allCivs);
+                        if(invalidBans.length === 0){
+                            bans[command[2]] = newBans;
+                            writeBanFile(bans);
+                            messageString = 'Added '+command[2]+' with the following bans: '+newBans.join(', ');
+                        } else {
+                            messageString = 'Invalid bans provided: '+invalidBans.join(', ');
+                        }
+                    }
+                    break;
+                case 'delete':
+                    if (typeof(command[2]) === 'undefined'){
+                        messageString = 'Need to pass in a valid ban list!';
+                    } else if (bans.hasOwnProperty(command[2])){
+                        bans.splice(bans.indexOf(command[2]), 1);
+                        writeBanFile(bans);
+                        messageString = 'Removed ban list: '+command[2];
+                    } else {
+                        messageString = 'Invalid ban list provided!  Please provide a valid ban list to remove it';
+                    }
+                    break;
+                case 'replace':
+                    newBans = command.slice(3);
+                    if (typeof(command[2]) === 'undefined'){
+                        messageString = 'Need to pass in a valid ban list!';
+                    } else if (bans.hasOwnProperty(command[2])){
+                        newBans = command.slice(3);
+                        let invalidBans = validateBans(newBans, allCivs);
+                        if(invalidBans.length === 0){
+                            bans[command[2]] = newBans;
+                            writeBanFile(bans);
+                            messageString = 'Replaced '+command[2]+' with the following bans: '+newBans.join(', ');
+                        } else {
+                            messageString = 'Invalid bans provided: '+invalidBans.join(', ');
+                        }
+                    } else {
+                        messageString = 'Invalid ban list provided!  Please provide a valid ban list to replace it';
+                    }
+                    break;
+            }
     }
     message.channel.sendMessage(messageString);
 });
