@@ -199,6 +199,7 @@ CivFFADrafter.on("message", message => {
                 if (!channelList.hasOwnProperty(channel)){
                     continue;
                 }
+                channel = channelList[channel];
                 if (channel.type === 'text'){
                     continue;
                 }
@@ -210,13 +211,14 @@ CivFFADrafter.on("message", message => {
                     if (!channelMembers.hasOwnProperty(user)){
                         continue;
                     }
+                    user = channelMembers[user];
                     if (user.user.id === message.author.id){
                         // Valid Channel.  Time to get to work
                         for (let channelUser in channelMembers){
                             if (!channelMembers.hasOwnProperty(channelUser)){
                                 continue;
                             }
-                            players.push('<@'+channelUser.user.id+'>');
+                            players.push('<@'+channelMembers[channelUser].user.id+'>');
                         }
                         messageString = draft(players, bans, allCivs);
                         break;
