@@ -327,7 +327,7 @@ CivFFADrafter.on("message", message => {
                         messageString = 'Need to pass in a valid ban list!';
                     } else if (bans.hasOwnProperty(command[2])){
                         messageString('Ban list: '+ command[2] + ' already exists, use replace to replace this list');
-                    } else if (allCivs.indexOf(command[2]) !== -1) {
+                    } else if (allCivs.hasOwnProperty(command[2])) {
                         messageString = 'Name of banlist matches a civ.  Needs to be unique.';
                     } else {
                         newBans = command.slice(3);
@@ -345,7 +345,7 @@ CivFFADrafter.on("message", message => {
                     if (typeof(command[2]) === 'undefined'){
                         messageString = 'Need to pass in a valid ban list!';
                     } else if (bans.hasOwnProperty(command[2])){
-                        bans.splice(bans.indexOf(command[2]), 1);
+                        delete bans[command[2]];
                         writeBanFile(bans);
                         messageString = 'Removed ban list: '+command[2];
                     } else {
