@@ -45,4 +45,4 @@ CivPlayersAdmin.on('message', message => {
     }
 });
 
-CivPlayersAdmin.login(Config.tokenAdminBot);
+CivPlayersAdmin.login(Config.tokens.AdminBot);

@@ -356,4 +356,4 @@ CivLeagueHelp.on("message", message => {
         );
     }
 });
-CivLeagueHelp.login(Config.tokenHelpBot);
+CivLeagueHelp.login(Config.tokens.HelpBot);
