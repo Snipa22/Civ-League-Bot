@@ -202,6 +202,9 @@ CivFFADrafter.on("message", message => {
                 if (channel.type === 'text'){
                     continue;
                 }
+                if (typeof(channel.members) === 'undefined'){
+                    continue;
+                }
                 let channelMembers = channel.members.array();
                 for (let user in channelMembers){
                     if (!channelMembers.hasOwnProperty(user)){
