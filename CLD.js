@@ -129,6 +129,7 @@ function draft(players, bans, drafts, max_players = 8, min_players = 2) {
     }
     let validCivs = [];
     let loadedBans = readBanFile();
+    bans = bans.filter(onlyUnique);
     for (let banGroup in loadedBans){
         if(!loadedBans.hasOwnProperty(banGroup)){
             continue;
@@ -140,7 +141,7 @@ function draft(players, bans, drafts, max_players = 8, min_players = 2) {
     }
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
-        return "\nInvalid ban(s) provided: "+invalidBans.join(".");
+        return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
     }
     if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
         return '\n**Excessive Amount of Bans!**\n  *Please Provide more Available Options.*';
