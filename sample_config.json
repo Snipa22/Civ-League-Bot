@@ -1,39 +1,6 @@
 {
   "dot": ".",
-  "ast": "*",
-  "civLeagueSteamGroup": "<http://steamcommunity.com/groups/CivLeagueEST#overview>",
-  "videoJoiningSteamGroup": "<https://www.youtube.com/watch?v=dl1Ygh22_Ys&feature=youtu.be>",
-  "civLeaguePlayerCheck": "<http://www.myleague.com/civilizationvi/standings/daily-buzz>",
-  "civLeaguePlayerAccount": "<http://www.myleague.com/civilizationvi/myaccount>",
-  "civLeagueSignUp": "<http://www.myleague.com/civilizationvi/free-signup>",
-  "civLeagueStandings": "<http://www.myleague.com/civilizationvi/standings>",
-  "discordLink": "<https://discord.gg/ucrpX9Q>",
-  "channels": {
-    "Introduction": "",
-    "Guidelines": "",
-    "News": "",
-    "Help": "",
-    "Workshop": "",
-    "Quests": "",
-    "Proof": "",
-    "HallOfFame": "",
-    "LeagueHistory": "",
-    "Lobby": "",
-    "Admin": ""
-  },
-  "images": {
-    "DeleteFiles": "deleteFiles.png",
-    "JoinSteam": "joinSteam.png",
-    "SetOverlay": "setOverlay.png",
-    "SetPTT": "setPTT.png",
-    "SetSteam": "setSteam.png"
-  },
   "tokens": {
-    "CivilizationVILeagueBot": "",
-    "QuitterBot": "",
-    "HelpBot": "",
-    "DrafterBot": "",
-    "PollBot": "",
-    "AdminBot": ""
+    "draftBot": "skdhasa"
   }
 }
