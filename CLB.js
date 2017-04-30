@@ -21,8 +21,7 @@ CivLeagueBot.on("guildMemberAdd", member => {
         `\n  Welcome to the **CivLeague Community**.*` +
         `\n\n**__Introduction__**` +
         `\n  <#${Config.channels.channelIntroduction}>` +
-        `\n    *Our introduction channel is the best place to find all of our links and available commands.*` +
-        `\n    **.Help** | **.help** | *Provides a brief description on Channels and Commands right from the <#${Config.channels.channelLobby}>.*`
+        `\n  *If you have any questions! Please mention an Admin or a Moderator Please.*`
     );//Direct Messages a Player upon Joining the Server
     member.send(
         `:blue_heart: •|• **__Welcome to CivLeague Community!__** •|• :heart:` +

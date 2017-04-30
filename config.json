@@ -11,7 +11,8 @@
         "channelProof" : "293741426947129347",
         "channelHallOfFame" : "294477371615084555",
         "channelLeagueHistory" : "291771157668167680",
-        "channelLobby" : "291653135343157258"
+        "channelLobby" : "291653135343157258",
+        "channelGameReport" : "304782704870686722"
     },
 
     "files": {
@@ -24,7 +25,8 @@
         "imageSetOverlay" : "setOverlay.png",
         "imageSetPTT" : "setPTT.png",
         "imageSetSteam" : "setSteam.png",
-        "imageSetGame" : "setGame.png"
+        "imageSetGame" : "setGame.png",
+        "imageSetMods" : "setMods.png"
     },
 
     "links": {

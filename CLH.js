@@ -68,7 +68,7 @@ CivLeagueHelp.on("message", message => {
                 `\n  **.reddit**` +
                 `\n     *Provides the Reddit Links so you can get that Upvoted.*` +
                 `\n  **.joinFacebook**` +
-                `\n     *Facebooook! Join our Social Group.*`
+                `\n     *Facebooook! Join our Social Group.*` +
             //Discord Commands
                 `\n\n•|• **__Discord Commands__** •|•` +
                 `\n  **.deleteFiles**` +
@@ -87,13 +87,17 @@ CivLeagueHelp.on("message", message => {
                 `\n    *It is respectful that Players don't Vote if they are not in this Game.` +
                 `\n  **.draftFFA x Civ Bans Here**` +
                 `\n     *x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*` +
-                `\n  **.draftTeam t p**` +
+                `\n  **.draftTeams t p**` +
                 `\n     *t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*` +
                 `\n     **All Teamers must be in** •|• **Staging: Teamers** •|•` +
-                `\n   **.ffareportx**` +
-                `\n    *x=Number (2-8) of Players in that Game.*` +
-                `\n    *x=Number of Teams (2v2, 2v2v2, 2v2v2v2, 3v3, 4v4).*` +
-                `\n      ***Example:** .ffaReport6 (FFA) | .ffaReport2v2v2 (Teamers)*` +
+                `\n   **.ffaReportx**` +
+                `\n    *x=Number (2-8) of Players in that Game.* | *Example:* **.ffaReport6**` +
+                `\n   **.tReport**` +
+                `\n    *t=Number of Teams (2v2, 2v2v2, 2v2v2v2, 3v3, 4v4).* | *Example:* **.2v2v2Report**` +
+                `\n   **.setMods**` +
+                `\n     *Shows how to enable the mods in Game Settings.*` +
+                `\n   **.setGame**` +
+                `\n     *Shows how to setup the Game to avoid Error's.*` +
             //Download Screenshot App
                 `\n\n•|• **__Alternative Screenshot Program__** •|•` +
                 `\n  **.lightshot**` +
@@ -101,6 +105,10 @@ CivLeagueHelp.on("message", message => {
         );
     }/*.joinSteam*/
     else if (command === "joinSteam") {
+        //Image of Joining
+        message.channel.sendFile(
+            `${Config.images.imageJoinSteam}`
+        );//Message to Send
         message.channel.sendMessage(
             `${Players.roleAdmin} | ${Players.roleModerator}` +
             `\n**__Steam Group (Enter Chat Room)__**` +
@@ -110,9 +118,6 @@ CivLeagueHelp.on("message", message => {
             `\n    •**Click the URL**` +
             `\n    •**Enter Chat Room (Blue Button)**` +
             `\n      *Check the Taskbar, Chat Window does not Open to the Front.*`
-        );
-        message.channel.sendFile(
-            `${Config.images.imageJoinSteam}`
         );
     }/*.discord*/
     else if (command === "discord" || command === "Discord") {
@@ -125,19 +130,17 @@ CivLeagueHelp.on("message", message => {
     else if (command === "reddit" || command === "Reddit") {
         message.channel.sendMessage(
             `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Reddit Posts (Create an Account and Upvote)__**` +
-            `\n  *Reddit is a great tool to help Promote our Civilization VI Community.*` +
-            `\n  *It's in the interest of growing our Community to create an account, and upvote the Posts.*` +
-            `\n  *Leaving a comment also helps encourage the growth of our Posts when seeking players who stop by.*` +
-            `\n\n<https://redd.it/623w5f>` +
-            `\n<https://redd.it/623oza>` +
-            `\n<https://redd.it/623mgp>`
+            `\n**__Reddit Links__**` +
+            `\n  *If you still have questions about how this community works..\n  You can read Hannah's Reddit's here!!*` +
+            `\n    •<https://redd.it/623w5f>` +
+            `\n    •<https://redd.it/623oza>` +
+            `\n    •<https://redd.it/623mgp>`
         );
     }/*.setSteam*/
     else if (command === "setSteam") {
         message.channel.sendMessage(
             `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `•|• **__Adding Steam to Discord__** •|•` +
+            `\n•|• **__Adding Steam to Discord__** •|•` +
             `\n *Attach your Steam Profile to the Discord Server.*` +
             `\n *For anyone who needs to host, your profile is **required public access**.*` +
             `\n   •**User Settings**` +
@@ -152,6 +155,16 @@ CivLeagueHelp.on("message", message => {
         );
         message.channel.sendFile(
             `${Config.images.imageSetSteam}`
+        );
+    }/*.setGame*/
+    else if (command === "setMods") {
+        message.channel.sendMessage(
+            `\n${Players.roleAdmin} | ${Players.roleModerator}` +
+            `\n•|• **__Auto Download Additional Content__** •|•` +
+            `\n  *This is how you should set Auto Download of Mods from Workshops.*`
+        );
+        message.channel.sendFile(
+            `${Config.images.imageSetMods}`
         );
     }/*.setGame*/
     else if (command === "setGame") {
@@ -187,7 +200,7 @@ CivLeagueHelp.on("message", message => {
     else if (command === "deleteFiles") {
         message.channel.sendMessage(
             `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Recieving Errors while Connecting__**` +
+            `\n**__Receiving Errors while Connecting__**` +
             `\n  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder URL*` +
             `\n    **Documents/My Games/Sid Meier's Civilization VI**` +
             `\n\n**This will not Delete your Game Options if you select the right files in the below photo!**` +
@@ -317,11 +330,11 @@ CivLeagueHelp.on("message", message => {
             `Paste Results to: ${Players.SongAdieu6276} by Sending a Direct Message (DM).` + "\n" +
 
             `1st Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `2nd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @`
+            `    @` + "\n" +
+            `    @`
         );
     }/*.2v2v2Report*/
     else if (command === "2v2v2report" || command === "2v2v2Report" || command === "2v2v2REPORT") {
@@ -330,14 +343,14 @@ CivLeagueHelp.on("message", message => {
             `Paste Results to: ${Players.SongAdieu6276} by Sending a Direct Message (DM).` + "\n" +
 
             `1st Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `2nd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `3rd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @`
+            `    @` + "\n" +
+            `    @`
         );
     }/*.2v2v2v2Report*/
     else if (command === "2v2v2v2report" || command === "2v2v2v2Report" || command === "2v2v2v2REPORT") {
@@ -346,17 +359,17 @@ CivLeagueHelp.on("message", message => {
             `Paste Results to: ${Players.SongAdieu6276} by Sending a Direct Message (DM).` + "\n" +
 
             `1st Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `2nd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `3rd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `4th Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n"
+            `    @` + "\n" +
+            `    @` + "\n"
         );
     }/*.3v3Report*/
     else if (command === "3v3report" || command === "3v3Report" || command === "3v3REPORT") {
@@ -365,30 +378,29 @@ CivLeagueHelp.on("message", message => {
             `Paste Results to: ${Players.SongAdieu6276} by Sending a Direct Message (DM).` + "\n" +
 
             `1st Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `2nd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n"
+            `    @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n"
         );
     }/*.4v4Report*/
     else if (command === "4v4report" || command === "4v4Report" || command === "4v4REPORT") {
         message.channel.sendMessage(
             `__**4v4 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu6276} by Sending a Direct Message (DM).` + "\n" +
-
+            `Paste Results to: <#${Config.channels.channelWorkshop}> by Sending a Direct Message (DM).` + "\n" +
             `1st Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
             `2nd Team:` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n" +
-            `  @` + "\n"
+            `    @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n" +
+            `    @` + "\n"
         );
     }
 });

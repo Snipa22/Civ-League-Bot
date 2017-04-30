@@ -31,11 +31,11 @@ function onlyUnique(value, index, self) {
 }
 
 let commandHelp = 
-`**draftFFA** *x = 2-8* *Bans Applied Here = Australia Germany England*\n
-  *Example: draftFFA 6 Australia Germany England*\n
+`**draft** *x = 2-8* *Bans Applied Here = Australia Germany England*\n
+  *Example: draft 6 Australia Germany England*\n
   *This will ban Australia, Germany and England.*\n
-**draftTeam** *x = 2-4 (Number of Teams)* *x = 2-4 (Players on each Team)*\n
-  *Example: draftTeam 3 3 (3v3)*`
+**draftTeams** *x = 2-4 (Number of Teams)* *x = 2-4 (Players on each Team)*\n
+  *Example: draftTeams 3 3 (3v3)*`
 ;
 
 //Array of Players Available
@@ -184,10 +184,10 @@ CivFFADrafter.on("message", message => {
     /*
     Command Format:
     draft <Teams> <Players Per Team> <Ban 1> <Ban 2> <Ban N>
-    draftTeam <Teams> <Players Per Team>
+    draftTeams <Teams> <Players Per Team>
     */
 
-    if (['draftFFA', 'draftTeam', 'civList', 'civListOP', 'draftChannel', 'banList'].indexOf(command[0]) === -1){
+    if (['draft', 'draftTeams', 'civList', 'civListOP', 'draftChannel', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -195,7 +195,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draftFFA':
+        case 'draft':
             if (command.length === 1){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
@@ -205,7 +205,7 @@ CivFFADrafter.on("message", message => {
                 bans = command.slice(2);
             }
             while (playerCount <= Number(command[1])){
-                players.push("Player "+playerCount);
+                players.push("Tier "+playerCount);
                 playerCount += 1;
             }
             messageString = draft(players, bans, allCivs);
@@ -256,7 +256,7 @@ CivFFADrafter.on("message", message => {
                 messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
-        case 'draftTeam':
+        case 'draftTeams':
             if (command.length !== 3){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
@@ -272,9 +272,9 @@ CivFFADrafter.on("message", message => {
             if (Number(teams) === 4) {
                 title = 'Teamer Draft (' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + ')';
             }//Team Draft
-            let channel = CivFFADrafter.channels.find('name', '•|• Team Drafting •|•');
+            let channel = CivFFADrafter.channels.find('name', '•|• Staging: Teamers');
             if(channel.members.keyArray().length < command[2] * command[1]){
-                messageString = '\n**Failed to Execute!**\n  *Need more Players in •|• **Team Drafting** •|•*.';
+                messageString = '\n**Failed to Execute!**\n  *Need more Players in •|• **Staging: Teamers** •|•*.';
                 break;
             }
             let civTeamDrafter = shuffleList(channel.members.array());
@@ -320,7 +320,7 @@ CivFFADrafter.on("message", message => {
                     } else if (bans.hasOwnProperty(command[2])){
                         messageString = 'Civs banned in the list: '+command[2]+' are: ' + bans[command[2]].join(", ");
                     } else {
-                        messageString = 'Invalid ban list provided!  Please provide a valid ban list for details';
+                        messageString = 'Invalid ban list provided!  Please provide a valid ban list for details.';
                     }
                     break;
                 case 'add':
