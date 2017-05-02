@@ -1,7 +1,7 @@
 {
     "dot" : ".",
     "ast" : "*",
-    
+
     "channels": {
         "channelIntroduction" : "291708368819716096",
         "channelGuidelines" : "291714830325383171",
@@ -28,6 +28,8 @@
         "imageSetGame" : "setGame.png",
         "imageSetMods" : "setMods.png"
     },
+
+
 
     "links": {
         "civLeagueSteamGroup" : "<http://steamcommunity.com/groups/CivLeagueEST#overview>",
