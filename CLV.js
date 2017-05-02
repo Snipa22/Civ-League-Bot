@@ -73,7 +73,7 @@ CivLeagueVote.on("message", message => {
         message.channel.sendMessage(
             `•|• **__Civilizations Ban List__** •|•` +
             `\n  **Update!**` +
-            `\n    ***Majority Votes Ban!***` +
+            `\n    ***Majority Votes Ban! In case of a tie. The host has the option to break it.***` +
             `\n      *4-5 Player Game: (4+ Total Reactions)*` +
             `\n      *6-7 Player Game: (5+ Total Reactions)*` +
             `\n      *8 Player Game: (6+ Total Reactions)*`
@@ -133,16 +133,16 @@ CivLeagueVote.on("message", message => {
             `` +
             //Barbarians
             `\n<:BA:304326160169435137> • **__Barbarians Off__**` +
-            `\n            *Current Risk with Barbarians as they are causing the Turn Timer to Extend past an Unplayable Point.*`
+            `\n            *Current Risk with Barbarians as they are causing the Turn Transition to Extend past an Unplayable Point.*`
         ).then(function(internalMessage) {
             opEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
-        //Adding a Reaction to CivLeague
+        //Putting a Plus in Chat when Done
         message.channel.sendMessage(
             `•|• **Done Voting** •|•` +
-            `\n  *Put a + in chat, so everyone knows who has completed the vote process.*`
+            `\n  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
         );
     }//.voteSettings
     else if (command === "voteSettings" || command === "votesettings") {
