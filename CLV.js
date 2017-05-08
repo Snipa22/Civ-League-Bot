@@ -54,9 +54,19 @@ let opEmojiList = [
 ':CS:300057379905470464',
 ':BA:304326160169435137'
 ];
-let settingsEmojiList = [
-    ''
-]
+let mapSettingsEmojiList = [
+':FR:309941196447416320',
+':IsP:309941867536056321',
+':PA:309941899341463553',
+':InS:309941877941993473',
+':Cr:299426443161632778',
+':SU:309943167875285002'
+];
+let letterEmojiList = [
+':regional_indicator_o:',
+':regional_indicator_s:',
+':regional_indicator_n:'
+];
 
 
 CivLeagueVote.on("message", message => {
@@ -68,32 +78,46 @@ CivLeagueVote.on("message", message => {
     let args = message.content.split(" ").splice(1);
 
     //.voteBans
-   if (command === "voteBans" || command === "votebans") {
+   if (command === "vote") {
+       //Settings Vote
+        message.channel.sendMessage(
+            `•|• **__Game Settings (Vote to Change)__** •|•
+            \n  **__Map__**
+            \n<:FR:309941196447416320> • **Fractal** | <:InS:309941877941993473> • **Inland Sea** | <:IsP:309941867536056321> • **Island Plates** | <:PA:309941899341463553> • **Pangaea** | <:SU:309943167875285002> | **Shuffle**`
+        ).then(function(internalMessage) {
+            mapSettingsEmojiList.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+            `\n  **__World Age__**
+            \n:regional_indicator_o: • **Old** | :regional_indicator_s: • **Standard** | :regional_indicator_n: • **New**`
+        ).then(function(internalMessage) {
+            letterEmojiList.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
        //OP Civilizations
         message.channel.sendMessage(
-            `•|• **__Civilizations Ban List__** •|•` +
-            `\n  **Update!**` +
-            `\n    ***Majority Votes Ban! In case of a tie. The host has the option to break it.***` +
-            `\n      *4-5 Player Game: (4+ Total Reactions)*` +
-            `\n      *6-7 Player Game: (5+ Total Reactions)*` +
-            `\n      *8 Player Game: (6+ Total Reactions)*`
+            `•|• **__Civilizations Ban List__** •|•
+            \n  *Majority Votes ban the Civilizations. Host has value, and can break Ties.*`
         );
         message.channel.sendMessage(
-            '  •|• **First Tier Civs** •|•'
+            '  •|• **Top Tier Civs** •|•'
         ).then(function(internalMessage) {
             civListOne.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            '  •|• **Second Tier Civs** •|•'
+            '  •|• **Mid Tier Civs** •|•'
         ).then(function(internalMessage) {
             civListTwo.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            '  •|• **Third Tier Civs** •|•'
+            '  •|• **Low Tier Civs** •|•'
         ).then(function(internalMessage) {
             civListThree.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -102,8 +126,7 @@ CivLeagueVote.on("message", message => {
         //In-Game OP Options Ban List
         message.channel.sendMessage(
             `\n\n•|• **__In-Game OP Options__** •|•` +
-            `\n      *These are options during the game, that should be followed and respected.*` +
-            `\n      *Please don't vote on these options, if you are not going to start in this game.*` +
+            `\n      *Majority Votes ban these Options during the game. Host has value, and can break Ties.*` +
             //Early Era Siege Units
             `\n<:AC:299426431489015810> • **__Ancient/Classical Era Support Units__**` +
             `\n             *Battering Rams/Siege Towers may not be used with Renaissance Era Units or Higher.*` +
@@ -129,8 +152,6 @@ CivLeagueVote.on("message", message => {
             //City States
             `\n<:CS:300057379905470464> • **__City States Peace/War__**` +
             `\n            *Disallow Peace with any City States, that are Suzzrain of the player you are at war with.*` +
-            //Diplo/No Diplo
-            `` +
             //Barbarians
             `\n<:BA:304326160169435137> • **__Barbarians Off__**` +
             `\n            *Current Risk with Barbarians as they are causing the Turn Transition to Extend past an Unplayable Point.*`
@@ -144,17 +165,6 @@ CivLeagueVote.on("message", message => {
             `•|• **Done Voting** •|•` +
             `\n  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
         );
-    }//.voteSettings
-    else if (command === "voteSettings" || command === "votesettings") {
-        message.channel.sendMessage(
-            `•|• **__Game Settings (Vote to Change)__** •|•` +
-            `\n      *These are options during the game, that can be voted on to change.*` +
-            `\n      *Please don't vote on these options, if you are not going to start in this game.*`
-        ).then(function(internalMessage) {
-            settingsEmojiList.forEach(function(emoji) {
-                internalMessage.react(emoji);
-            });
-        });
     }
 });
 
