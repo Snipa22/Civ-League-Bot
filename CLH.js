@@ -149,7 +149,7 @@ CivLeagueHelp.on("message", message => {
         message.channel.sendMessage(
             `${Players.roleAdmin} | ${Players.roleModerator}` +
             `\n**__Discord Link (Share with Everyone)!__**` +
-            `\ndiscord.gg/zXPMfsN`
+            `\nhttps://discord.gg/UFV4W4a`
         );
     }/*.deleteFiles*/
     else if (command === "deleteFiles") {
