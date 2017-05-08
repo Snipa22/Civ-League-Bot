@@ -1,5 +1,4 @@
 "use strict";
-/*Author: © • Song Adieu | Created: February 17th, 2017*/
 
 const Discord = require("discord.js");
 const Config = require("./config.json");
