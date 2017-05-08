@@ -65,7 +65,7 @@ CivLeagueHelp.on("message", message => {
         *Joining the Steam Group, by entering the Chat Room.*
     **.reddit**
         *Provides the Reddit Links so you can get that Upvoted.*
-    **.joinFacebook**
+    **.facebook**
         *Facebooook! Join our Social Group.*
 
 •|• **__Discord Commands__** •|•
