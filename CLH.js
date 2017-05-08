@@ -143,7 +143,6 @@ CivLeagueHelp.on("message", message => {
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 **__CivLeague Facebook__**
-  *If interested, you may also keep up to date on our Facebook Page!*
   <https://www.facebook.com/groups/civleague/>`
         );
     }
