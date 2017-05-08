@@ -45,27 +45,27 @@ let mainEmoji = [
 ];
 let opEmojiList = [
 ':AC:299426431489015810',
-':Cr:299426443161632778',
+':Cc:299426443161632778',
 ':DF:299426454012428290',
 ':TN:299426500552294400',
-':Nu:299426487143104523',
+':Nn:299426487143104523',
 ':GF:299426477756252161',
 ':GA:299426468109221888',
 ':CS:300057379905470464',
-':BA:304326160169435137'
+':Bb:304326160169435137'
 ];
 let mapSettingsEmojiList = [
-':FR:309941196447416320',
+':Ff:309941196447416320',
 ':IsP:309941867536056321',
-':PA:309941899341463553',
+':Pp:309941899341463553',
 ':InS:309941877941993473',
-':Cr:299426443161632778',
-':SU:309943167875285002'
+':Cc:299426443161632778',
+':Ss:309943167875285002'
 ];
 let letterEmojiList = [
-':regional_indicator_o:',
-':regional_indicator_s:',
-':regional_indicator_n:'
+':Oo:311212190071783425',
+':Ss:309943167875285002',
+':Nn:299426487143104523'
 ];
 
 
@@ -81,17 +81,33 @@ CivLeagueVote.on("message", message => {
    if (command === "vote") {
        //Settings Vote
         message.channel.sendMessage(
-            `•|• **__Game Settings (Vote to Change)__** •|•
-            \n  **__Map__**
-            \n<:FR:309941196447416320> • **Fractal** | <:InS:309941877941993473> • **Inland Sea** | <:IsP:309941867536056321> • **Island Plates** | <:PA:309941899341463553> • **Pangaea** | <:SU:309943167875285002> | **Shuffle**`
+            `•|• **__Game Settings (Vote to Change)__** •|•` +
+            `\n  **__Map__**` +
+            `\n    *May Click more than one Option! Choose your Favorites!*` +
+            `\n<:Ff:309941196447416320> • **Fractal**` +
+            `\n      *Unpredictable Map that can result in One or Many Land Masses*` +
+            `\n<:InS:309941877941993473> • **Inland Sea**` +
+            `\n      *One Large Ocean in the Center of the Map*` +
+            `\n<:IsP:309941867536056321> • **Island Plates**` +
+            `\n      *Islands Ranging in Size from Small to Large*` +
+            `\n<:Pp:309941899341463553> • **Pangaea**` +
+            `\n      *One Massive Landmass with Surrounding Islands*` +
+            `\n<:Ss:309943167875285002> • **Shuffle**` +
+            `\n      *What Secrets will this Map Reveal*`
         ).then(function(internalMessage) {
             mapSettingsEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            `\n  **__World Age__**
-            \n:regional_indicator_o: • **Old** | :regional_indicator_s: • **Standard** | :regional_indicator_n: • **New**`
+            `  **__World Age__**
+            \n    *May Click more than one Option! Choose your Favorites!*
+            \n<:Oo:311212190071783425> • **Old**
+            \n      *Less Hills and Mountains*
+            \n<:Ss:309943167875285002> • **Standard**
+            \n      *Standard Hills and Mountains*
+            \n<:Nn:299426487143104523> • **New**
+            \n      *More Hills and Mountains*`
         ).then(function(internalMessage) {
             letterEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -135,7 +151,7 @@ CivLeagueVote.on("message", message => {
             `\n             ***Banned** in teamers, as it provides all players on that team the bonus.*` +
             `\n             *This is a Pantheon that allows Ancient/Classical Era Units bonus of 25% Production.*` +
             //Crusade
-            `\n<:Cr:299426443161632778> • **__Crusade__**` +
+            `\n<:Cc:299426443161632778> • **__Crusade__**` +
             `\n            *+10 Combat Strength near foreign cities that follow this Religion.*` +
             //Defender of the Faith
             `\n<:DF:299426454012428290> • **__Defender of the Faith__**` +
@@ -144,7 +160,7 @@ CivLeagueVote.on("message", message => {
             `\n<:GA:299426468109221888> • **__Great General|Admiral Stacking__**` +
             `\n            *When two GG's|GA's of the same era are within proximity; allowing a Unit to gain Double Bonus.*` +
             //Nukes
-            `\n<:Nu:299426487143104523> • **__Nuclear Devices (Atomic Era)__**` +
+            `\n<:Nn:299426487143104523> • **__Nuclear Devices (Atomic Era)__**` +
             `\n            *Disallow building of Nuclear Devices.*` +
             //Thermo Nukes
             `\n<:TN:299426500552294400> • **__Thermo Nuclear Devices (Information Era)__**` +
@@ -153,7 +169,7 @@ CivLeagueVote.on("message", message => {
             `\n<:CS:300057379905470464> • **__City States Peace/War__**` +
             `\n            *Disallow Peace with any City States, that are Suzzrain of the player you are at war with.*` +
             //Barbarians
-            `\n<:BA:304326160169435137> • **__Barbarians Off__**` +
+            `\n<:Bb:304326160169435137> • **__Barbarians Off__**` +
             `\n            *Current Risk with Barbarians as they are causing the Turn Transition to Extend past an Unplayable Point.*`
         ).then(function(internalMessage) {
             opEmojiList.forEach(function(emoji) {
