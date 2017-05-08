@@ -93,7 +93,7 @@ CivLeagueHelp.on("message", message => {
                 `\n  **.draftFFA x Civ Bans Here**` +
                 `\n     *x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*` +
                 `\n  **.draft` +
-                `\n    *Draft's the Players in that Channel.*`
+                `\n    *Draft's the Players in that Channel.*` +
                 `\n  **.draftTeams t p**` +
                 `\n     *t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*` +
                 `\n     **All Teamers must be in** •|• **Staging: Teamers** •|•` +
