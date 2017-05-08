@@ -41,7 +41,7 @@ CivLeagueHelp.on("message", message => {
             `\n\n•|• **__List of Channels__** •|•` +
             `\n  ${Players.roleMember}` +
             `\n    | <#${Config.channels.channelIntroduction}>` +
-            `\n      *Join the CivLeague Everywhere (Discord/League/Steam Group).*` +
+            `\n      *Join CivLeague Everywhere (Discord/League/Steam Group).*` +
             `\n    | <#${Config.channels.channelGuidelines}>` +
             `\n      *Brief guide to handling certain situations properly.*` +
             `\n    | <#${Config.channels.channelWorkshop}>` +
