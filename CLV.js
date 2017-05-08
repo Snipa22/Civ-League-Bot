@@ -101,13 +101,13 @@ CivLeagueVote.on("message", message => {
         });
         message.channel.sendMessage(
             `  **__World Age__**
-            \n    *May Click more than one Option! Choose your Favorites!*
-            \n<:Oo:311212190071783425> • **Old**
-            \n      *Less Hills and Mountains*
-            \n<:Ss:309943167875285002> • **Standard**
-            \n      *Standard Hills and Mountains*
-            \n<:Nn:299426487143104523> • **New**
-            \n      *More Hills and Mountains*`
+                *May Click more than one Option! Choose your Favorites!*
+            <:Oo:311212190071783425> • **Old**
+                  *Less Hills and Mountains*
+            <:Ss:309943167875285002> • **Standard**
+                  *Standard Hills and Mountains*
+            <:Nn:299426487143104523> • **New**
+                  *More Hills and Mountains*`
         ).then(function(internalMessage) {
             letterEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
