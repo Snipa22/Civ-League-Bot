@@ -77,9 +77,8 @@ CivLeagueVote.on("message", message => {
     command = command.slice(Config.dot.length);
     let args = message.content.split(" ").splice(1);
 
-    //.voteBans
-   if (command === "vote") {
-       //Settings Vote
+    //.voteSettings
+   if (command === "voteSettings") {
         message.channel.sendMessage(
 `•|• **__Game Settings (Vote to Change)__** •|•
     •**__Map Choices__**
@@ -113,7 +112,8 @@ CivLeagueVote.on("message", message => {
                 internalMessage.react(emoji);
             });
         });
-       //OP Civilizations
+   }//.voteBans
+   if (command === "voteBans") {
         message.channel.sendMessage(
 `•|• **__Civilizations Ban List__** •|•
   *Majority Votes ban the Civilizations. Host has value, and can break Ties.*`
