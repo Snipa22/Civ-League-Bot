@@ -61,49 +61,49 @@ CivLeagueHelp.on("message", message => {
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 •|• **__CivLeague Link Commands__** •|•
-  **.joinSteam**
-*Joining the Steam Group, by entering the Chat Room.*
-  **.reddit**
-*Provides the Reddit Links so you can get that Upvoted.*
-  **.joinFacebook**
-*Facebooook! Join our Social Group.*
+**.joinSteam**
+  *Joining the Steam Group, by entering the Chat Room.*
+**.reddit**
+  *Provides the Reddit Links so you can get that Upvoted.*
+**.joinFacebook**
+  *Facebooook! Join our Social Group.*
 
 •|• **__Discord Commands__** •|•
-  **.deleteFiles**
-    *Shows you how to delete files to avoid getting **Error Messages**.*
-  **.setSteam**
-    *How to attach your Steam Profile to your Discord.*
-  **.setOverlay**
-    *How to set the discordOverly for people that stream, or just not sure who was talking when they said something.*
-    *While in game, it will display who is talking. Depends on how you have it setup.*
-  **.setPTT**
-    *How to setup Push to Talk.*
+**.deleteFiles**
+  *Shows you how to delete files to avoid getting **Error Messages**.*
+**.setSteam**
+  *How to attach your Steam Profile to your Discord.*
+**.setOverlay**
+  *How to set the discordOverly for people that stream, or just not sure who was talking when they said something.*
+  *While in game, it will display who is talking. Depends on how you have it setup.*
+**.setPTT**
+  *How to setup Push to Talk.*
 
 •|• **__Game Commands__** •|•
-  **.voteSettings**
-    *Vote the Map Settings First. Then doing the Ban Options.*
-  **.voteBans**
-    *Helps with Voting on Bans while Setting up the Game.*
-    *It is respectful that Players don't Vote if they are not in this Game.
-  **.draftFFA x Civ Bans Here**
-*x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*
-  **.draft**
-    *Draft's the Players in that Channel.*
-  **.draftTeams t p**
-*t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*
-**All Teamers must be in** •|• **Staging: Teamers** •|•
-   **.ffaReportx**
-    *x=Number (2-8) of Players in that Game.* | *Example:* **.ffaReport6**
-   **.tReport**
-    *t=Number of Teams (2v2, 2v2v2, 2v2v2v2, 3v3, 4v4).* | *Example:* **.2v2v2Report**
-   **.setMods**
-*Shows how to enable the mods in Game Settings.*
-   **.setGame**
-*Shows how to setup the Game to avoid Error's.*
+**.voteSettings**
+  *Vote the Map Settings First. Then doing the Ban Options.*
+**.voteBans**
+  *Helps with Voting on Bans while Setting up the Game.*
+  *It is respectful that Players don't Vote if they are not in this Game.
+**.draftFFA x Civ Bans Here**
+  *x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*
+**.draft**
+  *Draft's the Players in that Channel.*
+**.draftTeams t p**
+  *t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*
+  **All Teamers must be in** •|• **Staging: Teamers**.
+**.ffaReportx**
+  *x=Number (2-8) of Players in that Game.* | *Example:* **.ffaReport6**
+**.tReport**
+  *t=Number of Teams (2v2, 2v2v2, 2v2v2v2, 3v3, 4v4).* | *Example:* **.2v2v2Report**
+**.setMods**
+  *Shows how to enable the mods in Game Settings.*
+**.setGame**
+  *Shows how to setup the Game to avoid Error's.*
 
 •|• **__Alternative Screenshot Program__** •|•
-  **.lightshot**
-    *Shows how to take a screenshot.*`
+**.lightshot**
+  *Shows how to take a screenshot.*`
         );
     }/*.joinSteam*/
     else if (command === "joinSteam") {
