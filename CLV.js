@@ -83,16 +83,11 @@ CivLeagueVote.on("message", message => {
 `•|• **__Game Settings__** •|•
   *You may choose to select **more than one** setting for anything you enjoy playing on.*
 •**__Map Choices__**
-<:Ff:309941196447416320> • **Fractal**
-  *Unpredictable Map that can result in One or Many Land Masses*
-<:InS:309941877941993473> • **Inland Sea**
-  *One Large Ocean in the Center of the Map*
-<:IsP:309941867536056321> • **Island Plates**
-  *Islands Ranging in Size from Small to Large*
-<:Pp:309941899341463553> • **Pangaea**
-  *One Massive Landmass with Surrounding Islands*
-<:Ss:309943167875285002> • **Shuffle**
-  *What Secrets will this Map Reveal*`
+<:Ff:309941196447416320> • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
+<:InS:309941877941993473> • **Inland Sea** *(One Large Ocean in the Center of the Map)*
+<:IsP:309941867536056321> • **Island Plates** *(Islands Ranging in Size from Small to Large)*
+<:Pp:309941899341463553> • **Pangaea** *(One Massive Landmass with Surrounding Islands)*
+<:Ss:309943167875285002> • **Shuffle** *(What Secrets will this Map Reveal)*`
         ).then(function(internalMessage) {
             mapSettingsEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -100,12 +95,9 @@ CivLeagueVote.on("message", message => {
         });
         message.channel.sendMessage(
 `•**__World Age__**
-<:Oo:311212190071783425> • **Old**
-  *Less Hills and Mountains*
-<:Ss:309943167875285002> • **Standard**
-  *Standard Hills and Mountains*
-<:Nn:299426487143104523> • **New**
-  *More Hills and Mountains*`
+<:Oo:311212190071783425> • **Old** *(Less Hills and Mountains)*
+<:Ss:309943167875285002> • **Standard** *(Standard Hills and Mountains)*
+<:Nn:299426487143104523> • **New** *(More Hills and Mountains)*`
         ).then(function(internalMessage) {
             letterEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
