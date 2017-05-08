@@ -99,7 +99,7 @@ CivLeagueVote.on("message", message => {
             });
         });
         message.channel.sendMessage(
-`  •**__World Age__**
+`\n    •**__World Age__**
 <:Oo:311212190071783425> • **Old**
   *Less Hills and Mountains*
 <:Ss:309943167875285002> • **Standard**
@@ -111,6 +111,11 @@ CivLeagueVote.on("message", message => {
                 internalMessage.react(emoji);
             });
         });
+        //Putting a Plus in Chat when Done
+        message.channel.sendMessage(
+`•|• **Done Voting** •|•
+  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
+        );
    }//.voteBans
    if (command === "voteBans") {
         message.channel.sendMessage(
@@ -166,7 +171,7 @@ CivLeagueVote.on("message", message => {
                 internalMessage.react(emoji);
             });
         });
-        //Putting a Plus in Chat when Done
+//Putting a Plus in Chat when Done
         message.channel.sendMessage(
 `•|• **Done Voting** •|•
   *Put a + in chat, so everyone knows who has completed the Vote Process.*`
