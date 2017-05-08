@@ -83,6 +83,7 @@ CivLeagueVote.on("message", message => {
 `•|• **__Game Settings__** •|•
   *You may choose to select **more than one** setting for anything you enjoy playing on.*
 •**__Map Choices__**
+<:Cc:299426443161632778> • **Continents** *(Few Large Land Masses)*
 <:Ff:309941196447416320> • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
 <:InS:309941877941993473> • **Inland Sea** *(One Large Ocean in the Center of the Map)*
 <:IsP:309941867536056321> • **Island Plates** *(Islands Ranging in Size from Small to Large)*
