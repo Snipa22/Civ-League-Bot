@@ -81,33 +81,33 @@ CivLeagueVote.on("message", message => {
    if (command === "vote") {
        //Settings Vote
         message.channel.sendMessage(
-            `•|• **__Game Settings (Vote to Change)__** •|•` +
-            `\n  **__Map__**` +
-            `\n    *May Click more than one Option! Choose your Favorites!*` +
-            `\n<:Ff:309941196447416320> • **Fractal**` +
-            `\n      *Unpredictable Map that can result in One or Many Land Masses*` +
-            `\n<:InS:309941877941993473> • **Inland Sea**` +
-            `\n      *One Large Ocean in the Center of the Map*` +
-            `\n<:IsP:309941867536056321> • **Island Plates**` +
-            `\n      *Islands Ranging in Size from Small to Large*` +
-            `\n<:Pp:309941899341463553> • **Pangaea**` +
-            `\n      *One Massive Landmass with Surrounding Islands*` +
-            `\n<:Ss:309943167875285002> • **Shuffle**` +
-            `\n      *What Secrets will this Map Reveal*`
+`•|• **__Game Settings (Vote to Change)__** •|•
+    •**__Map Choices__**
+      *May Click more than one Option! Choose your Favorites!*
+<:Ff:309941196447416320> • **Fractal**
+  *Unpredictable Map that can result in One or Many Land Masses*
+<:InS:309941877941993473> • **Inland Sea**
+  *One Large Ocean in the Center of the Map*
+<:IsP:309941867536056321> • **Island Plates**
+  *Islands Ranging in Size from Small to Large*
+<:Pp:309941899341463553> • **Pangaea**
+  *One Massive Landmass with Surrounding Islands*
+<:Ss:309943167875285002> • **Shuffle**
+  *What Secrets will this Map Reveal*`
         ).then(function(internalMessage) {
             mapSettingsEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            `  **__World Age__**
-                *May Click more than one Option! Choose your Favorites!*
-            <:Oo:311212190071783425> • **Old**
-                  *Less Hills and Mountains*
-            <:Ss:309943167875285002> • **Standard**
-                  *Standard Hills and Mountains*
-            <:Nn:299426487143104523> • **New**
-                  *More Hills and Mountains*`
+`  •**__World Age__**
+     *May Click more than one Option! Choose your Favorites!*
+<:Oo:311212190071783425> • **Old**
+  *Less Hills and Mountains*
+<:Ss:309943167875285002> • **Standard**
+  *Standard Hills and Mountains*
+<:Nn:299426487143104523> • **New**
+  *More Hills and Mountains*`
         ).then(function(internalMessage) {
             letterEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -115,25 +115,25 @@ CivLeagueVote.on("message", message => {
         });
        //OP Civilizations
         message.channel.sendMessage(
-            `•|• **__Civilizations Ban List__** •|•
-            \n  *Majority Votes ban the Civilizations. Host has value, and can break Ties.*`
+`•|• **__Civilizations Ban List__** •|•
+  *Majority Votes ban the Civilizations. Host has value, and can break Ties.*`
         );
         message.channel.sendMessage(
-            '  •|• **Top Tier Civs** •|•'
+            '    •**Top Tier Civs**'
         ).then(function(internalMessage) {
             civListOne.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            '  •|• **Mid Tier Civs** •|•'
+            '    •**Mid Tier Civs**'
         ).then(function(internalMessage) {
             civListTwo.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            '  •|• **Low Tier Civs** •|•'
+            '    •**Low Tier Civs**'
         ).then(function(internalMessage) {
             civListThree.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -141,36 +141,27 @@ CivLeagueVote.on("message", message => {
         });
         //In-Game OP Options Ban List
         message.channel.sendMessage(
-            `\n\n•|• **__In-Game OP Options__** •|•` +
-            `\n      *Majority Votes ban these Options during the game. Host has value, and can break Ties.*` +
-            //Early Era Siege Units
-            `\n<:AC:299426431489015810> • **__Ancient/Classical Era Support Units__**` +
-            `\n             *Battering Rams/Siege Towers may not be used with Renaissance Era Units or Higher.*` +
-            //God of the Forge
-            `\n<:GF:299426477756252161> • **__God of the Forge__**` +
-            `\n             ***Banned** in teamers, as it provides all players on that team the bonus.*` +
-            `\n             *This is a Pantheon that allows Ancient/Classical Era Units bonus of 25% Production.*` +
-            //Crusade
-            `\n<:Cc:299426443161632778> • **__Crusade__**` +
-            `\n            *+10 Combat Strength near foreign cities that follow this Religion.*` +
-            //Defender of the Faith
-            `\n<:DF:299426454012428290> • **__Defender of the Faith__**` +
-            `\n            *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*` +
-            //General Stacking
-            `\n<:GA:299426468109221888> • **__Great General|Admiral Stacking__**` +
-            `\n            *When two GG's|GA's of the same era are within proximity; allowing a Unit to gain Double Bonus.*` +
-            //Nukes
-            `\n<:Nn:299426487143104523> • **__Nuclear Devices (Atomic Era)__**` +
-            `\n            *Disallow building of Nuclear Devices.*` +
-            //Thermo Nukes
-            `\n<:TN:299426500552294400> • **__Thermo Nuclear Devices (Information Era)__**` +
-            `\n            *Disallow building of Thermo Nuclear Devices.*` +
-            //City States
-            `\n<:CS:300057379905470464> • **__City States Peace/War__**` +
-            `\n            *Disallow Peace with any City States, that are Suzzrain of the player you are at war with.*` +
-            //Barbarians
-            `\n<:Bb:304326160169435137> • **__Barbarians Off__**` +
-            `\n            *Current Risk with Barbarians as they are causing the Turn Transition to Extend past an Unplayable Point.*`
+`•|• **__In-Game OP Options__** •|•
+  *Majority Votes ban these Options during the game. Host has value, and can break Ties.*
+<:AC:299426431489015810> • **__Ancient/Classical Era Support Units__**
+     *Battering Rams/Siege Towers may not be used with Renaissance Era Units or Higher.*
+<:GF:299426477756252161> • **__God of the Forge__**
+     ***Banned** in teamers, as it provides all players on that team the bonus.*
+     *This is a Pantheon that allows Ancient/Classical Era Units bonus of 25% Production.*
+<:Cc:299426443161632778> • **__Crusade__**
+    *+10 Combat Strength near foreign cities that follow this Religion.*
+<:DF:299426454012428290> • **__Defender of the Faith__**
+    *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
+<:GA:299426468109221888> • **__Great General|Admiral Stacking__**
+    *When two GG's|GA's of the same era are within proximity; allowing a Unit to gain Double Bonus.*
+<:Nn:299426487143104523> • **__Nuclear Devices (Atomic Era)__**
+    *Disallow building of Nuclear Devices.*
+<:TN:299426500552294400> • **__Thermo Nuclear Devices (Information Era)__**
+    *Disallow building of Thermo Nuclear Devices.*
+<:CS:300057379905470464> • **__City States Peace/War__**
+    *Disallow Peace with any City States, that are Suzzrain of the player you are at war with.*
+<:Bb:304326160169435137> • **__Barbarians Off__**
+    *Current Risk with Barbarians as they are causing the Turn Transition to Extend past an Unplayable Point.*`
         ).then(function(internalMessage) {
             opEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -178,8 +169,8 @@ CivLeagueVote.on("message", message => {
         });
         //Putting a Plus in Chat when Done
         message.channel.sendMessage(
-            `•|• **Done Voting** •|•` +
-            `\n  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
+`•|• **Done Voting** •|•
+  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
         );
     }
 });
