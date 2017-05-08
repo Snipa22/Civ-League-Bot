@@ -82,7 +82,7 @@ CivLeagueVote.on("message", message => {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
   *You may choose to select **more than one** setting for anything you enjoy playing on.*
-    •**__Map Choices__**
+•**__Map Choices__**
 <:Ff:309941196447416320> • **Fractal**
   *Unpredictable Map that can result in One or Many Land Masses*
 <:InS:309941877941993473> • **Inland Sea**
@@ -99,7 +99,7 @@ CivLeagueVote.on("message", message => {
             });
         });
         message.channel.sendMessage(
-`\n    •**__World Age__**
+`•**__World Age__**
 <:Oo:311212190071783425> • **Old**
   *Less Hills and Mountains*
 <:Ss:309943167875285002> • **Standard**
@@ -123,21 +123,21 @@ CivLeagueVote.on("message", message => {
   *Majority Votes ban the Civilizations. Host has value, and can break Ties.*`
         );
         message.channel.sendMessage(
-            '    •**Top Tier Civs**'
+            '•**Top Tier Civs**'
         ).then(function(internalMessage) {
             civListOne.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            '    •**Mid Tier Civs**'
+            '•**Mid Tier Civs**'
         ).then(function(internalMessage) {
             civListTwo.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
-            '    •**Low Tier Civs**'
+            '•**Low Tier Civs**'
         ).then(function(internalMessage) {
             civListThree.forEach(function(emoji) {
                 internalMessage.react(emoji);
