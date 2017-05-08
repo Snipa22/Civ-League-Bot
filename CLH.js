@@ -68,7 +68,9 @@ CivLeagueHelp.on("message", message => {
                 `\n  **.reddit**` +
                 `\n     *Provides the Reddit Links so you can get that Upvoted.*` +
                 `\n  **.joinFacebook**` +
-                `\n     *Facebooook! Join our Social Group.*` +
+                `\n     *Facebooook! Join our Social Group.*`
+        );
+        message.channel.sendMessage(
             //Discord Commands
                 `\n\n•|• **__Discord Commands__** •|•` +
                 `\n  **.deleteFiles**` +
@@ -79,14 +81,20 @@ CivLeagueHelp.on("message", message => {
                 `\n    *How to set the discordOverly for people that stream, or just not sure who was talking when they said something.*` +
                 `\n    *While in game, it will display who is talking. Depends on how you have it setup.*` +
                 `\n  **.setPTT**` +
-                `\n    *How to setup Push to Talk.*` +
+                `\n    *How to setup Push to Talk.*`
+        );
+        message.channel.sendMessage(
             //Game Commands
                 `\n\n•|• **__Game Commands__** •|•` +
+                `\n  **.voteSettings**` +
+                `\n    *Vote the Map Settings First. Then doing the Ban Options.*` +
                 `\n  **.voteBans**` +
                 `\n    *Helps with Voting on Bans while Setting up the Game.*` +
                 `\n    *It is respectful that Players don't Vote if they are not in this Game.` +
                 `\n  **.draftFFA x Civ Bans Here**` +
                 `\n     *x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*` +
+                `\n  **.draft` +
+                `\n    *Draft's the Players in that Channel.*`
                 `\n  **.draftTeams t p**` +
                 `\n     *t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*` +
                 `\n     **All Teamers must be in** •|• **Staging: Teamers** •|•` +
