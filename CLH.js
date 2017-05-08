@@ -138,7 +138,16 @@ CivLeagueHelp.on("message", message => {
             `\n    •<https://redd.it/623oza>` +
             `\n    •<https://redd.it/623mgp>`
         );
-    }/*.setSteam*/
+    }/*.joinFacebook*/
+    else if(command === "facebook" || command === "Facebook") {
+        message.channel.sendMessage(
+`${Players.roleAdmin} | ${Players.roleModerator}
+**__CivLeague Facebook__**
+  *If interested, you may also keep up to date on our Facebook Page!*
+  <https://www.facebook.com/groups/civleague/>`
+        );
+    }
+    /*.setSteam*/
     else if (command === "setSteam") {
         message.channel.sendMessage(
             `${Players.roleAdmin} | ${Players.roleModerator}` +
