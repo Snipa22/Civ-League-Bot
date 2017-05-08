@@ -80,9 +80,9 @@ CivLeagueVote.on("message", message => {
     //.voteSettings
    if (command === "voteSettings") {
         message.channel.sendMessage(
-`•|• **__Game Settings (Vote to Change)__** •|•
+`•|• **__Game Settings__** •|•
+  *You may choose to select **more than one** setting for anything you enjoy playing on.*
     •**__Map Choices__**
-      *May Click more than one Option! Choose your Favorites!*
 <:Ff:309941196447416320> • **Fractal**
   *Unpredictable Map that can result in One or Many Land Masses*
 <:InS:309941877941993473> • **Inland Sea**
@@ -100,7 +100,6 @@ CivLeagueVote.on("message", message => {
         });
         message.channel.sendMessage(
 `  •**__World Age__**
-     *May Click more than one Option! Choose your Favorites!*
 <:Oo:311212190071783425> • **Old**
   *Less Hills and Mountains*
 <:Ss:309943167875285002> • **Standard**
