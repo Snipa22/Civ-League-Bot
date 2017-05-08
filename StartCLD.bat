@@ -1,1 +1,0 @@
-START /B pm2 start CLD.js --name "CLD" --watch
