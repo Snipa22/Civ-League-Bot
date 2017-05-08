@@ -1,4 +1,5 @@
 "use strict";
+/*Author: © • Song Adieu | Created: February 17th, 2017*/
 
 const Discord = require("discord.js");
 const Config = require("./config.json");
@@ -9,8 +10,6 @@ const CivLeagueHelp = new Discord.Client();
 CivLeagueHelp.on("ready", () => {
     console.log("*CivLeagueHelp Activated*");
 });
-
-let emojiList = [':egypt:291788765847093248', ':america:291788587329126402', ':russia:291789137424416778'];
 
 CivLeagueHelp.on("message", message => {
     if (message.author.CivLeagueHelp) {
@@ -49,18 +48,10 @@ CivLeagueHelp.on("message", message => {
             `\n    | <#${Config.channelProof}>` +
             `\n      *Screenshots provided from the Members of this Community.*` +
             `\n    | <#${Config.channelLeagueHistory}>` +
-            `\n      *Shows the history of Games Played, and current Levels.*`
-        );
-        message.channel.sendMessage(
+            `\n      *Shows the history of Games Played, and current Levels.*` +
             `\n\n•|• **__CivLeague Helper Bot Commands__** •|•` +
             `\n  **.joinSteam**` +
             `\n     *Joining the Steam Group, by entering the Chat Room.*` +
-            `\n  **.voteSettings` +
-            `\n     *Majority Decision on what type of Settings to Play with.*` +
-            `\n  **.voteBans` +
-            `\n     *Majority Decision on what type of Settings to Ban.*` +
-            `\n  **.draftChannel**` +
-            `\n     *Drafts the Amount of Players in the Game Channel*` +
             `\n  **.draftx**` +
             `\n     *x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*` +
             `\n     *x=Teamer Drafter as well (2v2, 2v2v2, 3v3, 4v4) is then followed. Based on placement in Discord Staging.*` +
@@ -147,9 +138,9 @@ CivLeagueHelp.on("message", message => {
     }/*.discord*/
     else if (command === "discord" || command === "Discord") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Discord Link (Share with Everyone)!__**` +
-            `\nhttps://discord.gg/UFV4W4a`
+`${Players.roleAdmin} | ${Players.roleModerator}
+**__Discord Link (Share with Everyone)!__**
+  discord.gg/sbwZcjC`
         );
     }/*.deleteFiles*/
     else if (command === "deleteFiles") {
