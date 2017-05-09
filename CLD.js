@@ -84,7 +84,7 @@ let icons = {
 };
 
 let teamIcons = [icons['white'], icons['blue'], icons['purple'], icons['pink']],
-    civsPerPlayer = {2:5, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2};
+    civsPerPlayer = {2:5, 3:5, 4:4, 5:3, 6:2, 6:3, 7:2, 8:2};
 
 let civListOP = ['Australia', 'Macedon', 'Rome', 'Persia', 'Scythia', 'Sumeria'];
 
@@ -144,7 +144,7 @@ function draft(players, bans, drafts, max_players = 9, min_players = 2) {
         return "\n**Invalid ban(s) provided:** "+invalidBans.join(", ");
     }
     if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
-        return '\n**Excessive Amount of Bans!**\n  *Please Provide more Available Options.*';
+        return '\n**Excessive Amount of Bans!**\n  *Please try and do .draft2*';
     }
     for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
@@ -187,7 +187,7 @@ CivFFADrafter.on("message", message => {
     draftTeams <Teams> <Players Per Team>
     */
 
-    if (['draft', 'draftTeams', 'civList', 'civListOP', 'draftChannel', 'banList'].indexOf(command[0]) === -1){
+    if (['draft', 'draftTeams', 'civList', 'civListOP', 'draft2', 'draft3', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -210,20 +210,66 @@ CivFFADrafter.on("message", message => {
             }
             messageString = draft(players, bans, allCivs);
             break;
-        case 'draftChannel':
+        case 'draft2':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);
             }
-            let channelList = CivFFADrafter.channels.array();
-            for (let channel in channelList){
-                if (!channelList.hasOwnProperty(channel)){
+            let channel2 = CivFFADrafter.channels.array();
+            for (let channel in channel2){
+                if (!channel2.hasOwnProperty(channel)){
                     continue;
                 }
                 if(messageString !== ""){
                     continue;
                 }
-                channel = channelList[channel];
+                channel = channel2[channel];
+                if (channel.type === 'text'){
+                    continue;
+                }
+                if (typeof(channel.members) === 'undefined'){
+                    continue;
+                }
+                let channelMembers = channel.members.array();
+                for (let user in channelMembers){
+                    if (!channelMembers.hasOwnProperty(user)){
+                        continue;
+                    }
+                    if(messageString !== ""){
+                        continue;
+                    }
+                    user = channelMembers[user];
+                    if (user.user.id === message.author.id){
+                        // Valid Channel.  Time to get to work
+                        for (let channelUser in channelMembers){
+                            if (!channelMembers.hasOwnProperty(channelUser)){
+                                continue;
+                            }
+                            players.push('<@'+channelMembers[channelUser].user.id+'>');
+                        }
+                        messageString = draft(players, bans, allCivs);
+                        break;
+                    }
+                }
+            }
+            if (messageString === ""){
+                messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
+            }
+            break;
+                case 'draft3':
+            if (command.length > 1){
+                // Bans!  Time to handle them.
+                bans = command.slice(1);
+            }
+            let channel3 = CivFFADrafter.channels.array();
+            for (let channel in channel3){
+                if (!channel3.hasOwnProperty(channel)){
+                    continue;
+                }
+                if(messageString !== ""){
+                    continue;
+                }
+                channel = channel3[channel];
                 if (channel.type === 'text'){
                     continue;
                 }
