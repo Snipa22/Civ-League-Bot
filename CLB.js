@@ -10,12 +10,13 @@ const CivLeagueBot = new Discord.Client();
 CivLeagueBot.on("ready", () => {
     console.log("*CivLeagueBot Activated*");
 });
-
-/*Welcoms Player to the Server*/
-CivLeagueBot.on("guildMemberAdd", member => {
+//Gives new player a Member Role
+CivLeagueBot.on("guildMemberAdd", function(member) {
     member.addRole(member.guild.roles.find("name", "Member"));
-    let roleAdded = member.addRole();
+});
 
+//Welcomes Player to the Server
+CivLeagueBot.on("guildMemberAdd", member => {
     let guild = member.guild;
     guild.defaultChannel.sendMessage(
         `${Player.roleAdmin} | ${Player.roleModerator}` +
