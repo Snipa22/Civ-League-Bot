@@ -1,5 +1,5 @@
 "use strict";
-/*Author: © • Song Adieu | Created: February 16th, 2017*/
+/*Author: © • Song Adieu | Created: February 16th, 2017 | Snipa Revision*/
 const Discord = require("discord.js");
 const Config = require("./config.json");
 const Player = require("./players.json");
@@ -10,10 +10,10 @@ CivLeagueBot.on("ready", () => {
     console.log("*CivLeagueBot Activated*");
 });
 
-/*Gives new player a Member Role
+//Gives new player a Member Role
 CivLeagueBot.on("guildMemberAdd", function(member) {
     member.addRole(member.guild.roles.find("name", "Member"));
-});*/
+});
 
 //Welcomes Player to the Server
 CivLeagueBot.on("guildMemberAdd", member => {
