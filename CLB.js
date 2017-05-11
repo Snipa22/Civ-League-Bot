@@ -13,6 +13,9 @@ CivLeagueBot.on("ready", () => {
 
 /*Welcoms Player to the Server*/
 CivLeagueBot.on("guildMemberAdd", member => {
+    member.addRole(member.guild.roles.find("name", "Member"));
+    let roleAdded = member.addRole();
+
     let guild = member.guild;
     guild.defaultChannel.sendMessage(
         `${Player.roleAdmin} | ${Player.roleModerator}` + "\n" +
