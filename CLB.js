@@ -10,8 +10,10 @@ CivLeagueBot.on("ready", () => {
     console.log("*CivLeagueBot Activated*");
 });
 
+/*Gives new player a Member Role*/
 CivLeagueBot.on("guildMemberAdd", function(member) {
     member.addRole(member.guild.roles.find("name", "Member"));
+});
 
 //Welcomes Player to the Server
 CivLeagueBot.on("guildMemberAdd", member => {
