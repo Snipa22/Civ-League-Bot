@@ -15,9 +15,9 @@ let civListOne = [
     ':germany:291788833794818049', //9
     ':macedon:296313184841891840', //15
     ':persia:296313246279794689', //17
-    ':rome:291789096244871169', //19
-    ':russia:291789137424416778', //20
-    ':scythia:291789172434272256', //21
+    ':rome:291789096244871169', //20
+    ':russia:291789137424416778', //21
+    ':scythia:291789172434272256', //22
     ':sumeria:291789223365836813' //23
 ];
 let civListTwo = [
@@ -37,8 +37,8 @@ let civListThree = [
     ':england:291788789079080971', //7
     ':india:291788886513025034', //12
     ':norway:291789000954478592', //16
-    ':poland:291789066301603840',
-    `:spain:291789195691819010` //18
+    ':poland:291789066301603840', //18
+    `:spain:291789195691819010` //19
 ];//Finshed Voting
 let mainEmoji = [
     ':civIconPurple:291784556489474049'
@@ -81,7 +81,7 @@ CivLeagueVote.on("message", message => {
    if (command === "voteSettings") {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
-  *You may choose to select **more than one** setting for anything you enjoy playing on.*
+  ***Majority Votes pick the Game Settings. Host does break Ties.***
 •**__Map Choices__**
 <:Cc:299426443161632778> • **Continents** *(Few Large Land Masses)*
 <:Ff:309941196447416320> • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
@@ -107,13 +107,19 @@ CivLeagueVote.on("message", message => {
         //Putting a Plus in Chat when Done
         message.channel.sendMessage(
 `•|• **Done Voting** •|•
-  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
-        );
-   }//.voteBans
+  *Please react to the Purple Coin to announce you have finished voting.
+  Keep in mind the bot autovotes 1, so make sure everyone has locked in their votes.*`
+        ).then(function(internalMessage) {
+            mainEmoji.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
+    }
+//.voteBans
    if (command === "voteBans") {
         message.channel.sendMessage(
 `•|• **__Civilizations Ban List__** •|•
-  *Majority Votes ban the Civilizations. Host has value, and can break Ties.*`
+  ***Majority Votes ban the Civilizations. Host does break Ties.***`
         );
         message.channel.sendMessage(
             '•**Top Tier Civs**'
@@ -139,7 +145,7 @@ CivLeagueVote.on("message", message => {
         //In-Game OP Options Ban List
         message.channel.sendMessage(
 `•|• **__In-Game OP Options__** •|•
-  *Majority Votes ban these Options during the game. Host has value, and can break Ties.*
+  ***Majority Votes ban these Options during the game. Host does break Ties.***
 <:AC:299426431489015810> • **__Ancient/Classical Era Support Units__**
      *Battering Rams/Siege Towers may not be used with Renaissance Era Units or Higher.*
 <:GF:299426477756252161> • **__God of the Forge__**
@@ -156,9 +162,7 @@ CivLeagueVote.on("message", message => {
 <:TN:299426500552294400> • **__Thermo Nuclear Devices (Information Era)__**
     *Disallow building of Thermo Nuclear Devices.*
 <:CS:300057379905470464> • **__City States Peace/War__**
-    *Disallow Peace with any City States, that are Suzzrain of the player you are at war with.*
-<:Bb:304326160169435137> • **__Barbarians Off__**
-    *Current Risk with Barbarians as they are causing the Turn Transition to Extend past an Unplayable Point.*`
+    *Disallow Peace with any City States, that are Suzzrain of the player you are at war with, even exceeding the 10 turns.*`
         ).then(function(internalMessage) {
             opEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -167,9 +171,14 @@ CivLeagueVote.on("message", message => {
 //Putting a Plus in Chat when Done
         message.channel.sendMessage(
 `•|• **Done Voting** •|•
-  *Put a + in chat, so everyone knows who has completed the Vote Process.*`
-        );
-    }
+  *Please react to the Purple Coin to announce you have finished voting.
+  Keep in mind the bot autovotes 1, so make sure everyone has locked in their votes.*`
+        ).then(function(internalMessage) {
+            mainEmoji.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
+   }
 });
 
 CivLeagueVote.login(Config.tokens.VoteBot);
