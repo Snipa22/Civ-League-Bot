@@ -84,7 +84,7 @@ CivLeagueVote.on("message", message => {
     let args = message.content.split(" ").splice(1);
 
     //.voteSettings
-   if (command === "voteSettings") {
+   if (command === "voteSettings" || command === "votesettings") {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break Ties.***
@@ -134,7 +134,7 @@ CivLeagueVote.on("message", message => {
         });
     }
 //.voteBans
-   if (command === "voteBans2") {
+   if (command === "voteBans" || command === "votebans") {
         message.channel.sendMessage(
 `•|• **__Civilizations Ban List__** •|•
   ***Majority Votes ban the Civilizations. Host does break Ties.***`
