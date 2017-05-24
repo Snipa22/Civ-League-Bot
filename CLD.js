@@ -54,7 +54,7 @@ let allCivs = {
     india: '<:india:291788886513025034>*India*', //12
     japan: '<:japanx:291788927424266250>*Japan*', //13
     kongo: '<:kongo:291788970805952513>*Kongo*', //14
-    macedon: `<:macedon:296313184841891840>*Macedon*`, //15
+    macedon: `<:macedon:316955264853213185>*Macedon*`, //15
     norway: '<:norway:291789000954478592>*Norway*', //16
     persia: `<:persia:296313246279794689>*Persia*`, //17
     poland: '<:poland:291789066301603840>*Poland*', //18
