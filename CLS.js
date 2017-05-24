@@ -376,18 +376,18 @@ CivLeagueStats.on("message", message => {
             .setColor(0x42FF00)
         message.channel.sendEmbed(p);
     };
-//@mike#3166 `Wins: 124 | Losses: 95 | Games Played: 48 | EXP: 179/275 | Level: 9`
+//@mike#3166 `Wins: 129 | Losses: 95 | Games Played: 49 | EXP: 189/275 | Level: 9`
     if(command === 'lmikel1337') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '124', true)
+            .addField('Wins', '129', true)
             .addField('Losses', '95', true)
-            .addField('Games Played', '48', true)
-            .addField('Experience', '179/275', true)
+            .addField('Games Played', '49', true)
+            .addField('Experience', '189/275', true)
             .addField('Level', '9', true)
-            .addField('Last Game Played', '832', true)
-            .addField('Current Win Streak', '0', true)
+            .addField('Last Game Played', '834', true)
+            .addField('Current Win Streak', '5', true)
             .addField('Longest Win Streak', '9', true)
-            .addField('Win Percentage', '*56.62%*', true)
+            .addField('Win Percentage', '*57.58%*', true)
 
             .addField('Valued Player', '⭐', true)
 
