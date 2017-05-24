@@ -7,7 +7,7 @@
         "channelGuidelines" : "291714830325383171",
         "channelNews" : "291742284188352522",
         "channelWorkshop" : "292315755410882561",
-        "channelQuests" : "293374854533480450",
+        "channelTournament" : "316922164211089410",
         "channelProof" : "293741426947129347",
         "channelHallOfFame" : "294477371615084555",
         "channelLeagueHistory" : "291771157668167680",
@@ -28,8 +28,6 @@
         "imageSetGame" : "setGame.png",
         "imageSetMods" : "setMods.png"
     },
-
-
 
     "links": {
         "civLeagueSteamGroup" : "<http://steamcommunity.com/groups/CivLeagueEST#overview>",

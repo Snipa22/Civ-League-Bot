@@ -36,30 +36,32 @@ CivLeagueHelp.on("message", message => {
     //Channels
     if (command === "channels" || command === "Channels") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n\n•|• **__List of Channels__** •|•` +
-            `\n  ${Players.roleMember}` +
-            `\n    | <#${Config.channels.channelIntroduction}>` +
-            `\n      *Join CivLeague Everywhere (Discord/League/Steam Group).*` +
-            `\n    | <#${Config.channels.channelGuidelines}>` +
-            `\n      *Brief guide to handling certain situations properly.*` +
-            `\n    | <#${Config.channels.channelWorkshop}>` +
-            `\n      *List of CivLeague Mods. As well as many other enjoyable mods, such as the Hellblazer's Mods.*` +
-            `\n    | <#${Config.channels.channelNews}>` +
-            `\n      *Updates on our Server based by the **Polls** that are held.*` +
-            `\n    | <#${Config.channels.channelQuests}>` +
-            `\n      *Daily | Weekly | Lifetime Quests that can be Achieved!*` +
-            `\n    | <#${Config.channels.channelHallOfFame}>` +
-            `\n      *Players who have achieved a great deal of success within the Game!*` +
-            `\n    | <#${Config.channels.channelProof}>` +
-            `\n      *Screenshots provided from the Members of this Community.*` +
-            `\n    | <#${Config.channels.channelLeagueHistory}>` +
-            `\n      *Shows the history of Games Played, and current Levels.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+
+•|• **__List of Channels__** •|•
+    <#${Config.channels.channelIntroduction}>
+        *Join CivLeague Everywhere (Discord/League/Steam Group).*
+    <#${Config.channels.channelGuidelines}>
+        *Brief guide to handling certain situations properly.*
+    <#${Config.channels.channelWorkshop}>
+        *List of CivLeague Mods. As well as many other enjoyable mods!
+        You will also find all the extra Civilizations Mod Pack here.*
+    <#${Config.channels.channelNews}>
+        *Updates on our Server based by the **Polls** that are held.*
+    <#${Config.channels.channelTournament}>
+        *Tournament News and Requirements along with any Mods to Install.*
+    <#${Config.channels.channelHallOfFame}>
+        *Players who have achieved a great deal of success within the Game!*
+    <#${Config.channels.channelProof}>
+        *Screenshots provided from the Members of this Community.*
+    <#${Config.channels.channelLeagueHistory}>
+        *Shows the history of Games Played, and current Levels.*`
         );
     }//Commands
     if (command === "commands" || command === "Commands") {
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
+
 •|• **__CivLeague Link Commands__** •|•
     **.joinSteam**
         *Joining the Steam Group, by entering the Chat Room.*
@@ -80,15 +82,15 @@ CivLeagueHelp.on("message", message => {
         *How to setup Push to Talk.*
 
 •|• **__Game Commands__** •|•
-    **.voteSettings**
+    **.voteSettings | .votesettings**
         *Vote the Map Settings First. Then doing the Ban Options.*
-    **.voteBans**
+    **.voteBans | .voteBans**
         *Helps with Voting on Bans while Setting up the Game.*
         *It is respectful that Players don't Vote if they are not in this Game.
-    **.draftFFA x Civ Bans Here**
-        *x=Number of Players (2-8) in the Game. Follow that with names of Civilizations to Ban (Capitalizing the first Letter).*
     **.draft**
         *Draft's the Players in that Channel.*
+    **.draft2**
+        *Draft's the Players in that Channel with too many Bans to access.*
     **.draftTeams t p**
         *t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*
         **All Teamers must be in** •|• **Staging: Teamers**.
