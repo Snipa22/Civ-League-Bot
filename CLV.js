@@ -13,7 +13,7 @@ CivLeagueVote.on("ready", () => {
 let civListOne = [
     ':australia:291788657000710144', //2
     ':germany:291788833794818049', //9
-    ':macedon:296313184841891840', //15
+    ':macedon:316955264853213185', //15
     ':persia:296313246279794689', //17
     ':rome:291789096244871169', //20
     ':russia:291789137424416778', //21
@@ -43,31 +43,37 @@ let civListThree = [
 let mainEmoji = [
     ':civIconPurple:291784556489474049'
 ];
-let opEmojiList = [
-':AC:299426431489015810',
-':Cc:299426443161632778',
-':DF:299426454012428290',
-':TN:299426500552294400',
-':Nn:299426487143104523',
-':GF:299426477756252161',
-':GA:299426468109221888',
-':CS:300057379905470464',
-':Bb:304326160169435137'
+let difficultyEmojiList = [
+'🌤',
+'☁',
+'🌧',
+'🌩',
+'⛈'
 ];
 let mapSettingsEmojiList = [
-':Ff:309941196447416320',
-':IsP:309941867536056321',
-':Pp:309941899341463553',
-':InS:309941877941993473',
-':Cc:299426443161632778',
-':Ss:309943167875285002'
+'🌏',
+':earth_inland:316937660138520578',
+'🌍',
+':earth_islands:316937669672304651',
+'🌎',
+':earth_shuffle:316937678908293121'
 ];
 let letterEmojiList = [
-':Oo:311212190071783425',
-':Ss:309943167875285002',
-':Nn:299426487143104523'
+'🌕',
+'🌗',
+'🌑'
 ];
-
+let opEmojiList = [
+'🐏',
+'⚔',
+'🛡',
+'☢',
+'⚛',
+'🎖',
+'🌪',
+'🏠',
+'👿'
+];
 
 CivLeagueVote.on("message", message => {
     if (message.author.CivLeagueVote) return;
@@ -83,12 +89,12 @@ CivLeagueVote.on("message", message => {
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break Ties.***
 •**__Map Choices__**
-<:Cc:299426443161632778> • **Continents** *(Few Large Land Masses)*
-<:Ff:309941196447416320> • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
-<:InS:309941877941993473> • **Inland Sea** *(One Large Ocean in the Center of the Map)*
-<:IsP:309941867536056321> • **Island Plates** *(Islands Ranging in Size from Small to Large)*
-<:Pp:309941899341463553> • **Pangaea** *(One Massive Landmass with Surrounding Islands)*
-<:Ss:309943167875285002> • **Shuffle** *(What Secrets will this Map Reveal)*`
+:earth_americas: • **Continents** *(Few Large Land Masses)*
+:earth_africa: • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
+<:earth_inland:316937660138520578> • **Inland Sea** *(One Large Ocean in the Center of the Map)*
+<:earth_islands:316937669672304651> • **Island Plates** *(Islands Ranging in Size from Small to Large)*
+:earth_asia: • **Pangaea** *(One Massive Landmass with Surrounding Islands)*
+<:earth_shuffle:316937678908293121> • **Shuffle** *(What Secrets will this Map Reveal)*`
         ).then(function(internalMessage) {
             mapSettingsEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
@@ -96,11 +102,23 @@ CivLeagueVote.on("message", message => {
         });
         message.channel.sendMessage(
 `•**__World Age__**
-<:Oo:311212190071783425> • **Old** *(Less Hills and Mountains)*
-<:Ss:309943167875285002> • **Standard** *(Standard Hills and Mountains)*
-<:Nn:299426487143104523> • **New** *(More Hills and Mountains)*`
+🌑 • **Old** *(Less Hills and Mountains)*
+🌗 • **Standard** *(Standard Hills and Mountains)*
+🌕 • **New** *(More Hills and Mountains)*`
         ).then(function(internalMessage) {
             letterEmojiList.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`•**__Level of Difficulty__**
+🌤 • **Prince**
+☁ • **King**
+🌧 • **Emperor**
+🌩 • **Immortal**
+⛈ • **Deity**`
+        ).then(function(internalMessage) {
+            difficultyEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
@@ -116,7 +134,7 @@ CivLeagueVote.on("message", message => {
         });
     }
 //.voteBans
-   if (command === "voteBans") {
+   if (command === "voteBans2") {
         message.channel.sendMessage(
 `•|• **__Civilizations Ban List__** •|•
   ***Majority Votes ban the Civilizations. Host does break Ties.***`
@@ -146,23 +164,15 @@ CivLeagueVote.on("message", message => {
         message.channel.sendMessage(
 `•|• **__In-Game OP Options__** •|•
   ***Majority Votes ban these Options during the game. Host does break Ties.***
-<:AC:299426431489015810> • **__Ancient/Classical Era Support Units__**
-     *Battering Rams/Siege Towers may not be used with Renaissance Era Units or Higher.*
-<:GF:299426477756252161> • **__God of the Forge__**
-     ***Banned** in teamers, as it provides all players on that team the bonus.*
-     *This is a Pantheon that allows Ancient/Classical Era Units bonus of 25% Production.*
-<:Cc:299426443161632778> • **__Crusade__**
-    *+10 Combat Strength near foreign cities that follow this Religion.*
-<:DF:299426454012428290> • **__Defender of the Faith__**
-    *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
-<:GA:299426468109221888> • **__Great General|Admiral Stacking__**
-    *When two GG's|GA's of the same era are within proximity; allowing a Unit to gain Double Bonus.*
-<:Nn:299426487143104523> • **__Nuclear Devices (Atomic Era)__**
-    *Disallow building of Nuclear Devices.*
-<:TN:299426500552294400> • **__Thermo Nuclear Devices (Information Era)__**
-    *Disallow building of Thermo Nuclear Devices.*
-<:CS:300057379905470464> • **__City States Peace/War__**
-    *Disallow Peace with any City States, that are Suzzrain of the player you are at war with, even exceeding the 10 turns.*`
+🐏 • **Ancient/Classical Era Support Units:** *Rams/Siege Towers may not be used with renaissance era units and up.*
+🎖 • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
+⚔ • **Crusade:** *+10 Combat Strength near foreign cities that follow this Religion.*
+🛡 • **Defender of the Faith:** *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
+🌪 • **GG/GA Stacking:** *When two GG's/GA's of the same era allow a unit to receive Double Bonus.*
+⚛ • **Nuclear Devices (Atomic Era):** *Disallow building of Nuclear Devices.*
+☢ • **Thermo Nuclear Devices (Information Era):** *Disallow building of Thermo Nuclear Devices.*
+🏠 • **City States:** *Disallow Peace with any City State, that is suzzrain of any player(s) you are at war with.*
+👿 • **Barbarians:** *Disallow Barbarians in the Game, as they currently bug turn transitions. So please be aware.*`
         ).then(function(internalMessage) {
             opEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
