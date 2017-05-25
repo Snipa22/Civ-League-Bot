@@ -86,7 +86,7 @@ CivLeagueHelp.on("message", message => {
 •|• **__Game Commands__** •|•
     **.voteSettings | .votesettings**
         *Vote the Map Settings First. Then doing the Ban Options.*
-    **.voteBans | .votebans**
+    **.voteBans | .votebans | .voteBansJDF | votebansjdf**
         *Helps with Voting on Bans while Setting up the Game.*
         *It is respectful that Players don't Vote if they are not in this Game.
     **.draft**

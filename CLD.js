@@ -48,7 +48,7 @@ let allCivs = {
     egypt: '<:egypt:291788765847093248>*Egypt*', //6
     england: '<:england:291788789079080971>*England*', //7
     france: '<:france:291788812068323330>*France*', //8
-    germany: '<:germany:291788833794818049>*Germany*', //9
+    frederick: '<:frederickbarbarossa:291788833794818049>*Germany (**Frederick Barbarossa**)*', //9
     gorgo: '<:gorgo:291788859736588290>*Greece (**Gorgo**)*', //10
     pericles: '<:pericles:291789035289182208>*Greece (**Pericles**)*', //11
     india: '<:india:291788886513025034>*India*', //12
@@ -67,12 +67,12 @@ let allCivs = {
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',
     white: '<:civIconWhite:293543789103022080>',
-    blue: '<:civIconBlue:296338624855932929>',
-    pink: '<:civIconPink:297682734195802113>'
+    red: '<:civIconRed:292900895094603776>',
+    green: '<:civIconGreen:292900880519397376>'
 };
 
-let teamIcons = [icons['white'], icons['blue'], icons['purple'], icons['pink']],
-    civsPerPlayer = {2:5, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:2};
+let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
+    civsPerPlayer = {2:7, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:2};
 
 let civListOP = ['-'];
 
