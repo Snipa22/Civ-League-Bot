@@ -41,7 +41,7 @@ let commandHelp =
 let allCivsDLC = {
     //Top Tier Civs
     germany: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*',
-    macedon: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*',
+    macedon: '\n  •<:alexader:317405771631558656>*Macedon (**Alexander**)*',
     rome: '\n  •<:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Low Tier Civs
