@@ -39,7 +39,7 @@ let commandHelp =
 
 //Array of Civilizations Available
 let allCivs = {
-    adolfhitler: '<:adolfhitler:317142862611349505>*Germany (**Adolf Hitler**)*', //DLC 0
+    //adolfhitler: '<:adolfhitler:317142862611349505>*Germany (**Adolf Hitler**)*', //DLC 0
     america: '<:america:291788587329126402>*America*', //0
     arabia: '<:arabia:291788624041607170>*Arabia*', //1
     australia: '<:australia:291788657000710144>*Australia*', //2
