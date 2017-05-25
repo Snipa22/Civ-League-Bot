@@ -43,15 +43,15 @@ let allCivsDLC = {
 
 */    
     //Top Tier Civs
-    adolfh: '\n  •<:adolfhitler:317183252244987914>*Germany (**Adolf Hitler**)*', //DLC 0
-    antoninusp: '\n  •<:antoninusp:317198867659751425>*Rome (**Antoninus Pius**)*', //DLC 2
+    adolfh: '\n  •<:adolfhitler:317183252244987914>*Germany (**Adolf Hitler**)*', //DLC
+    antoninusp: '\n  •<:antoninusp:317198867659751425>*Rome (**Antoninus Pius**)*', //DLC
     frederickii: '\n  •<:frederickii:317183363603628033>*Germany (**Frederick II**)*', //DLC 
-    julian: '\n  •<:julian:317206472276836353>*Rome (**Juian**)*', //DLC 
-    nero: '<\n  •<:nero:317206544179789824>*Rome (**Nero**)*', //DLC 
+    julian: '\n  •<:julian:317206472276836353>*Rome (**Juian**)*', //DLC
+    nero: '<\n  •<:nero:317206544179789824>*Rome (**Nero**)*', //DLC
 
-    frederickb: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*', //9
-    alexander: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*', //15
-    trajan: '<:trajan:317208457499377665>*Rome (**Trajan**)*', //19
+    frederickb: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*',
+    alexander: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*',
+    trajan: '<:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Mid Tier Civs
     ajatasattu: '\n  •<:ajatasattu:317183414698508288>*India (**Ajatasattu**)*', //DLC 
@@ -59,29 +59,29 @@ let allCivsDLC = {
     charlesg: '', //DLC 3
 
     //Low Tier Civs
-    gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*', //12
-    catherinem: '<:catherinem:317342622052122624>*France (**Catherine De Medici**)*', //8
+    gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*',
+    catherinem: '<:catherinem:317342622052122624>*France (**Catherine De Medici**)*',
 
-    america: '<:america:291788587329126402>*America*', //0
-    arabia: '<:arabia:291788624041607170>*Arabia*', //1
-    australia: '<:australia:291788657000710144>*Australia*', //2
-    aztec: '<:aztec:291788693428109322>*Aztec*', //3
-    brazil: '<:brazil:291788717587300353>*Brazil*', //4
-    china: '<:china:291788737573027840>*China*', //5
-    egypt: '<:egypt:291788765847093248>*Egypt*', //6
-    england: '<:england:291788789079080971>*England*', //7
+    america: '<:america:291788587329126402>*America*',
+    arabia: '<:arabia:291788624041607170>*Arabia*',
+    australia: '<:australia:291788657000710144>*Australia*',
+    aztec: '<:aztec:291788693428109322>*Aztec*',
+    brazil: '<:brazil:291788717587300353>*Brazil*',
+    china: '<:china:291788737573027840>*China*',
+    egypt: '<:egypt:291788765847093248>*Egypt*',
+    england: '<:england:291788789079080971>*England*',
     
-    gorgo: '<:gorgo:291788859736588290>*Greece (**Gorgo**)*', //10
-    pericles: '<:pericles:291789035289182208>*Greece (**Pericles**)*', //11
-    japan: '<:japanx:291788927424266250>*Japan*', //13
-    kongo: '<:kongo:291788970805952513>*Kongo*', //14
-    norway: '<:norway:291789000954478592>*Norway*', //16
-    persia: `<:persia:296313246279794689>*Persia*`, //17
-    poland: '<:poland:291789066301603840>*Poland*', //18
-    russia: '<:russia:291789137424416778>*Russia*', //20
-    scythia: '<:scythia:291789172434272256>*Scythia*', //21
-    spain: '<:spain:291789195691819010>*Spain*', //22
-    sumeria: '<:sumeria:291789223365836813>*Sumeria*'}; //23
+    gorgo: '<:gorgo:291788859736588290>*Greece (**Gorgo**)*',
+    pericles: '<:pericles:291789035289182208>*Greece (**Pericles**)*',
+    japan: '<:japanx:291788927424266250>*Japan*',
+    kongo: '<:kongo:291788970805952513>*Kongo*',
+    norway: '<:norway:291789000954478592>*Norway*',
+    persia: `<:persia:296313246279794689>*Persia*`,
+    poland: '<:poland:291789066301603840>*Poland*',
+    russia: '<:russia:291789137424416778>*Russia*',
+    scythia: '<:scythia:291789172434272256>*Scythia*',
+    spain: '<:spain:291789195691819010>*Spain*',
+    sumeria: '<:sumeria:291789223365836813>*Sumeria*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',

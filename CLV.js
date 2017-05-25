@@ -11,34 +11,34 @@ CivLeagueVote.on("ready", () => {
 })
 //Civilization Ban List
 let civListOne = [
-    ':australia:291788657000710144', //2
-    ':frederickbarbarossa:317183299401285633', //9
-    ':alexander:317183831734091776', //15
-    ':persia:296313246279794689', //17
-    ':trajan:317208457499377665', //20
-    ':russia:291789137424416778', //21
-    ':scythia:291789172434272256', //22
-    ':sumeria:291789223365836813' //23
+    ':australia:291788657000710144',
+    ':frederickbarbarossa:317183299401285633',
+    ':alexander:317183831734091776',
+    ':persia:296313246279794689',
+    ':trajan:317401277825024021',
+    ':russia:291789137424416778',
+    ':scythia:291789172434272256',
+    ':sumeria:291789223365836813'
 ];
 let civListTwo = [
-    ':america:291788587329126402', //0
-    ':arabia:291788624041607170', //1
-    ':aztec:291788693428109322', //3
-    ':china:291788737573027840', //5
-    ':gorgo:291788859736588290', //10
-    ':pericles:291789035289182208', //11
-    ':japanx:291788927424266250', //13
-    ':kongo:291788970805952513' //14Z
+    ':america:291788587329126402',
+    ':arabia:291788624041607170',
+    ':aztec:291788693428109322',
+    ':china:291788737573027840',
+    ':gorgo:291788859736588290',
+    ':pericles:291789035289182208',
+    ':japanx:291788927424266250',
+    ':kongo:291788970805952513'
 ];
 let civListThree = [
-    ':brazil:291788717587300353', //4
-    ':egypt:291788765847093248', //6
-    ':france:291788812068323330', //8
-    ':england:291788789079080971', //7
-    ':gandhi:317183717439176704', //12
-    ':norway:291789000954478592', //16
-    ':poland:291789066301603840', //18
-    `:spain:291789195691819010` //19
+    ':brazil:291788717587300353',
+    ':egypt:291788765847093248',
+    ':france:291788812068323330',
+    ':england:291788789079080971',
+    ':gandhi:317183717439176704',
+    ':norway:291789000954478592',
+    ':poland:291789066301603840',
+    `:spain:291789195691819010`
 ];
 let civListDLC1 = [
     ':adolfhitler:317183252244987914',
@@ -100,13 +100,6 @@ CivLeagueVote.on("message", message => {
     //.voteSettings
    if (command === "voteSettings" || command === "votesettings") {
         message.channel.sendMessage(
-/*
-
-
-
-
-
-*/
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break Ties.***
 •**__Map Choices__**

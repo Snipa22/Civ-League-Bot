@@ -40,34 +40,34 @@ let commandHelp =
 //Array of Civilizations Available
 let allCivsDLC = {
     //Top Tier Civs
-    germany: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*', //9
-    macedon: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*', //15
-    rome: '\n  •<:trajan:317208457499377665>*Rome (**Trajan**)*', //19
+    germany: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*',
+    macedon: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*',
+    rome: '\n  •<:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Low Tier Civs
-    gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*', //12
-    france: '\n  •<:france:291788812068323330>*France (**Catherine De Medici**)*', //8
+    gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*',
+    france: '\n  •<:france:291788812068323330>*France (**Catherine De Medici**)*',
 
-    america: '\n  •<:america:291788587329126402>*America (**Teddy Roosevelt**)*', //0
-    arabia: '\n  •<:arabia:291788624041607170>*Arabia (**Saladin**)*', //1
-    australia: '\n  •<:australia:291788657000710144>*Australia (**John Curtin**)*', //2
-    aztec: '\n  •<:aztec:291788693428109322>*Aztec (**Montezuma**)*', //3
-    brazil: '\n  •<:brazil:291788717587300353>*Brazil (**Pedro II**)*', //4
-    china: '\n  •<:china:291788737573027840>*China (**Qin Shi Huang**)*', //5
-    egypt: '\n  •<:egypt:291788765847093248>*Egypt (**Cleopatra**)*', //6
-    england: '\n  •<:england:291788789079080971>*England (**Victoria**)*', //7
+    america: '\n  •<:america:291788587329126402>*America (**Teddy Roosevelt**)*',
+    arabia: '\n  •<:arabia:291788624041607170>*Arabia (**Saladin**)*',
+    australia: '\n  •<:australia:291788657000710144>*Australia (**John Curtin**)*',
+    aztec: '\n  •<:aztec:291788693428109322>*Aztec (**Montezuma**)*',
+    brazil: '\n  •<:brazil:291788717587300353>*Brazil (**Pedro II**)*',
+    china: '\n  •<:china:291788737573027840>*China (**Qin Shi Huang**)*',
+    egypt: '\n  •<:egypt:291788765847093248>*Egypt (**Cleopatra**)*',
+    england: '\n  •<:england:291788789079080971>*England (**Victoria**)*',
     
-    gorgo: '\n  •<:gorgo:291788859736588290>*Greece (**Gorgo**)*', //10
-    pericles: '\n  •<:pericles:291789035289182208>*Greece (**Pericles**)*', //11
-    japan: '\n  •<:japanx:291788927424266250>*Japan (**Hojo Tokimune**)*', //13
-    kongo: '\n  •<:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*', //14
-    norway: '\n  •<:norway:291789000954478592>*Norway (**Harold Hardrada**)*', //16
-    persia: '\n  •<:persia:296313246279794689>*Persia (**Cyrus**)*', //17
-    poland: '\n  •<:poland:291789066301603840>*Poland (**Jadwiga**)*', //18
-    russia: '\n  •<:russia:291789137424416778>*Russia (**Peter**)*', //20
-    scythia: '\n  •<:scythia:291789172434272256>*Scythia (**Tomyris**)*', //21
-    spain: '\n  •<:spain:291789195691819010>*Spain (**Philip I**)*', //22
-    sumeria: '\n  •<:sumeria:291789223365836813>*Sumeria (**Gilgamesh**)*'}; //23
+    gorgo: '\n  •<:gorgo:291788859736588290>*Greece (**Gorgo**)*',
+    pericles: '\n  •<:pericles:291789035289182208>*Greece (**Pericles**)*',
+    japan: '\n  •<:japanx:291788927424266250>*Japan (**Hojo Tokimune**)*',
+    kongo: '\n  •<:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
+    norway: '\n  •<:norway:291789000954478592>*Norway (**Harold Hardrada**)*',
+    persia: '\n  •<:persia:296313246279794689>*Persia (**Cyrus**)*',
+    poland: '\n  •<:poland:291789066301603840>*Poland (**Jadwiga**)*',
+    russia: '\n  •<:russia:291789137424416778>*Russia (**Peter**)*',
+    scythia: '\n  •<:scythia:291789172434272256>*Scythia (**Tomyris**)*',
+    spain: '\n  •<:spain:291789195691819010>*Spain (**Philip I**)*',
+    sumeria: '\n  •<:sumeria:291789223365836813>*Sumeria (**Gilgamesh**)*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',
@@ -79,7 +79,7 @@ let icons = {
 let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
     civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
 
-let civListOP = ['-'];
+let civListOP = ['-']; 
 
 function readBanFile(){
     let loadedBans = {'OP': civListOP};
@@ -175,7 +175,7 @@ CivFFADrafter.on("message", message => {
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
     console.log(command);
 
-    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
+    if (['draft', 'shuffle2', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -229,7 +229,7 @@ CivFFADrafter.on("message", message => {
                 messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
-        case 'shuffle':
+        case 'shuffle2':
             if (command.length !== 3){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
