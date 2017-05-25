@@ -41,7 +41,7 @@ let commandHelp =
 let allCivs = {
     //Top Tier Civs
     //adolfhitler: '<:adolfhitler:317142862611349505>*Germany (**Adolf Hitler**)*', //DLC 0
-    fredrickbarbarossa: '<:frederickbarbarossa:317144875923406848>*Germany (**Frederick Barbarossa**)*', //9
+    frederickbarbarossa: '<:frederickbarbarossa:317144875923406848>*Germany (**Frederick Barbarossa**)*', //9
     //fredrickii: '<:frederickii:317144875923406848>*Germany (**Frederick Barbarossa**)*', //9
 
     //Mid Tier Civs
