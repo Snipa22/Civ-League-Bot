@@ -65,12 +65,12 @@ let difficultyEmojiList = [
 '⛈'
 ];
 let mapSettingsEmojiList = [
-':numbone:317354852860559361',
-':numbtwo:317361016247681024',
-':numbthree:317366430444290050',
-':numbfour:317366444180373504',
-':numbfive:317366457501614080',
-':numbsix:317366468540891146'
+':NumbOne:317382776523587594', 
+':NumbTwo:317382792713469952', 
+':NumbThree:317382805250113546', 
+':NumbFour:317382816537116673', 
+':NumbFive:317382827710611458', 
+':NumbSix:317382839089758209'
 ];
 let letterEmojiList = [
 '🌕',
@@ -100,15 +100,22 @@ CivLeagueVote.on("message", message => {
     //.voteSettings
    if (command === "voteSettings" || command === "votesettings") {
         message.channel.sendMessage(
+/*
+
+
+
+
+
+*/
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break Ties.***
 •**__Map Choices__**
-<:numbone:317354852860559361> • 🌏**Pangaea** *(One Massive Landmass with Surrounding Islands)*
-<:numbtwo:317361016247681024> • 🌎**Continents** *(Few Large Land Masses)*
-<:numbthree:317366430444290050> • 🌍**Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
-<:numbfour:317366444180373504> • <:earth_inland:316937660138520578>**Inland Sea** *(One Large Ocean in the Center of the Map)*
-<:numbfive:317366457501614080> • <:earth_islands:316937669672304651>**Island Plates** *(Islands Ranging in Size from Small to Large)*
-<:numbsix:317366468540891146> • <:earth_shuffle:316937678908293121>**Shuffle** *(What Secrets will this Map Reveal)*`
+<:NumbOne:317382776523587594> • 🌏**Pangaea** *(One Massive Landmass with Surrounding Islands)*
+<:NumbTwo:317382792713469952> • 🌎**Continents** *(Few Large Land Masses)*
+<:NumbThree:317382805250113546> • 🌍**Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
+<:NumbFour:317382816537116673> • <:earth_inland:316937660138520578>**Inland Sea** *(One Large Ocean in the Center of the Map)*
+<:NumbFive:317382827710611458> • <:earth_islands:316937669672304651>**Island Plates** *(Islands Ranging in Size from Small to Large)*
+<:NumbSix:317382839089758209> • <:earth_shuffle:316937678908293121>**Shuffle** *(What Secrets will this Map Reveal)*`
         ).then(function(internalMessage) {
             mapSettingsEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);
