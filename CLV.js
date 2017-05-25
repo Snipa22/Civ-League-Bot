@@ -13,7 +13,7 @@ CivLeagueVote.on("ready", () => {
 let civListOne = [
     ':australia:291788657000710144',
     ':frederickbarbarossa:317183299401285633',
-    ':alexander:317183831734091776',
+    ':alexader:317405771631558656',
     ':persia:296313246279794689',
     ':trajan:317401277825024021',
     ':russia:291789137424416778',
