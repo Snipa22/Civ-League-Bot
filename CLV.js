@@ -12,8 +12,8 @@ CivLeagueVote.on("ready", () => {
 //Civilization Ban List
 let civListOne = [
     ':australia:291788657000710144', //2
-    ':germany:291788833794818049', //9
-    ':macedon:316955264853213185', //15
+    ':frederickbarbarossa:317183299401285633', //9
+    ':alexander:317183831734091776', //15
     ':persia:296313246279794689', //17
     ':rome:291789096244871169', //20
     ':russia:291789137424416778', //21
