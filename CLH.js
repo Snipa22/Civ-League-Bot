@@ -404,7 +404,7 @@ CivLeagueHelp.on("message", message => {
     else if (command === "4v4report" || command === "4v4Report" || command === "4v4REPORT") {
         message.channel.sendMessage(
             `__**4v4 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.}> by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Players.SongAdieu}> by Sending a Direct Message (DM).` + "\n" +
             `1st Team:` + "\n" +
             `    @` + "\n" +
             `    @` + "\n" +
