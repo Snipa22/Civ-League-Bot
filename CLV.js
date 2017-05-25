@@ -28,7 +28,7 @@ let civListTwo = [
     ':gorgo:291788859736588290', //10
     ':pericles:291789035289182208', //11
     ':japanx:291788927424266250', //13
-    ':kongo:291788970805952513' //14
+    ':kongo:291788970805952513' //14Z
 ];
 let civListThree = [
     ':brazil:291788717587300353', //4
@@ -39,7 +39,21 @@ let civListThree = [
     ':norway:291789000954478592', //16
     ':poland:291789066301603840', //18
     `:spain:291789195691819010` //19
-];//Finshed Voting
+];
+let civListDLC1 = [
+    ':adolfhitler:317183252244987914',
+    ':frederickii:317183363603628033',
+    ':antoninusp:317198867659751425',
+    ':julian:317206472276836353',
+    ':nero:317206544179789824',
+    ':trajan:317208457499377665'
+];
+let civListDLC2 = [
+    ':ajatasattu:317183414698508288',
+    ':commodus:317203273050226688',
+    ''
+];
+//Finshed Voting
 let mainEmoji = [
     ':civIconPurple:291784556489474049'
 ];

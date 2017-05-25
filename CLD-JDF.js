@@ -39,10 +39,24 @@ let commandHelp =
 
 //Array of Civilizations Available
 let allCivsDLC = {
+/*
+
+*/    
     //Top Tier Civs
-    germany: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*', //9
-    macedon: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*', //15
-    rome: '<:trajan:317208457499377665>*Rome (**Trajan**)*', //19
+    adolfh: '\n  •<:adolfhitler:317183252244987914>*Germany (**Adolf Hitler**)*', //DLC 0
+    antoninusp: '\n  •<:antoninusp:317198867659751425>*Rome (**Antoninus Pius**)*', //DLC 2
+    frederickii: '\n  •<:frederickii:317183363603628033>*Germany (**Frederick II**)*', //DLC 
+    julian: '\n  •<:julian:317206472276836353>*Rome (**Juian**)*', //DLC 
+    nero: '<\n  •<:nero:317206544179789824>*Rome (**Nero**)*', //DLC 
+
+    frederickb: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*', //9
+    alexander: '\n  •<:alexander:317183831734091776>*Macedon (**Alexander**)*', //15
+    trajan: '<:trajan:317208457499377665>*Rome (**Trajan**)*', //19
+
+    //Mid Tier Civs
+    ajatasattu: '\n  •<:ajatasattu:317183414698508288>*India (**Ajatasattu**)*', //DLC 
+    commodus: '\n  •<:commodus:317203273050226688>*Rome (**Commodus**)*', //DLC 
+    charlesg: '', //DLC 3
 
     //Low Tier Civs
     gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*', //12
@@ -73,11 +87,11 @@ let icons = {
     purple: '<:civIconPurple:291784556489474049>',
     white: '<:civIconWhite:317154981054513152>',
     red: '<:civIconRed:292900895094603776>',
-    green: '<:civIconGreen:292900880519397376> '
+    green: '<:civIconGreen:292900880519397376>'
 };
 
 let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:4, 7:2, 8:2, 9:2, 10:1};
 
 let civListOP = ['-'];
 
@@ -175,7 +189,7 @@ CivFFADrafter.on("message", message => {
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
     console.log(command);
 
-    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
+    if (['draftDLC', 'shuffle2', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -183,7 +197,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draft':
+        case 'draftDLC':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);
@@ -229,7 +243,7 @@ CivFFADrafter.on("message", message => {
                 messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
-        case 'shuffle':
+        case 'shuffle2':
             if (command.length !== 3){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
