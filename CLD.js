@@ -77,7 +77,7 @@ let icons = {
 };
 
 let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:2, 7:2, 8:2, 9:2, 10:1};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
 
 let civListOP = ['-'];
 
@@ -175,7 +175,7 @@ CivFFADrafter.on("message", message => {
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
     console.log(command);
 
-    if (['draft2', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
+    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -183,7 +183,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draft2':
+        case 'draft':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);
