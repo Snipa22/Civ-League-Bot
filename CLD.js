@@ -39,6 +39,7 @@ let commandHelp =
 
 //Array of Civilizations Available
 let allCivs = {
+    adolfhitler: '<:adolfhitler:317142862611349505>*Germany (**Adolf Hitler**)*', //DLC 0
     america: '<:america:291788587329126402>*America*', //0
     arabia: '<:arabia:291788624041607170>*Arabia*', //1
     australia: '<:australia:291788657000710144>*Australia*', //2
@@ -48,7 +49,7 @@ let allCivs = {
     egypt: '<:egypt:291788765847093248>*Egypt*', //6
     england: '<:england:291788789079080971>*England*', //7
     france: '<:france:291788812068323330>*France*', //8
-    frederick: '<:frederickbarbarossa:291788833794818049>*Germany (**Frederick Barbarossa**)*', //9
+    germany: '<:fredrickbarbarossa:317144875923406848>*Germany (**Frederick Barbarossa**)*', //9
     gorgo: '<:gorgo:291788859736588290>*Greece (**Gorgo**)*', //10
     pericles: '<:pericles:291789035289182208>*Greece (**Pericles**)*', //11
     india: '<:india:291788886513025034>*India*', //12
@@ -72,7 +73,7 @@ let icons = {
 };
 
 let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
-    civsPerPlayer = {2:7, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:2};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:2, 7:2, 8:2, 9:2, 10:1};
 
 let civListOP = ['-'];
 
