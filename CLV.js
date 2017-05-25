@@ -65,12 +65,12 @@ let difficultyEmojiList = [
 '⛈'
 ];
 let mapSettingsEmojiList = [
-'🌏',
-':earth_inland:316937660138520578',
-'🌍',
-':earth_islands:316937669672304651',
-'🌎',
-':earth_shuffle:316937678908293121'
+':numbone:317354852860559361',
+':numbtwo:317361016247681024',
+':numbthree:317366430444290050',
+':numbfour:317366444180373504',
+':numbfive:317366457501614080',
+':numbsix:317366468540891146'
 ];
 let letterEmojiList = [
 '🌕',
@@ -103,12 +103,12 @@ CivLeagueVote.on("message", message => {
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break Ties.***
 •**__Map Choices__**
-:earth_americas: • **Continents** *(Few Large Land Masses)*
-:earth_africa: • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
-<:earth_inland:316937660138520578> • **Inland Sea** *(One Large Ocean in the Center of the Map)*
-<:earth_islands:316937669672304651> • **Island Plates** *(Islands Ranging in Size from Small to Large)*
-:earth_asia: • **Pangaea** *(One Massive Landmass with Surrounding Islands)*
-<:earth_shuffle:316937678908293121> • **Shuffle** *(What Secrets will this Map Reveal)*`
+<:numbone:317354852860559361> • 🌏**Pangaea** *(One Massive Landmass with Surrounding Islands)*
+<:numbtwo:317361016247681024> • 🌎**Continents** *(Few Large Land Masses)*
+<:numbthree:317366430444290050> • 🌍**Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
+<:numbfour:317366444180373504> • <:earth_inland:316937660138520578>**Inland Sea** *(One Large Ocean in the Center of the Map)*
+<:numbfive:317366457501614080> • <:earth_islands:316937669672304651>**Island Plates** *(Islands Ranging in Size from Small to Large)*
+<:numbsix:317366468540891146> • <:earth_shuffle:316937678908293121>**Shuffle** *(What Secrets will this Map Reveal)*`
         ).then(function(internalMessage) {
             mapSettingsEmojiList.forEach(function(emoji) {
                 internalMessage.react(emoji);

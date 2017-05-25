@@ -213,16 +213,21 @@ CivLeagueHelp.on("message", message => {
     }/*.deleteFiles*/
     else if (command === "deleteFiles") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Receiving Errors while Connecting__**` +
-            `\n  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder URL*` +
-            `\n    **Documents/My Games/Sid Meier's Civilization VI**` +
-            `\n\n**This will not Delete your Game Options if you select the right files in the below photo!**` +
-            `\n\n**__Using the CivilizationVIDeleteFiles.bat File__**` +
-            `\n    **Credit: Sir Rogers**` +
-            `\n  *•All you have to do is download that file, and run it from your Desktop.*` +
-            `\n  *•Make sure to close the game before running the .bat file, or your files will not be deleted!*` +
-            `\n    *Using the .bat file, you will no longer need to follow this guide.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+'•|•**__Receiving Errors while Connecting__** •|•
+  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder URL*
+**Documents/My Games/Sid Meier's Civilization VI**
+    ***Notes:***
+      •*This will not Delete your Game Options if you select the right files in the below photo!*
+
+•|• **__Using the CivilizationVIDeleteFiles.bat File__** •|•
+***Give Credit to: MisterT800***
+  •*All you have to do is download that file, and run it from your Desktop next to your Civilization VI Game Icon.*
+    *This will **Restart Civilization VI** > **Clean the Files** > **Restart Civilization VI** for you.*
+      ***Notes:***
+        •*May need to change path for Steam at the beginning of the file if you have Steam installed elsewhere.*
+        •*Using the .bat file, you will no longer need to follow this guide.*
+    **CivLeague <:civIconPurple:291784556489474049> Approved!**`
         );
         message.channel.sendFile(
             `${Config.images.imageDeleteFiles}`
