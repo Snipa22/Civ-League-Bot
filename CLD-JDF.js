@@ -43,15 +43,16 @@ let allCivsDLC = {
 
 */    
     //Top Tier Civs
-    adolfh: '\n  •<:adolfhitler:317183252244987914>*Germany (**Adolf Hitler**)*', //DLC
+    adolfh: '\n  •<:adolfh:317422265236979733>*Germany (**Adolf Hitler**)*', //DLC
     antoninusp: '\n  •<:antoninusp:317198867659751425>*Rome (**Antoninus Pius**)*', //DLC
-    frederickii: '\n  •<:frederickii:317183363603628033>*Germany (**Frederick II**)*', //DLC 
+    frederickii: '\n  •<:frederickii:317422329569345537>*Germany (**Frederick II**)*', //DLC 
     julian: '\n  •<:julian:317206472276836353>*Rome (**Juian**)*', //DLC
     nero: '<\n  •<:nero:317206544179789824>*Rome (**Nero**)*', //DLC
 
-    frederickb: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*',
+    frederickb: '\n  •<:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     alexander: '\n  •<:alexader:317405771631558656>*Macedon (**Alexander**)*',
     trajan: '<:trajan:317401277825024021>*Rome (**Trajan**)*',
+    cyrus: '<:cyrus:317414457762512896>*Persia (**Cyrus**)*',
 
     //Mid Tier Civs
     ajatasattu: '\n  •<:ajatasattu:317183414698508288>*India (**Ajatasattu**)*', //DLC 

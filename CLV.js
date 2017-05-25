@@ -10,11 +10,15 @@ CivLeagueVote.on("ready", () => {
     console.log("*CivLeagueVote Activated*");
 })
 //Civilization Ban List
+/*
+<:frederickii:317422329569345537> 
+<:adolfh:317422265236979733>
+*/
 let civListOne = [
     ':australia:291788657000710144',
-    ':frederickbarbarossa:317183299401285633',
+    ':frederickb:317422295113269248',
     ':alexader:317405771631558656',
-    ':persia:296313246279794689',
+    ':cyrus:317414457762512896',
     ':trajan:317401277825024021',
     ':russia:291789137424416778',
     ':scythia:291789172434272256',

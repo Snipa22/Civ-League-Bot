@@ -40,7 +40,7 @@ let commandHelp =
 //Array of Civilizations Available
 let allCivsDLC = {
     //Top Tier Civs
-    germany: '\n  •<:frederickbarbarossa:317183299401285633>*Germany (**Frederick Barbarossa**)*',
+    germany: '\n  •<:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     macedon: '\n  •<:alexader:317405771631558656>*Macedon (**Alexander**)*',
     rome: '\n  •<:trajan:317401277825024021>*Rome (**Trajan**)*',
 
@@ -62,7 +62,7 @@ let allCivsDLC = {
     japan: '\n  •<:japanx:291788927424266250>*Japan (**Hojo Tokimune**)*',
     kongo: '\n  •<:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
     norway: '\n  •<:norway:291789000954478592>*Norway (**Harold Hardrada**)*',
-    persia: '\n  •<:persia:296313246279794689>*Persia (**Cyrus**)*',
+    persia: '\n  •<:cyrus:317414457762512896>*Persia (**Cyrus**)*',
     poland: '\n  •<:poland:291789066301603840>*Poland (**Jadwiga**)*',
     russia: '\n  •<:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  •<:scythia:291789172434272256>*Scythia (**Tomyris**)*',
@@ -175,7 +175,7 @@ CivFFADrafter.on("message", message => {
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
     console.log(command);
 
-    if (['draft', 'shuffle2', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
+    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -229,7 +229,7 @@ CivFFADrafter.on("message", message => {
                 messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
-        case 'shuffle2':
+        case 'shuffle':
             if (command.length !== 3){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
