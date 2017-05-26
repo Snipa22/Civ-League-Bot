@@ -63,7 +63,7 @@ let allCivsDLC = {
     kongo: '\n  • <:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
     norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
-    poland: '\n  • <:poland:291789066301603840>*Poland (**Jadwiga**)*',
+    poland: '\n  • <:jadwiga:317764772001087488>*Poland (**Jadwiga**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',
     spain: '\n  • <:spain:291789195691819010>*Spain (**Philip II**)*',
@@ -183,7 +183,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draft2':
+        case 'draft':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);
