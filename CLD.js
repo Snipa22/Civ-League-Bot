@@ -45,7 +45,7 @@ let allCivsDLC = {
     rome: '\n  •<:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Low Tier Civs
-    gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*',
+    gandhi: '\n  •<:gandhi:317452366783971328>*India (**Gandhi**)*',
     france: '\n  •<:france:291788812068323330>*France (**Catherine De Medici**)*',
 
     america: '\n  •<:america:291788587329126402>*America (**Teddy Roosevelt**)*',
