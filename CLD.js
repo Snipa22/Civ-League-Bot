@@ -50,7 +50,7 @@ let allCivsDLC = {
 
     america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
-    australia: '\n  • <:australia:291788657000710144>*Australia (**John Curtin**)*',
+    australia: '\n  • <:johnc:317801445275729950>*Australia (**John Curtin**)*',
     aztec: '\n  • <:aztec:291788693428109322>*Aztec (**Montezuma**)*',
     brazil: '\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
@@ -61,12 +61,12 @@ let allCivsDLC = {
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
     japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
     kongo: '\n  • <:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
-    norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harold Hardrada**)*',
+    norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
     poland: '\n  • <:poland:291789066301603840>*Poland (**Jadwiga**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',
-    spain: '\n  • <:spain:291789195691819010>*Spain (**Philip I**)*',
+    spain: '\n  • <:spain:291789195691819010>*Spain (**Philip II**)*',
     sumeria: '\n  • <:gilgamesh:317534174904975362>*Sumeria (**Gilgamesh**)*'};
 
 let icons = {
@@ -183,7 +183,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draft':
+        case 'draft2':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);

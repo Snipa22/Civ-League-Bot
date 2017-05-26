@@ -15,7 +15,7 @@ CivLeagueVote.on("ready", () => {
 <:adolfh:317422265236979733>
 */
 let civListOne = [
-    ':australia:291788657000710144',
+    ':johnc:317801445275729950',
     ':frederickb:317422295113269248',
     ':alexader:317405771631558656',
     ':cyrus:317414457762512896',
