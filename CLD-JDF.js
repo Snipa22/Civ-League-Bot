@@ -51,38 +51,38 @@ let allCivsDLC = {
 
     frederickb: '\n  •<:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     alexander: '\n  •<:alexader:317405771631558656>*Macedon (**Alexander**)*',
-    trajan: '<:trajan:317401277825024021>*Rome (**Trajan**)*',
-    cyrus: '<:cyrus:317414457762512896>*Persia (**Cyrus**)*',
+    trajan: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
+    cyrus: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
 
     //Mid Tier Civs
-    ajatasattu: '\n  •<:ajatasattu:317183414698508288>*India (**Ajatasattu**)*', //DLC 
-    commodus: '\n  •<:commodus:317203273050226688>*Rome (**Commodus**)*', //DLC 
+    ajatasattu: '\n  • <:ajatasattu:317183414698508288>*India (**Ajatasattu**)*', //DLC 
+    commodus: '\n  • <:commodus:317203273050226688>*Rome (**Commodus**)*', //DLC 
     charlesg: '', //DLC 3
 
     //Low Tier Civs
-    gandhi: '\n  •<:gandhi:317452366783971328>*India (**Gandhi**)*',
-    catherinem: '<:catherinem:317458895314354176>*France (**Catherine De Medici**)*',
+    gandhi: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
+    catherinem: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
 
-    america: '<:america:291788587329126402>*America*',
-    arabia: '<:arabia:291788624041607170>*Arabia*',
-    australia: '<:australia:291788657000710144>*Australia*',
-    aztec: '<:aztec:291788693428109322>*Aztec*',
-    brazil: '<:brazil:291788717587300353>*Brazil*',
-    china: '<:china:291788737573027840>*China*',
-    egypt: '<:egypt:291788765847093248>*Egypt*',
-    england: '<:england:291788789079080971>*England*',
+    america: '\n  • <:america:291788587329126402>*America*',
+    arabia: '\n  • <:arabia:291788624041607170>*Arabia*',
+    australia: '\n  • <:australia:291788657000710144>*Australia*',
+    aztec: '\n  • <:aztec:291788693428109322>*Aztec*',
+    brazil: '\n  • <:brazil:291788717587300353>*Brazil*',
+    china: '\n  • <:china:291788737573027840>*China*',
+    egypt: '\n  • <:egypt:291788765847093248>*Egypt*',
+    england: '\n  • <:england:291788789079080971>*England*',
     
-    gorgo: '<:gorgo:291788859736588290>*Greece (**Gorgo**)*',
-    pericles: '<:pericles:291789035289182208>*Greece (**Pericles**)*',
-    japan: '<:japanx:291788927424266250>*Japan*',
-    kongo: '<:kongo:291788970805952513>*Kongo*',
-    norway: '<:norway:291789000954478592>*Norway*',
-    persia: `<:persia:296313246279794689>*Persia*`,
-    poland: '<:poland:291789066301603840>*Poland*',
-    russia: '<:russia:291789137424416778>*Russia*',
-    scythia: '<:scythia:291789172434272256>*Scythia*',
-    spain: '<:spain:291789195691819010>*Spain*',
-    sumeria: '<:sumeria:291789223365836813>*Sumeria*'};
+    gorgo: '\n  • <:gorgo:291788859736588290>*Greece (**Gorgo**)*',
+    pericles: '\n  • <:pericles:291789035289182208>*Greece (**Pericles**)*',
+    japan: '\n  • <:japanx:291788927424266250>*Japan*',
+    kongo: '\n  • <:kongo:291788970805952513>*Kongo*',
+    norway: '\n  • <:norway:291789000954478592>*Norway*',
+    persia: `\n  • <:persia:296313246279794689>*Persia*`,
+    poland: '\n  • <:poland:291789066301603840>*Poland*',
+    russia: '\n  • <:russia:291789137424416778>*Russia*',
+    scythia: '\n  • <:scythia:291789172434272256>*Scythia*',
+    spain: '\n  • <:spain:291789195691819010>*Spain*',
+    sumeria: '\n  • <:sumeria:291789223365836813>*Sumeria*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',
