@@ -54,7 +54,7 @@ let allCivsDLC = {
     aztec: '\n  • <:aztec:291788693428109322>*Aztec (**Montezuma**)*',
     brazil: '\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
-    egypt: '\n  • <:egypt:291788765847093248>*Egypt (**Cleopatra**)*',
+    egypt: '\n  • <:cleopatra:317500171355422730>*Egypt (**Cleopatra**)*',
     england: '\n  • <:england:291788789079080971>*England (**Victoria**)*',
     
     gorgo: '\n  • <:gorgo:291788859736588290>*Greece (**Gorgo**)*',

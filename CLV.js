@@ -36,7 +36,7 @@ let civListTwo = [
 ];
 let civListThree = [
     ':brazil:291788717587300353',
-    ':egypt:291788765847093248',
+    ':cleopatra:317500171355422730',
     ':catherinem:317460679189725185',
     ':england:291788789079080971',
     ':gandhi:317452366783971328',
