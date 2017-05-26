@@ -53,6 +53,7 @@ let allCivsDLC = {
     alexander: '\n  •<:alexader:317405771631558656>*Macedon (**Alexander**)*',
     trajan: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
     cyrus: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
+    gilgamesh: '\n  • <:gilgamesh:317534174904975362>*Sumeria (**Gilgamesh**)*',
 
     //Mid Tier Civs
     ajatasattu: '\n  • <:ajatasattu:317183414698508288>*India (**Ajatasattu**)*', //DLC 
@@ -81,8 +82,7 @@ let allCivsDLC = {
     poland: '\n  • <:poland:291789066301603840>*Poland*',
     russia: '\n  • <:russia:291789137424416778>*Russia*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia*',
-    spain: '\n  • <:spain:291789195691819010>*Spain*',
-    sumeria: '\n  • <:sumeria:291789223365836813>*Sumeria*'};
+    spain: '\n  • <:spain:291789195691819010>*Spain*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',

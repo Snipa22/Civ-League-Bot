@@ -67,7 +67,7 @@ let allCivsDLC = {
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',
     spain: '\n  • <:spain:291789195691819010>*Spain (**Philip I**)*',
-    sumeria: '\n  • <:gilgamesh:317528766547230720>*Sumeria (**Gilgamesh**)*'};
+    sumeria: '\n  • <:gilgamesh:317534174904975362>*Sumeria (**Gilgamesh**)*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',

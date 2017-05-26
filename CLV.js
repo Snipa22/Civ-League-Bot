@@ -22,7 +22,7 @@ let civListOne = [
     ':trajan:317401277825024021',
     ':russia:291789137424416778',
     ':scythia:291789172434272256',
-    ':gilgamesh:317528766547230720'
+    ':gilgamesh:317534174904975362'
 ];
 let civListTwo = [
     ':america:291788587329126402',
