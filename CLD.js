@@ -61,7 +61,7 @@ let allCivsDLC = {
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
     japan: '\n  • <:japanx:291788927424266250>*Japan (**Hojo Tokimune**)*',
     kongo: '\n  • <:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
-    norway: '\n  • <:haraldh:317714861230391296>*Norway (**Harold Hardrada**)*',
+    norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harold Hardrada**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
     poland: '\n  • <:poland:291789066301603840>*Poland (**Jadwiga**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
