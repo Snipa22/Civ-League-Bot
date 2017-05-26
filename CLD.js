@@ -40,9 +40,9 @@ let commandHelp =
 //Array of Civilizations Available
 let allCivsDLC = {
     //Top Tier Civs
-    germany: '\n  •<:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
-    macedon: '\n  •<:alexader:317405771631558656>*Macedon (**Alexander**)*',
-    rome: '\n  •<:trajan:317401277825024021>*Rome (**Trajan**)*',
+    germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
+    macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
+    rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Low Tier Civs
     gandhi: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
@@ -59,7 +59,7 @@ let allCivsDLC = {
     
     gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
-    japan: '\n  • <:japanx:291788927424266250>*Japan (**Hojo Tokimune**)*',
+    japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
     kongo: '\n  • <:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
     norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harold Hardrada**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
