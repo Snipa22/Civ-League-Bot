@@ -60,8 +60,8 @@ let allCivsDLC = {
     charlesg: '', //DLC 3
 
     //Low Tier Civs
-    gandhi: '\n  •<:gandhi:317183717439176704>*India (**Gandhi**)*',
-    catherinem: '<:catherinem:317342622052122624>*France (**Catherine De Medici**)*',
+    gandhi: '\n  •<:gandhi:317452366783971328>*India (**Gandhi**)*',
+    catherinem: '<:catherinem:317458895314354176>*France (**Catherine De Medici**)*',
 
     america: '<:america:291788587329126402>*America*',
     arabia: '<:arabia:291788624041607170>*Arabia*',
