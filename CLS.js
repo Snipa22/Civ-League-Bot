@@ -1268,23 +1268,23 @@ CivLeagueStats.on("message", message => {
             .setColor(0x0D9345)
         message.channel.sendEmbed(p);
     };
-//@czozp#8908 `Wins: 270 | Losses: 26 | Games Played: 62 EXP: 471/485 | Level: 11`
+//@czozp#8908 `Wins: 275 | Losses: 26 | Games Played: 63 EXP: 488/590 | Level: 12`
     if(command === 'czozp') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '270', true)
+            .addField('Wins', '275', true)
             .addField('Losses', '26', true)
-            .addField('Games Played', '62', true)
-            .addField('Experience', '478/485', true)
-            .addField('Level', '11', true)
-            .addField('Last Game Played', '851', true)
-            .addField('Current Win Streak', '23', true)
+            .addField('Games Played', '63', true)
+            .addField('Experience', '488/590', true)
+            .addField('Level', '12', true)
+            .addField('Last Game Played', '857', true)
+            .addField('Current Win Streak', '28', true)
             .addField('Longest Win Streak', '47', true)
-            .addField('Win Percentage', '*91.21%*', true)
+            .addField('Win Percentage', '*91.36%*', true)
             
             .addField('Solid Host', '⍟', true)
 
             .setFooter('•|• czozp •|•')
-            .setColor(0x3498DB)
+            .setColor(0xF5A154)
         message.channel.sendEmbed(p);
     };
 //@da ElCid#6007 `Wins: 5 | Losses: 0 | Games Played: 1 | EXP: 8/9 | Level: 2`
@@ -2651,18 +2651,18 @@ CivLeagueStats.on("message", message => {
             .setColor(0x0D9345)
         message.channel.sendEmbed(p);
     };
-//@maidy#3412 `Wins: 11 | Losses: 23 | Games Played: 7 | EXP: 14/16 | Level: 2`
+//@maidy#3412 `Wins: 11 | Losses: 28 | Games Played: 8 | EXP: 14/16 | Level: 2`
     if(command === 'maidy') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '11', true)
-            .addField('Losses', '23', true)
-            .addField('Games Played', '7', true)
+            .addField('Losses', '28', true)
+            .addField('Games Played', '8', true)
             .addField('Experience', '14/16', true)
             .addField('Level', '3', true)
-            .addField('Last Game Played', '855', true)
+            .addField('Last Game Played', '857', true)
             .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '5', true)
-            .addField('Win Percentage', '*32.35%*', true)
+            .addField('Win Percentage', '*28.20%*', true)
 
             .setFooter('•|• maidy •|•')
             .setColor(0x0D9345)
