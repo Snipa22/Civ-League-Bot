@@ -11,11 +11,11 @@ CivLeagueVote.on("ready", () => {
 })
 //Civilization Ban List
 /*
-<:frederickii:317422329569345537> 
-<:adolfh:317422265236979733>
+
 */
 let civListOne = [
     'johnc:318097446196609024',
+    ':montezuma:318129675924668427',
     ':frederickb:317422295113269248',
     ':alexader:317405771631558656',
     ':cyrus:317414457762512896',
@@ -27,21 +27,20 @@ let civListOne = [
 let civListTwo = [
     ':america:291788587329126402',
     ':arabia:291788624041607170',
-    ':montezuma:317829598673108993',
     ':china:291788737573027840',
     ':gorgo:317699788256837632',
     ':pericles:317700081807654913',
     ':hojot:317736482578366485',
-    ':mvemban:318097919146459136'
+    ':mvemban:318097919146459136',
+    ':victoria:318129726504042497'
 ];
 let civListThree = [
     ':brazil:291788717587300353',
     ':cleopatra:317500171355422730',
     ':catherinem:317460679189725185',
-    ':victoria:318097472608141313',
     ':gandhi:317452366783971328',
     ':haraldh:317727671830315010',
-    ':jadwiga:317764772001087488',
+    ':jadwiga:318129714772443136',
     `:spain:291789195691819010`
 ];
 let civListDLC1 = [
@@ -51,11 +50,6 @@ let civListDLC1 = [
     ':julian:317206472276836353',
     ':nero:317206544179789824',
     ':trajan:317208457499377665'
-];
-let civListDLC2 = [
-    ':ajatasattu:317183414698508288',
-    ':commodus:317203273050226688',
-    ''
 ];
 //Finshed Voting
 let mainEmoji = [

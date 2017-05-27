@@ -185,6 +185,7 @@ CivLeagueHelp.on("message", message => {
 `•|• **__All Available Civilizations__** •|•
     **Top Tier**
 <:johnc:318097446196609024> • *Australia (**John Curtin**)*
+<:montezuma:318129675924668427> • *Aztec (**Montezuma**)*
 <:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
 <:alexader:317405771631558656> • *Macedon (**Alexander**)*
 <:cyrus:317414457762512896> • *Persia (**Cyrus**)*
@@ -196,21 +197,20 @@ CivLeagueHelp.on("message", message => {
     **Mid Tier**
 <:america:291788587329126402> • *America (**Teddy Roosevelt**)*
 <:arabia:291788624041607170> • *Arabia (**Saladin**)*
-<:montezuma:317829598673108993> • *Aztec (**Montezuma**)*
 <:china:291788737573027840> • *China (**Qin Shi Huang**)*
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
 <:mvemban:318097919146459136> • *Kongo (**Mvemba A Nzinga**)*
+<:victoria:318129726504042497> • *England (**Victoria**)*
 
     **Low Tier**
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*
 <:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
-<:victoria:318097472608141313> • *England (**Victoria**)*
 <:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
 <:gandhi:317452366783971328> • *India (**Gandhi**)*
 <:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
-<:jadwiga:317764772001087488> • *Poland (**Jadwiga**)*
+<:jadwiga:318129714772443136> • *Poland (**Jadwiga**)*
 <:spain:291789195691819010> • *Spain (**Philip II**)*
 `
         );

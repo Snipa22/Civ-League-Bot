@@ -37,10 +37,11 @@ let commandHelp =
   •*Shuffles the list of players for teams.*`
 ;
 
-//Array of Civilizations Available
+//Array of Civilizations Available 
 let allCivsDLC = {
     //Top Tier Civs
     australia: '\n  • <:johnc:318097446196609024>*Australia (**John Curtin**)*',
+    aztec: '\n  • <:montezuma:318129675924668427>*Aztec (**Montezuma**)*',
     germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
@@ -48,8 +49,7 @@ let allCivsDLC = {
     rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Mid Tier Civs
-    aztec: '\n  • <:montezuma:317829598673108993>*Aztec (**Montezuma**)*',
-    england: '\n  • <:victoria:318097472608141313>*England (**Victoria**)*',
+    england: '\n  • <:victoria:318129726504042497>*England (**Victoria**)*',
     gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
     japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
@@ -60,7 +60,7 @@ let allCivsDLC = {
     france: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
     gandhi: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
     norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
-    poland: '\n  • <:jadwiga:317764772001087488>*Poland (**Jadwiga**)*',
+    poland: '\n  • <:jadwiga:318129714772443136>*Poland (**Jadwiga**)*',
 //---------------------
     america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
