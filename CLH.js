@@ -191,7 +191,7 @@ CivLeagueHelp.on("message", message => {
 <:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
 <:america:291788587329126402> • *America (**Teddy Roosevelt**)*
 <:arabia:291788624041607170> • *Arabia (**Saladin**)*
-<:johnc:317801445275729950> • *Australia (**John Curtin**)*
+<:johnc:317913691574239233> • *Australia (**John Curtin**)*
 <:montezuma:317829598673108993> • *Aztec (**Montezuma**)*
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*
 <:china:291788737573027840> • *China (**Qin Shi Huang**)*
