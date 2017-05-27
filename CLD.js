@@ -40,7 +40,7 @@ let commandHelp =
 //Array of Civilizations Available
 let allCivsDLC = {
     //Top Tier Civs
-    australia: '\n  • <:johnc:317913691574239233>*Australia (**John Curtin**)*',
+    australia: '\n  • <:johnc:318097446196609024>*Australia (**John Curtin**)*',
     germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
@@ -49,7 +49,11 @@ let allCivsDLC = {
 
     //Mid Tier Civs
     aztec: '\n  • <:montezuma:317829598673108993>*Aztec (**Montezuma**)*',
+    england: '\n  • <:victoria:318097472608141313>*England (**Victoria**)*',
+    gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
+    pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
     japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
+    kongo: '\n  • <:mvemban:318097919146459136>*Kongo (**Mvemba A Nzinga**)*',
 
     //Low Tier Civs
     egypt: '\n  • <:cleopatra:317500171355422730>*Egypt (**Cleopatra**)*',
@@ -62,10 +66,6 @@ let allCivsDLC = {
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
     brazil: '\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
-    england: '\n  • <:england:291788789079080971>*England (**Victoria**)*',
-    gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
-    pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
-    kongo: '\n  • <:mvemban:317912569467895808>*Kongo (**Mvemba A Nzinga**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',
     spain: '\n  • <:spain:291789195691819010>*Spain (**Philip II**)*'};
@@ -135,7 +135,7 @@ function draft(players, bans, drafts, max_players = 12, min_players = 2) {
     }
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
-        return "\n**Invalid command used.**";
+        return "\n**Invalid command used:**";
     }
     if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
         return '**Not enough Civilizations Allowed for 3 Choices. Please use: .draft2. Bans are provided after that command as usual. Good Luck!**';
