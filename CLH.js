@@ -180,10 +180,9 @@ CivLeagueHelp.on("message", message => {
             `\n  *This is how you should set Auto Download of Mods from Workshops.*`
         );
     }/*.setGame*/
-    else if (command === "allcivs") {
+    else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-•|• **__All Available Civilizations__** •|•
+`•|• **__All Available Civilizations__** •|•
 <:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
 <:alexader:317405771631558656> • *Macedon (**Alexander**)*
 <:trajan:317401277825024021> • *Rome (**Trajan**)*
