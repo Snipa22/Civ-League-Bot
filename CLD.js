@@ -40,34 +40,35 @@ let commandHelp =
 //Array of Civilizations Available
 let allCivsDLC = {
     //Top Tier Civs
+    australia: '\n  • <:johnc:317913691574239233>*Australia (**John Curtin**)*',
     germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
+    persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
+    sumeria: '\n  • <:gilgamesh:317534174904975362>*Sumeria (**Gilgamesh**)*',
     rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
 
-    //Low Tier Civs
-    gandhi: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
-    france: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
+    //Mid Tier Civs
+    aztec: '\n  • <:montezuma:317829598673108993>*Aztec (**Montezuma**)*',
+    japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
 
+    //Low Tier Civs
+    egypt: '\n  • <:cleopatra:317500171355422730>*Egypt (**Cleopatra**)*',
+    france: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
+    gandhi: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
+    norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
+    poland: '\n  • <:jadwiga:317764772001087488>*Poland (**Jadwiga**)*',
+//---------------------
     america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
-    australia: '\n  • <:johnc:317801445275729950>*Australia (**John Curtin**)*',
-    aztec: '\n  • <:montezuma:317829598673108993>*Aztec (**Montezuma**)*',
     brazil: '\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
-    egypt: '\n  • <:cleopatra:317500171355422730>*Egypt (**Cleopatra**)*',
     england: '\n  • <:england:291788789079080971>*England (**Victoria**)*',
-    
     gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
-    japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
-    kongo: '\n  • <:kongo:291788970805952513>*Kongo (**Mvemba A Nzinga**)*',
-    norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
-    persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
-    poland: '\n  • <:jadwiga:317764772001087488>*Poland (**Jadwiga**)*',
+    kongo: '\n  • <:mvemban:317912569467895808>*Kongo (**Mvemba A Nzinga**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',
-    spain: '\n  • <:spain:291789195691819010>*Spain (**Philip II**)*',
-    sumeria: '\n  • <:gilgamesh:317534174904975362>*Sumeria (**Gilgamesh**)*'};
+    spain: '\n  • <:spain:291789195691819010>*Spain (**Philip II**)*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',
