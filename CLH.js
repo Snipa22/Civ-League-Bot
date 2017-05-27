@@ -184,7 +184,7 @@ CivLeagueHelp.on("message", message => {
         message.channel.sendMessage(
 `•|• **__All Available Civilizations__** •|•
     **Top Tier**
-<:johnc:317913691574239233> • *Australia (**John Curtin**)*
+<:johnc:318097446196609024> • *Australia (**John Curtin**)*
 <:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
 <:alexader:317405771631558656> • *Macedon (**Alexander**)*
 <:cyrus:317414457762512896> • *Persia (**Cyrus**)*
@@ -201,12 +201,12 @@ CivLeagueHelp.on("message", message => {
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
-<:mvemban:317912569467895808> • *Kongo (**Mvemba A Nzinga**)*
+<:mvemban:318097919146459136> • *Kongo (**Mvemba A Nzinga**)*
 
     **Low Tier**
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*
 <:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
-<:england:291788789079080971> • *England (**Victoria**)*
+<:victoria:318097472608141313> • *England (**Victoria**)*
 <:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
 <:gandhi:317452366783971328> • *India (**Gandhi**)*
 <:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
