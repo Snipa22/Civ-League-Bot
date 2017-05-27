@@ -210,9 +210,6 @@ CivLeagueHelp.on("message", message => {
 <:gilgamesh:317534174904975362> • *Sumeria (**Gilgamesh**)*
 `
         );
-        message.channel.sendFile(
-            `${Config.images.imageSetMods}`
-        );
     }/*.setGame*/
     else if (command === "setGame") {
         message.channel.sendMessage(
