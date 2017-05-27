@@ -77,7 +77,7 @@ let icons = {
 };
 
 let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:2, 7:2, 8:2, 9:2, 10:1};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
 
 let civListOP = ['-']; 
 
