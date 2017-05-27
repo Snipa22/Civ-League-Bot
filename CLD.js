@@ -77,7 +77,7 @@ let icons = {
 };
 
 let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:2, 7:2, 8:2, 9:2, 10:1};
 
 let civListOP = ['-']; 
 
@@ -134,7 +134,7 @@ function draft(players, bans, drafts, max_players = 12, min_players = 2) {
     }
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
-        return "\n**Invalid command used.**");
+        return "\n**Invalid command used.**";
     }
     if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
         return '**Not enough Civilizations Allowed for 3 Choices. Please use: .draft2. Bans are provided after that command as usual. Good Luck!**';
