@@ -183,30 +183,35 @@ CivLeagueHelp.on("message", message => {
     else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
 `•|• **__All Available Civilizations__** •|•
+    **Top Tier**
+<:johnc:317913691574239233> • *Australia (**John Curtin**)*
 <:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
 <:alexader:317405771631558656> • *Macedon (**Alexander**)*
-<:trajan:317401277825024021> • *Rome (**Trajan**)*
-<:gandhi:317452366783971328> • *India (**Gandhi**)*
-<:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
-<:america:291788587329126402> • *America (**Teddy Roosevelt**)*
-<:arabia:291788624041607170> • *Arabia (**Saladin**)*
-<:johnc:317913691574239233> • *Australia (**John Curtin**)*
-<:montezuma:317829598673108993> • *Aztec (**Montezuma**)*
-<:brazil:291788717587300353> • *Brazil (**Pedro II**)*
-<:china:291788737573027840> • *China (**Qin Shi Huang**)*
-<:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
-<:england:291788789079080971> • *England (**Victoria**)*
-<:gorgo:317699788256837632> • *Greece (**Gorgo**)*
-<:pericles:317700081807654913> • *Greece (**Pericles**)*
-<:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
-<:mvemban:317912569467895808> • *Kongo (**Mvemba A Nzinga**)*
-<:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
 <:cyrus:317414457762512896> • *Persia (**Cyrus**)*
-<:jadwiga:317764772001087488> • *Poland (**Jadwiga**)*
+<:trajan:317401277825024021> • *Rome (**Trajan**)*
 <:russia:291789137424416778> • *Russia (**Peter**)*
 <:scythia:291789172434272256> • *Scythia (**Tomyris**)*
-<:spain:291789195691819010> • *Spain (**Philip II**)*
 <:gilgamesh:317534174904975362> • *Sumeria (**Gilgamesh**)*
+
+    **Mid Tier**
+<:america:291788587329126402> • *America (**Teddy Roosevelt**)*
+<:arabia:291788624041607170> • *Arabia (**Saladin**)*
+<:montezuma:317829598673108993> • *Aztec (**Montezuma**)*
+<:china:291788737573027840> • *China (**Qin Shi Huang**)*
+<:gorgo:317699788256837632> • *Greece (**Gorgo**)*
+<:pericles:317700081807654913> • *Greece (**Pericles**)*
+<:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
+<:mvemban:317912569467895808> • *Kongo (**Mvemba A Nzinga**)*
+
+    **Low Tier**
+<:brazil:291788717587300353> • *Brazil (**Pedro II**)*
+<:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
+<:england:291788789079080971> • *England (**Victoria**)*
+<:gandhi:317452366783971328> • *India (**Gandhi**)*
+<:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
+<:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
+<:jadwiga:317764772001087488> • *Poland (**Jadwiga**)*
+<:spain:291789195691819010> • *Spain (**Philip II**)*
 `
         );
     }/*.setGame*/
