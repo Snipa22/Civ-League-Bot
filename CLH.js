@@ -200,15 +200,15 @@ CivLeagueHelp.on("message", message => {
 <:china:291788737573027840> • *China (**Qin Shi Huang**)*
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
-<:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
+<:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
 <:mvemban:317912569467895808> • *Kongo (**Mvemba A Nzinga**)*
 
     **Low Tier**
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*
 <:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
 <:england:291788789079080971> • *England (**Victoria**)*
+<:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
 <:gandhi:317452366783971328> • *India (**Gandhi**)*
-<:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
 <:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
 <:jadwiga:317764772001087488> • *Poland (**Jadwiga**)*
 <:spain:291789195691819010> • *Spain (**Philip II**)*
