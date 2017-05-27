@@ -84,6 +84,8 @@ CivLeagueHelp.on("message", message => {
         *How to setup Push to Talk.*
 
 •|• **__Game Commands__** •|•
+    **.allCivs** | .allcivs**
+        *Shows all available Civilizations.*
     **.voteSettings | .votesettings**
         *Vote the Map Settings First. Then doing the Ban Options.*
     **.voteBans | .votebans | .voteBansJDF | votebansjdf**
@@ -170,12 +172,43 @@ CivLeagueHelp.on("message", message => {
         message.channel.sendFile(
             `${Config.images.imageSetSteam}`
         );
-    }/*.setGame*/
+    }/*.allCivs*/
     else if (command === "setMods") {
         message.channel.sendMessage(
             `\n${Players.roleAdmin} | ${Players.roleModerator}` +
             `\n•|• **__Auto Download Additional Content__** •|•` +
             `\n  *This is how you should set Auto Download of Mods from Workshops.*`
+        );
+    }/*.setGame*/
+    else if (command === "allcivs") {
+        message.channel.sendMessage(
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__All Available Civilizations__** •|•
+<:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
+<:alexader:317405771631558656> • *Macedon (**Alexander**)*
+<:trajan:317401277825024021> • *Rome (**Trajan**)*
+<:gandhi:317452366783971328> • *India (**Gandhi**)*
+<:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
+<:america:291788587329126402> • *America (**Teddy Roosevelt**)*
+<:arabia:291788624041607170> • *Arabia (**Saladin**)*
+<:johnc:317801445275729950> • *Australia (**John Curtin**)*
+<:montezuma:317829598673108993> • *Aztec (**Montezuma**)*
+<:brazil:291788717587300353> • *Brazil (**Pedro II**)*
+<:china:291788737573027840> • *China (**Qin Shi Huang**)*
+<:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
+<:england:291788789079080971> • *England (**Victoria**)*
+<:gorgo:317699788256837632> • *Greece (**Gorgo**)*
+<:pericles:317700081807654913> • *Greece (**Pericles**)*
+<:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
+<:kongo:291788970805952513> • *Kongo (**Mvemba A Nzinga**)*
+<:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
+<:cyrus:317414457762512896> • *Persia (**Cyrus**)*
+<:jadwiga:317764772001087488> • *Poland (**Jadwiga**)*
+<:russia:291789137424416778> • *Russia (**Peter**)*
+<:scythia:291789172434272256> • *Scythia (**Tomyris**)*
+<:spain:291789195691819010> • *Spain (**Philip II**)*
+<:gilgamesh:317534174904975362> • *Sumeria (**Gilgamesh**)*
+`
         );
         message.channel.sendFile(
             `${Config.images.imageSetMods}`
