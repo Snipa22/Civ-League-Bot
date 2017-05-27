@@ -84,7 +84,7 @@ CivLeagueHelp.on("message", message => {
         *How to setup Push to Talk.*
 
 •|• **__Game Commands__** •|•
-    **.allCivs** | **.allcivs**
+    **.allCivs | .allcivs**
         *Shows all available Civilizations.*
     **.voteSettings | .votesettings**
         *Vote the Map Settings First. Then doing the Ban Options.*
