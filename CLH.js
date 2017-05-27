@@ -200,7 +200,7 @@ CivLeagueHelp.on("message", message => {
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
-<:kongo:291788970805952513> • *Kongo (**Mvemba A Nzinga**)*
+<:mvemban:317912569467895808> • *Kongo (**Mvemba A Nzinga**)*
 <:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
 <:cyrus:317414457762512896> • *Persia (**Cyrus**)*
 <:jadwiga:317764772001087488> • *Poland (**Jadwiga**)*
