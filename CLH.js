@@ -217,7 +217,7 @@ ${Config.links.civLeagueSteamGroup}
 `
         );
     }/*.gameTypes*/
-    else if (command === "gameTypes") {
+    else if (command === "gameTypes" || command === "gametypes") {
         message.channel.sendMessage(
 `\n${Players.roleAdmin} | ${Players.roleModerator}
 •|• **__Game Types__** •|•
