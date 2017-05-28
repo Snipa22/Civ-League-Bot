@@ -64,6 +64,11 @@ let allCivsDLC = {
 //---------------------
     america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
+<<<<<<< HEAD
+=======
+    australia: '\n  • <:johnc:317801445275729950>*Australia (**John Curtin**)*',
+    aztec: '\n  • <:aztec:291788693428109322>*Aztec (**Montezuma**)*',
+>>>>>>> parent of af78d08... Emoji Update: Aztec
     brazil: '\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',

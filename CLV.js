@@ -27,6 +27,10 @@ let civListOne = [
 let civListTwo = [
     ':america:291788587329126402',
     ':arabia:291788624041607170',
+<<<<<<< HEAD
+=======
+    ':aztec:291788693428109322',
+>>>>>>> parent of af78d08... Emoji Update: Aztec
     ':china:291788737573027840',
     ':gorgo:317699788256837632',
     ':pericles:317700081807654913',
