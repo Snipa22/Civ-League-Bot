@@ -135,7 +135,7 @@ function draft(players, bans, drafts, max_players = 12, min_players = 2) {
     }
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
-        return '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
+        return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
     }
     if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
         return '**Not enough Civilizations Allowed for 3 Choices. Please use: .draft2. Bans are provided after that command as usual. Good Luck!**';
