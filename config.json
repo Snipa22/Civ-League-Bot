@@ -22,13 +22,12 @@
 
     "images": {
         "imageDeleteFiles" : "deleteFiles.png",
+        "imageGameTypes" : "setGameTypes.png",
         "imageJoinSteam" : "joinSteam.png",
         "imageSetOverlay" : "setOverlay.png",
         "imageSetPTT" : "setPTT.png",
         "imageSetSteam" : "setSteam.png",
-        "imageSetGame" : "setGame.png",
-        "imageSetMods" : "setMods.png",
-        "imageGameTypes" : "setGameTypes.png"
+        "imageSetMods" : "setMods.png"
     },
 
     "links": {

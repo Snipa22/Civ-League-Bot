@@ -2819,6 +2819,8 @@ CivLeagueStats.on("message", message => {
             .addField('Longest Win Streak', '5', true)
             .addField('Win Percentage', '*24.44%*', true)
 
+            .addField('Settler', '<:cleopatra:317500171355422730>', true)
+
             .setFooter('•|• maidy •|•')
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
@@ -4967,7 +4969,7 @@ if(command === 'warsoldier12') {
         message.channel.sendEmbed(p);
     };
 
-/*Civilization Leaders
+/*Civilization Leaders*/
     if(command === 'CivVictoria' || command === 'civvictoria') {
         let p = new Discord.RichEmbed()
             .addField('England:', '<:victoria:318129726504042497>', true)
@@ -4976,7 +4978,7 @@ if(command === 'warsoldier12') {
             .setFooter('•|• Victoria of the English Empire •|•')
             .setColor(0xff0000)
         message.channel.sendEmbed(p);
-    };*/
+    };
 });
 CivLeagueStats.login(Config.tokens.StatsBot);
 
