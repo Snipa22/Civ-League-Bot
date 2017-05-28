@@ -62,8 +62,7 @@ CivLeagueHelp.on("message", message => {
     }//Commands
     if (command === "commands" || command === "Commands") {
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-
+`${Players.roleAdmin}
 •|• **__CivLeague Link Commands__** •|•
     **.joinSteam**
         *Joining the Steam Group, by entering the Chat Room.*
@@ -81,8 +80,10 @@ CivLeagueHelp.on("message", message => {
         *How to set the discordOverly for people that stream, or just not sure who was talking when they said something.*
         *While in game, it will display who is talking. Depends on how you have it setup.*
     **.setPTT**
-        *How to setup Push to Talk.*
-
+        *How to setup Push to Talk.*`
+        );
+        message.channel.sendMessage(
+`${Players.roleModerator}
 •|• **__Game Commands__** •|•
     **.allCivs | .allcivs**
         *Shows all available Civilizations.*
@@ -104,8 +105,8 @@ CivLeagueHelp.on("message", message => {
         *t=Number of Teams (2v2, 2v2v2, 2v2v2v2, 3v3, 4v4).* | *Example:* **.2v2v2Report**
     **.setMods**
         *Shows how to enable the mods in Game Settings.*
-    **.setGame**
-        *Shows how to setup the Game to avoid Error's.*
+    **.gameTypes**
+        *Shows the different game types: **FFA**, **Diplo**, and **No Diplo**.*
 
 •|• **__Alternative Screenshot Program__** •|•
     **.lightshot**
@@ -179,10 +180,11 @@ CivLeagueHelp.on("message", message => {
             `\n•|• **__Auto Download Additional Content__** •|•` +
             `\n  *This is how you should set Auto Download of Mods from Workshops.*`
         );
-    }/*.setGame*/
+    }/*.allCivs*/
     else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
 `•|• **__All Available Civilizations__** •|•
+    *Generaly able to use the commands:* *CivLeaderName
     **Top Tier**
 <:johnc:318097446196609024> • *Australia (**John Curtin**)*
 <:montezuma:318129675924668427> • *Aztec (**Montezuma**)*
@@ -202,7 +204,7 @@ CivLeagueHelp.on("message", message => {
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
 <:mvemban:318097919146459136> • *Kongo (**Mvemba A Nzinga**)*
-<:victoria:318129726504042497> • *England (**Victoria**)*
+<:victoria:318129726504042497> • *England (**Victoria**)* | CivVictoria/civvictoria
 
     **Low Tier**
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*
@@ -214,15 +216,15 @@ CivLeagueHelp.on("message", message => {
 <:spain:291789195691819010> • *Spain (**Philip II**)*
 `
         );
-    }/*.setGame*/
-    else if (command === "setGame") {
+    }/*.gameTypes*/
+    else if (command === "gameTypes") {
         message.channel.sendMessage(
-            `\n${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__Game Setup__** •|•` +
-            `\n  *This is how you should set up your game for less issues!*`
+`\n${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Game Types__** •|•
+*These are the available options!*`
         );
         message.channel.sendFile(
-            `${Config.images.imageSetGame}`
+            `${Config.images.imageGameTypes.png}`
         );
     }/*.setOverlay*/
     else if (command === "setOverlay") {

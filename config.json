@@ -27,7 +27,8 @@
         "imageSetPTT" : "setPTT.png",
         "imageSetSteam" : "setSteam.png",
         "imageSetGame" : "setGame.png",
-        "imageSetMods" : "setMods.png"
+        "imageSetMods" : "setMods.png",
+        "imageGameTypes" : "setGameModeSheet.png"
     },
 
     "links": {
