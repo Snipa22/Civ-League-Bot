@@ -227,7 +227,7 @@ CivLeagueHelp.on("message", message => {
   •**No Diplo:** Nothing is granted.`
         );
         message.channel.sendFile(
-            `${Config.images.setGameTypes.png}`
+            `${Config.images.imageGameTypes}`
         );
     }/*.setOverlay*/
     else if (command === "setOverlay") {
