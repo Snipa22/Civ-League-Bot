@@ -221,7 +221,10 @@ CivLeagueHelp.on("message", message => {
         message.channel.sendMessage(
 `\n${Players.roleAdmin} | ${Players.roleModerator}
 •|• **__Game Types__** •|•
-*These are the available options!*`
+*These are the available options!*
+  •**Diplo:** Everything is granted.
+  •**FFA:** No Declarations of Friendships\Alliances, everything else is granted.
+  •**No Diplo:** Nothing is granted.`
         );
         message.channel.sendFile(
             `${Config.images.imageGameTypes.png}`
