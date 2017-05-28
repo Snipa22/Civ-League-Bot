@@ -64,12 +64,12 @@ let difficultyEmojiList = [
 '⛈'
 ];
 let mapSettingsEmojiList = [
-':NumbOne:318269441559232512', 
-':NumbTwo:318269455056633856', 
-':NumbThree:318269467278704640', 
-':NumbFive:318269495003185163', 
-':NumbFive:317382827710611458', 
-':NumbSix:317382839089758209'
+':NumbOne:318269441559232512',
+':NumbTwo:318269455056633856',
+':NumbThree:318269467278704640',
+':NumbFour:318269483384832002',
+':NumbFive:318269495003185163',
+':NumbSix:318269504532774912'
 ];
 let letterEmojiList = [
 '🌕',
