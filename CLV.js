@@ -11,7 +11,6 @@ CivLeagueVote.on("ready", () => {
 })
 //Civilization Ban List
 /*
-
 */
 let civListOne = [
     ':australia:319172870074793984',
@@ -27,8 +26,9 @@ let civListOne = [
 let civListTwo = [
     ':america:319168816644882432',
     ':arabia:319172861715808256',
-    ':aztec:291788693428109322',
-    ':china:291788737573027840',
+    ':aztec:319176447531024384',
+    ':brazil:319176534373957632',
+    ':china:319177163939250178',
     ':gorgo:317699788256837632',
     ':pericles:317700081807654913',
     ':hojot:317736482578366485',
@@ -36,8 +36,7 @@ let civListTwo = [
     ':england:319148263900971008',
 ];
 let civListThree = [
-    ':brazil:291788717587300353',
-    ':cleopatra:317500171355422730',
+    ':egypt:319176482788343808',
     ':catherinem:317460679189725185',
     ':gandhi:317452366783971328',
     ':haraldh:317727671830315010',

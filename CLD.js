@@ -37,38 +37,40 @@ let commandHelp =
   •*Shuffles the list of players for teams.*`
 ;
 
-//Array of Civilizations Available 
+/*Array of Civilizations Available 
+ 
+*/
 let allCivsDLC = {
     //Top Tier Civs
-    australia: '\n  • <:australia:319172870074793984>*Australia (**John Curtin**)*',
-    aztec: '\n  • <:montezuma:318129675924668427>*Aztec (**Montezuma**)*',
-    germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
-    macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
-    persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
-    sumeria: '\n  • <:sumeria:319165695721996291>*Sumeria (**Gilgamesh**)*',
-    rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
+    australia: '\n  • <:australia:319172870074793984> *Australia (**John Curtin**)*',
+    aztec: '\n  • <:aztec:319176447531024384> *Aztec (**Montezuma**)*',
+    germany: '\n  • <:frederickb:317422295113269248> *Germany (**Frederick Barbarossa**)*',
+    macedon: '\n  • <:alexader:317405771631558656> *Macedon (**Alexander**)*',
+    persia: '\n  • <:cyrus:317414457762512896> *Persia (**Cyrus**)*',
+    sumeria: '\n  • <:sumeria:319165695721996291> *Sumeria (**Gilgamesh**)*',
+    rome: '\n  • <:trajan:317401277825024021> *Rome (**Trajan**)*',
 
     //Mid Tier Civs
-    america: '\n  • <:america:319168816644882432>*America (**Teddy Roosevelt**)*',
+    america: '\n  • <:america:319168816644882432> *America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:319172861715808256> *Arabia (**Saladin**)*',
-    england: '\n  • <:england:319148263900971008>*England (**Victoria**)*',
-    gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
-    pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
-    japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
-    kongo: '\n  • <:mvemban:318097919146459136>*Kongo (**Mvemba A Nzinga**)*',
+    brazil : `\n  • <:brazil:319176534373957632> *Brazil (**Pedro II**)*`,
+    china: '\n  • <:china:319177163939250178> *China (**Qin Shi Huang**)*',
+    england: '\n  • <:england:319148263900971008> *England (**Victoria**)*',
+    gorgo: '\n  • <:gorgo:317699788256837632> *Greece (**Gorgo**)*',
+    pericles: '\n  • <:pericles:317700081807654913> *Greece (**Pericles**)*',
+    japan: '\n  • <:hojot:317736482578366485> *Japan (**Hojo Tokimune**)*',
+    kongo: '\n  • <:mvemban:318097919146459136> *Kongo (**Mvemba A Nzinga**)*',
 
     //Low Tier Civs
-    egypt: '\n  • <:cleopatra:317500171355422730>*Egypt (**Cleopatra**)*',
-    france: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
-    india: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
-    norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
-    poland: '\n  • <:poland:319160313331056651>*Poland (**Jadwiga**)*',
+    egypt: '\n  • <:egypt:319176482788343808> *Egypt (**Cleopatra**)*',
+    france: '\n  • <:catherinem:317460679189725185> *France (**Catherine De Medici**)*',
+    india: '\n  • <:gandhi:317452366783971328> *India (**Gandhi**)*',
+    norway: '\n  • <:haraldh:317727671830315010> *Norway (**Harald Hardrada**)*',
+    poland: '\n  • <:poland:319160313331056651> *Poland (**Jadwiga**)*',
 //---------------------
-    brazil : `\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*`,
-    china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
-    russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
-    scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',
-    spain: '\n  • <:spain:291789195691819010>*Spain (**Philip II**)*'};
+    russia: '\n  • <:russia:291789137424416778> *Russia (**Peter**)*',
+    scythia: '\n  • <:scythia:291789172434272256> *Scythia (**Tomyris**)*',
+    spain: '\n  • <:spain:291789195691819010> *Spain (**Philip II**)*'};
 
 let icons = {
     purple: '<:civIconPurple:291784556489474049>',

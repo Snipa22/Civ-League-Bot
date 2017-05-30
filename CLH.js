@@ -186,7 +186,7 @@ ${Config.links.civLeagueSteamGroup}
 `•|• **__All Available Civilizations__** •|•
     **Top Tier**
 <:australia:319172870074793984> • *Australia (**John Curtin**)*
-<:montezuma:318129675924668427> • *Aztec (**Montezuma**)*
+<:aztec:319176447531024384> • *Aztec (**Montezuma**)*
 <:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
 <:alexader:317405771631558656> • *Macedon (**Alexander**)*
 <:cyrus:317414457762512896> • *Persia (**Cyrus**)*
@@ -198,7 +198,8 @@ ${Config.links.civLeagueSteamGroup}
     **Mid Tier**
 <:america:319168816644882432> • *America (**Teddy Roosevelt**)*
 <:arabia:319172861715808256> • *Arabia (**Saladin**)*
-<:china:291788737573027840> • *China (**Qin Shi Huang**)*
+<:brazil:319176534373957632> • *Brazil (**Pedro II**)*
+<:china:319177163939250178> • *China (**Qin Shi Huang**)*
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
@@ -206,8 +207,7 @@ ${Config.links.civLeagueSteamGroup}
 <:england:319148263900971008> • *England (**Victoria**)* | *-Victoria
 
     **Low Tier**
-<:brazil:291788717587300353> • *Brazil (**Pedro II**)*
-<:cleopatra:317500171355422730> • *Egypt (**Cleopatra**)*
+<:egypt:319176482788343808> • *Egypt (**Cleopatra**)*
 <:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
 <:gandhi:317452366783971328> • *India (**Gandhi**)*
 <:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
