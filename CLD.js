@@ -60,7 +60,7 @@ let allCivsDLC = {
     france: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
     india: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
     norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
-    poland: '\n  • <:jadwiga:318129714772443136>*Poland (**Jadwiga**)*',
+    poland: '\n  • <:poland:319160313331056651>*Poland (**Jadwiga**)*',
 //---------------------
     brazil : `\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*`,
     america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
