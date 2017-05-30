@@ -184,7 +184,6 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
 `•|• **__All Available Civilizations__** •|•
-    *Generaly able to use the commands:* *CivLeaderName
     **Top Tier**
 <:johnc:318097446196609024> • *Australia (**John Curtin**)*
 <:montezuma:318129675924668427> • *Aztec (**Montezuma**)*
