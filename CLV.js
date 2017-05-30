@@ -14,7 +14,7 @@ CivLeagueVote.on("ready", () => {
 
 */
 let civListOne = [
-    'johnc:318097446196609024',
+    ':australia:319172870074793984',
     ':montezuma:318129675924668427',
     ':frederickb:317422295113269248',
     ':alexader:317405771631558656',
@@ -26,7 +26,7 @@ let civListOne = [
 ];
 let civListTwo = [
     ':america:319168816644882432',
-    ':arabia:291788624041607170',
+    ':arabia:319172861715808256',
     ':aztec:291788693428109322',
     ':china:291788737573027840',
     ':gorgo:317699788256837632',

@@ -40,7 +40,7 @@ let commandHelp =
 //Array of Civilizations Available 
 let allCivsDLC = {
     //Top Tier Civs
-    australia: '\n  • <:johnc:318097446196609024>*Australia (**John Curtin**)*',
+    australia: '\n  • <:australia:319172870074793984>*Australia (**John Curtin**)*',
     aztec: '\n  • <:montezuma:318129675924668427>*Aztec (**Montezuma**)*',
     germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
@@ -50,6 +50,7 @@ let allCivsDLC = {
 
     //Mid Tier Civs
     america: '\n  • <:america:319168816644882432>*America (**Teddy Roosevelt**)*',
+    arabia: '\n  • <:arabia:319172861715808256> *Arabia (**Saladin**)*',
     england: '\n  • <:england:319148263900971008>*England (**Victoria**)*',
     gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
@@ -64,7 +65,6 @@ let allCivsDLC = {
     poland: '\n  • <:poland:319160313331056651>*Poland (**Jadwiga**)*',
 //---------------------
     brazil : `\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*`,
-    arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',

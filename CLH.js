@@ -185,7 +185,7 @@ ${Config.links.civLeagueSteamGroup}
         message.channel.sendMessage(
 `•|• **__All Available Civilizations__** •|•
     **Top Tier**
-<:johnc:318097446196609024> • *Australia (**John Curtin**)*
+<:australia:319172870074793984> • *Australia (**John Curtin**)*
 <:montezuma:318129675924668427> • *Aztec (**Montezuma**)*
 <:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
 <:alexader:317405771631558656> • *Macedon (**Alexander**)*
@@ -197,7 +197,7 @@ ${Config.links.civLeagueSteamGroup}
 
     **Mid Tier**
 <:america:319168816644882432> • *America (**Teddy Roosevelt**)*
-<:arabia:291788624041607170> • *Arabia (**Saladin**)*
+<:arabia:319172861715808256> • *Arabia (**Saladin**)*
 <:china:291788737573027840> • *China (**Qin Shi Huang**)*
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
