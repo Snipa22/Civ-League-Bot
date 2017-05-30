@@ -196,7 +196,7 @@ ${Config.links.civLeagueSteamGroup}
 <:sumeria:319165695721996291> • *Sumeria (**Gilgamesh**)*
 
     **Mid Tier**
-<:america:291788587329126402> • *America (**Teddy Roosevelt**)*
+<:america:319168816644882432> • *America (**Teddy Roosevelt**)*
 <:arabia:291788624041607170> • *Arabia (**Saladin**)*
 <:china:291788737573027840> • *China (**Qin Shi Huang**)*
 <:gorgo:317699788256837632> • *Greece (**Gorgo**)*

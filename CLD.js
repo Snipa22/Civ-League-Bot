@@ -49,6 +49,7 @@ let allCivsDLC = {
     rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Mid Tier Civs
+    america: '\n  • <:america:319168816644882432>*America (**Teddy Roosevelt**)*',
     england: '\n  • <:england:319148263900971008>*England (**Victoria**)*',
     gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
@@ -63,7 +64,6 @@ let allCivsDLC = {
     poland: '\n  • <:poland:319160313331056651>*Poland (**Jadwiga**)*',
 //---------------------
     brazil : `\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*`,
-    america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
