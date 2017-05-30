@@ -212,7 +212,7 @@ ${Config.links.civLeagueSteamGroup}
 <:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
 <:gandhi:317452366783971328> • *India (**Gandhi**)*
 <:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
-<:jadwiga:318129714772443136> • *Poland (**Jadwiga**)*
+<:poland:319160313331056651> • *Poland (**Jadwiga**)*
 <:spain:291789195691819010> • *Spain (**Philip II**)*
 `
         );
