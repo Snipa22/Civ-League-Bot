@@ -193,7 +193,7 @@ ${Config.links.civLeagueSteamGroup}
 <:trajan:317401277825024021> • *Rome (**Trajan**)*
 <:russia:291789137424416778> • *Russia (**Peter**)*
 <:scythia:291789172434272256> • *Scythia (**Tomyris**)*
-<:gilgamesh:317534174904975362> • *Sumeria (**Gilgamesh**)*
+<:sumeria:319165695721996291> • *Sumeria (**Gilgamesh**)*
 
     **Mid Tier**
 <:america:291788587329126402> • *America (**Teddy Roosevelt**)*

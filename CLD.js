@@ -45,7 +45,7 @@ let allCivsDLC = {
     germany: '\n  • <:frederickb:317422295113269248>*Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:alexader:317405771631558656>*Macedon (**Alexander**)*',
     persia: '\n  • <:cyrus:317414457762512896>*Persia (**Cyrus**)*',
-    sumeria: '\n  • <:gilgamesh:317534174904975362>*Sumeria (**Gilgamesh**)*',
+    sumeria: '\n  • <:sumeria:319165695721996291>*Sumeria (**Gilgamesh**)*',
     rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Mid Tier Civs
