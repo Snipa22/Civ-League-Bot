@@ -204,7 +204,7 @@ ${Config.links.civLeagueSteamGroup}
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
 <:mvemban:318097919146459136> • *Kongo (**Mvemba A Nzinga**)*
-<:england:319148263900971008> • *England (**Victoria**)* | -Victoria
+<:england:319148263900971008> • *England (**Victoria**)* | *-Victoria
 
     **Low Tier**
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*

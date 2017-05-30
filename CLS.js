@@ -5485,7 +5485,7 @@ if(command === 'warsoldier12') {
 /*Civilization Leaders*/
     if(command === '-Victoria' || command === '-victoria') {
         let p = new Discord.RichEmbed()
-            .addField('England:', '<:victoria:318129726504042497> **The Sunset never Sets!**', true)
+            .addField('•|• Victoria of the English Empire •|•', '<:england:319148263900971008> **The Sunset never Sets!**', true)
             
             .addField('Pax Britannica', '*All settled or conquered cities on a continent other than your home continent receive a free melee unit. Gain the **Redcoat** unit when the Military Science is researched.*')
             .addField('--  --  --  --  --  --  --  --', '•|• **__Unique Units__** •|•')
