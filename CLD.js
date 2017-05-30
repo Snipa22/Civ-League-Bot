@@ -49,7 +49,7 @@ let allCivsDLC = {
     rome: '\n  • <:trajan:317401277825024021>*Rome (**Trajan**)*',
 
     //Mid Tier Civs
-    england: '\n  • <:victoria:318129726504042497>*England (**Victoria**)*',
+    england: '\n  • <:england:319148263900971008>*England (**Victoria**)*',
     gorgo: '\n  • <:gorgo:317699788256837632>*Greece (**Gorgo**)*',
     pericles: '\n  • <:pericles:317700081807654913>*Greece (**Pericles**)*',
     japan: '\n  • <:hojot:317736482578366485>*Japan (**Hojo Tokimune**)*',
@@ -58,18 +58,13 @@ let allCivsDLC = {
     //Low Tier Civs
     egypt: '\n  • <:cleopatra:317500171355422730>*Egypt (**Cleopatra**)*',
     france: '\n  • <:catherinem:317460679189725185>*France (**Catherine De Medici**)*',
-    gandhi: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
+    india: '\n  • <:gandhi:317452366783971328>*India (**Gandhi**)*',
     norway: '\n  • <:haraldh:317727671830315010>*Norway (**Harald Hardrada**)*',
     poland: '\n  • <:jadwiga:318129714772443136>*Poland (**Jadwiga**)*',
 //---------------------
+    brazil : `\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*`,
     america: '\n  • <:america:291788587329126402>*America (**Teddy Roosevelt**)*',
     arabia: '\n  • <:arabia:291788624041607170>*Arabia (**Saladin**)*',
-<<<<<<< HEAD
-=======
-    australia: '\n  • <:johnc:317801445275729950>*Australia (**John Curtin**)*',
-    aztec: '\n  • <:aztec:291788693428109322>*Aztec (**Montezuma**)*',
->>>>>>> parent of af78d08... Emoji Update: Aztec
-    brazil: '\n  • <:brazil:291788717587300353>*Brazil (**Pedro II**)*',
     china: '\n  • <:china:291788737573027840>*China (**Qin Shi Huang**)*',
     russia: '\n  • <:russia:291789137424416778>*Russia (**Peter**)*',
     scythia: '\n  • <:scythia:291789172434272256>*Scythia (**Tomyris**)*',

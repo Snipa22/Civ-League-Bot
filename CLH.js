@@ -173,7 +173,7 @@ ${Config.links.civLeagueSteamGroup}
         message.channel.sendFile(
             `${Config.images.imageSetSteam}`
         );
-    }/*.allCivs*/
+    }/*.setMods*/
     else if (command === "setMods") {
         message.channel.sendMessage(
             `\n${Players.roleAdmin} | ${Players.roleModerator}` +
@@ -204,7 +204,7 @@ ${Config.links.civLeagueSteamGroup}
 <:pericles:317700081807654913> • *Greece (**Pericles**)*
 <:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
 <:mvemban:318097919146459136> • *Kongo (**Mvemba A Nzinga**)*
-<:victoria:318129726504042497> • *England (**Victoria**)* | CivVictoria/civvictoria
+<:england:319148263900971008> • *England (**Victoria**)* | -Victoria
 
     **Low Tier**
 <:brazil:291788717587300353> • *Brazil (**Pedro II**)*
