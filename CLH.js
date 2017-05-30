@@ -184,35 +184,33 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
 `•|• **__All Available Civilizations__** •|•
-    **Top Tier**
+--    **Top Tier**    --
 <:australia:319172870074793984> • *Australia (**John Curtin**)*
 <:aztec:319176447531024384> • *Aztec (**Montezuma**)*
-<:frederickb:317422295113269248> • *Germany (**Frederick Barbarossa**)*
-<:alexader:317405771631558656> • *Macedon (**Alexander**)*
-<:cyrus:317414457762512896> • *Persia (**Cyrus**)*
-<:trajan:317401277825024021> • *Rome (**Trajan**)*
-<:russia:291789137424416778> • *Russia (**Peter**)*
-<:scythia:291789172434272256> • *Scythia (**Tomyris**)*
+<:germany:319191037337665536> • *Germany (**Frederick Barbarossa**)*
+<:macedon:319191099111505931> • *Macedon (**Alexander**)*
+<:persia:319191114793877504> • *Persia (**Cyrus**)*
+<:rome:319191129230671873> • *Rome (**Trajan**)*
+<:russia:319191141637685248> • *Russia (**Peter**)*
+<:scythia:319191152563847178> • *Scythia (**Tomyris**)*
 <:sumeria:319165695721996291> • *Sumeria (**Gilgamesh**)*
-
-    **Mid Tier**
+--    **Mid Tier**    --
 <:america:319168816644882432> • *America (**Teddy Roosevelt**)*
 <:arabia:319172861715808256> • *Arabia (**Saladin**)*
 <:brazil:319176534373957632> • *Brazil (**Pedro II**)*
 <:china:319177163939250178> • *China (**Qin Shi Huang**)*
-<:gorgo:317699788256837632> • *Greece (**Gorgo**)*
-<:pericles:317700081807654913> • *Greece (**Pericles**)*
-<:hojot:317736482578366485> • *Japan (**Hojo Tokimune**)*
-<:mvemban:318097919146459136> • *Kongo (**Mvemba A Nzinga**)*
+<:greece_gorgo:319191048335130624> • *Greece (**Gorgo**)*
+<:greece_pericles:319191058221236224> • *Greece (**Pericles**)*
+<:japan_hojo:319191078639108096> • *Japan (**Hojo Tokimune**)*
+<:kongo:319191090399936512> • *Kongo (**Mvemba A Nzinga**)*
 <:england:319148263900971008> • *England (**Victoria**)* | *-Victoria
-
-    **Low Tier**
+--    **Low Tier**    --
 <:egypt:319176482788343808> • *Egypt (**Cleopatra**)*
-<:catherinem:317460679189725185> • *France (**Catherine De Medici**)*
-<:gandhi:317452366783971328> • *India (**Gandhi**)*
-<:haraldh:317727671830315010> • *Norway (**Harald Hardrada**)*
+<:france:319191004550922250> • *France (**Catherine De Medici**)*
+<:india:319191068488761354> • *India (**Gandhi**)*
+<:norway:319191107302850580> • *Norway (**Harald Hardrada**)*
 <:poland:319160313331056651> • *Poland (**Jadwiga**)*
-<:spain:291789195691819010> • *Spain (**Philip II**)*
+<:spain:319191162462273536> • *Spain (**Philip II**)*
 `
         );
     }/*.gameTypes*/
