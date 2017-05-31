@@ -12,8 +12,7 @@ CivLeagueVote.on("ready", () => {
 //Civilization Ban List
 let civListOne = [
     ':australia:319172870074793984',
-    ':montezuma:318129675924668427',
-    ':france:319191004550922250',
+    ':aztec:319176447531024384',
     ':germany:319191037337665536',
     ':macedon:319191099111505931',
     ':persia:319191114793877504',
@@ -25,7 +24,6 @@ let civListOne = [
 let civListTwo = [
     ':america:319168816644882432',
     ':arabia:319172861715808256',
-    ':aztec:319176447531024384',
     ':brazil:319176534373957632',
     ':china:319177163939250178',
     ':greece_gorgo:319191048335130624',
@@ -36,11 +34,11 @@ let civListTwo = [
 ];
 let civListThree = [
     ':egypt:319176482788343808',
-    ':catherinem:317460679189725185',
+    ':france:319191004550922250',
     ':india:319191068488761354',
     ':norway:319191107302850580',
     ':poland:319160313331056651',
-    `:spain:319191162462273536`
+    ':spain:319191162462273536'
 ];
 //Finshed Voting
 let mainEmoji = [
