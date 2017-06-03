@@ -96,9 +96,9 @@ CivLeagueHelp.on("message", message => {
         *Draft's the Players in that Channel.*
     **.draft2**
         *Draft's the Players in that Channel with too many Bans to access.*
-    **.draftTeams t p**
+    **.shuffle t p**
         *t=Number of Teams (2, 3 or 4) | p=Number of Players on Each Team.*
-        **All Teamers must be in** •|• **Staging: Teamers**.
+        **All Teamers must be in** •|• **Staging: Teamers**. *Example:* **.shuffle 3 2** *(3v2*.
     **.ffaReportx**
         *x=Number (2-8) of Players in that Game.* | *Example:* **.ffaReport6**
     **.tReport**
