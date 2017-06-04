@@ -122,10 +122,9 @@ CivLeagueHelp.on("message", message => {
 `${Players.roleAdmin} | ${Players.roleModerator}` +
 `\n**__Steam Group (Enter Chat Room)__**
 ${Config.links.civLeagueSteamGroup}
-  *Entering the Steam Group is for players who rejoin our community and play on a social basis.*
-  *Joining the Steam Group helps connect us outside the game, and Join Private Games hosted here.*
     •**Click the URL**
-    •**Enter Chat Room (Blue Button)**
+    •**Don't Sign In/Join Group**
+    •**Just Enter Chat Room (Blue Button)**
       *Check the Taskbar, Chat Window does not Open to the Front.*`
         );
     }/*.discord*/
@@ -252,7 +251,9 @@ ${Config.links.civLeagueSteamGroup}
 `${Players.roleAdmin} | ${Players.roleModerator}
 '•|•**__Receiving Errors while Connecting__** •|•
   *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder URL*
+
 **Documents/My Games/Sid Meier's Civilization VI**
+                       *^ copy/paste that ^*
     ***Notes:***
       •*This will not Delete your Game Options if you select the right files in the below photo!*
 
