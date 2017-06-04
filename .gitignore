@@ -50,3 +50,6 @@ config.json
 CLS.js
 CLS.js
 config.json
+players.json
+.idea/
+data/*.json
