@@ -179,6 +179,9 @@ ${Config.links.civLeagueSteamGroup}
             `\n•|• **__Auto Download Additional Content__** •|•` +
             `\n  *This is how you should set Auto Download of Mods from Workshops.*`
         );
+        message.channel.sendFile(
+            `${Config.images.imageSetMods}`
+        );
     }/*.allCivs*/
     else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
