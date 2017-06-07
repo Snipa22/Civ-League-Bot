@@ -65,6 +65,7 @@ let letterEmojiList = [
 '🌑'
 ];
 let opEmojiList = [
+'🐎',
 '🐏',
 '⚔',
 '🛡',
@@ -90,14 +91,14 @@ CivLeagueVote.on("message", message => {
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break Ties.***
 •**__Map Choices__**
-- • - **Vanilla** - • -
+    - • - **Vanilla** - • -
 <:NumbOne:318828396563922955> • 🌏**Pangaea** *(One Massive Landmass with Surrounding Islands)*
 <:NumbTwo:318828407741743105> • 🌎**Continents** *(Few Large Land Masses)*
 <:NumbThree:318828419888578560> • 🌍**Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
 <:NumbFour:318828429946519552> • <:earth_inland:316937660138520578>**Inland Sea** *(One Large Ocean in the Center of the Map)*
 <:NumbFive:318828442588020766> • <:earth_islands:316937669672304651>**Island Plates** *(Islands Ranging in Size from Small to Large)*
 <:NumbSix:318828453983944704> • <:earth_shuffle:316937678908293121>**Shuffle** *(What Secrets will this Map Reveal)*
-- • - **Modded** - • -
+    - • - **Modded** - • -
  • **Oval** *(One Mass Oval Shaped Land, with surrounding Islands)*
  • **Double Hex** *(2 Large Serperate rough Hexagonal Continents)*
 `
@@ -171,19 +172,19 @@ CivLeagueVote.on("message", message => {
         message.channel.sendMessage(
 `•|• **__In-Game OP Options__** •|•
   ***Majority Votes ban these Options during the game. Host does break Ties.***
-- • - **Pantheons** - • -
+    - • - **Pantheons** - • -
 🐎 • **God of the Open Sky:** *Provides +1 Culture from Pastures.*
 🎖 • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
-- • - **Religion Beliefs** - • -
+    - • - **Religion Beliefs** - • -
 ⚔ • **Crusade:** *+10 Combat Strength near foreign cities that follow this Religion.*
 🛡 • **Defender of the Faith:** *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
-- • - **Game Mechanics** - • -
+    - • - **Game Mechanics** - • -
 🐏 • **Ancient/Classical Era Support Units:** *Rams/Siege Towers may not be used with renaissance era units and up.*
 🌪 • **GG/GA Stacking:** *When two GG's/GA's of the same era allow a unit to receive Double Bonus.*
-- • - **Nukes** - • -
+    - • - **Nukes** - • -
 ⚛ • **Nuclear Devices (Atomic Era):** *Disallow building of Nuclear Devices.*
 ☢ • **Thermo Nuclear Devices (Information Era):** *Disallow building of Thermo Nuclear Devices.*
-- • - **Bugged Mechanics** - • -
+    - • - **Bugged Mechanics** - • -
 🏠 • **City States:** *Disallow Peace with any City State, that is suzzrain of any player(s) you are at war with.*
 👿 • **Barbarians:** *Disallow Barbarians in the Game, as they currently bug turn transitions. So please be aware.*`
         ).then(function(internalMessage) {
