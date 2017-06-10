@@ -21,18 +21,18 @@ CivLeagueStats.on("message", message => {
 
 /*  --  Player List  --  */
 //Admin
-//@© • 𝖘𝖔𝖓𝖌 𝖆𝖉𝖎𝖊𝖚#6276 `Wins: 349 | Losses: 167 | Games Played: 125 | League EXP: 527/590 | Level: 12`
+//@© • 𝖘𝖔𝖓𝖌 𝖆𝖉𝖎𝖊𝖚#6276 `Wins: 352 | Losses: 169 | Games Played: 126 | League EXP: 530/590 | Level: 12`
     if(command === 'songadieu') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '349', true)
-            .addField('Losses', '167', true)
-            .addField('Games Played', '122', true)
-            .addField('League Experience', '527/590', true)
+            .addField('Wins', '352', true)
+            .addField('Losses', '169', true)
+            .addField('Games Played', '126', true)
+            .addField('League Experience', '530/590', true)
             .addField('Level', '12', true)
-            .addField('Last Game Played', '1,041', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Last Game Played', '1,053', true)
+            .addField('Current Win Streak', '3', true)
             .addField('Longest Win Streak', '25', true)
-            .addField('Win Percentage', '*67.63%*', true)
+            .addField('Win Percentage', '*67.56%*', true)
 
             .addField('Admin', '<:admin:319920680349204483>', true)
             .addField('Warlord', '<:warlord:319931261894524928>', true)
@@ -41,18 +41,18 @@ CivLeagueStats.on("message", message => {
             .setFooter('•|• © • 𝖘𝖔𝖓𝖌 𝖆𝖉𝖎𝖊𝖚 - "Check out the #forms Channel" •|•')
             .setColor(0xB16EFE)
         message.channel.sendEmbed(p);
-    };//@Justifier#7095 `Wins: 282 | Losses: 49 | Games Played: 70 | League EXP: 564/590 | Level: 12`
+    };//@Justifier#7095 `Wins: 287 | Losses: 49 | Games Played: 71 | League EXP: 594/695 | Level: 13`
     if(command === 'Justifier') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '282', true)
+            .addField('Wins', '287', true)
             .addField('Losses', '49', true)
-            .addField('Games Played', '70', true)
-            .addField('Level', '12', true)
-            .addField('League Experience', '564/590', true)
-            .addField('Last Game Played', '1,041', true)
-            .addField('Current Win Streak', '15', true)
+            .addField('Games Played', '71', true)
+            .addField('Level', '13', true)
+            .addField('League Experience', '594/695', true)
+            .addField('Last Game Played', '1,048', true)
+            .addField('Current Win Streak', '20', true)
             .addField('Longest Win Streak', '33', true)
-            .addField('Win Percentage', '*85.19%*', true)
+            .addField('Win Percentage', '*85.41%*', true)
             
             .addField('Admin', '<:admin:319920680349204483>', true)
             .addField('Warlord', '<:warlord:319931261894524928>', true)
@@ -279,18 +279,18 @@ CivLeagueStats.on("message", message => {
             .setFooter('•|• onfire369 •|•')
             .setColor(0xC665C1)
         message.channel.sendEmbed(p);
-    };//@Swirlix#6895 `Wins: 98 | Losses: 65 | Games Played: 35 | League EXP: 121/170 | Level: 8`
+    };//@Swirlix#6895 `Wins: 100 | Losses: 67 | Games Played: 36 | League EXP: 123/170 | Level: 8`
     if(command === 'Swirlix') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '98', true)
-            .addField('Losses', '65', true)
-            .addField('Games Played', '35', true)
-            .addField('League Experience', '121/170', true)
+            .addField('Wins', '100', true)
+            .addField('Losses', '67', true)
+            .addField('Games Played', '36', true)
+            .addField('League Experience', '123/170', true)
             .addField('Level', '8', true)
-            .addField('Last Game Played', '974', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Last Game Played', '1,054', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '7', true)
-            .addField('Win Percentage', '*60.12%*', true)
+            .addField('Win Percentage', '*59.88%*', true)
 
             .addField('Moderator', '<:moderator:319920680546205698>', true)
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
@@ -298,19 +298,19 @@ CivLeagueStats.on("message", message => {
             .setFooter('•|• Swirlix •|•')
             .setColor(0xC665C1)
         message.channel.sendEmbed(p);
-    };//@ToMbraider#6882 `Wins: 290 | Losses: 225 | Games Played: 109 | League EXP: 418/485 | Level: 11`
+    };//@ToMbraider#6882 `Wins: 292 | Losses: 228 | Games Played: 111 | League EXP: 420/485 | Level: 11`
     if(command === 'TomBraider') {
         let p = new Discord.RichEmbed()
             .setAuthor('TomBraider')
-            .addField('Wins', '290', true)
-            .addField('Losses', '225', true)
-            .addField('Games Played', '109', true)
-            .addField('League Experience', '418/485', true)
+            .addField('Wins', '292', true)
+            .addField('Losses', '228', true)
+            .addField('Games Played', '111', true)
+            .addField('League Experience', '420/485', true)
             .addField('Level', '11', true)
-            .addField('Last Game Played', '1,031', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Last Game Played', '1,053', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '12', true)
-            .addField('Win Percentage', '*56.31%*', true)
+            .addField('Win Percentage', '*57.30%*', true)
 
             .addField('Moderator', '<:moderator:319920680546205698>', true)
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
@@ -341,20 +341,20 @@ CivLeagueStats.on("message", message => {
     };
 
 //Valued Member
-/*@Arki#6925 `Wins: 6 | Losses: 4 | Games Played: 68 | League EXP: 154/170 | Level: 8`
+/*@Arki#6925 `Wins: 9 | Losses: 5 | Games Played: 69 | League EXP: 157/170 | Level: 8`
 Player Stats Reset: 06.07.17
 */
     if(command === 'Arki') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '6', true)
-            .addField('Losses', '4', true)
-            .addField('Games Played', '68', true)
-            .addField('League Experience', '154/170', true)
+            .addField('Wins', '9', true)
+            .addField('Losses', '5', true)
+            .addField('Games Played', '69', true)
+            .addField('League Experience', '157/170', true)
             .addField('Level', '8', true)
-            .addField('Last Game Played', '1,042', true)
-            .addField('Current Win Streak', '6', true)
+            .addField('Last Game Played', '1,052', true)
+            .addField('Current Win Streak', '3', true)
             .addField('Longest Win Streak', '6', true)
-            .addField('Win Percentage', '*60.00%*', true)
+            .addField('Win Percentage', '*64.28%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
             .addField('Valued Player', '⭐', true)
@@ -422,18 +422,18 @@ Player Stats Reset: 06.07.17
             .setFooter('•|• groovedrift •|•')
             .setColor(0x42FF00)
         message.channel.sendEmbed(p);
-    };//@LITCH#1727 `Wins: 25 | Losses: 43 | Games Played: 13 | League EXP: 25/40 | Level: 5`
+    };//@LITCH#1727 `Wins: 26 | Losses: 47 | Games Played: 14 | League EXP: 26/40 | Level: 5`
     if(command === 'LITCH') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '25', true)
-            .addField('Losses', '43', true)
-            .addField('Games Played', '13', true)
-            .addField('League Experience', '25/40', true)
+            .addField('Wins', '26', true)
+            .addField('Losses', '47', true)
+            .addField('Games Played', '14', true)
+            .addField('League Experience', '26/40', true)
             .addField('Level', '5', true)
-            .addField('Last Game Played', '1,043', true)
+            .addField('Last Game Played', '1,054', true)
             .addField('Current Win Streak', '1', true)
             .addField('Longest Win Streak', '4', true)
-            .addField('Win Percentage', '*36.76%*', true)
+            .addField('Win Percentage', '*35.61%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
             .addField('Valued Player', '⭐', true)
@@ -462,13 +462,13 @@ Player Stats Reset: 06.07.17
             .setColor(0x42FF00)
         message.channel.sendEmbed(p);
     };
-//@mike#3166 `Wins: 196 | Losses: 121 | Games Played: 69 | League EXP: 290/380 | Level: 10`
+//@mike#3166 `Wins: 196 | Losses: 121 | Games Played: 69 | League EXP: 320/380 | Level: 10`
     if(command === 'lmikel1337') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '196', true)
             .addField('Losses', '121', true)
             .addField('Games Played', '69', true)
-            .addField('League Experience', '290/375', true)
+            .addField('League Experience', '320/375', true)
             .addField('Level', '10', true)
             .addField('Last Game Played', '1,042', true)
             .addField('Current Win Streak', '3', true)
@@ -542,18 +542,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@[BOBAS] Peter Jenko#7281 `Wins: 115 | Losses: 45 | Games Played: 32 | League EXP: 179/275 | Level: 9`
+//@[BOBAS] Peter Jenko#7281 `Wins: 119 | Losses: 46 | Games Played: 33 | League EXP: 183/275 | Level: 9`
     if(command === 'cvoky24') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '115', true)
-            .addField('Losses', '45', true)
-            .addField('Games Played', '32', true)
-            .addField('League Experience', '179/275', true)
+            .addField('Wins', '119', true)
+            .addField('Losses', '46', true)
+            .addField('Games Played', '33', true)
+            .addField('League Experience', '183/275', true)
             .addField('Level', '9', true)
-            .addField('Last Game Played', '1,019', true)
-            .addField('Current Win Streak', '11', true)
+            .addField('Last Game Played', '1,051', true)
+            .addField('Current Win Streak', '4', true)
             .addField('Longest Win Streak', '12', true)
-            .addField('Win Percentage', '*71.87%*', true)
+            .addField('Win Percentage', '*72.12%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -1069,18 +1069,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@barmaleushko#8848 `Wins: 3 | Losses: 2 | Games Played: 1 | League EXP: 3/4 | Level: 1`
+//@barmaleushko#8848 `Wins: 5 | Losses: 4 | Games Played: 2 | League EXP: 5/9 | Level: 2`
     if(command === 'barmaleushko') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '3', true)
-            .addField('Losses', '2', true)
-            .addField('Games Played', '1', true)
-            .addField('League Experience', '3/4', true)
-            .addField('Level', '1', true)
-            .addField('Last Game Played', '977', true)
-            .addField('Current Win Streak', '3', true)
+            .addField('Wins', '5', true)
+            .addField('Losses', '4', true)
+            .addField('Games Played', '2', true)
+            .addField('League Experience', '5/9', true)
+            .addField('Level', '2', true)
+            .addField('Last Game Played', '1,049', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '3', true)
-            .addField('Win Percentage', '*60.00%*', true)
+            .addField('Win Percentage', '*55.55%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -1529,6 +1529,25 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
+//@Chroma Source#3786 `Wins: 0 | Losses: 5 | Games Played: 1 | League EXP: 0/4 | Level: 0`
+    if(command === 'ChromaSource') {
+        let p = new Discord.RichEmbed()
+            .addField('Wins', '0', true)
+            .addField('Losses', '5', true)
+            .addField('Games Played', '1', true)
+            .addField('League Experience', '0/4', true)
+            .addField('Level', '0', true)
+            .addField('Last Game Played', '1,053', true)
+            .addField('Current Win Streak', '0', true)
+            .addField('Longest Win Streak', '0', true)
+            .addField('Win Percentage', '*0.00%*', true)
+
+            .addField('Settler', '<:settler:319889887996411915>', true)
+
+            .setFooter('•|• Chroma Source •|•')
+            .setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
 //@Civ 6#3601 `Wins: 1 | Losses: 11 | Games Played: 3 | League EXP: 1/4 | Level: 1`
     if(command === 'Civ6') {
         let p = new Discord.RichEmbed()
@@ -1832,18 +1851,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@czozp#8908 `Wins: 338 | Losses: 27 | Games Played: 75 | League EXP: 673/695 | Level: 13`
+//@czozp#8908 `Wins: 342 | Losses: 27 | Games Played: 76 | League EXP: 679/695 | Level: 13`
     if(command === 'czozp') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '338', true)
+            .addField('Wins', '342', true)
             .addField('Losses', '27', true)
-            .addField('Games Played', '75', true)
-            .addField('League Experience', '673/695', true)
+            .addField('Games Played', '76', true)
+            .addField('League Experience', '679/695', true)
             .addField('Level', '13', true)
-            .addField('Last Game Played', '1,045', true)
-            .addField('Current Win Streak', '31', true)
+            .addField('Last Game Played', '1,054', true)
+            .addField('Current Win Streak', '35', true)
             .addField('Longest Win Streak', '59', true)
-            .addField('Win Percentage', '*92.60%*', true)
+            .addField('Win Percentage', '*92.68%*', true)
             
             .addField('Warlord', '<:warlord:319931261894524928>', true)
             .addField('Solid Host', '⍟', true)
@@ -1996,18 +2015,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@DESTROYER#9361 `Wins: 46 | Losses: 73 | Games Played: 24 | League EXP: 56/65 | Level: 6`
+//@DESTROYER#9361 `Wins: 51 | Losses: 73 | Games Played: 25 | League EXP: 66/105 | Level: 7`
     if(command === 'Destroyer') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '46', true)
+            .addField('Wins', '51', true)
             .addField('Losses', '73', true)
-            .addField('Games Played', '24', true)
-            .addField('League Experience', '56/65', true)
-            .addField('Level', '6', true)
-            .addField('Last Game Played', '1,007', true)
-            .addField('Current Win Streak', '3', true)
-            .addField('Longest Win Streak', '6', true)
-            .addField('Win Percentage', '*38.65%*', true)
+            .addField('Games Played', '25', true)
+            .addField('League Experience', '66/105', true)
+            .addField('Level', '7', true)
+            .addField('Last Game Played', '1,049', true)
+            .addField('Current Win Streak', '8', true)
+            .addField('Longest Win Streak', '8', true)
+            .addField('Win Percentage', '*41.12%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
             .addField('Solid Host', '⍟', true)
@@ -2284,23 +2303,23 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Elevated#8090 `Wins: 21 | Losses: 35 | Games Played: 12 | League EXP: 31/40 | Level: 5`
+//@Elevated#8090 `Wins: 27 | Losses: 35 | Games Played: 13 | League EXP: 43/65 | Level: 6`
     if(command === 'Karlos4') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '21', true)
+            .addField('Wins', '27', true)
             .addField('Losses', '35', true)
-            .addField('Games Played', '12', true)
-            .addField('League Experience', '31/40', true)
-            .addField('Level', '5', true)
-            .addField('Last Game Played', '1,021', true)
-            .addField('Current Win Streak', '3', true)
-            .addField('Longest Win Streak', '7', true)
-            .addField('Win Percentage', '*37.50%*', true)
+            .addField('Games Played', '13', true)
+            .addField('League Experience', '43/65', true)
+            .addField('Level', '6', true)
+            .addField('Last Game Played', '1,052', true)
+            .addField('Current Win Streak', '9', true)
+            .addField('Longest Win Streak', '9', true)
+            .addField('Win Percentage', '*43.54%*', true)
 
-            .addField('Settler', '<:settler:319889887996411915>', true)
+            .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
             .setFooter('•|• Karlos4 •|•')
-            .setColor(0x04771B)
+            .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@EliteCrew#9038 `Wins: 24 | Losses: 3 | Games Played: 6 | League EXP: 38/40 | Level: 5`
@@ -2568,18 +2587,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@fluffykobs#4863 `Wins: 19 | Losses: 26 | Games Played: 10 | League EXP: 20/25 | Level: 4`
+//@fluffykobs#4863 `Wins: 21 | Losses: 28 | Games Played: 11 | League EXP: 22/25 | Level: 4`
     if(command === 'fluffykobs') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '19', true)
-            .addField('Losses', '26', true)
-            .addField('Games Played', '10', true)
+            .addField('Wins', '21', true)
+            .addField('Losses', '28', true)
+            .addField('Games Played', '11', true)
             .addField('League Experience', '20/25', true)
             .addField('Level', '4', true)
-            .addField('Last Game Played', '974', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Last Game Played', '1,054', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '4', true)
-            .addField('Win Percentage', '*42.22%*', true)
+            .addField('Win Percentage', '*42.85%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -2682,18 +2701,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Fury Golem#1976 `Wins: 182 | Losses: 11 | Games Played: 45 | League EXP: 374/380 | Level: 10`
+//@Fury Golem#1976 `Wins: 187 | Losses: 11 | Games Played: 46 | League EXP: 384/485 | Level: 11`
     if(command === 'FuryGolem') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '182', true)
+            .addField('Wins', '187', true)
             .addField('Losses', '11', true)
-            .addField('Games Played', '45', true)
-            .addField('League Experience', '374/380', true)
-            .addField('Level', '10', true)
-            .addField('Last Game Played', '1,038', true)
-            .addField('Current Win Streak', '78', true)
-            .addField('Longest Win Streak', '78', true)
-            .addField('Win Percentage', '*94.30%*', true)
+            .addField('Games Played', '46', true)
+            .addField('League Experience', '384/485', true)
+            .addField('Level', '11', true)
+            .addField('Last Game Played', '1,053', true)
+            .addField('Current Win Streak', '83', true)
+            .addField('Longest Win Streak', '83', true)
+            .addField('Win Percentage', '*94.44%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
             .addField('Solid Host', '⍟', true)
@@ -3000,18 +3019,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@GRITHER#6274 `Wins: 31 | Losses: 62 | Games Played: 19 | League EXP: 33/40 | Level: 5`
+//@GRITHER#6274 `Wins: 32 | Losses: 67 | Games Played: 20 | League EXP: 34/40 | Level: 5`
     if(command === 'grither') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '31', true)
-            .addField('Losses', '62', true)
-            .addField('Games Played', '19', true)
-            .addField('League Experience', '33/40', true)
+            .addField('Wins', '32', true)
+            .addField('Losses', '67', true)
+            .addField('Games Played', '20', true)
+            .addField('League Experience', '34/40', true)
             .addField('Level', '5', true)
-            .addField('Last Game Played', '1,045', true)
-            .addField('Current Win Streak', '3', true)
+            .addField('Last Game Played', '1,052', true)
+            .addField('Current Win Streak', '1', true)
             .addField('Longest Win Streak', '4', true)
-            .addField('Win Percentage', '*33.33%*', true)
+            .addField('Win Percentage', '*32.32%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -3254,18 +3273,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@iartur#8087 `Wins: 85 | Losses: 122 | Games Played: 43 | League EXP: 92/105 | Level: 7`
+//@iartur#8087 `Wins: 85 | Losses: 127 | Games Played: 44 | League EXP: 92/105 | Level: 7`
     if(command === 'iartur') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '85', true)
-            .addField('Losses', '122', true)
-            .addField('Games Played', '43', true)
+            .addField('Losses', '127', true)
+            .addField('Games Played', '44', true)
             .addField('League Experience', '92/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '1,038', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Last Game Played', '1,047', true)
+            .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '9', true)
-            .addField('Win Percentage', '*41.06%*', true)
+            .addField('Win Percentage', '*40.09%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -3599,18 +3618,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@JohhnyPro#4540 `Wins: 50 | Losses: 50 | Games Played: 20 | League EXP: 65/105 | Level: 7`
+//@JohhnyPro#4540 `Wins: 50 | Losses: 56 | Games Played: 21 | League EXP: 65/105 | Level: 7`
     if(command === 'Johnny') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '50', true)
-            .addField('Losses', '60', true)
-            .addField('Games Played', '20', true)
+            .addField('Losses', '66', true)
+            .addField('Games Played', '21', true)
             .addField('League Experience', '65/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '995', true)
+            .addField('Last Game Played', '1,052', true)
             .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '11', true)
-            .addField('Win Percentage', '*54.45%*', true)
+            .addField('Win Percentage', '*53.10%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -3887,18 +3906,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@lolohcrap#8475 `Wins: 274 | Losses: 142 | Games Played: 84 | League EXP: 404/485 | Level: 11`
+//@lolohcrap#8475 `Wins: 275 | Losses: 146 | Games Played: 85 | League EXP: 405/485 | Level: 11`
     if(command === 'lolohcrap') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '274', true)
-            .addField('Losses', '142', true)
-            .addField('Games Played', '84', true)
-            .addField('League Experience', '404/485', true)
+            .addField('Wins', '275', true)
+            .addField('Losses', '146', true)
+            .addField('Games Played', '85', true)
+            .addField('League Experience', '405/485', true)
             .addField('Level', '11', true)
-            .addField('Last Game Played', '1,043', true)
-            .addField('Current Win Streak', '11', true)
+            .addField('Last Game Played', '1,050', true)
+            .addField('Current Win Streak', '1', true)
             .addField('Longest Win Streak', '18', true)
-            .addField('Win Percentage', '*65.86%*', true)
+            .addField('Win Percentage', '*65.32%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -4355,18 +4374,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Miyu#6683 `Wins: 34 | Losses: 35 | Games Played: 14 | League EXP: 33/40 | Level: 5`
+//@Miyu#6683 `Wins: 36 | Losses: 37 | Games Played: 15 | League EXP: 35/40 | Level: 5`
     if(command === 'Miyu') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '34', true)
-            .addField('Losses', '35', true)
-            .addField('Games Played', '14', true)
-            .addField('League Experience', '33/40', true)
+            .addField('Wins', '36', true)
+            .addField('Losses', '37', true)
+            .addField('Games Played', '15', true)
+            .addField('League Experience', '35/40', true)
             .addField('Level', '5', true)
-            .addField('Last Game Played', '1,041', true)
+            .addField('Last Game Played', '1,051', true)
             .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '4', true)
-            .addField('Win Percentage', '*49.27%*', true)
+            .addField('Win Percentage', '*49.31%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -4374,18 +4393,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Mnenomic#1538 `Wins: 29 | Losses: 83 | Games Played: 21 | League EXP: 34/40 | Level: 5`
+//@Mnenomic#1538 `Wins: 33 | Losses: 84 | Games Played: 22 | League EXP: 38/40 | Level: 5`
     if(command === 'Mnenomic') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '29', true)
-            .addField('Losses', '83', true)
-            .addField('Games Played', '21', true)
-            .addField('League Experience', '34/40', true)
+            .addField('Wins', '33', true)
+            .addField('Losses', '84', true)
+            .addField('Games Played', '22', true)
+            .addField('League Experience', '38/40', true)
             .addField('Level', '5', true)
-            .addField('Last Game Played', '1,026', true)
-            .addField('Current Win Streak', '1', true)
+            .addField('Last Game Played', '1,049', true)
+            .addField('Current Win Streak', '4', true)
             .addField('Longest Win Streak', '5', true)
-            .addField('Win Percentage', '*25.89%*', true)
+            .addField('Win Percentage', '*28.20%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -4469,18 +4488,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Mr, Krigan#2451 `Wins: 41 | Losses: 87 | Games Played: 26 | League EXP: 46/65 | Level: 6`
+//@Mr, Krigan#2451 `Wins: 43 | Losses: 90 | Games Played: 27 | League EXP: 48/65 | Level: 6`
     if(command === 'Krigan') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '41', true)
-            .addField('Losses', '87', true)
-            .addField('Games Played', '26', true)
-            .addField('League Experience', '46/65', true)
+            .addField('Wins', '43', true)
+            .addField('Losses', '90', true)
+            .addField('Games Played', '27', true)
+            .addField('League Experience', '48/65', true)
             .addField('Level', '6', true)
-            .addField('Last Game Played', '942', true)
+            .addField('Last Game Played', '1,047', true)
             .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '5', true)
-            .addField('Win Percentage', '*47.12%*', true)
+            .addField('Win Percentage', '*32.33%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -4526,18 +4545,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Murcielaghost#1159 `Wins: 129 | Losses: 95 | Games Played: 46 | League EXP: 160/170 | Level: 8`
+//@Murcielaghost#1159 `Wins: 140 | Losses: 103 | Games Played: 49 | League EXP: 174/275 | Level: 9`
     if(command === 'Murcielaghost') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '129', true)
-            .addField('Losses', '95', true)
-            .addField('Games Played', '46', true)
-            .addField('League Experience', '160/170', true)
+            .addField('Wins', '140', true)
+            .addField('Losses', '103', true)
+            .addField('Games Played', '49', true)
+            .addField('League Experience', '174/170', true)
             .addField('Level', '8', true)
-            .addField('Last Game Played', '1,042', true)
-            .addField('Current Win Streak', '3', true)
+            .addField('Last Game Played', '1,054', true)
+            .addField('Current Win Streak', '6', true)
             .addField('Longest Win Streak', '9', true)
-            .addField('Win Percentage', '*57.27%*', true)
+            .addField('Win Percentage', '*57.61%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -4613,18 +4632,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Negi#1116 `Wins: 301 | Losses: 23 | Games Played: 68 | League EXP: 578/590 | Level: 12`
+//@Negi#1116 `Wins: 306 | Losses: 28 | Games Played: 70 | League EXP: 588/590 | Level: 12`
     if(command === 'Negi') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '301', true)
-            .addField('Losses', '23', true)
-            .addField('Games Played', '68', true)
-            .addField('League Experience', '578/590', true)
+            .addField('Wins', '306', true)
+            .addField('Losses', '28', true)
+            .addField('Games Played', '70', true)
+            .addField('League Experience', '588/590', true)
             .addField('Level', '12', true)
-            .addField('Last Game Played', '987', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Last Game Played', '1,051', true)
+            .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '135', true)
-            .addField('Win Percentage', '*92.90%*', true)
+            .addField('Win Percentage', '*91.61%*', true)
 
             .addField('Warlord', '<:warlord:319931261894524928>', true)
             .addField('•HoF• Longest Win Streak', '135', true)
@@ -4845,18 +4864,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Packpok#0087 `Wins: 51 | Losses: 32 | Games Played: 17 | League EXP: 95/105 | Level: 7`
+//@Packpok#0087 `Wins: 58 | Losses: 39 | Games Played: 20 | League EXP: 102/105 | Level: 7`
     if(command === 'Packpok') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '51', true)
-            .addField('Losses', '32', true)
-            .addField('Games Played', '17', true)
-            .addField('League Experience', '95/105', true)
+            .addField('Wins', '58', true)
+            .addField('Losses', '39', true)
+            .addField('Games Played', '20', true)
+            .addField('League Experience', '102/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '1,044', true)
-            .addField('Current Win Streak', '5', true)
+            .addField('Last Game Played', '1,052', true)
+            .addField('Current Win Streak', '3', true)
             .addField('Longest Win Streak', '13', true)
-            .addField('Win Percentage', '*61.44%*', true)
+            .addField('Win Percentage', '*59.79%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -5042,18 +5061,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Problemator#5503 `Wins: 10 | Losses: 19 | Games Played: 6 | League EXP: 10/16| Level: 3`
+//@Problemator#5503 `Wins: 11 | Losses: 23 | Games Played: 7 | League EXP: 11/16| Level: 3`
     if(command === 'Problemator') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '10', true)
-            .addField('Losses', '19', true)
-            .addField('Games Played', '3', true)
-            .addField('League Experience', '10/16', true)
+            .addField('Wins', '11', true)
+            .addField('Losses', '23', true)
+            .addField('Games Played', '4', true)
+            .addField('League Experience', '11/16', true)
             .addField('Level', '3', true)
-            .addField('Last Game Played', '1,026', true)
-            .addField('Current Win Streak', '2', true)
+            .addField('Last Game Played', '1,049', true)
+            .addField('Current Win Streak', '1', true)
             .addField('Longest Win Streak', '4', true)
-            .addField('Win Percentage', '*32.00%*', true)
+            .addField('Win Percentage', '*32.35%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -5241,18 +5260,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Rozovici#5220 `Wins: 70 | Losses: 100 | Games Played: 33 | League EXP: 79/105 | Level: 7`
+//@Rozovici#5220 `Wins: 75 | Losses: 100 | Games Played: 34 | League EXP: 84/105 | Level: 7`
     if(command === 'Rozovici') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '70', true)
+            .addField('Wins', '75', true)
             .addField('Losses', '100', true)
-            .addField('Games Played', '33', true)
-            .addField('League Experience', '79/105', true)
+            .addField('Games Played', '34', true)
+            .addField('League Experience', '84/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '1,017', true)
-            .addField('Current Win Streak', '0', true)
+            .addField('Last Game Played', '1,051', true)
+            .addField('Current Win Streak', '5', true)
             .addField('Longest Win Streak', '8', true)
-            .addField('Win Percentage', '*41.17%*', true)
+            .addField('Win Percentage', '*42.85%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -5410,23 +5429,24 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Sephirawk#7517 `Wins: 33 | Losses: 56 | Games Played: 18 | League EXP: 38/40 | Level: 5`
+//@Sephirawk#7517 `Wins: 38 | Losses: 62 | Games Played: 20 | League EXP: 43/65 | Level: 6`
     if(command === 'Sephirawk') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '33', true)
-            .addField('Losses', '56', true)
-            .addField('Games Played', '18', true)
-            .addField('League Experience', '38/40', true)
-            .addField('Level', '5', true)
-            .addField('Last Game Played', '1,046', true)
-            .addField('Current Win Streak', '4', true)
+            .addField('Wins', '38', true)
+            .addField('Losses', '62', true)
+            .addField('Games Played', '20', true)
+            .addField('League Experience', '43/65', true)
+            .addField('Level', '6', true)
+            .addField('Last Game Played', '1,052', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '7', true)
-            .addField('Win Percentage', '*37.07%*', true)
+            .addField('Win Percentage', '*38.00%*', true)
 
-            .addField('Settler', '<:settler:319889887996411915>', true)
+            .addField('Chieftain', '<:chieftain:320176909927579648>', true)
+            .addField('Quit Amount', '  *•4 Rages*')
 
             .setFooter('•|• Sephirawk •|•')
-            .setColor(0x04771B)
+            .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@SerialKisser#3309 `Wins: 0 | Losses: 5 | Games Played: 1 | EXP: 0/4 | Level: 0`
@@ -5503,15 +5523,15 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Shadow#7719 `Wins: 0 | Losses: 5 | Games Played: 1 | League EXP: 0/4 | Level: 0`
+//@Shadow#7719 `Wins: 0 | Losses: 10 | Games Played: 2 | League EXP: 0/4 | Level: 0`
     if(command === 'Shadow') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '0', true)
-            .addField('Losses', '5', true)
-            .addField('Games Played', '1', true)
+            .addField('Losses', '10', true)
+            .addField('Games Played', '2', true)
             .addField('League Experience', '0/4', true)
             .addField('Level', '0', true)
-            .addField('Last Game Played', '1,027', true)
+            .addField('Last Game Played', '1,049', true)
             .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '0', true)
             .addField('Win Percentage', '*0.00%*', true)
@@ -5519,6 +5539,25 @@ Player Stats Reset: 06.07.17
             .addField('Settler', '<:settler:319889887996411915>', true)
 
             .setFooter('•|• Shadow •|•')
+            .setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
+//@Shadow_link291#7162 `Wins: 18 | Losses: 23 | Games Played: 8 | League EXP: 18/25 | Level: 4`
+    if(command === 'briansgames') {
+        let p = new Discord.RichEmbed()
+            .addField('Wins', '18', true)
+            .addField('Losses', '23', true)
+            .addField('Games Played', '8', true)
+            .addField('League Experience', '18/25', true)
+            .addField('Level', '4', true)
+            .addField('Last Game Played', '1,047', true)
+            .addField('Current Win Streak', '1', true)
+            .addField('Longest Win Streak', '5', true)
+            .addField('Win Percentage', '*43.90%*', true)
+
+            .addField('Settler', '<:settler:319889887996411915>', true)
+
+            .setFooter('•|• briansgames •|•')
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -5560,18 +5599,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Shibi4you#8817 `Wins: 14 | Losses: 9 | Games Played: 4 | League EXP: 14/16 | Level: 3`
+//@Shibi4you#8817 `Wins: 17 | Losses: 10 | Games Played: 5 | League EXP: 17/25 | Level: 4`
     if(command === 'Shibi4you') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '14', true)
-            .addField('Losses', '9', true)
-            .addField('Games Played', '4', true)
-            .addField('League Experience', '14/16', true)
-            .addField('Level', '3', true)
-            .addField('Last Game Played', '1,002', true)
+            .addField('Wins', '17', true)
+            .addField('Losses', '10', true)
+            .addField('Games Played', '5', true)
+            .addField('League Experience', '17/25', true)
+            .addField('Level', '4', true)
+            .addField('Last Game Played', '1,042', true)
             .addField('Current Win Streak', '3', true)
             .addField('Longest Win Streak', '6', true)
-            .addField('Win Percentage', '*60.86%*', true)
+            .addField('Win Percentage', '*62.96%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -5595,6 +5634,25 @@ Player Stats Reset: 06.07.17
             .addField('Settler', '<:settler:319889887996411915>', true)
 
             .setFooter('•|• shout •|•')
+            .setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
+//@Shuckle#9042 `Wins: 1 | Losses: 4 | Games Played: 1 | League EXP: 1/4 | Level: 1`
+    if(command === 'Shuckle') {
+        let p = new Discord.RichEmbed()
+            .addField('Wins', '1', true)
+            .addField('Losses', '4', true)
+            .addField('Games Played', '1', true)
+            .addField('League Experience', '1/4', true)
+            .addField('Level', '1', true)
+            .addField('Last Game Played', '1,053', true)
+            .addField('Current Win Streak', '1', true)
+            .addField('Longest Win Streak', '1', true)
+            .addField('Win Percentage', '*20.00%*', true)
+
+            .addField('Settler', '<:settler:319889887996411915>', true)
+
+            .setFooter('•|• Shuckle •|•')
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -5674,18 +5732,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@SourceGear#0062 `Wins: 44 | Losses: 23 | Games Played: 14 | League EXP: 65/105 | Level: 7`
+//@SourceGear#0062 `Wins: 44 | Losses: 28 | Games Played: 15 | League EXP: 65/105 | Level: 7`
     if(command === 'SourceGear') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '44', true)
-            .addField('Losses', '23', true)
-            .addField('Games Played', '14', true)
+            .addField('Losses', '28', true)
+            .addField('Games Played', '15', true)
             .addField('League Experience', '65/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '1,031', true)
-            .addField('Current Win Streak', '7', true)
+            .addField('Last Game Played', '1,050', true)
+            .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '11', true)
-            .addField('Win Percentage', '*65.67%*', true)
+            .addField('Win Percentage', '*61.11%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -5732,18 +5790,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Squish#0658 `Wins: 83 | Losses: 93 | Games Played: 41 | League EXP: 99/105 | Level: 7`
+//@Squish#0658 `Wins: 87 | Losses: 94 | Games Played: 42 | League EXP: 103/105 | Level: 7`
     if(command === 'Squish') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '83', true)
-            .addField('Losses', '93', true)
-            .addField('Games Played', '41', true)
-            .addField('League Experience', '99/105', true)
+            .addField('Wins', '87', true)
+            .addField('Losses', '94', true)
+            .addField('Games Played', '42', true)
+            .addField('League Experience', '103/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '1,016', true)
-            .addField('Current Win Streak', '2', true)
+            .addField('Last Game Played', '1,050', true)
+            .addField('Current Win Streak', '4', true)
             .addField('Longest Win Streak', '8', true)
-            .addField('Win Percentage', '*47.15%*', true)
+            .addField('Win Percentage', '*50.87%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6057,18 +6115,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@theShyForest#1311 `Wins: 36 | Losses: 54 | Games Played: 18 | League EXP: 41/65 | Level: 6`
+//@theShyForest#1311 `Wins: 37 | Losses: 58 | Games Played: 19 | League EXP: 42/65 | Level: 6`
     if(command === 'theShyForest') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '36', true)
-            .addField('Losses', '54', true)
-            .addField('Games Played', '18', true)
-            .addField('League Experience', '41/65', true)
+            .addField('Wins', '37', true)
+            .addField('Losses', '58', true)
+            .addField('Games Played', '19', true)
+            .addField('League Experience', '42/65', true)
             .addField('Level', '6', true)
-            .addField('Last Game Played', '1,034', true)
-            .addField('Current Win Streak', '6', true)
+            .addField('Last Game Played', '1,048', true)
+            .addField('Current Win Streak', '1', true)
             .addField('Longest Win Streak', '6', true)
-            .addField('Win Percentage', '*40.00%*', true)
+            .addField('Win Percentage', '*38.94%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6076,18 +6134,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Tiri#8430 `Wins: 216 | Losses: 71 | Games Played: 62 | League EXP: 324/380 | Level: 10`
+//@Tiri#8430 `Wins: 221 | Losses: 71 | Games Played: 63 | League EXP: 334/380 | Level: 10`
     if(command === 'Tiri') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '216', true)
+            .addField('Wins', '221', true)
             .addField('Losses', '71', true)
-            .addField('Games Played', '62', true)
-            .addField('League Experience', '324/380', true)
+            .addField('Games Played', '63', true)
+            .addField('League Experience', '334/380', true)
             .addField('Level', '10', true)
-            .addField('Last Game Played', '1,040', true)
-            .addField('Current Win Streak', '16', true)
+            .addField('Last Game Played', '1,047', true)
+            .addField('Current Win Streak', '21', true)
             .addField('Longest Win Streak', '28', true)
-            .addField('Win Percentage', '*75.26%*', true)
+            .addField('Win Percentage', '*75.68%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6203,18 +6261,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@treflan#1832 `Wins: 30 | Losses: 28 | Games Played: 11 | League EXP: 45/65 | Level: 6`
+//@treflan#1832 `Wins: 34 | Losses: 29 | Games Played: 12 | League EXP: 49/65 | Level: 6`
     if(command === 'treflan') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '30', true)
-            .addField('Losses', '28', true)
-            .addField('Games Played', '11', true)
-            .addField('League Experience', '45/65', true)
+            .addField('Wins', '34', true)
+            .addField('Losses', '29', true)
+            .addField('Games Played', '12', true)
+            .addField('League Experience', '49/65', true)
             .addField('Level', '6', true)
-            .addField('Last Game Played', '1,038', true)
-            .addField('Current Win Streak', '3', true)
+            .addField('Last Game Played', '1,053', true)
+            .addField('Current Win Streak', '4', true)
             .addField('Longest Win Streak', '6', true)
-            .addField('Win Percentage', '*51.72%*', true)
+            .addField('Win Percentage', '*53.96%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6366,18 +6424,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Under#8770 `Wins: 96 | Losses: 120 | Games Played: 45 | League EXP: 121/170 | Level: 8`
+//@Under#8770 `Wins: 97 | Losses: 124 | Games Played: 46 | League EXP: 122/170 | Level: 8`
     if(command === 'Under') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '96', true)
-            .addField('Losses', '120', true)
-            .addField('Games Played', '45', true)
-            .addField('League Experience', '121/170', true)
+            .addField('Wins', '97', true)
+            .addField('Losses', '124', true)
+            .addField('Games Played', '46', true)
+            .addField('League Experience', '122/170', true)
             .addField('Level', '8', true)
-            .addField('Last Game Played', '1,032', true)
-            .addField('Current Win Streak', '3', true)
+            .addField('Last Game Played', '1,051', true)
+            .addField('Current Win Streak', '1', true)
             .addField('Longest Win Streak', '7', true)
-            .addField('Win Percentage', '*44.44%*', true)
+            .addField('Win Percentage', '*43.89%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6385,18 +6443,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@UNI#6538 `Wins: 15 | Losses: 13 | Games Played: 6 | League EXP: 22/25 | Level: 4`
+//@UNI#6538 `Wins: 17 | Losses: 15 | Games Played: 7 | League EXP: 24/25 | Level: 4`
     if(command === 'UNI') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '15', true)
-            .addField('Losses', '13', true)
-            .addField('Games Played', '6', true)
-            .addField('League Experience', '22/25', true)
+            .addField('Wins', '17', true)
+            .addField('Losses', '15', true)
+            .addField('Games Played', '7', true)
+            .addField('League Experience', '24/25', true)
             .addField('Level', '4', true)
-            .addField('Last Game Played', '1,029', true)
-            .addField('Current Win Streak', '0', true)
+            .addField('Last Game Played', '1,049', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '9', true)
-            .addField('Win Percentage', '*53.57%*', true)
+            .addField('Win Percentage', '*53.12%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -6478,18 +6536,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@VALKYRIE#4369 `Wins: 40 | Losses: 33 | Games Played: 15 | League EXP: 49/65 | Level: 6`
+//@VALKYRIE#4369 `Wins: 42 | Losses: 35 | Games Played: 16 | League EXP: 51/65 | Level: 6`
     if(command === 'SheepHorror') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '40', true)
-            .addField('Losses', '33', true)
-            .addField('Games Played', '15', true)
-            .addField('League Experience', '49/65', true)
+            .addField('Wins', '42', true)
+            .addField('Losses', '35', true)
+            .addField('Games Played', '16', true)
+            .addField('League Experience', '51/65', true)
             .addField('Level', '6', true)
-            .addField('Last Game Played', '1,041', true)
-            .addField('Current Win Streak', '3', true)
+            .addField('Last Game Played', '1,051', true)
+            .addField('Current Win Streak', '2', true)
             .addField('Longest Win Streak', '8', true)
-            .addField('Win Percentage', '*54.79*', true)
+            .addField('Win Percentage', '*54.54*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6896,18 +6954,18 @@ if(command === 'warsoldier12') {
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@YOYO4230#7170 `Wins: 81 | Losses: 150 | Games Played: 49 | League EXP: 93/105 | Level: 7`
+//@YOYO4230#7170 `Wins: 84 | Losses: 156 | Games Played: 51 | League EXP: 96/105 | Level: 7`
     if(command === 'YOYO') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '81', true)
-            .addField('Losses', '150', true)
-            .addField('Games Played', '49', true)
-            .addField('League Experience', '93/105', true)
+            .addField('Wins', '84', true)
+            .addField('Losses', '156', true)
+            .addField('Games Played', '51', true)
+            .addField('League Experience', '96/105', true)
             .addField('Level', '7', true)
-            .addField('Last Game Played', '1,045', true)
-            .addField('Current Win Streak', '1', true)
+            .addField('Last Game Played', '1,054', true)
+            .addField('Current Win Streak', '0', true)
             .addField('Longest Win Streak', '8', true)
-            .addField('Win Percentage', '*35.06%*', true)
+            .addField('Win Percentage', '*35.00%*', true)
 
             .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -6987,18 +7045,18 @@ if(command === 'warsoldier12') {
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@zickbagg#7982 `Wins: 60 | Losses: 103 | Games Played: 32 | League EXP: 60/65 | Level: 6`
+//@zickbagg#7982 `Wins: 63 | Losses: 104 | Games Played: 33 | League EXP: 63/65 | Level: 6`
     if(command === 'zickbagg') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '60', true)
-            .addField('Losses', '103', true)
-            .addField('Games Played', '32', true)
-            .addField('League Experience', '60/65', true)
+            .addField('Wins', '63', true)
+            .addField('Losses', '104', true)
+            .addField('Games Played', '33', true)
+            .addField('League Experience', '63/65', true)
             .addField('Level', '6', true)
-            .addField('Last Game Played', '1,045', true)
-            .addField('Current Win Streak', '0', true)
+            .addField('Last Game Played', '1,048', true)
+            .addField('Current Win Streak', '3', true)
             .addField('Longest Win Streak', '5', true)
-            .addField('Win Percentage', '*36.09%*', true)
+            .addField('Win Percentage', '*37.72%*', true)
 
             .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -7034,10 +7092,10 @@ if(command === 'warsoldier12') {
             
             .addField("To the World's End", '*Cities do not incur war weariness. All Military units heal completely when this player captures a city with a World Wonder.\n**Current Bug Abuse:** Do not place a wonder down before keeping/razing city.*')
             .addField('-- • -- • -- • -- • -- • -- • -- • --', '•|• **__Unique Units__** •|•')
-            .addField('Red Coat', '*Industrial Era Melee unit that has\n+10 Combat Strength\nwhen fighting on a different\ncontinent foreign to your home.\nNo disembark costs.\n  •**Production:** 340\n  •**Combat Strength:** 65\n  •**Base Movement:** 2*', true)
-            .addField('Sea Dog', '*Renaissance Era Naval unit that can\ncapture enemy ships.\nCannot be seen,\nunless adjacent to it.\n(Replaces: Privateer).\n  •**Production:** 280\n  •**Combat Strength:** 40\n  •**Ranged Combat Strength:** 50\n  •**Base Movement:** 4*', true)
+            .addField('', '', true)
+            .addField('', '', true)
             .addField('-- • -- • -- • -- • -- • -- • -- • --', '•|• **__Unique Districts__** •|•')
-            .addField('Royal Navy Dockyard', '*Naval activity with no embark\npenalties to land units.\n(Replaces: Harbor).*\n  •**+1 Movement to Ships**\n  •**+2 Gold on Foreign Land**\n  •**+1 Trader Route Capacity**', true)
+            .addField('', '', true)
 
             .setFooter('•|• Alexander of the Macedonian Empire •|•')
             .setColor(0xff0000)
