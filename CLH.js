@@ -249,7 +249,7 @@ ${Config.links.civLeagueSteamGroup}
             `${Config.images.imageSetOverlay}`
         );
     }/*.deleteFiles*/
-    else if (command === "deleteFiles") {
+    else if (command === "deleteFiles" || command === "deletefiles") {
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 '•|•**__Receiving Errors while Connecting__** •|•
