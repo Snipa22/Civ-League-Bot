@@ -223,7 +223,7 @@ ${Config.links.civLeagueSteamGroup}
 *These are the available options!*
   •**Diplo:** Everything is granted.
   •**FFA:** No Declarations of Friendships\Alliances, everything else is granted.
-  •**No Diplo:** Nothing is granted.`
+  •**No Diplo:** Nothing *(only peace)* is granted.`
         );
         message.channel.sendFile(
             `${Config.images.imageGameTypes}`
