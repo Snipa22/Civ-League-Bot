@@ -260,10 +260,10 @@ ${Config.links.civLeagueSteamGroup}
     ***Notes:***
       •*This will not Delete your Game Options if you select the right files in the below photo!*
 
-•|• **__Using the CivilizationVIDeleteFiles.bat File__** •|•
-***Give Credit to: MisterT800***
-  •*All you have to do is download that file, and run it from your Desktop next to your Civilization VI Game Icon.*
-    *This will **Restart Civilization VI** > **Clean the Files** > **Restart Civilization VI** for you.*
+•|• **__CivilizationVIDeleteFiles.bat File__** •|•
+***Creation credit to: MisterT800***
+  •*Download the Dx11 or 12 file you run Civ with, and run it from your Desktop next to your Civilization VI Game Icon.*
+    *This will **Restart Civilization VI** > **Delete the necessary Files** > **Restart Civilization VI** for you.*
       ***Notes:***
         •*May need to change path for Steam at the beginning of the file if you have Steam installed elsewhere.*
         •*Using the .bat file, you will no longer need to follow this guide.*
@@ -273,8 +273,11 @@ ${Config.links.civLeagueSteamGroup}
             `${Config.images.imageDeleteFiles}`
         );
         message.channel.sendFile(
-            `${Config.files.fileDeleteFiles}`
+            `${Config.files.fileDeleteFilesx11}`
         );
+        message.channel.sendFile(
+            `${Config.files.fileDeleteFilesx12}`
+        )
     }/*.setPTT*/
     else if (command === "setPTT") {
         message.channel.sendMessage(

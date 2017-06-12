@@ -17,7 +17,8 @@
     },
 
     "files": {
-        "fileDeleteFiles" : "CivilizationVIDeleteFiles.bat"
+        "fileDeleteFilesx11" : "CivVI_DX11_DeleteFiles.bat",
+        "fileDeleteFilesx12" : "CivVI_DX12_DeleteFiles.bat"
     },
 
     "images": {
