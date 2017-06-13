@@ -106,7 +106,7 @@ CivLeagueHelp.on("message", message => {
     **.setMods**
         *Shows how to enable the mods in Game Settings.*
     **.gameTypes**
-        *Shows the different game types: **FFA**, **Diplo**, and **No Diplo**.*
+        *Shows the different game types: **Diplo** and **No Diplo**.*
 
 •|• **__Alternative Screenshot Program__** •|•
     **.lightshot**
@@ -222,7 +222,6 @@ ${Config.links.civLeagueSteamGroup}
 •|• **__Game Types__** •|•
 *These are the available options!*
   •**Diplo:** Everything is granted.
-  •**FFA:** No Declarations of Friendships\Alliances, everything else is granted.
   •**No Diplo:** Nothing *(only peace)* is granted.`
         );
         message.channel.sendFile(
