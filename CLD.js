@@ -197,7 +197,7 @@ function validateBans(bans, drafts){
     return invalidBans;
 }
 
-function draft(players, bans, drafts, max_players = 8, min_players = 2) {
+function draft(players, bans, drafts, max_players = 11, min_players = 2) {
     // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
