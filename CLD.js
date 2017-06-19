@@ -202,7 +202,7 @@ function draft(players, bans, drafts, max_players = 8, min_players = 2) {
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
     if (players.length > max_players || players.length < min_players){
-        return '\n**Invalid Number for Draft!**\n  *draft x = 2-10 Players (As with more players, the game can be less reliable.*';
+        return '\n**Invalid number for Draft!**\n  *draft x = 2-10 players (as with more players, the game can be less reliable).*';
     }
     let validCivs = [];
     let loadedBans = readBanFile();
