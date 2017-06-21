@@ -177,7 +177,7 @@ CivLeagueVote.on("message", message => {
 •**__Nukes__**:
 ⚛ • **Nuclear Devices (Atomic Era):** *Disallow building of Nuclear Devices.*
 ☢ • **Thermo Nuclear Devices (Information Era):** *Disallow building of Thermo Nuclear Devices.*
-•**__Bugged Mechanics**:
+•**__Bugged Mechanics__**:
 🏠 • **City States:** *Disallow Peace with any City State, that is suzzrain of any player(s) you are at war with.*
 😈 • **Barbarians:** *Disallow Barbarians in the Game, as they currently bug turn transitions. So please be aware.*`
         ).then(function(internalMessage) {
@@ -331,7 +331,7 @@ CivLeagueVote.on("message", message => {
                     });
                 });
                 message.channel.sendMessage(
-`•**__Bugged Mechanics**:
+`•**__Bugged Mechanics__**:
 🏠 • **City States:** *Disallow Peace with any City State, that is suzzrain of any player(s) you are at war with.*
 😈 • **Barbarians:** *Disallow Barbarians in the Game, as they currently bug turn transitions. So please be aware.*`
         ).then(function(internalMessage) {
