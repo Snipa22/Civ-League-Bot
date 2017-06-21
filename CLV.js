@@ -52,11 +52,11 @@ let mapSettingsEmojiList = [
 ':NumbSix:318828453983944704'
 ];
 
-let mapOvalEmoji = ['<:earth_oval:327137636282269706>'];
+let mapOvalEmoji = [':earth_oval:327137636282269706'];
 let mapPangaeaEmoji = ['🌏'];
-let mapInlandSeaEmoji = ['<:earth_inland:316937660138520578>'];
+let mapInlandSeaEmoji = [':earth_inland:316937660138520578'];
 let mapContinentsEmoji = ['🌎'];
-let mapDoubleHexEmoji = ['<:earth_doublehex:327142621426352128>'];
+let mapDoubleHexEmoji = [':earth_doublehex:327142621426352128'];
 
 let mainEmoji = [':civIconPurple:291784556489474049'];
 
