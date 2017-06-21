@@ -43,38 +43,23 @@ let civListThree = [
     ':spain:319191162462273536'
 ];
 
-let mapSettingsEmojiList = [
-':NumbOne:318828396563922955',
-':NumbTwo:318828407741743105',
-':NumbThree:318828419888578560',
-':NumbFour:318828429946519552',
-':NumbFive:318828442588020766',
-':NumbSix:318828453983944704'
-];
-
 let mapOvalEmoji = [':earth_oval:327137636282269706'];
 let mapPangaeaEmoji = ['🌏'];
+let mapFractalEmoji = ['🌍'];
 let mapInlandSeaEmoji = [':earth_inland:316937660138520578'];
 let mapContinentsEmoji = ['🌎'];
+let mapIslandPlatesEmoji = [':earth_islands:316937669672304651'];
+let mapShuffleEmoji = [':earth_shuffle:316937678908293121'];
 let mapDoubleHexEmoji = [':earth_doublehex:327142621426352128'];
 
-let mainEmoji = [':civIconPurple:291784556489474049'];
+let civIconEmoji = [':civIconPurple:291784556489474049'];
 
 let difficultyEmojiList = ['🌤', '☁', '🌧', '🌩', '⛈'];
 
-let worldageEmojis = [
-'🌕',
-'🌗',
-'🌑'
-];
+let worldageEmojis = ['🌕', '🌗', '🌑'];
+
 let opEmojiList = ['🐎', '🎖', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
-
-let pantheonEmojis = ['🐎', '🎖'];
-let religionEmojis = ['⚔', '🛡'];
-let nukeEmojis = ['☢', '⚛'];
-let gamemechanicsEmojis = ['🐏', '🌪'];
-let buggedgameEmojis = ['🏠', '😈'];
-
+let opNQEmojiList = ['🐎', '🎖', '☔', '🌊', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
 
 CivLeagueVote.on("message", message => {
     if (message.author.CivLeagueVote) return;
@@ -89,15 +74,47 @@ CivLeagueVote.on("message", message => {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break ties.***
-•**__Map Choices__**:
-<:NumbOne:318828396563922955> • 🌏**Pangaea** *(One Massive Landmass with Surrounding Islands)*
-<:NumbTwo:318828407741743105> • 🌎**Continents** *(Few Large Land Masses)*
-<:NumbThree:318828419888578560> • 🌍**Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*
-<:NumbFour:318828429946519552> • <:earth_inland:316937660138520578>**Inland Sea** *(One Large Ocean in the Center of the Map)*
-<:NumbFive:318828442588020766> • <:earth_islands:316937669672304651>**Island Plates** *(Islands Ranging in Size from Small to Large)*
-<:NumbSix:318828453983944704> • <:earth_shuffle:316937678908293121>**Shuffle** *(What Secrets will this Map Reveal)*`
+•**__Map Choices__**:`
+        );
+        message.channel.sendMessage(
+`🌎 • **Continents** *(Few Large Land Masses)*`
         ).then(function(internalMessage) {
-            mapSettingsEmojiList.forEach(function(emoji) {
+                    mapContinentsEmoji.forEach(function(emoji) {
+                        internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`🌏 • **Pangaea** *(One Massive Landmass with Surrounding Islands)*`
+        ).then(function(internalMessage) {
+                    mapPangaeaEmoji.forEach(function(emoji) {
+                        internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`🌍 • **Fractal** *(Unpredictable Map that can result in One or Many Land Masses)*`
+        ).then(function(internalMessage) {
+                    mapFractalEmoji.forEach(function(emoji) {
+                        internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`<:earth_inland:316937660138520578> • **Inland Sea** *(One Large Ocean in the Center of the Map)*`
+        ).then(function(internalMessage) {
+                    mapInlandSeaEmoji.forEach(function(emoji) {
+                        internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`<:earth_islands:316937669672304651> • **Island Plates** *(Islands Ranging in Size from Small to Large)*`
+        ).then(function(internalMessage) {
+                    mapIslandPlatesEmoji.forEach(function(emoji) {
+                        internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`<:earth_shuffle:316937678908293121> • **Shuffle** *(What Secrets will this Map Reveal)*`
+        ).then(function(internalMessage) {
+            mapShuffleEmoji.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
@@ -129,7 +146,7 @@ CivLeagueVote.on("message", message => {
   *Please react to the purple CivLeague Icon to announce you have finished voting.
   Keep in mind the bot autovotes 1, so make sure everyone has locked in their votes.*`
         ).then(function(internalMessage) {
-            mainEmoji.forEach(function(emoji) {
+            civIconEmoji.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
@@ -191,7 +208,7 @@ CivLeagueVote.on("message", message => {
   *Please react to the purple CivLeague Icon to announce you have finished voting.
   Keep in mind the bot autovotes 1, so make sure everyone has locked in their votes.*`
         ).then(function(internalMessage) {
-            mainEmoji.forEach(function(emoji) {
+            civIconEmoji.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
@@ -257,7 +274,7 @@ CivLeagueVote.on("message", message => {
   *Please react to the purple CivLeague Icon to announce you have finished voting.
   Keep in mind the bot autovotes 1, so make sure everyone has locked in their votes.*`
         ).then(function(internalMessage) {
-            mainEmoji.forEach(function(emoji) {
+            civIconEmoji.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
@@ -292,51 +309,27 @@ CivLeagueVote.on("message", message => {
         //In-Game OP Options Ban List
         message.channel.sendMessage(
 `•|• **__In-Game OP Options__** •|•
-  ***Majority Votes ban these Options during the game. Host does break Ties.***`
-        );
-        message.channel.sendMessage(
-`•**__Pantheons__**:
+  ***Majority Votes ban these Options during the game. Host does break Ties.***
+•**__Pantheons__**:
+🎖 • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
 🐎• **God of the Open Sky:** *Provides +1 Culture for Pastures.*
-🎖 • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*`
-        ).then(function(internalMessage) {
-            pantheonEmojis.forEach(function(emoji) {
-                internalMessage.react(emoji);
-            });
-        });
-        message.channel.sendMessage(
-`•**__Religion Beliefs__**:
+🌊 • **God of the Sea:** *Provides +1 Production to each Fishing Boat.*
+☔ • **Ocean's Bounty:** *Provides +1 Culture to each Fishing Boat.*
+•**__Religion Beliefs__**:
 ⚔ • **Crusade:** *+10 Combat Strength near foreign cities that follow this Religion.*
-🛡 • **Defender of the Faith:** *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*`
-        ).then(function(internalMessage) {
-                    religionEmojis.forEach(function(emoji) {
-                        internalMessage.react(emoji);
-                    });
-                });
-                message.channel.sendMessage(
-`•**__Game Mechanics__**:
+🛡 • **Defender of the Faith:** *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
+•**__Game Mechanics__**:
 🐏 • **Ancient/Classical Era Support Units:** *Rams/Siege Towers may not be used with renaissance era units and up.*
-🌪 • **GG/GA Stacking:** *When two GG's/GA's of the same era allow a unit to receive Double Bonus.*`
-        ).then(function(internalMessage) {
-                    gamemechanicsEmojis.forEach(function(emoji) {
-                        internalMessage.react(emoji);
-                    });
-                });
-                message.channel.sendMessage(
-`•**__Nukes__**:
+🌪 • **GG/GA Stacking:** *When two GG's/GA's of the same era allow a unit to receive Double Bonus.*
+•**__Nukes__**:
 ⚛ • **Nuclear Devices (Atomic Era):** *Disallow building of Nuclear Devices.*
-☢ • **Thermo Nuclear Devices (Information Era):** *Disallow building of Thermo Nuclear Devices.*`
-        ).then(function(internalMessage) {
-                    nukeEmojis.forEach(function(emoji) {
-                        internalMessage.react(emoji);
-                    });
-                });
-                message.channel.sendMessage(
-`•**__Bugged Mechanics__**:
+☢ • **Thermo Nuclear Devices (Information Era):** *Disallow building of Thermo Nuclear Devices.*
+•**__Bugged Mechanics__**:
 🏠 • **City States:** *Disallow Peace with any City State, that is suzzrain of any player(s) you are at war with.*
 😈 • **Barbarians:** *Disallow Barbarians in the Game, as they currently bug turn transitions. So please be aware.*`
-        ).then(function(internalMessage) {
-            buggedgameEmojis.forEach(function(emoji) {
-                internalMessage.react(emoji);
+                ).then(function(internalMessage) {
+                    opNQEmojiList.forEach(function(emoji) {
+                        internalMessage.react(emoji);
             });
         });
         message.channel.sendMessage(
@@ -344,7 +337,7 @@ CivLeagueVote.on("message", message => {
   *Please react to the purple CivLeague Icon to announce you have finished voting.
   Keep in mind the bot autovotes 1, so make sure everyone has locked in their votes.*`
         ).then(function(internalMessage) {
-            mainEmoji.forEach(function(emoji) {
+            civIconEmoji.forEach(function(emoji) {
                 internalMessage.react(emoji);
             });
         });
