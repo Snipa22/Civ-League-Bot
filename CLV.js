@@ -58,7 +58,7 @@ let difficultyEmojiList = ['🌤', '☁', '🌧', '🌩', '⛈'];
 
 let worldageEmojis = ['🌕', '🌗', '🌑'];
 
-let opEmojiList = ['🐎', '🎖', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
+let opEmojiList = ['🎖', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
 let opNQEmojiList = ['🐎', '🎖', '☔', '🌊', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
 
 CivLeagueVote.on("message", message => {
@@ -316,8 +316,8 @@ CivLeagueVote.on("message", message => {
 🌊 • **God of the Sea:** *Provides +1 Production to each Fishing Boat.*
 ☔ • **Ocean's Bounty:** *Provides +1 Culture to each Fishing Boat.*
 •**__Religion Beliefs__**:
-⚔ • **Crusade:** *+10 Combat Strength near foreign cities that follow this Religion.*
-🛡 • **Defender of the Faith:** *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
+⚔ • **Crusade:** *+5 Combat Strength near foreign cities that follow this Religion.*
+🛡 • **Defender of the Faith:** *+5 Combat Strength when within the borders of friendly cities that follow this Religion.*
 •**__Game Mechanics__**:
 🐏 • **Ancient/Classical Era Support Units:** *Rams/Siege Towers may not be used with renaissance era units and up.*
 🌪 • **GG/GA Stacking:** *When two GG's/GA's of the same era allow a unit to receive Double Bonus.*
