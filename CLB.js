@@ -27,7 +27,7 @@ CivLeagueBot.on("guildMemberAdd", member => {
     •**No Rage Quitting!**
     •**Join our Steam Group Chat Room.**
         <http://steamcommunity.com/groups/CivLeagueEST#overview>
-***If you have any questions! Please ask any question freely.***`
+***If you have any questions! Please feel free to start asking.***`
     );//Direct Messages a Player upon Joining the Server
     member.send(
         `:blue_heart: •|• **__Welcome to CivLeague Community!__** •|• :heart:` +
