@@ -19,13 +19,15 @@ CivLeagueBot.on("guildMemberAdd", function(member) {
 CivLeagueBot.on("guildMemberAdd", member => {
     let guild = member.guild;
     guild.defaultChannel.sendMessage(
-        `${Player.roleAdmin} | ${Player.roleModerator}` +
-        `\n**__Just Joined the Civilization__** •<:civIcon:291784556489474049>• **__Community!__**` +
-        `\n  :hugging: ${member.user} *You have just been hugged!` +
-        `\n  Welcome to the **CivLeague Community**.*` +
-        `\n\n**__Introduction__**` +
-        `\n  <#${Config.channels.channelIntroduction}>` +
-        `\n  *If you have any questions! Please mention an Admin or a Moderator Please.*`
+`${Player.roleAdmin} | ${Player.roleModerator}
+**__Welcome to the Civilization__** •<:civIcon:291784556489474049>• **__Community!__**
+:hugging: ${member.user} :hugging: *You have just been hugged!
+
+**__Quick Guidelines__**:
+    •**No Rage Quitting!**
+    •**Join our Steam Group Chat Room.**
+        <http://steamcommunity.com/groups/CivLeagueEST#overview>
+***If you have any questions! Please ask any question freely.***`
     );//Direct Messages a Player upon Joining the Server
     member.send(
         `:blue_heart: •|• **__Welcome to CivLeague Community!__** •|• :heart:` +
