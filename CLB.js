@@ -21,7 +21,7 @@ CivLeagueBot.on("guildMemberAdd", member => {
     guild.defaultChannel.sendMessage(
 `${Player.roleAdmin} | ${Player.roleModerator}
 **__Welcome to the Civilization__** •<:civIcon:291784556489474049>• **__Community!__**
-:hugging: ${member.user} :hugging: *You have just been hugged!
+:hugging: ${member.user} :hugging: *You have just been hugged!*
 
 **__Quick Guidelines__**:
     •**No Rage Quitting!**
