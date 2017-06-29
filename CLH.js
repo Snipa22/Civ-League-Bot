@@ -56,6 +56,8 @@ CivLeagueHelp.on("message", message => {
         *Players who have achieved a great deal of success within the Game!*
     <#${Config.channels.channelProof}>
         *Screenshots provided from the Members of this Community.*
+    <#${Config.channels.channelReport}>
+        *Players will need to report their games in this channel to avoid bad reports.*
     <#${Config.channels.channelLeagueHistory}>
         *Shows the history of Games Played, and current Levels.*`
         );
@@ -252,12 +254,11 @@ ${Config.links.civLeagueSteamGroup}
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 '•|•**__Receiving Errors while Connecting__** •|•
-  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder URL*
+  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder Address Bar*
 
 **Documents/My Games/Sid Meier's Civilization VI**
                        *^ copy/paste that ^*
-    ***Notes:***
-      •*This will not Delete your Game Options if you select the right files in the below photo!*
+***This will not Delete your Game Options if you select the right files in the below photo!***
 
 •|• **__CivilizationVIDeleteFiles.bat File__** •|•
 ***Creation credit to: MisterT800***
@@ -311,7 +312,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "1v1report" || command === "1v1Report" || command === "1v1REPORT") {
         message.channel.sendMessage(
             `__**2 Player Duel Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @`
         );
@@ -319,7 +320,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "ffareport3" || command === "ffaReport3" || command === "FFAReport3" || command === "FFAREPORT3") {
         message.channel.sendMessage(
             `__**3 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @` + "\n" +
             `3: @`
@@ -328,7 +329,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "ffareport4" || command === "ffaReport4" || command === "FFAReport4" || command === "FFAREPORT4") {
         message.channel.sendMessage(
             `__**4 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @` + "\n" +
             `3: @` + "\n" +
@@ -338,7 +339,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "ffareport5" || command === "ffaReport5" || command === "FFAReport5" || command === "FFAREPORT5") {
         message.channel.sendMessage(
             `__**5 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @` + "\n" +
             `3: @` + "\n" +
@@ -349,7 +350,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "ffareport6" || command === "ffaReport6" || command === "FFAReport6" || command === "FFAREPORT6") {
         message.channel.sendMessage(
             `__**6 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @` + "\n" +
             `3: @` + "\n" +
@@ -361,7 +362,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "ffareport7" || command === "ffaReport7" || command === "FFAReport7" || command === "FFAREPORT7") {
         message.channel.sendMessage(
             `__**7 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @` + "\n" +
             `3: @` + "\n" +
@@ -374,7 +375,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "ffareport8" || command === "ffaReport8" || command === "FFAReport8" || command === "FFAREPORT8") {
         message.channel.sendMessage(
             `__**8 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1: @` + "\n" +
             `2: @` + "\n" +
             `3: @` + "\n" +
@@ -388,8 +389,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "2v2report" || command === "2v2Report" || command === "2v2REPORT") {
         message.channel.sendMessage(
             `__**2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1st Team:` + "\n" +
             `    @` + "\n" +
             `    @` + "\n" +
@@ -401,8 +401,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "2v2v2report" || command === "2v2v2Report" || command === "2v2v2REPORT") {
         message.channel.sendMessage(
             `__**2v2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1st Team:` + "\n" +
             `    @` + "\n" +
             `    @` + "\n" +
@@ -417,8 +416,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "2v2v2v2report" || command === "2v2v2v2Report" || command === "2v2v2v2REPORT") {
         message.channel.sendMessage(
             `__**2v2v2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1st Team:` + "\n" +
             `    @` + "\n" +
             `    @` + "\n" +
@@ -436,8 +434,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "3v3report" || command === "3v3Report" || command === "3v3REPORT") {
         message.channel.sendMessage(
             `__**3v3 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1st Team:` + "\n" +
             `    @` + "\n" +
             `    @` + "\n" +
@@ -451,7 +448,7 @@ ${Config.links.civLeagueSteamGroup}
     else if (command === "4v4report" || command === "4v4Report" || command === "4v4REPORT") {
         message.channel.sendMessage(
             `__**4v4 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Players.SongAdieu}> by Sending a Direct Message (DM).` + "\n" +
+            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
             `1st Team:` + "\n" +
             `    @` + "\n" +
             `    @` + "\n" +
