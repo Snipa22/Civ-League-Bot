@@ -58,8 +58,8 @@ let difficultyEmojiList = ['🌤', '☁', '🌧', '🌩', '⛈'];
 
 let worldageEmojis = ['🌕', '🌗', '🌑'];
 
-let opEmojiList = ['🎖', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
-let opNQEmojiList = ['🐎', '🎖', '☔', '🌊', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
+let opEmojiList = ['⚒', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
+let opNQEmojiList = ['🐎', '⚒', '☔', '🌊', '⚔', '🛡', '☢', '⚛', '🐏', '🌪', '🏠', '😈'];
 
 CivLeagueVote.on("message", message => {
     if (message.author.CivLeagueVote) return;
@@ -184,7 +184,7 @@ CivLeagueVote.on("message", message => {
 `•|• **__In-Game OP Options__** •|•
   ***Majority Votes ban these Options during the game. Host does break Ties.***
 •**__Pantheons__**:
-🎖 • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
+⚒ • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
 •**__Religion Beliefs__**:
 ⚔ • **Crusade:** *+10 Combat Strength near foreign cities that follow this Religion.*
 🛡 • **Defender of the Faith:** *+10 Combat Strength when within the borders of friendly cities that follow this Religion.*
@@ -311,7 +311,7 @@ CivLeagueVote.on("message", message => {
 `•|• **__In-Game OP Options__** •|•
   ***Majority Votes ban these Options during the game. Host does break Ties.***
 •**__Pantheons__**:
-🎖 • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
+⚒ • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
 🐎• **God of the Open Sky:** *Provides +1 Culture for Pastures.*
 🌊 • **God of the Sea:** *Provides +1 Production to each Fishing Boat.*
 ☔ • **Ocean's Bounty:** *Provides +1 Culture to each Fishing Boat.*
