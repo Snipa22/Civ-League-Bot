@@ -197,7 +197,7 @@ function validateBans(bans, drafts){
     return invalidBans;
 }
 
-function draft(players, bans, drafts, max_players = 11, min_players = 2) {
+function draft(players, bans, drafts, max_players = 10, min_players = 2) {
     // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
@@ -329,7 +329,7 @@ CivFFADrafter.on("message", message => {
             if (Number(teams) === 4) {
                 title = 'Teamer Draft (' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + ')';
             }//Team Draft
-            let channel = CivFFADrafter.channels.find('name', '•|• Staging: Teamers');
+            let channel = CivFFADrafter.channels.find('name', '•|• Staging: Teamers •|•');
             if(channel.members.keyArray().length < command[2] * command[1]){
                 messageString = '\n**Failed to Execute!**\n  *Please move to: •|• **Staging: Teamers**.*';
                 break;
