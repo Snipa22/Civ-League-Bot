@@ -257,6 +257,9 @@ CivLeagueVote.on("message", message => {
             });
         });
         message.channel.sendMessage(
+
+        );
+        message.channel.sendMessage(
 `•**__Level of Difficulty__**:
 🌤 • **Prince**
 ☁ • **King**

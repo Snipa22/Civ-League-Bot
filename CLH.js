@@ -230,27 +230,27 @@ ${Config.links.civLeagueSteamGroup}
             `${Config.images.imageGameTypes}`
         );
     }/*.setOverlay*/
-    else if (command === "setOverlay") {
+    else if (command === "setOverlay" || command === "setoverlay") {
         message.channel.sendMessage(
-            `\n${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__Setup Discord Overlay__** •|•` +
-            `\n  *Setting up Discord Overlay, which allows the user to see who is talking, while in Game.*` +
-            `\n    •**User Settings**` +
-            `\n      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*` +
-            `\n    •**Overlay**` +
-            `\n      *Click the Overlay Tab on the left side of Discord in User Settings.*` +
-            `\n    •**Enable Overlay**` +
-            `\n      *Check the box: Enable In-Game Overlay.*` +
-            `\n    •**Games**` +
-            `\n      *Click the Games tab on the left side of Discord in User Settings.*` +
-            `\n    •**Enabled Civilization VI**` +
-            `\n      *Finally under the **Added Games** section, just enable **Sid Meier's Civilization VI** by checking box.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Setup Discord Overlay__** •|•
+*Setting up Discord Overlay, which allows the user to see who is talking, while in Game.*
+    •**User Settings**
+      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*
+    •**Overlay**
+      *Click the Overlay Tab on the left side of Discord in User Settings.*
+    •**Enable Overlay**
+      *Check the box: Enable In-Game Overlay.*
+    •**Games**
+      *Click the Games tab on the left side of Discord in User Settings.*
+    •**Enabled Civilization VI**
+      *Finally under the **Added Games** section, just enable **Sid Meier's Civilization VI** by checking box.*`
         );
         message.channel.sendFile(
             `${Config.images.imageSetOverlay}`
         );
     }/*.deleteFiles*/
-    else if (command === "deleteFiles" || command === "deletefiles") {
+    else if (command === "deleteFiles" || command === "deletefiles" || command === "df" || command === "DF") {
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 '•|•**__Receiving Errors while Connecting__** •|•
@@ -275,25 +275,22 @@ ${Config.links.civLeagueSteamGroup}
         message.channel.sendFile(
             `${Config.files.fileDeleteFilesx11}`
         );
-        message.channel.sendFile(
-            `${Config.files.fileDeleteFilesx12}`
-        )
     }/*.setPTT*/
     else if (command === "setPTT") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Setup Push to Talk__**` +
-            `\n  *Setting up Push to Talk is very useful for the players that have a lot of background noise.*` +
-            `\n  *Using this Discord Feature will help maintain a better playing environment.*` +
-            `\n    | **User Settings** |` +
-            `\n      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*` +
-            `\n    | **Click Voice** |` +
-            `\n      *Click the Voice Tab on the left side of Discord in User Settings.*` +
-            `\n    | **Set Push to Talk** |` +
-            `\n      *Click the Drop Down under Input Mode, and change from Voice Acitivity to Push to Talk.*` +
-            `\n    | **Assign a Key** |` +
-            `\n      *Finally click next to Push to Talk option, and assign a key, or multiple.*` +
-            `\n      *You can assign whatever you like, I just like to use a double key.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Setup Push to Talk__** •|•
+*Setting up Push to Talk is very useful for the players that have a lot of background noise.*
+*Using this Discord Feature will help maintain a better playing environment.*
+    •**User Settings**
+      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*
+    •**Click Voice**
+      *Click the Voice Tab on the left side of Discord in User Settings.*
+    •**Set Push to Talk**
+      *Click the Drop Down under Input Mode, and change from Voice Acitivity to Push to Talk.*
+    •**Assign a Key**
+      *Finally click next to Push to Talk option, and assign a key, or multiple.*
+      *You can assign whatever you like, I just like to use a double key.*`
         );
         message.channel.sendFile(
             `${Config.images.imageSetPTT}`
@@ -301,164 +298,174 @@ ${Config.links.civLeagueSteamGroup}
      }/*.lightshot*/
     else if (command === "lightshot") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__How to Take a Screenshot__** •|•` +
-            `\n*Alternative Program: <http://app.prntscr.com/en/index.html>*` +
-            `\n **[Alt]** + **[Prnt Scrn]**` +
-            `\n   *Come to Discord, and **Click** in the Text Field*` +
-            `\n Then **Hold [Ctrl]** and **Tap [V]**`
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Windows Screenshot Function:__** •|•
+Hold **[Alt]** + Tap **[Prnt Scrn]** (Selected Program Window)
+Hold **[Ctrl]** + Tap **[Prnt Scrn]** (Complete Display)
+*Come to Discord and **click** in the text field*
+Hold **[Ctrl]** and Tap **[V]** to paste image.
+
+•|• **__Lightshot (Alternative Program):__** •|•
+<http://app.prntscr.com/en/index.html>`
         );
     }/*.1v1Report*/
-    else if (command === "1v1report" || command === "1v1Report" || command === "1v1REPORT") {
+    else if (command === "1v1report" || command === "1v1Report") {
         message.channel.sendMessage(
-            `__**2 Player Duel Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @`
+`**__2 Player Duel Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @`
         );
     }/*.ffaReport3*/
     else if (command === "ffareport3" || command === "ffaReport3" || command === "FFAReport3" || command === "FFAREPORT3") {
         message.channel.sendMessage(
-            `__**3 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @`
+`**__3 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @`
         );
     }/*.ffaReport4*/
     else if (command === "ffareport4" || command === "ffaReport4" || command === "FFAReport4" || command === "FFAREPORT4") {
         message.channel.sendMessage(
-            `__**4 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @`
+`**__4 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @`
         );
     }/*.ffaReport5*/
     else if (command === "ffareport5" || command === "ffaReport5" || command === "FFAReport5" || command === "FFAREPORT5") {
         message.channel.sendMessage(
-            `__**5 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @`
+`**__5 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @`
         );
     }/*.ffaReport6*/
     else if (command === "ffareport6" || command === "ffaReport6" || command === "FFAReport6" || command === "FFAREPORT6") {
         message.channel.sendMessage(
-            `__**6 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @` + "\n" +
-            `6: @`
+`**__6 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @
+6: @`
         );
     }/*.ffaReport7*/
     else if (command === "ffareport7" || command === "ffaReport7" || command === "FFAReport7" || command === "FFAREPORT7") {
         message.channel.sendMessage(
-            `__**7 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @` + "\n" +
-            `6: @` + "\n" +
-            `7: @`
+`**__7 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @
+6: @
+7: @`
         );
     }/*.ffaReport8*/
     else if (command === "ffareport8" || command === "ffaReport8" || command === "FFAReport8" || command === "FFAREPORT8") {
         message.channel.sendMessage(
-            `__**8 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @` + "\n" +
-            `6: @` + "\n" +
-            `7: @` + "\n" +
-            `8: @`
+`**__8 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @
+6: @
+7: @
+8: @`
         );
     }/*.2v2Report*/
     else if (command === "2v2report" || command === "2v2Report" || command === "2v2REPORT") {
         message.channel.sendMessage(
-            `__**2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @`
+`**__2v2 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+2nd Team:
+    @
+    @`
         );
     }/*.2v2v2Report*/
     else if (command === "2v2v2report" || command === "2v2v2Report" || command === "2v2v2REPORT") {
         message.channel.sendMessage(
-            `__**2v2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `3rd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @`
+`**__2v2v2 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+2nd Team:
+    @
+    @
+3rd Team:
+    @
+    @`
         );
     }/*.2v2v2v2Report*/
     else if (command === "2v2v2v2report" || command === "2v2v2v2Report" || command === "2v2v2v2REPORT") {
         message.channel.sendMessage(
-            `__**2v2v2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `3rd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `4th Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n"
+`**__2v2v2v2 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+2nd Team:
+    @
+    @
+3rd Team:
+    @
+    @
+4th Team:
+    @
+    @`
         );
     }/*.3v3Report*/
     else if (command === "3v3report" || command === "3v3Report" || command === "3v3REPORT") {
         message.channel.sendMessage(
-            `__**3v3 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n"
+`**__3v3 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+    @
+2nd Team:
+    @
+    @
+    @`
         );
     }/*.4v4Report*/
     else if (command === "4v4report" || command === "4v4Report" || command === "4v4REPORT") {
         message.channel.sendMessage(
-            `__**4v4 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Config.channels.channelReport}>.` + "\n" +
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n"
+`**__4v4 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+    @
+    @
+2nd Team:
+    @
+    @
+    @
+    @`
         );
     }
 });
