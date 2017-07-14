@@ -116,10 +116,7 @@ CivLeagueHelp.on("message", message => {
         );
     }/*.joinSteam*/
     else if (command === "joinSteam") {
-        //Image of Joining
-        message.channel.sendFile(
-            `${Config.images.imageJoinSteam}`
-        );//Message to Send
+        //Message to Send
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 **__Steam Group Chat Room__**

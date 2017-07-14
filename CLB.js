@@ -26,7 +26,7 @@ CivLeagueBot.on("guildMemberAdd", member => {
 **__Quick Guidelines__**:
     •*No Rage Quitting!*
     •*To join on our players, you'll need to join our **Steam Group Chat Room**.*
-        <${Config.links.civLeagueSteamGroup}>
+        <steam://friends/joinchat/103582791457662088>
 ***If you have any questions! Please feel free to start asking.***`
     );
 
