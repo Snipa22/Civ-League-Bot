@@ -118,8 +118,8 @@ CivLeagueHelp.on("message", message => {
     else if (command === "joinSteam") {
         //Message to Send
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-**__Steam Group Chat Room__**
+`**__Steam Group Chat Room__**
+*Click this link to always join the Steam Group Chat Room.*
 ${Config.links.civLeagueSteamGroup}`
         );
     }/*.discord*/
