@@ -121,13 +121,9 @@ CivLeagueHelp.on("message", message => {
             `${Config.images.imageJoinSteam}`
         );//Message to Send
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}` +
-`\n**__Steam Group (Enter Chat Room)__**
-${Config.links.civLeagueSteamGroup}
-    •**Click the URL**
-    •**Don't Sign In/Join Group**
-    •**Just Enter Chat Room (Blue Button)**
-      *Check the Taskbar, Chat Window does not Open to the Front.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+**__Steam Group Chat Room__**
+${Config.links.civLeagueSteamGroup}`
         );
     }/*.discord*/
     else if (command === "discord" || command === "Discord") {
