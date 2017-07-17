@@ -10598,7 +10598,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Location', ':flag_us: • America')
+.addField('Location', ':flag_br: • Brazil')
 
 .setFooter('•|• ThugLife •|•')
 .setColor(0x04771B)
@@ -12120,6 +12120,7 @@ CivLeagueStats.login(Config.tokens.StatsBot);
 .addField('Incidents Reported:', '  *•Quitting Barbarian: 1*')
 
 .addField('Location', ':flag_au: • Australia')
+.addField('Location', ':flag_br: • Brazil')
 .addField('Location', ':flag_ca: • Canada')
 .addField('Location', ':flag_ch: • China')
 .addField('Location', ':flag_eu: • Europe')
