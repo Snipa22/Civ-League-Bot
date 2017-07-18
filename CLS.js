@@ -1469,14 +1469,14 @@ Player Stats Reset: 06.07.17
 .addField('Longest Win Streak', '14', true)
 .addField('Win Percentage', '*64.46%*', true)
 
-.addField('Settler', '<:settler:319889887996411915>', true)
+.addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
 .addField('Incidents Reported:', '  *•Raging Barbarian: 1*')
 
 .addField('Location', ':flag_lv: • Latvia')
 
 .setFooter('•|• Avaria☢ •|•')
-.setColor(0x04771B)
+.setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@Azlo#7202 `Wins: 9 | Losses: 53 | Games Played: 12 | EXP: 9/16 | Level: 3`
@@ -2046,12 +2046,12 @@ Player Stats Reset: 06.07.17
 .addField('Longest Win Streak', '12', true)
 .addField('Win Percentage', '*50.72%*', true)
 
-.addField('Warlord', '<:warlord:319931261894524928>', true)
+.addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• Buttercup •|•')
-.setColor(0x77FF82)
+.setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@Cad Bane#5195 `Wins: 3 | Losses: 7 | Games Played: 2 | League EXP: 3/4 | Level: 1`
