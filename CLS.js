@@ -41,7 +41,6 @@ CivLeagueStats.on("message", message => {
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• © • 𝖘𝖔𝖓𝖌 𝖆𝖉𝖎𝖊𝖚 - "Check out the #forms Channel" •|•')
-.setDescription("[Watch my Twitch!](https://www.twitch.tv/songadieu)")
 .setColor(0xB16EFE)
         message.channel.sendEmbed(p);
     };//@Justifier#7095 `Wins: 353 | Losses: 63 | Games Played: 88 | League EXP: 891/905 | Level: 15`
@@ -5158,7 +5157,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  *•Raging Barbarian: 1*\n*•Quitting Barbarian: 2*')
+.addField('Incidents Reported:', '  *•Raging Barbarian: 2*\n*•Quitting Barbarian: 2*')
 
 .addField('Location', ':flag_us: • America')
 

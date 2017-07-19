@@ -44,7 +44,7 @@ CivLeagueHelp.on("message", message => {
     <#${Config.channels.channelGuidelines}>
         *Brief guide to handling certain situations properly.*
     <#${Config.channels.channelForms}>
-        *Application to become Moderator/Reporting a Player.. and more!*
+        *Application to become Moderator/Reporting a Player.. and more.*
     <#${Config.channels.channelWorkshop}>
         *List of CivLeague Mods. As well as many other enjoyable mods!
         You will also find all the extra Civilizations Mod Pack here.*

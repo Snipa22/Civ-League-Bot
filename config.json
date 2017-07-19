@@ -1,6 +1,8 @@
 {
     "dot" : ".",
     "ast" : "*",
+    "space" : " ",
+    "atcom" : "@",
 
     "channels": {
         "channelIntroduction" : "291708368819716096",
