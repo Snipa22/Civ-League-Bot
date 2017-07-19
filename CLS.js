@@ -427,13 +427,13 @@ Player Stats Reset: 06.07.17
 .setColor(0x42FF00)
         message.channel.sendEmbed(p);
     };
-//@groove#8337 `Wins: 329 | Losses: 418 | Games Played: 159 | League EXP: 435/485 | Level: 11`
+//@groove#8337 `Wins: 329 | Losses: 418 | Games Played: 159 | League EXP: 442/485 | Level: 11`
     if(command === 'groovedrift') {
         let p = new Discord.RichEmbed()
 .addField('Wins', '329', true)
 .addField('Losses', '418', true)
 .addField('Games Played', '159', true)
-.addField('League Experience', '435/485', true)
+.addField('League Experience', '442/485', true)
 .addField('Level', '11', true)
 .addField('Last Game Played', '1,585', true)
 .addField('Current Win Streak', '4', true)
