@@ -5030,12 +5030,12 @@ Player Stats Reset: 06.07.17
 .addField('Longest Win Streak', '77', true)
 .addField('Win Percentage', '*92.78%*', true)
 
-.addField('Chieftain', '<:chieftain:320176909927579648>', true)
+.addField('Warlord', '<:warlord:319931261894524928>', true)
 
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• HarambeV2 •|•')
-.setColor(0x0C5B80)
+.setColor(0x77FF82)
         message.channel.sendEmbed(p);
     };
 //@Harricus#2730 `Wins: 60 | Losses: 78 | Games Played: 29 | League EXP: 84/105 | Level: 7`
