@@ -228,9 +228,9 @@ CivLeagueVote.on("message", message => {
 •**__Game Types__**:
 <:Diplo:338652090421477376> • **Diplo** *Everything is allowed.*
 <:FFA:338652106586324993> • **FFA** *Everything but Friendships/Alliances.*
-<:NoDiplo:338652125427007488> • **No Diplo** *Nothing is allowed, except for making Peace.**
+<:NoDiplo:338652125427007488> • **No Diplo** *Nothing is allowed, except for making Peace.*
 <:NoWar:338652794427015169> • **No War** *Everything is allowed, except warring other Civilizations*
-  ***For more information, click: ${Config.channels.channelGuidelines}`
+  ***For more information, click: <#${Config.channels.channelGuidelines}>***`
         ).then(function(internalMessage) {
             gameTypeEmoji.forEach(function(emoji) {
                 internalMessage.react(emoji);
