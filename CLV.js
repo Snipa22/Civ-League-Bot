@@ -45,8 +45,8 @@ let civListThree = [
 let gameTypeEmoji = [
 ':Diplo:338652090421477376',
 ':FFA:338652106586324993',
-':NoDiplo:338652125427007488',
-':NoWar:338652794427015169'];
+':NoDiplo:338792445091381248',
+':NoWar:338792455518420994'];
 
 let mapOvalEmoji = [':earth_oval:327137636282269706'];
 let mapPangaeaEmoji = ['🌏'];
@@ -78,9 +78,19 @@ CivLeagueVote.on("message", message => {
    if (command === "voteSettings" || command === "votesettings") {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
-  ***Majority Votes pick the Game Settings. Host does break ties.***
-•**__Map Choices__**:`
-        );
+  ***Majority Votes pick the Game Settings. Host breaks tied votes.***
+
+•**__Game Types__**:
+<:Diplo:338652090421477376> • **Diplo** *Everything is allowed.*
+<:FFA:338652106586324993> • **FFA** *Everything but Friendships/Alliances.*
+<:NoDiplo:338652125427007488> • **No Diplo** *Nothing is allowed, except for making Peace.*
+<:NoWar:338652794427015169> • **No War** *Everything is allowed, except warring other Civilizations*
+  ***For more information, click: <#${Config.channels.channelGuidelines}>***`
+        ).then(function(internalMessage) {
+            gameTypeEmoji.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
         message.channel.sendMessage(
 `🌎 • **Continents** *(Few Large Land Masses)*`
         ).then(function(internalMessage) {
@@ -161,7 +171,7 @@ CivLeagueVote.on("message", message => {
    if (command === "voteBans" || command === "votebans") {
         message.channel.sendMessage(
 `•|• **__Civilizations Ban List__** •|•
-  ***Majority Votes ban the Civilizations. Host does break Ties.***`
+  ***Majority Votes ban the Civilizations. Host breaks tied votes.***`
         );
         message.channel.sendMessage(
             '•**__Top Tier Civs__**:'
@@ -187,7 +197,7 @@ CivLeagueVote.on("message", message => {
         //In-Game OP Options Ban List
         message.channel.sendMessage(
 `•|• **__In-Game OP Options__** •|•
-  ***Majority Votes ban these Options during the game. Host does break Ties.***
+  ***Majority Votes ban these Options during the game. Host breaks tied votes.***
 •**__Pantheons__**:
 ⚒ • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
 •**__Religion Beliefs__**:
@@ -207,7 +217,7 @@ CivLeagueVote.on("message", message => {
                 internalMessage.react(emoji);
             });
         });
-//Putting a Plus in Chat when Done
+//Finished Voting
         message.channel.sendMessage(
 `•|• **Done Voting** •|•
   *Please react to the purple CivLeague Icon to announce you have finished voting.
@@ -218,12 +228,11 @@ CivLeagueVote.on("message", message => {
             });
         });
    }
-
 //.voteSettingsNQ
     if(command === "voteSettingsNQ" || command === "votesettingsnq") {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
-  ***Majority Votes pick the Game Settings. Host does break ties.***
+  ***Majority Votes pick the Game Settings. Host breaks tied votes.***
 
 •**__Game Types__**:
 <:Diplo:338652090421477376> • **Diplo** *Everything is allowed.*
@@ -304,7 +313,7 @@ CivLeagueVote.on("message", message => {
     if(command === "voteBansNQ" || command === "votebansnq") {
         message.channel.sendMessage(
 `•|• **__Civilizations Ban List__** •|•
-  ***Majority Votes ban the Civilizations. Host does break Ties.***`
+  ***Majority Votes ban the Civilizations. Host breaks tied votes.***`
     );
         message.channel.sendMessage(
             '•**__Top Tier Civs__**:'
@@ -330,7 +339,7 @@ CivLeagueVote.on("message", message => {
         //In-Game OP Options Ban List
         message.channel.sendMessage(
 `•|• **__In-Game OP Options__** •|•
-  ***Majority Votes ban these Options during the game. Host does break Ties.***
+  ***Majority Votes ban these Options during the game. Host breaks tied votes.***
 •**__Pantheons__**:
 ⚒ • **God of the Forge:** *Provides Ancient/Classical Era Units 25% Production Bonus.*
 🐎• **God of the Open Sky:** *Provides +1 Culture for Pastures.*
