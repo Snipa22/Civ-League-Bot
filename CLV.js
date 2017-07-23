@@ -42,6 +42,11 @@ let civListThree = [
     ':poland:319160313331056651',
     ':spain:319191162462273536'
 ];
+let gameTypeEmoji = [
+':Diplo:338652090421477376',
+':FFA:338652106586324993',
+':NoDiplo:338652125427007488',
+':NoWar:338652794427015169'];
 
 let mapOvalEmoji = [':earth_oval:327137636282269706'];
 let mapPangaeaEmoji = ['🌏'];
@@ -219,7 +224,20 @@ CivLeagueVote.on("message", message => {
         message.channel.sendMessage(
 `•|• **__Game Settings__** •|•
   ***Majority Votes pick the Game Settings. Host does break ties.***
-•**__Map Choices__**:`
+
+•**__Game Types__**:
+<:Diplo:338652090421477376> • **Diplo** *Everything is allowed.*
+<:FFA:338652106586324993> • **FFA** *Everything but Friendships/Alliances.*
+<:NoDiplo:338652125427007488> • **No Diplo** *Nothing is allowed, except for making Peace.**
+<:NoWar:338652794427015169> • **No War** *Everything is allowed, except warring other Civilizations*
+  ***For more information, click: ${Config.channels.channelGuidelines}`
+        ).then(function(internalMessage) {
+            gameTypeEmoji.forEach(function(emoji) {
+                internalMessage.react(emoji);
+            });
+        });
+        message.channel.sendMessage(
+`•**__Map Choices__**:`
         );
         message.channel.sendMessage(
 `<:earth_oval:327137636282269706> • **Oval with Small Islands** *(Oval with Random Small Islands)*`
