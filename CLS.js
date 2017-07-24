@@ -9513,7 +9513,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Location', ':flag_us: • America')
+.addField('Location', ':flag_au: • Australia')
 
 .setFooter('•|• rolfejason •|•')
 .setColor(0x0C5B80)
