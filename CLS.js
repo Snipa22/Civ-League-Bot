@@ -4818,7 +4818,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Location', ':flag_us: • America')
+.addField('Location', ':flag_sk: • Slovakia')
 
 .setFooter('•|• GekonS •|•')
 .setColor(0x0C5B80)
@@ -13035,6 +13035,7 @@ CivLeagueStats.login(Config.tokens.StatsBot);
 .addField('Location', ':flag_lv: • Latvia')
 .addField('Location', ':flag_pl: • Poland')
 .addField('Location', ':flag_ru: • Russia')
+.addField('Location', ':flag_sk: • Slovakia')
 .addField('Location', ':flag_es: • Spain')
 .addField('Location', ':flag_ch: • Switzerland')
 
