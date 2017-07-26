@@ -79,7 +79,7 @@ let icons = {
 };
 
 let teamIcons = [icons['two'], icons['three'], icons['one'], icons['four']],
-    civsPerPlayer = {1:3, 2:6, 3:4, 4:4, 5:3, 6:2, 7:2, 8:2, 9:1, 10:1};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
 
 let civListOP = ['-']; 
 
@@ -120,7 +120,7 @@ function draft(players, bans, drafts, max_players = 11, min_players = 2) {
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
     if (players.length > max_players || players.length < min_players){
-        return '\n**Invalid amount of players in the current channel, please make sure there are the correct amount of people (1-10).**';
+        return '\n**Invalid amount of players in the current channel, please make sure there are the correct amount of people (2-10).**';
     }
     let validCivs = [];
     let loadedBans = readBanFile();
@@ -197,7 +197,7 @@ function validateBans(bans, drafts){
     return invalidBans;
 }
 
-function draft(players, bans, drafts, max_players = 10, min_players = 1) {
+function draft(players, bans, drafts, max_players = 10, min_players = 2) {
     // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
@@ -259,7 +259,7 @@ CivFFADrafter.on("message", message => {
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
     console.log(command);
 
-    if (['draft2', 'shuffle2', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
+    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -267,7 +267,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draft2':
+        case 'draft':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);
@@ -313,13 +313,13 @@ CivFFADrafter.on("message", message => {
                 messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
-        case 'shuffle2':
+        case 'shuffle':
             if (command.length !== 3){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
             }
             if (command[2] * command[1] < 2 || command[2] * command[1] > 8){
-                messageString = '\n**Invalid Input for Team Generation. Example:\n  .shuffle x (Number of Teams) x (Number of Players on each Team).**';
+                messageString = '\n**Invalid Input for Team Generation.**';
                 break;
             }
             let title = 'Teamer Draft ('+command[2]+'v'+command[2]+')', teamMembers = command[2], teams = command[1];
