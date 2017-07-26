@@ -1,4 +1,3 @@
-"use strict";
 /*Author(s): Snipa and © • Song Adieu | Created: February 17th, 2017*/
 
 const Discord = require("discord.js");
