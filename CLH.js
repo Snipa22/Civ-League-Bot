@@ -186,6 +186,7 @@ ${Config.links.civLeagueSteamGroup}`
 <:aztec:319176447531024384> • *Aztec (**Montezuma**)*
 <:germany:319191037337665536> • *Germany (**Frederick Barbarossa**)*
 <:macedon:319191099111505931> • *Macedon (**Alexander**)*
+🔔 • *Nubia (**Amanitore**)* -- Temporary Icon
 <:persia:319191114793877504> • *Persia (**Cyrus**)*
 <:rome:319191129230671873> • *Rome (**Trajan**)*
 <:russia:319191141637685248> • *Russia (**Peter**)*

@@ -45,7 +45,7 @@ let allCivsDLC = {
     aztec: '\n  • <:aztec:319176447531024384> *Aztec (**Montezuma**)*',
     germany: '\n  • <:germany:319191037337665536> *Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:macedon:319191099111505931> *Macedon (**Alexander**)*',
-    nubia: '\n  • *Nubia (**Amanitore**)*',
+    nubia: '\n  • 🔔 *Nubia (**Amanitore**)*',
     persia: '\n  • <:persia:319191114793877504> *Persia (**Cyrus**)*',
     rome: '\n  • <:rome:319191129230671873> *Rome (**Trajan**)*',
     russia: '\n  • <:russia:319191141637685248> *Russia (**Peter**)*',
