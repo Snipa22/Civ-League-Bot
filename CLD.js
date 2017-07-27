@@ -45,6 +45,7 @@ let allCivsDLC = {
     aztec: '\n  • <:aztec:319176447531024384> *Aztec (**Montezuma**)*',
     germany: '\n  • <:germany:319191037337665536> *Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:macedon:319191099111505931> *Macedon (**Alexander**)*',
+    nubia: '\n  • *Nubia (**Amanitore**)*',
     persia: '\n  • <:persia:319191114793877504> *Persia (**Cyrus**)*',
     rome: '\n  • <:rome:319191129230671873> *Rome (**Trajan**)*',
     russia: '\n  • <:russia:319191141637685248> *Russia (**Peter**)*',
@@ -78,7 +79,7 @@ let icons = {
 };
 
 let teamIcons = [icons['two'], icons['three'], icons['one'], icons['four']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
+    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:2};
 
 let civListOP = ['-']; 
 
