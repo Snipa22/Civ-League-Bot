@@ -20,14 +20,14 @@ CivLeagueBot.on("guildMemberAdd", member => {
     let guild = member.guild;
     guild.defaultChannel.sendMessage(
 `${Player.roleAdmin} | ${Player.roleModerator}
-**__Welcome, this is a Civilization__** •<:civIcon:291784556489474049>• NQ Community__**
-:hugging: ${member.user} :hugging: *You have just been hugged!*
+**__Welcome, this is a Civilization__** •<:civIcon:291784556489474049>• **__NQ Community__**
+:hugging: **${member.user}** :hugging: *You have just been hugged!*
 
 **__CivLeague's Guide__**:
     •*Please, follow and respect our #guidelines and our players!*
     •*We do value games where players **do not** quit!*
     •*To join on our players, you'll need to join our **Steam Group Chat Room**.*
-        <steam://friends/joinchat/103582791457662088>
+        **<steam://friends/joinchat/103582791457662088>**
 ***If you have any questions! Please feel free to start asking.***`
     );
 
