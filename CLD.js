@@ -36,9 +36,7 @@ let commandHelp =
   •*Shuffles the list of players for teams.*`
 ;
 
-/*Array of Civilizations Available 
-
-*/
+//Array of Civilizations Available 
 let allCivsDLC = {
     //Top Tier Civs
     australia: '\n  • <:australia:319172870074793984> *Australia (**John Curtin**)*',
@@ -79,7 +77,7 @@ let icons = {
 };
 
 let teamIcons = [icons['two'], icons['three'], icons['one'], icons['four']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:2};
+    civsPerPlayer = {1:3, 2:6, 3:5, 4:4, 5:3, 6:2, 7:2, 8:2, 9:1, 10:2};
 
 let civListOP = ['-']; 
 
@@ -259,7 +257,7 @@ CivFFADrafter.on("message", message => {
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
     console.log(command);
 
-    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
+    if (['draft2', 'shuffle2', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
         // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
         return;
     }
@@ -267,7 +265,7 @@ CivFFADrafter.on("message", message => {
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
     switch(command[0]){
-        case 'draft':
+        case 'draft2':
             if (command.length > 1){
                 // Bans!  Time to handle them.
                 bans = command.slice(1);
@@ -313,7 +311,7 @@ CivFFADrafter.on("message", message => {
                 messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
-        case 'shuffle':
+        case 'shuffle2':
             if (command.length !== 3){
                 messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
                 break;
@@ -431,6 +429,51 @@ CivFFADrafter.on("message", message => {
             }
     }
     message.channel.sendMessage(messageString);
+});
+
+//Tournament Drafter
+CivFFADrafter.on("message", message => {
+    if (message.author.CivFFADrafter) return;
+    if (!message.content.startsWith(Config.ast)) return;
+
+    let command = message.content;
+    command = command.slice(Config.ast.length);
+
+//Array of Teams to Generate to Play
+let teamsJoin = [
+'\n*Civ Team Evolution*',
+'\n*Anthropomorphic Dryosaurus Dino-Gorilla (with a butterknife) Task Force*',
+'\n*MagcialSandwichMakers (MSM)*',
+'\n*One-Turn Wonders*',
+'\n*Blalallalalalallalalallala*',
+'\n*Damage Incorporated: The Jackals*',
+'\n*Damage Incorporated: The A Team*'
+];
+
+  function shuffle(teamsJoin) {
+    let currentPass = teamsJoin.length;
+    let index, temp;
+
+    while (currentPass > 0) {
+      index=Math.floor(Math.random() * currentPass);
+      currentPass--;
+
+      temp = teamsJoin[currentPass];
+      teamsJoin[currentPass] = teamsJoin[index];
+      teamsJoin[index] = temp;
+    }
+    return teamsJoin;
+  }//.draft
+  if(command==="draftTournament") {
+    let shuffleTeams = shuffle(teamsJoin);
+    message.channel.sendMessage(
+"**__CivLeague <:civIconPurple:291784556489474049> Tournament Initial Drafter__**" +
+"\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
+"\n\n------------------------------\n   •**Tournament Game 2**•\n------------------------------" + shuffleTeams[2] + "\n              --**vs.**--" + shuffleTeams[3] +
+"\n\n------------------------------\n   •**Tournament Game 3**•\n------------------------------" + shuffleTeams[4] + "\n              --**vs.**--" + shuffleTeams[5] +
+"\n\n------------------------------\n   •**Tournament Game 4**•\n------------------------------" + shuffleTeams[6] + "\n              --**vs.**--" + "\n*Nobody - Team has a Bye.*"
+    );
+  }
 });
 
 CivFFADrafter.login(Config.tokens.DrafterBot);

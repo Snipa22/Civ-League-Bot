@@ -20,11 +20,12 @@ CivLeagueBot.on("guildMemberAdd", member => {
     let guild = member.guild;
     guild.defaultChannel.sendMessage(
 `${Player.roleAdmin} | ${Player.roleModerator}
-**__Welcome to the 'CivLeague' Civilization__** •<:civIcon:291784556489474049>• **__Community!__**
+**__Welcome, this is a Civilization__** •<:civIcon:291784556489474049>• NQ Community__**
 :hugging: ${member.user} :hugging: *You have just been hugged!*
 
-**__Quick Guidelines__**:
-    •*No Rage Quitting!*
+**__CivLeague's Guide__**:
+    •*Please, follow and respect our #guidelines and our players!*
+    •*We do value games where players **do not** quit!*
     •*To join on our players, you'll need to join our **Steam Group Chat Room**.*
         <steam://friends/joinchat/103582791457662088>
 ***If you have any questions! Please feel free to start asking.***`
@@ -33,13 +34,10 @@ CivLeagueBot.on("guildMemberAdd", member => {
 //Direct Messages a Player upon Joining the Server
     member.send(
 `:purple_heart: •|• **__Welcome to CivLeague Community!__** •|• :purple_heart:
-*Hey! Welcome to the most active, greatest CivLeague Community around.
-We value respecting our players, and giving them a great place to enjoy playing some Civilization.
-Using Discord/Bots to organize games, and playing them with players all around the world.
-There have been some Servers that have risen but they peak, and fall! This is a trajedy.
-Which is why we have an always growing changing administration team in this community to ensure constant growth.
-Many of us devote our time, in turn always implementing great ways to innovate this community.
-    **__Admin | Moderators__**
+*CivLeague is the most active Community to play Civilization VI with the goal of not quitting.
+If there is any questions, please ask our Admin | Moderator Team at any time.*
+
+    **__Admins | Moderators__**
     **What this means to you:**
       •**If you have any questions, please never hesitate to ask.**
         *We are here to support your growth with us!*
@@ -57,18 +55,13 @@ Many of us devote our time, in turn always implementing great ways to innovate t
   *As it offers an organized way to be connected outside the game and creates a community of greatness.*
   *You are not required to use a mic, and you are not required to listen to people talk. There are options available to mute/deafen.*
 
-    •**__Steam Group (Enter Chat Room)__**
+    •**__Steam Group Website__**
       ${Config.links.civLeagueSteamGroup}
-        *Entering the Steam Group is for players who rejoin our community and play on a social basis.*
-        *Joining the Steam Group helps connect us outside the game, and Join Private Games hosted here.*
-          •**Click the URL**
-          •**Enter Chat Room (Blue Button)**
-            *Check the Taskbar, Chat Window does not Open to the Front.*
+    
+    •**__Entering Steam Group Chat Room__**
+    ${Config.links.civLeagueGroupChat}
 
     •**__Reddit Posts__**
-      *Reddit is another great resource to help Promote our Civilization VI League Community.*
-      *It's in the interest of growing our Community to create an account, and upvote the Posts.*
-      *Leaving a comment also helps encourage the growth of our Posts when seeking players who stop by.*
         <https://redd.it/623w5f>
         <https://redd.it/623oza>
         <https://redd.it/623mgp>
@@ -84,8 +77,9 @@ Many of us devote our time, in turn always implementing great ways to innovate t
 //Discloses the Player from the Server
 CivLeagueBot.on("guildMemberRemove", member => {
     let guild = member.guild;
-    guild.defaultChannel.sendMessage("**__Just Left our Community__**" + "\n" +
-        `  :broken_heart: ${member.user}*.. oh no.. just one more turn!*`
+    guild.defaultChannel.sendMessage(
+`**__Just Left CivLeague__** •<:civIcon:291784556489474049>• **__Community!__**
+    :broken_heart: ${member.user} :broken_heart: *.. oh no.. just one more turn!*`
     );
 });
 

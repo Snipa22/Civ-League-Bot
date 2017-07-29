@@ -1,5 +1,3 @@
-"use strict";
-
 const Discord = require("discord.js");
 const Config = require("./config.json");
 const Players = require("./players.json");
@@ -23,22 +21,19 @@ CivLeagueHelp.on("message", message => {
     let args = message.content.split(" ").splice(1);
 
     //Help
-    if (command === "help" || command === "Help") {
+    if (command === "help") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Quick Help Guide__**` +
-            `\n  **.Channels** | **.channels**` +
-            `\n    *Displays all available text channels.*` +
-            `\n  **.Commands** | **.commands**` +
-            `\n    *Displays all commands.*`
+`**__Quick Help Guide__**
+**.channels**
+    *Displays all available text channels.*
+**.commands**
+    *Displays all commands.*`
         );
     }
     //Channels
-    if (command === "channels" || command === "Channels") {
+    if (command === "channels") {
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-
-•|• **__List of Channels__** •|•
+`•|• **__List of Channels__** •|•
     <#${Config.channels.channelIntroduction}>
         *Join CivLeague Everywhere (Discord/League/Steam Group).*
     <#${Config.channels.channelGuidelines}>
@@ -62,10 +57,9 @@ CivLeagueHelp.on("message", message => {
         *Shows the history of Games Played, and current Levels.*`
         );
     }//Commands
-    if (command === "commands" || command === "Commands") {
+    if (command === "commands") {
         message.channel.sendMessage(
-`${Players.roleAdmin}
-•|• **__CivLeague Link Commands__** •|•
+`•|• **__CivLeague Link Commands__** •|•
     **.joinSteam**
         *Joining the Steam Group, by entering the Chat Room.*
     **.reddit**
@@ -85,8 +79,7 @@ CivLeagueHelp.on("message", message => {
         *How to setup Push to Talk.*`
         );
         message.channel.sendMessage(
-`${Players.roleModerator}
-•|• **__Game Commands__** •|•
+`•|• **__Game Commands__** •|•
     **.allCivs | .allcivs**
         *Shows all available Civilizations.*
     **.voteSettings | .votesettings**
@@ -125,44 +118,41 @@ ${Config.links.civLeagueSteamGroup}`
     }/*.discord*/
     else if (command === "discord" || command === "Discord") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Discord Link (Share with Everyone!)__**` +
-            `\n${Config.links.discordLink}`
+`**__Discord Links (Share with Everyone!)__**
+**Use with Discord App:**
+${Config.links.discordLink}
+**Use with Website:**
+${Config.links.discordMeLink}`
         );
     }/*.reddit*/
     else if (command === "reddit" || command === "Reddit") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Reddit Links__**` +
-            `\n  *If you still have questions about how this community works..\n  You can read Hannah's Reddit's here!!*` +
-            `\n    •<https://redd.it/623w5f>` +
-            `\n    •<https://redd.it/623oza>` +
-            `\n    •<https://redd.it/623mgp>`
+`**__Reddit Links__**
+*Still learning and have questions?! We have guides here to help:
+    •<https://redd.it/623w5f>
+    •<https://redd.it/623oza>
+    •<https://redd.it/623mgp>`
         );
     }/*.joinFacebook*/
     else if(command === "facebook" || command === "Facebook") {
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-**__CivLeague Facebook__**
+`**__CivLeague Facebook__**
   <https://www.facebook.com/groups/civleague/>`
         );
     }
     /*.setSteam*/
     else if (command === "setSteam") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__Adding Steam to Discord__** •|•` +
-            `\n *Attach your Steam Profile to the Discord Server.*` +
-            `\n *For anyone who needs to host, your profile is **required public access**.*` +
-            `\n   •**User Settings**` +
-            `\n     *Click the User Settings bottom left of Discord (Right of Avatar|Username).*` +
-            `\n   •**Connections**` +
-            `\n     *Click the Connections tab on the left side of Discord in User Settings.*` +
-            `\n   •**Steam Icon**` +
-            `\n     *Click that Steam Icon that is displayed under **Connect Your Accounts**.*` +
-            `\n     *Follow the Guide to get you Logged and Connected.*` +
-            `\n   •**Display on Profile**` +
-            `\n     *Finally make sure to check that box **Display on Profile**.*`
+`•|• **__Adding Steam to Discord__** •|•
+*Once you have added Steam to your Discord, please notify admin, so we can give you a Solid Barbarian Role.
+*This is to help with players joining our Discord, and helps hosts connect players who have issues joining Steam.*
+  •**User Settings**
+  •**Connections**
+  •**Steam Icon**
+    *Follow the Guide to get you Logged and Connected.*
+  •**Display on Profile**
+  
+***Now remember, whoever does this, get's the Solid Barbarian Role, and is a trusted member in this community!***`
         );
         message.channel.sendFile(
             `${Config.images.imageSetSteam}`
