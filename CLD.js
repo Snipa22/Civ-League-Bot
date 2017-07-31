@@ -469,10 +469,10 @@ let teamsJoin = [
     let shuffleTeams = shuffle(teamsJoin);
     message.channel.sendMessage(
 "**__CivLeague <:civIconPurple:291784556489474049> Tournament Initial Drafter__**" +
-"\n\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
+"\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
 "\n\n------------------------------\n   •**Tournament Game 2**•\n------------------------------" + shuffleTeams[2] + "\n              --**vs.**--" + shuffleTeams[3] +
 "\n\n------------------------------\n   •**Tournament Game 3**•\n------------------------------" + shuffleTeams[4] + "\n              --**vs.**--" + shuffleTeams[5] +
-"\n\n------------------------------\n   •**Tournament Game 4**•\n------------------------------" + shuffleTeams[6] + "\n              --**vs.**--" + "\n*Nobody - Team has a Bye.*"
+"\n\n------------------------------\n   •**Tournament Game 4**•\n------------------------------" + shuffleTeams[6] + "\n              --**vs.**--" + shuffleTeams[7]
     );
   }
 });
