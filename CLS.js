@@ -18,18 +18,18 @@ CivLeagueStats.on("message", message => {
 
 /*  --  Player List  --  */
 //Admin
-//@© • Song Adieu#6276 `Wins: 514 | Losses: 224 | Games Played: 179 | League EXP: 1,124/1,230 | Level: 18`
+//@© • Song Adieu#6276 `Wins: 523 | Losses: 227 | Games Played: 183 | League EXP: 1,197/1,230 | Level: 18`
     if(command === '© • Song Adieu') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '514', true)
-.addField('Losses', '224', true)
-.addField('Games Played', '179', true)
-.addField('League Experience', '1,124/1,230', true)
+.addField('Wins', '523', true)
+.addField('Losses', '227', true)
+.addField('Games Played', '183', true)
+.addField('League Experience', '1,197/1,230', true)
 .addField('Level', '18', true)
-.addField('Last Game Played', '1,660', true)
+.addField('Last Game Played', '1,754', true)
 .addField('Current Win Streak', '9', true)
 .addField('Longest Win Streak', '32', true)
-.addField('Win Percentage', '*69.64%*', true)
+.addField('Win Percentage', '*69.73%*', true)
 
 .addField('Admin', '<:admin:319920680349204483>', true)
 .addField('Warlord', '<:warlord:319931261894524928>', true)
@@ -363,8 +363,8 @@ Player Stats Reset: 06.07.17
 .addField('Games Played', '111', true)
 .addField('League Experience', '331/380', true)
 .addField('Level', '10', true)
-.addField('Last Game Played', '1,715', true)
-.addField('Current Win Streak', '4', true)
+.addField('Last Game Played', '1,733', true)
+.addField('Current Win Streak', '6', true)
 .addField('Longest Win Streak', '18', true)
 .addField('Win Percentage', '*55.14%*', true)
 
@@ -399,23 +399,23 @@ Player Stats Reset: 06.07.17
 .setColor(0x42FF00)
         message.channel.sendEmbed(p);
     };
-//@General (Desert Fox)#0453 `Wins: 354 | Losses: 263 | Games Played: 142 | League EXP: 488/590 | Level: 12`
+//@General (Desert Fox)#0453 `Wins: 367 | Losses: 263 | Games Played: 145 | League EXP: 510/590 | Level: 12`
     if(command === 'GeneralDesertFox') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '354', true)
+.addField('Wins', '367', true)
 .addField('Losses', '263', true)
-.addField('Games Played', '142', true)
-.addField('League Experience', '488/590', true)
+.addField('Games Played', '145', true)
+.addField('League Experience', '510/590', true)
 .addField('Level', '12', true)
-.addField('Last Game Played', '1,707', true)
-.addField('Current Win Streak', '5', true)
+.addField('Last Game Played', '1,740', true)
+.addField('Current Win Streak', '18', true)
 .addField('Longest Win Streak', '19', true)
-.addField('Win Percentage', '*57.37%*', true)
+.addField('Win Percentage', '*58.25%*', true)
 
 .addField('Warlord', '<:warlord:319931261894524928>', true)
 .addField('Valued Player', '⭐', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -444,18 +444,18 @@ Player Stats Reset: 06.07.17
 .setFooter('•|• groovedrift •|•')
 .setColor(0x42FF00)
         message.channel.sendEmbed(p);
-    };//@LITCH#1727 `Wins: 186 | Losses: 120 | Games Played: 63 | League EXP: 270/275 | Level: 9`
+    };//@LITCH#1727 `Wins: 193 | Losses: 120 | Games Played: 65 | League EXP: 280/380 | Level: 10`
     if(command === 'LITCH') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '186', true)
+.addField('Wins', '193', true)
 .addField('Losses', '120', true)
-.addField('Games Played', '63', true)
-.addField('League Experience', '270/275', true)
-.addField('Level', '9', true)
-.addField('Last Game Played', '1,721', true)
-.addField('Current Win Streak', '1', true)
+.addField('Games Played', '65', true)
+.addField('League Experience', '280/380', true)
+.addField('Level', '10', true)
+.addField('Last Game Played', '1,737', true)
+.addField('Current Win Streak', '8', true)
 .addField('Longest Win Streak', '18', true)
-.addField('Win Percentage', '*60.78%*', true)
+.addField('Win Percentage', '*61.66%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Valued Player', '⭐', true)
@@ -575,6 +575,28 @@ Player Stats Reset: 06.07.17
 .addField('Location', ':flag_de: • Germany')
 
 .setFooter('•|• MrGtheFox •|•')
+.setColor(0x42FF00)
+        message.channel.sendEmbed(p);
+    };
+//@TheDonKillum#8936 `Wins: 117 | Losses: 149 | Games Played: 55 | League EXP: 125/170 | Level: 8`
+    if(command === 'TheDonKillum') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '117', true)
+.addField('Losses', '149', true)
+.addField('Games Played', '55', true)
+.addField('League Experience', '125/170', true)
+.addField('Level', '8', true)
+.addField('Last Game Played', '1,716', true)
+.addField('Current Win Streak', '2', true)
+.addField('Longest Win Streak', '12', true)
+.addField('Win Percentage', '*43.98%*', true)
+
+.addField('Chieftain', '<:chieftain:320176909927579648>', true)
+.addField('Valued Player', '⭐', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• TheDonKillum •|•')
 .setColor(0x42FF00)
         message.channel.sendEmbed(p);
     };
@@ -898,7 +920,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -986,7 +1008,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Location', ':flag_ch: • China')
 
-.setFooter('•|•  •|•')
+.setFooter('•|• AlexKnay •|•')
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -1005,7 +1027,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -1013,18 +1035,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@alimora#2131 `Wins: 121 | Losses: 66 | Games Played: 39 | League EXP: 283/380 | Level: 10`
+//@alimora#2131 `Wins: 126 | Losses: 66 | Games Played: 40 | League EXP: 318/380 | Level: 10`
     if(command === 'Deavill') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '121', true)
+.addField('Wins', '126', true)
 .addField('Losses', '66', true)
-.addField('Games Played', '39', true)
-.addField('League Experience', '283/380', true)
+.addField('Games Played', '40', true)
+.addField('League Experience', '318/380', true)
 .addField('Level', '10', true)
-.addField('Last Game Played', '1,630', true)
-.addField('Current Win Streak', '1', true)
+.addField('Last Game Played', '1,726', true)
+.addField('Current Win Streak', '6', true)
 .addField('Longest Win Streak', '15', true)
-.addField('Win Percentage', '*64.70%*', true)
+.addField('Win Percentage', '*65.62%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Solid Host', '⍟', true)
@@ -1075,22 +1097,22 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@alvtillas#0886 `Wins: 18 | Losses: 18 | Games Played: 7 | League EXP: 29/40 | Level: 5`
+//@alvtillas#0886 `Wins: 19 | Losses: 22 | Games Played: 8 | League EXP: 30/40 | Level: 5`
     if(command === 'alvtillas') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '18', true)
-.addField('Losses', '18', true)
-.addField('Games Played', '7', true)
-.addField('League Experience', '29/40', true)
+.addField('Wins', '19', true)
+.addField('Losses', '22', true)
+.addField('Games Played', '8', true)
+.addField('League Experience', '30/40', true)
 .addField('Level', '5', true)
-.addField('Last Game Played', '1,720', true)
-.addField('Current Win Streak', '8', true)
+.addField('Last Game Played', '1,722', true)
+.addField('Current Win Streak', '1', true)
 .addField('Longest Win Streak', '8', true)
-.addField('Win Percentage', '*50.00%*', true)
+.addField('Win Percentage', '*46.34%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -1134,23 +1156,23 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@AN1B4L#0370 `Wins: 219 | Losses: 151 | Games Played: 79 | League EXP: 332/380 | Level: 10`
+//@AN1B4L#0370 `Wins: 228 | Losses: 160 | Games Played: 83 | League EXP: 345/380 | Level: 10`
     if(command === 'AN1B4L') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '219', true)
-.addField('Losses', '151', true)
-.addField('Games Played', '79', true)
-.addField('League Experience', '332/380', true)
+.addField('Wins', '228', true)
+.addField('Losses', '160', true)
+.addField('Games Played', '83', true)
+.addField('League Experience', '345/380', true)
 .addField('Level', '10', true)
-.addField('Last Game Played', '1,720', true)
-.addField('Current Win Streak', '1', true)
+.addField('Last Game Played', '1,736', true)
+.addField('Current Win Streak', '9', true)
 .addField('Longest Win Streak', '24', true)
-.addField('Win Percentage', '*59.18%*', true)
+.addField('Win Percentage', '*58.76%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Solid Host', '⍟', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1\n  •**Quitting Barbarian:** 1*')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1\n•**Quitting Barbarian:** 1*')
 
 .addField('Location', ':flag_es: • Spain')
 
@@ -1216,7 +1238,7 @@ Player Stats Reset: 06.07.17
 .addField('Warlord', '<:warlord:319931261894524928>', true)
 .addField('Solid Host', '⍟', true)
 
-.addField('Incidents Reported:', '  •**Abusive Barbarian:** 1\n  •**Quitting Barbarian:** 1\n  •**Uncivilized Barbarian:** 1')
+.addField('Incidents Reported:', '•**Abusive Barbarian:** 1\n•**Quitting Barbarian:** 1\n•**Uncivilized Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -1279,7 +1301,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -1483,7 +1505,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -1586,22 +1608,22 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Avaria#7474 `Wins: 106 | Losses: 61 | Games Played: 38 | League EXP: 177/275 | Level: 9`
+//@Avaria#7474 `Wins: 115 | Losses: 63 | Games Played: 40 | League EXP: 191/275 | Level: 9`
     if(command === 'Avaria') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '106', true)
-.addField('Losses', '61', true)
-.addField('Games Played', '38', true)
-.addField('League Experience', '177/275', true)
+.addField('Wins', '115', true)
+.addField('Losses', '63', true)
+.addField('Games Played', '40', true)
+.addField('League Experience', '191/275', true)
 .addField('Level', '8', true)
-.addField('Last Game Played', '1,696', true)
-.addField('Current Win Streak', '13', true)
+.addField('Last Game Played', '1,735', true)
+.addField('Current Win Streak', '4', true)
 .addField('Longest Win Streak', '19', true)
-.addField('Win Percentage', '*63.47%*', true)
+.addField('Win Percentage', '*64.60%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 2')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 2')
 
 .addField('Location', ':flag_lv: • Latvia')
 
@@ -1624,7 +1646,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -1860,7 +1882,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Banned:** 1')
+.addField('Incidents Reported:', '•**Banned:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -2183,7 +2205,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -2274,25 +2296,25 @@ Player Stats Reset: 06.07.17
 .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Cad Bane#5195 `Wins: 28 | Losses: 39 | Games Played: 14 | League EXP: 30/40 | Level: 5`
+//@Cad Bane#5195 `Wins: 33 | Losses: 44 | Games Played: 16 | League EXP: 40/65 | Level: 6`
     if(command === 'CADBANE') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '28', true)
-.addField('Losses', '39', true)
-.addField('Games Played', '14', true)
-.addField('League Experience', '30/40', true)
-.addField('Level', '5', true)
-.addField('Last Game Played', '1,713', true)
-.addField('Current Win Streak', '4', true)
+.addField('Wins', '33', true)
+.addField('Losses', '44', true)
+.addField('Games Played', '16', true)
+.addField('League Experience', '40/65', true)
+.addField('Level', '6', true)
+.addField('Last Game Played', '1,727', true)
+.addField('Current Win Streak', '5', true)
 .addField('Longest Win Streak', '7', true)
-.addField('Win Percentage', '*41.79%*', true)
+.addField('Win Percentage', '*42.85%*', true)
 
-.addField('Settler', '<:settler:319889887996411915>', true)
+.addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• C[A]D BANE •|•')
-.setColor(0x04771B)
+.setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@Capo_Di_Tutti_Capi#8144 `Wins: 1 | Losses: 13 | Games Played: 3 | League EXP: 1/4 | Level: 1`
@@ -2350,18 +2372,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Carson#2172 `Wins: 161 | Losses: 111 | Games Played: 54 | League EXP: 204/275 | Level: 9`
+//@Carson#2172 `Wins: 162 | Losses: 115 | Games Played: 55 | League EXP: 205/275 | Level: 9`
     if(command === 'Carson') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '161', true)
-.addField('Losses', '111', true)
-.addField('Games Played', '54', true)
-.addField('League Experience', '204/275', true)
+.addField('Wins', '166', true)
+.addField('Losses', '115', true)
+.addField('Games Played', '55', true)
+.addField('League Experience', '205/275', true)
 .addField('Level', '9', true)
-.addField('Last Game Played', '1,717', true)
-.addField('Current Win Streak', '4', true)
+.addField('Last Game Played', '1,729', true)
+.addField('Current Win Streak', '1', true)
 .addField('Longest Win Streak', '13', true)
-.addField('Win Percentage', '*59.19%*', true)
+.addField('Win Percentage', '*59.07%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Solid Host', '⍟', true)
@@ -2545,6 +2567,27 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
+//@Chipmumk#9186 `Wins: 3 | Losses: 12 | Games Played: 3 | League EXP: 3/4 | Level: 1`
+    if(command === 'Chipmumk') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '3', true)
+.addField('Losses', '12', true)
+.addField('Games Played', '3', true)
+.addField('League Experience', '3/4', true)
+.addField('Level', '1', true)
+.addField('Last Game Played', '1,740', true)
+.addField('Current Win Streak', '1', true)
+.addField('Longest Win Streak', '2', true)
+.addField('Win Percentage', '*20.00%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• Chipmumk •|•')
+.setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
 //@chkjnn#9001 `Wins: 0 | Losses: 3 | Games Played: 1 | League EXP: 10/16 | Level: 3`
     if(command === 'chkjnn') {
         let p = new Discord.RichEmbed()
@@ -2674,7 +2717,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -3083,7 +3126,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -3225,7 +3268,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -3251,6 +3294,27 @@ Player Stats Reset: 06.07.17
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• danhynes •|•')
+.setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
+//@Daniel#5199 `Wins: 3 | Losses: 5 | Games Played: 2 | League EXP: 23/25 | Level: 5`
+    if(command === 'Daniel') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '3', true)
+.addField('Losses', '5', true)
+.addField('Games Played', '2', true)
+.addField('League Experience', '23/25', true)
+.addField('Level', '5', true)
+.addField('Last Game Played', '1,732', true)
+.addField('Current Win Streak', '0', true)
+.addField('Longest Win Streak', '3', true)
+.addField('Win Percentage', '*37.50%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• Daniel •|•')
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -3467,18 +3531,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Delux#5364 `Wins: 54 | Losses: 54 | Games Played: 22 | League EXP: 98/105 | Level: 7`
+//@Delux#5364 `Wins: 63 | Losses: 55 | Games Played: 24 | League EXP: 112/170 | Level: 8`
     if(command === 'Delux') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '54', true)
-.addField('Losses', '54', true)
-.addField('Games Played', '22', true)
-.addField('League Experience', '98/105', true)
-.addField('Level', '7', true)
-.addField('Last Game Played', '1,720', true)
-.addField('Current Win Streak', '0', true)
+.addField('Wins', '63', true)
+.addField('Losses', '55', true)
+.addField('Games Played', '24', true)
+.addField('League Experience', '112/105', true)
+.addField('Level', '8', true)
+.addField('Last Game Played', '1,731', true)
+.addField('Current Win Streak', '4', true)
 .addField('Longest Win Streak', '8', true)
-.addField('Win Percentage', '*50.00%*', true)
+.addField('Win Percentage', '*53.38%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -3572,18 +3636,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@DiMiX#4545 `Wins: 3 | Losses: 13 | Games Played: 3 | League EXP: 3/4 | Level: 1`
+//@DiMiX#4545 `Wins: 3 | Losses: 18 | Games Played: 4 | League EXP: 3/4 | Level: 1`
     if(command === 'DiMiX') {
         let p = new Discord.RichEmbed()
 .addField('Wins', '3', true)
-.addField('Losses', '13', true)
-.addField('Games Played', '3', true)
+.addField('Losses', '18', true)
+.addField('Games Played', '4', true)
 .addField('League Experience', '3/4', true)
 .addField('Level', '1', true)
-.addField('Last Game Played', '1,616', true)
-.addField('Current Win Streak', '1', true)
+.addField('Last Game Played', '1,725', true)
+.addField('Current Win Streak', '0', true)
 .addField('Longest Win Streak', '2', true)
-.addField('Win Percentage', '*18.75%*', true)
+.addField('Win Percentage', '*14.28%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -3608,7 +3672,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -3835,7 +3899,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -4003,18 +4067,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@DrunkCoffee#0974 `Wins: 4 | Losses: 6 | Games Played: 2 | League EXP: 4/9 | Level: 2`
+//@DrunkCoffee#0974 `Wins: 9 | Losses: 11 | Games Played: 4 | League EXP: 9/16 | Level: 3`
     if(command === 'DrunkCoffee') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '4', true)
-.addField('Losses', '6', true)
-.addField('Games Played', '2', true)
-.addField('League Experience', '4/9', true)
-.addField('Level', '2', true)
-.addField('Last Game Played', '1,720', true)
+.addField('Wins', '9', true)
+.addField('Losses', '11', true)
+.addField('Games Played', '3', true)
+.addField('League Experience', '9/16', true)
+.addField('Level', '3', true)
+.addField('Last Game Played', '1,738', true)
 .addField('Current Win Streak', '3', true)
 .addField('Longest Win Streak', '3', true)
-.addField('Win Percentage', '*40.00%*', true)
+.addField('Win Percentage', '*45.00%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -4262,7 +4326,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -4387,7 +4451,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 2')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 2')
 
 .addField('Location', ':flag_ca: • Canada')
 
@@ -4566,7 +4630,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -4633,18 +4697,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Formabellus#9026 `Wins: 41 | Losses: 15 | Games Played: 11 | League EXP: 70/105 | Level: 7`
+//@Formabellus#9026 `Wins: 44 | Losses: 16 | Games Played: 12 | League EXP: 73/105 | Level: 7`
     if(command === 'Formabellus') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '41', true)
-.addField('Losses', '15', true)
-.addField('Games Played', '11', true)
-.addField('League Experience', '70/105', true)
+.addField('Wins', '44', true)
+.addField('Losses', '16', true)
+.addField('Games Played', '12', true)
+.addField('League Experience', '73/105', true)
 .addField('Level', '7', true)
-.addField('Last Game Played', '1,692', true)
-.addField('Current Win Streak', '2', true)
+.addField('Last Game Played', '1,727', true)
+.addField('Current Win Streak', '3', true)
 .addField('Longest Win Streak', '13', true)
-.addField('Win Percentage', '*73.21%*', true)
+.addField('Win Percentage', '*73.33%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -4935,7 +4999,7 @@ Player Stats Reset: 06.07.17
 .addField('Settler', '<:settler:319889887996411915>', true)
 .addField('Solid Host', '⍟', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 2')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 2')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5185,7 +5249,7 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@goldenrpgs#0494 `Wins: 19 | Losses: 33 | Games Played: 12 | League EXP: 72/105 | Level: 7`
+//@GoldenRPGs#5066 `Wins: 19 | Losses: 33 | Games Played: 12 | League EXP: 72/105 | Level: 7`
     if(command === 'goldenrpgs') {
         let p = new Discord.RichEmbed()
 .addField('Wins', '19', true)
@@ -5221,7 +5285,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5244,7 +5308,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5341,7 +5405,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5367,6 +5431,27 @@ Player Stats Reset: 06.07.17
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• Guilles •|•')
+.setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
+//@Gvozdy#2093 `Wins: 5 | Losses: 1 | Games Played: 2 | League EXP: 18/25 | Level: 4`
+    if(command === 'Gvozdy') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '5', true)
+.addField('Losses', '1', true)
+.addField('Games Played', '2', true)
+.addField('League Experience', '18/25', true)
+.addField('Level', '4', true)
+.addField('Last Game Played', '1,728', true)
+.addField('Current Win Streak', '5', true)
+.addField('Longest Win Streak', '5', true)
+.addField('Win Percentage', '*83.33%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• Gvozdy •|•')
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -5560,7 +5645,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1\n  •**Raging Barbarian:** 1\n  •**Uncivilized Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1\n•**Raging Barbarian:** 1\n•**Uncivilized Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5583,7 +5668,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5612,18 +5697,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Havoc#0821 `Wins: 117 | Losses: 48 | Games Played: 41 | League EXP: 387/485 | Level: 11`
+//@Havoc#0821 `Wins: 129 | Losses: 49 | Games Played: 45 | League EXP: 453/485 | Level: 11`
     if(command === 'Havoc') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '117', true)
-.addField('Losses', '48', true)
-.addField('Games Played', '41', true)
-.addField('League Experience', '387/485', true)
+.addField('Wins', '129', true)
+.addField('Losses', '49', true)
+.addField('Games Played', '45', true)
+.addField('League Experience', '453/485', true)
 .addField('Level', '11', true)
-.addField('Last Game Played', '1,721', true)
-.addField('Current Win Streak', '13', true)
-.addField('Longest Win Streak', '18', true)
-.addField('Win Percentage', '*70.90%*', true)
+.addField('Last Game Played', '1,754', true)
+.addField('Current Win Streak', '6', true)
+.addField('Longest Win Streak', '19', true)
+.addField('Win Percentage', '*72.47%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Solid Host', '⍟', true)
@@ -5708,7 +5793,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5731,7 +5816,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 2\n  •**Quitting Barbarian:** 3\n  •**Uncivilized Barbarian:** 1\n  •**Banned:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 2\n•**Quitting Barbarian:** 3\n•**Uncivilized Barbarian:** 1\n•**Banned:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -5796,18 +5881,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Huracanizado#1868 `Wins: 129 | Losses: 261 | Games Played: 85 | League EXP: 158/170 | Level: 8`
+//@Huracanizado#1868 `Wins: 135 | Losses: 271 | Games Played: 88 | League EXP: 164/170 | Level: 8`
     if(command === 'Huracanizado') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '129', true)
-.addField('Losses', '261', true)
-.addField('Games Played', '85', true)
-.addField('League Experience', '158/170', true)
+.addField('Wins', '135', true)
+.addField('Losses', '271', true)
+.addField('Games Played', '88', true)
+.addField('League Experience', '164/170', true)
 .addField('Level', '8', true)
-.addField('Last Game Played', '1,713', true)
+.addField('Last Game Played', '1,753', true)
 .addField('Current Win Streak', '3', true)
 .addField('Longest Win Streak', '5', true)
-.addField('Win Percentage', '*32.30%*', true)
+.addField('Win Percentage', '*33.25%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -6114,6 +6199,27 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
+//@iPekto#9852 `Wins: 0 | Losses: 3 | Games Played: 1 | League EXP: 10/16 | Level: 3`
+    if(command === 'iPekto') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '0', true)
+.addField('Losses', '3', true)
+.addField('Games Played', '1', true)
+.addField('League Experience', '10/16', true)
+.addField('Level', '3', true)
+.addField('Last Game Played', '1,728', true)
+.addField('Current Win Streak', '0', true)
+.addField('Longest Win Streak', '0', true)
+.addField('Win Percentage', '*0.00%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|•  •|•')
+.setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
 //@Is. Leave. Possible.#0433 `Wins: 9 | Losses: 12 | Games Played: 3 | League EXP: 9/16 | Level: 3`
     if(command === 'IsLeavePossible') {
         let p = new Discord.RichEmbed()
@@ -6192,7 +6298,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Location', ':flag_us: • America')
 
-.setFooter('•|•  •|•')
+.setFooter('•|• Jack The Ripper •|•')
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -6272,7 +6378,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -6390,7 +6496,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -6510,7 +6616,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -6850,7 +6956,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -6961,6 +7067,27 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
+//@KMlv#6996 `Wins: 4 | Losses: 1 | Games Played: 1 | League EXP: 4/9 | Level: 2`
+    if(command === 'KMlv') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '4', true)
+.addField('Losses', '1', true)
+.addField('Games Played', '1', true)
+.addField('League Experience', '4/9', true)
+.addField('Level', '2', true)
+.addField('Last Game Played', '1,724', true)
+.addField('Current Win Streak', '4', true)
+.addField('Longest Win Streak', '4', true)
+.addField('Win Percentage', '*80.00%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• KMlv •|•')
+.setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
 //@knoko#6969 `Wins: 26 | Losses: 23 | Games Played: 10 | League EXP: 22/25 | Level: 4`
     if(command === 'knoko') {
         let p = new Discord.RichEmbed()
@@ -7001,18 +7128,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@kosma#2799 `Wins: 13 | Losses: 15 | Games Played: 6 | League EXP: 18/25 | Level: 4`
+//@kosma#2799 `Wins: 18 | Losses: 26 | Games Played: 10 | League EXP: 33/40 | Level: 5`
     if(command === 'Kosmanaut') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '13', true)
-.addField('Losses', '15', true)
-.addField('Games Played', '6', true)
-.addField('League Experience', '18/25', true)
-.addField('Level', '4', true)
-.addField('Last Game Played', '1,717', true)
-.addField('Current Win Streak', '1', true)
+.addField('Wins', '18', true)
+.addField('Losses', '26', true)
+.addField('Games Played', '10', true)
+.addField('League Experience', '33/40', true)
+.addField('Level', '5', true)
+.addField('Last Game Played', '1,752', true)
+.addField('Current Win Streak', '0', true)
 .addField('Longest Win Streak', '9', true)
-.addField('Win Percentage', '*46.42%*', true)
+.addField('Win Percentage', '*40.90%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -7043,18 +7170,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Krupa#1788 `Wins: 133 | Losses: 189 | Games Played: 66 | League EXP: 153/170 | Level: 8`
+//@Krupa#1788 `Wins: 140 | Losses: 196 | Games Played: 69 | League EXP: 160/170 | Level: 8`
     if(command === 'Krupa') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '133', true)
-.addField('Losses', '189', true)
-.addField('Games Played', '66', true)
-.addField('League Experience', '153/170', true)
+.addField('Wins', '140', true)
+.addField('Losses', '196', true)
+.addField('Games Played', '69', true)
+.addField('League Experience', '160/170', true)
 .addField('Level', '8', true)
-.addField('Last Game Played', '1,717', true)
-.addField('Current Win Streak', '1', true)
+.addField('Last Game Played', '1,733', true)
+.addField('Current Win Streak', '2', true)
 .addField('Longest Win Streak', '9', true)
-.addField('Win Percentage', '*41.30%*', true)
+.addField('Win Percentage', '*41.66%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -7390,7 +7517,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -7434,7 +7561,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Location', ':flag_us: • America')
 
-.setFooter('•|•  •|•')
+.setFooter('•|• LTLB •|•')
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -7717,7 +7844,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -8044,7 +8171,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -8067,7 +8194,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 3\n  •**Uncivilized Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 3\n•**Uncivilized Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -8202,7 +8329,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Abusive Barbarian:** 1')
+.addField('Incidents Reported:', '•**Abusive Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -8451,18 +8578,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Murcielaghost#1159 `Wins: 389 | Losses: 240 | Games Played: 134 | League EXP: 652/695 | Level: 13`
+//@Murcielaghost#1159 `Wins: 395 | Losses: 241 | Games Played: 136 | League EXP: 667/695 | Level: 13`
     if(command === 'Murcielaghost') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '389', true)
-.addField('Losses', '240', true)
-.addField('Games Played', '134', true)
-.addField('League Experience', '652/695', true)
+.addField('Wins', '395', true)
+.addField('Losses', '241', true)
+.addField('Games Played', '136', true)
+.addField('League Experience', '667/695', true)
 .addField('Level', '13', true)
-.addField('Last Game Played', '1,707', true)
-.addField('Current Win Streak', '3', true)
+.addField('Last Game Played', '1,739', true)
+.addField('Current Win Streak', '2', true)
 .addField('Longest Win Streak', '18', true)
-.addField('Win Percentage', '*61.84%*', true)
+.addField('Win Percentage', '*62.10%*', true)
 
 .addField('Warlord', '<:warlord:319931261894524928>', true)
 
@@ -8489,18 +8616,18 @@ Player Stats Reset: 06.07.17
             .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@mykbg#0863 `Wins: 13 | Losses: 39 | Games Played: 10 | League EXP: 13/16 | Level: 3`
+//@mykbg#0863 `Wins: 14 | Losses: 48 | Games Played: 12 | League EXP: 14/16 | Level: 3`
     if(command === 'mykbg') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '13', true)
-.addField('Losses', '39', true)
-.addField('Games Played', '10', true)
-.addField('League Experience', '13/16', true)
+.addField('Wins', '14', true)
+.addField('Losses', '48', true)
+.addField('Games Played', '12', true)
+.addField('League Experience', '14/16', true)
 .addField('Level', '3', true)
-.addField('Last Game Played', '1,721', true)
-.addField('Current Win Streak', '4', true)
+.addField('Last Game Played', '1,736', true)
+.addField('Current Win Streak', '1', true)
 .addField('Longest Win Streak', '3', true)
-.addField('Win Percentage', '*25.00%*', true)
+.addField('Win Percentage', '*22.58%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -8803,22 +8930,20 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Nomadhtims#7488 `Wins: 0 | Losses: 5 | Games Played: 1 | League EXP: 0/4 | Level: 0`
+//@Nomadhtims#7488 `Wins: 2 | Losses: 8 | Games Played: 2 | League EXP: 2/4 | Level: 1`
     if(command === 'Nomadhtims') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '0', true)
-.addField('Losses', '5', true)
-.addField('Games Played', '1', true)
-.addField('League Experience', '0/4', true)
-.addField('Level', '0', true)
-.addField('Last Game Played', '1,721', true)
-.addField('Current Win Streak', '0', true)
-.addField('Longest Win Streak', '0', true)
-.addField('Win Percentage', '*0.00%*', true)
+.addField('Wins', '2', true)
+.addField('Losses', '8', true)
+.addField('Games Played', '2', true)
+.addField('League Experience', '2/4', true)
+.addField('Level', '1', true)
+.addField('Last Game Played', '1,725', true)
+.addField('Current Win Streak', '2', true)
+.addField('Longest Win Streak', '2', true)
+.addField('Win Percentage', '*20.00%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
-
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -8956,7 +9081,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -9040,7 +9165,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 2')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 2')
 
 .addField('Location', ':flag_kr: • Korea Republic')
 
@@ -9141,7 +9266,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -9217,11 +9342,11 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
-.setFooter('•|•  •|•')
+.setFooter('•|• Papa Mac •|•')
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
@@ -9503,18 +9628,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Planthom#6208 `Wins: 4 | Losses: 6 | Games Played: 2 | League EXP: 4/9 | Level: 2`
+//@Planthom#6208 `Wins: 7 | Losses: 13 | Games Played: 4 | League EXP: 7/9 | Level: 2`
     if(command === 'Planthom') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '4', true)
-.addField('Losses', '6', true)
-.addField('Games Played', '2', true)
-.addField('League Experience', '4/9', true)
+.addField('Wins', '7', true)
+.addField('Losses', '13', true)
+.addField('Games Played', '4', true)
+.addField('League Experience', '7/9', true)
 .addField('Level', '2', true)
-.addField('Last Game Played', '1,627', true)
-.addField('Current Win Streak', '3', true)
+.addField('Last Game Played', '1,726', true)
+.addField('Current Win Streak', '1', true)
 .addField('Longest Win Streak', '3', true)
-.addField('Win Percentage', '*40.00%*', true)
+.addField('Win Percentage', '*35.00%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -9587,18 +9712,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Problemator#5503 `Wins: 34 | Losses: 90 | Games Played: 25 | League EXP: 34/40| Level: 5`
+//@Problemator#5503 `Wins: 39 | Losses: 97 | Games Played: 27 | League EXP: 39/40| Level: 5`
     if(command === 'Problemator') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '34', true)
-.addField('Losses', '90', true)
-.addField('Games Played', '25', true)
-.addField('League Experience', '34/40', true)
+.addField('Wins', '39', true)
+.addField('Losses', '97', true)
+.addField('Games Played', '27', true)
+.addField('League Experience', '39/40', true)
 .addField('Level', '5', true)
-.addField('Last Game Played', '1,596', true)
-.addField('Current Win Streak', '0', true)
+.addField('Last Game Played', '1,735', true)
+.addField('Current Win Streak', '2', true)
 .addField('Longest Win Streak', '4', true)
-.addField('Win Percentage', '*27.41%*', true)
+.addField('Win Percentage', '*28.67%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -9644,6 +9769,27 @@ Player Stats Reset: 06.07.17
 
             .setFooter('•|• Qbert •|•')
             .setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
+//@quazlat#4323 `Wins: 1 | Losses: 4 | Games Played: 1 | League EXP: 1/4 | Level: 1`
+    if(command === 'quazlat') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '1', true)
+.addField('Losses', '4', true)
+.addField('Games Played', '1', true)
+.addField('League Experience', '1/4', true)
+.addField('Level', '1', true)
+.addField('Last Game Played', '1,725', true)
+.addField('Current Win Streak', '1', true)
+.addField('Longest Win Streak', '1', true)
+.addField('Win Percentage', '*20.00%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• quazlat •|•')
+.setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
 //@Rachet#5479 `Wins: 0 | Losses: 3 | Games Played: 1 | League EXP: 10/16 | Level: 3`
@@ -9919,18 +10065,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@robawtic#4365 `Wins: 30 | Losses: 82 | Games Played: 22 | League EXP: 31/40 | Level: 5`
+//@robawtic#4365 `Wins: 34 | Losses: 83 | Games Played: 23 | League EXP: 35/40 | Level: 5`
     if(command === 'robawtic') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '30', true)
-.addField('Losses', '82', true)
-.addField('Games Played', '22', true)
-.addField('League Experience', '31/40', true)
+.addField('Wins', '34', true)
+.addField('Losses', '83', true)
+.addField('Games Played', '23', true)
+.addField('League Experience', '35/40', true)
 .addField('Level', '5', true)
-.addField('Last Game Played', '1,716', true)
+.addField('Last Game Played', '1,730', true)
 .addField('Current Win Streak', '4', true)
 .addField('Longest Win Streak', '4', true)
-.addField('Win Percentage', '*26.78%*', true)
+.addField('Win Percentage', '*29.05%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -9976,7 +10122,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -10064,7 +10210,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -10093,18 +10239,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Rozovici#5220 `Wins: 236 | Losses: 226 | Games Played: 95 | League EXP: 250/275 | Level: 9`
+//@Rozovici#5220 `Wins: 242 | Losses: 229 | Games Played: 97 | League EXP: 256/275 | Level: 9`
     if(command === 'Rozovici') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '236', true)
-.addField('Losses', '226', true)
-.addField('Games Played', '95', true)
-.addField('League Experience', '250/275', true)
+.addField('Wins', '242', true)
+.addField('Losses', '229', true)
+.addField('Games Played', '97', true)
+.addField('League Experience', '256/275', true)
 .addField('Level', '9', true)
-.addField('Last Game Played', '1,720', true)
-.addField('Current Win Streak', '4', true)
+.addField('Last Game Played', '1,729', true)
+.addField('Current Win Streak', '2', true)
 .addField('Longest Win Streak', '14', true)
-.addField('Win Percentage', '*51.08%*', true)
+.addField('Win Percentage', '*51.38%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Solid Host', '⍟', true)
@@ -10210,7 +10356,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 3\n  •**Uncivilized Barbarian:** 1\n  •**Banned:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 3\n•**Uncivilized Barbarian:** 1\n•**Banned:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -10363,20 +10509,22 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@sansare#7637 `Wins: 2 | Losses: 2 | Games Played: 1 | League EXP: 2/4 | Level: 1`
+//@sansare#7637 `Wins: 2 | Losses: 12 | Games Played: 3 | League EXP: 2/4 | Level: 1`
     if(command === 'sansare') {
         let p = new Discord.RichEmbed()
 .addField('Wins', '2', true)
-.addField('Losses', '2', true)
-.addField('Games Played', '1', true)
+.addField('Losses', '12', true)
+.addField('Games Played', '3', true)
 .addField('League Experience', '2/4', true)
 .addField('Level', '1', true)
-.addField('Last Game Played', '1,721', true)
-.addField('Current Win Streak', '2', true)
+.addField('Last Game Played', '1,736', true)
+.addField('Current Win Streak', '0', true)
 .addField('Longest Win Streak', '2', true)
-.addField('Win Percentage', '*50.00%*', true)
+.addField('Win Percentage', '*14.28%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -10479,7 +10627,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 4')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 4')
 
 .addField('Location', ':flag_us: • America')
 
@@ -10502,7 +10650,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -10916,6 +11064,27 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
+//@SilentPunisher#4438 `Wins: 1 | Losses: 4 | Games Played: 1 | League EXP: 1/4 | Level: 1`
+    if(command === 'SilentPunisher') {
+        let p = new Discord.RichEmbed()
+.addField('Wins', '1', true)
+.addField('Losses', '4', true)
+.addField('Games Played', '1', true)
+.addField('League Experience', '1/4', true)
+.addField('Level', '1', true)
+.addField('Last Game Played', '1,723', true)
+.addField('Current Win Streak', '1', true)
+.addField('Longest Win Streak', '1', true)
+.addField('Win Percentage', '*20.00%*', true)
+
+.addField('Settler', '<:settler:319889887996411915>', true)
+
+.addField('Location', ':flag_us: • America')
+
+.setFooter('•|• SilentPunisher •|•')
+.setColor(0x04771B)
+        message.channel.sendEmbed(p);
+    };
 //@silver#0600 `Wins: 0 | Losses: 2 | Games Played: 1 | League EXP: 10/16 | Level: 3`
     if(command === 'dmsilver2') {
         let p = new Discord.RichEmbed()
@@ -11219,7 +11388,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -11227,25 +11396,25 @@ Player Stats Reset: 06.07.17
 .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@Sphod#1205 `Wins: 18 | Losses: 11 | Games Played: 6 | League EXP: 37/40 | Level: 5`
+//@Sphod#1205 `Wins: 25 | Losses: 14 | Games Played: 8 | League EXP: 44/65 | Level: 6`
     if(command === 'Sphod') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '18', true)
-.addField('Losses', '11', true)
-.addField('Games Played', '6', true)
-.addField('League Experience', '37/40', true)
-.addField('Level', '5', true)
-.addField('Last Game Played', '1,678', true)
-.addField('Current Win Streak', '0', true)
+.addField('Wins', '25', true)
+.addField('Losses', '14', true)
+.addField('Games Played', '8', true)
+.addField('League Experience', '44/65', true)
+.addField('Level', '6', true)
+.addField('Last Game Played', '1,732', true)
+.addField('Current Win Streak', '3', true)
 .addField('Longest Win Streak', '14', true)
-.addField('Win Percentage', '*62.06%*', true)
+.addField('Win Percentage', '*64.10%*', true)
 
-.addField('Settler', '<:settler:319889887996411915>', true)
+.addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
 .addField('Location', ':flag_us: • America')
 
 .setFooter('•|• Sphod •|•')
-.setColor(0x04771B)
+.setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@emt409#1968 `Wins: 153 | Losses: 204 | Games Played: 73 | League EXP: 170/275 | Level: 9`
@@ -11285,7 +11454,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -11748,7 +11917,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -11809,27 +11978,6 @@ Player Stats Reset: 06.07.17
 
             .setFooter('•|• LimitedMelon •|•')
             .setColor(0x04771B)
-        message.channel.sendEmbed(p);
-    };
-//@TheDonKillum#8936 `Wins: 117 | Losses: 149 | Games Played: 55 | League EXP: 125/170 | Level: 8`
-    if(command === 'TheDonKillum') {
-        let p = new Discord.RichEmbed()
-.addField('Wins', '117', true)
-.addField('Losses', '149', true)
-.addField('Games Played', '55', true)
-.addField('League Experience', '125/170', true)
-.addField('Level', '8', true)
-.addField('Last Game Played', '1,716', true)
-.addField('Current Win Streak', '2', true)
-.addField('Longest Win Streak', '12', true)
-.addField('Win Percentage', '*43.98%*', true)
-
-.addField('Chieftain', '<:chieftain:320176909927579648>', true)
-
-.addField('Location', ':flag_us: • America')
-
-.setFooter('•|• TheDonKillum •|•')
-.setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
 //@Theevils#7815 `Wins: 5 | Losses: 8 | Games Played: 3 | League EXP: 5/9 | Level: 2`
@@ -11927,7 +12075,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -12100,18 +12248,18 @@ Player Stats Reset: 06.07.17
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@ThugLife#7123 `Wins: 23 | Losses: 51 | Games Played: 16 | League EXP: 55/65 | Level: 6`
+//@ThugLife#7123 `Wins: 32 | Losses: 54 | Games Played: 19 | League EXP: 77/105 | Level: 7`
     if(command === 'ThugLife') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '23', true)
-.addField('Losses', '51', true)
-.addField('Games Played', '16', true)
-.addField('League Experience', '55/65', true)
-.addField('Level', '6', true)
-.addField('Last Game Played', '1,672', true)
-.addField('Current Win Streak', '0', true)
-.addField('Longest Win Streak', '5', true)
-.addField('Win Percentage', '*31.08%*', true)
+.addField('Wins', '32', true)
+.addField('Losses', '54', true)
+.addField('Games Played', '19', true)
+.addField('League Experience', '77/105', true)
+.addField('Level', '7', true)
+.addField('Last Game Played', '1,752', true)
+.addField('Current Win Streak', '6', true)
+.addField('Longest Win Streak', '6', true)
+.addField('Win Percentage', '*37.20%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -12488,7 +12636,7 @@ Player Stats Reset: 06.07.17
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -12554,7 +12702,7 @@ Player Stats Reset: 06.07.17
         message.channel.sendEmbed(p);
     };
 //@Tyree#1158 `Wins: 105 | Losses: 217 | Games Played: 64 | League EXP: 113/170 | Level: 8`
-    if(command === '-DI-Tyree') {
+    if(command === 'DemonWolf') {
         let p = new Discord.RichEmbed()
 .addField('Wins', '105', true)
 .addField('Losses', '217', true)
@@ -12567,10 +12715,11 @@ Player Stats Reset: 06.07.17
 .addField('Win Percentage', '*32.60%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
+.addField('Solid Host', '⍟', true)
 
 .addField('Location', ':flag_us: • America')
 
-.setFooter('•|• -DI- Tyree •|•')
+.setFooter('•|• DemonWolf •|•')
 .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
@@ -12708,7 +12857,7 @@ let p = new Discord.RichEmbed()
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -12737,18 +12886,18 @@ let p = new Discord.RichEmbed()
 .setColor(0x0C5B80)
         message.channel.sendEmbed(p);
     };
-//@ustmip[CPL]#8911 `Wins: 149 | Losses: 80 | Games Played: 45 | League EXP: 207/275 | Level: 9`
+//@ustmip[CPL]#8911 `Wins: 159 | Losses: 81 | Games Played: 47 | League EXP: 219/275 | Level: 9`
     if(command === 'ustmip') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '149', true)
-.addField('Losses', '80', true)
-.addField('Games Played', '45.', true)
-.addField('League Experience', '207/275', true)
+.addField('Wins', '159', true)
+.addField('Losses', '81', true)
+.addField('Games Played', '47.', true)
+.addField('League Experience', '219/275', true)
 .addField('Level', '9', true)
-.addField('Last Game Played', '1,719', true)
-.addField('Current Win Streak', '5', true)
+.addField('Last Game Played', '1,735', true)
+.addField('Current Win Streak', '6', true)
 .addField('Longest Win Streak', '25', true)
-.addField('Win Percentage', '*65.06%*', true)
+.addField('Win Percentage', '*66.25%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 .addField('Solid Host', '⍟', true)
@@ -13035,7 +13184,7 @@ let p = new Discord.RichEmbed()
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -13079,22 +13228,22 @@ if(command === 'warsoldier12') {
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@wazabaza#9125 `Wins: 197 | Losses: 173 | Games Played: 75 | League EXP: 258/275 | Level: 9`
+//@wazabaza#9125 `Wins: 204 | Losses: 176 | Games Played: 77 | League EXP: 270/275 | Level: 9`
     if(command === 'wazabaza') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '197', true)
-.addField('Losses', '173', true)
-.addField('Games Played', '75', true)
-.addField('League Experience', '258/275', true)
+.addField('Wins', '204', true)
+.addField('Losses', '176', true)
+.addField('Games Played', '77', true)
+.addField('League Experience', '270/275', true)
 .addField('Level', '9', true)
-.addField('Last Game Played', '1,717', true)
-.addField('Current Win Streak', '1', true)
+.addField('Last Game Played', '1,730', true)
+.addField('Current Win Streak', '7', true)
 .addField('Longest Win Streak', '23', true)
-.addField('Win Percentage', '*53.24%*', true)
+.addField('Win Percentage', '*53.68%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1\n  •**Quitting Barbarian:** 2')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1\n•**Quitting Barbarian:** 2')
 
 .addField('Location', ':flag_us: • America')
 
@@ -13157,22 +13306,22 @@ if(command === 'warsoldier12') {
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Wilson#5035 `Wins: 5 | Losses: 10 | Games Played: 3 | League EXP: 5/9 | Level: 2`
+//@Wilson#5035 `Wins: 9 | Losses: 16 | Games Played: 5 | League EXP: 9/16 | Level: 3`
     if(command === 'Wilson') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '5', true)
-.addField('Losses', '10', true)
-.addField('Games Played', '3', true)
-.addField('League Experience', '5/9', true)
-.addField('Level', '2', true)
-.addField('Last Game Played', '1,684', true)
+.addField('Wins', '9', true)
+.addField('Losses', '16', true)
+.addField('Games Played', '5', true)
+.addField('League Experience', '9/16', true)
+.addField('Level', '3', true)
+.addField('Last Game Played', '1,725', true)
 .addField('Current Win Streak', '4', true)
 .addField('Longest Win Streak', '4', true)
-.addField('Win Percentage', '*33.33%*', true)
+.addField('Win Percentage', '*36.00%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -13195,7 +13344,7 @@ if(command === 'warsoldier12') {
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
 
 .addField('Location', ':flag_gb: • Great Britain Republic')
 
@@ -13278,7 +13427,7 @@ if(command === 'warsoldier12') {
         message.channel.sendEmbed(p);
     };
 //@xavier#9632 `Wins: 38 | Losses: 42 | Games Played: 16 | League EXP: 44/65 | Level: 6`
-    if(command === 'RenegadeXavier') {
+    if(command === 'Renegade Xavier') {
         let p = new Discord.RichEmbed()
             .addField('Wins', '38', true)
             .addField('Losses', '42', true)
@@ -13415,7 +13564,7 @@ if(command === 'warsoldier12') {
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
 
 .addField('Location', ':flag_us: • America')
 
@@ -13478,7 +13627,7 @@ if(command === 'warsoldier12') {
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 2')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 2')
 
 .addField('Location', ':flag_fr: • France')
 
@@ -13528,18 +13677,18 @@ if(command === 'warsoldier12') {
 .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@Zack#5784 `Wins: 13 | Losses: 9 | Games Played: 4 | League EXP: 10/16 | Level: 3`
+//@Zack#5784 `Wins: 20 | Losses: 16 | Games Played: 7 | League EXP: 27/40 | Level: 5`
     if(command === 'zakzackattack') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '13', true)
-.addField('Losses', '9', true)
-.addField('Games Played', '4', true)
-.addField('League Experience', '10/16', true)
-.addField('Level', '3', true)
-.addField('Last Game Played', '1,669', true)
-.addField('Current Win Streak', '3', true)
-.addField('Longest Win Streak', '3', true)
-.addField('Win Percentage', '*59.09%*', true)
+.addField('Wins', '20', true)
+.addField('Losses', '16', true)
+.addField('Games Played', '7', true)
+.addField('League Experience', '27/40', true)
+.addField('Level', '5', true)
+.addField('Last Game Played', '1,735', true)
+.addField('Current Win Streak', '4', true)
+.addField('Longest Win Streak', '4', true)
+.addField('Win Percentage', '*55.55%*', true)
 
 .addField('Settler', '<:settler:319889887996411915>', true)
 
@@ -13686,18 +13835,18 @@ if(command === 'warsoldier12') {
             .setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
-//@zickbagg#7982 `Wins: 232 | Losses: 268 | Games Played: 100 | League EXP: 286/380 | Level: 9`
+//@zickbagg#7982 `Wins: 234 | Losses: 279 | Games Played: 103 | League EXP: 298/380 | Level: 9`
     if(command === 'zickbagg') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '232', true)
-.addField('Losses', '268', true)
-.addField('Games Played', '100', true)
-.addField('League Experience', '289/275', true)
+.addField('Wins', '234', true)
+.addField('Losses', '279', true)
+.addField('Games Played', '103', true)
+.addField('League Experience', '298/275', true)
 .addField('Level', '8', true)
-.addField('Last Game Played', '1,705', true)
-.addField('Current Win Streak', '2', true)
+.addField('Last Game Played', '1,754', true)
+.addField('Current Win Streak', '0', true)
 .addField('Longest Win Streak', '10', true)
-.addField('Win Percentage', '*46.40%*', true)
+.addField('Win Percentage', '*46.61%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -13774,10 +13923,10 @@ if(command === 'warsoldier12') {
             .addField('Pax Britannica', '*All settled or conquered cities on a continent other than your home continent receive a free melee unit. Gain the **Redcoat** unit when the Military Science is researched.*')
             .addField('British Museum', '*Each Archaeological Museum holds 6 Artificats instead of 3, and can support 2 Archaeologists at once. Archaeological Museums are automatically themed when they have 6 Artifacts.*')
             .addField('-- • -- • -- • -- • -- • -- • -- • --', '•|• **__Unique Units__** •|•')
-            .addField('Red Coat', '*Industrial Era Melee unit that has\n+10 Combat Strength when fighting\non a different continent foreign to\nyour home. No disembark costs.*\n  •**Production:** 340\n  •**Combat Strength:** 65\n  •**Base Movement:** 2', true)
-            .addField('Sea Dog', '*Renaissance Era Naval unit that can\ncapture enemy ships. Cannot be seen,\nunless adjacent to it. (Replaces: Privateer).*\n  •**Production:** 280\n  •**Combat Strength:** 40\n  •**Ranged Combat Strength:** 50\n  •**Base Movement:** 4', true)
+            .addField('Red Coat', '*Industrial Era Melee unit that has\n+10 Combat Strength when fighting\non a different continent foreign to\nyour home. No disembark costs.*\n•**Production:** 340\n•**Combat Strength:** 65\n•**Base Movement:** 2', true)
+            .addField('Sea Dog', '*Renaissance Era Naval unit that can\ncapture enemy ships. Cannot be seen,\nunless adjacent to it. (Replaces: Privateer).*\n•**Production:** 280\n•**Combat Strength:** 40\n•**Ranged Combat Strength:** 50\n•**Base Movement:** 4', true)
             .addField('-- • -- • -- • -- • -- • -- • -- • --', '•|• **__Unique Districts__** •|•')
-            .addField('Royal Navy Dockyard', '*Naval activity with no embark\npenalties to land units.\n(Replaces: Harbor).*\n  •**+1 Movement to Ships**\n  •**+2 Gold on Foreign Land**\n  •**+1 Trader Route Capacity**', true)
+            .addField('Royal Navy Dockyard', '*Naval activity with no embark\npenalties to land units.\n(Replaces: Harbor).*\n•**+1 Movement to Ships**\n•**+2 Gold on Foreign Land**\n•**+1 Trader Route Capacity**', true)
 
             .setFooter('•|• Victoria of the English Empire •|•')
             .setColor(0xff0000)
@@ -13788,11 +13937,11 @@ if(command === 'warsoldier12') {
 CivLeagueStats.login(Config.tokens.StatsBot);
 
 /*
-.addField('Incidents Reported:', '  •**Abusive Barbarian:** 1')
-.addField('Incidents Reported:', '  •**Raging Barbarian:** 1')
-.addField('Incidents Reported:', '  •**Quitting Barbarian:** 1')
-.addField('Incidents Reported:', '  •**Uncivilized Barbarian:** 1')
-.addField('Incidents Reported:', '  •**Banned:** 1')
+.addField('Incidents Reported:', '•**Abusive Barbarian:** 1')
+.addField('Incidents Reported:', '•**Raging Barbarian:** 1')
+.addField('Incidents Reported:', '•**Quitting Barbarian:** 1')
+.addField('Incidents Reported:', '•**Uncivilized Barbarian:** 1')
+.addField('Incidents Reported:', '•**Banned:** 1')
 
 .addField('Location', ':flag_au: • Australia')
 .addField('Location', ':flag_br: • Brazil')

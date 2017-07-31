@@ -77,7 +77,7 @@ let icons = {
 };
 
 let teamIcons = [icons['two'], icons['three'], icons['one'], icons['four']],
-    civsPerPlayer = {1:3, 2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:2};
+    civsPerPlayer = {1:3, 2:6, 3:5, 4:4, 5:3, 6:3, 7:3, 8:2, 9:2, 10:2};
 
 let civListOP = ['-']; 
 
@@ -137,7 +137,7 @@ function draft(players, bans, drafts, max_players = 11, min_players = 1) {
         return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
     }
     if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
-        return `**Not enough Civilizations Allowed for 3 Choices.\nPlease use: .draft2. Good Luck!**`;
+        return `**Not enough Civilizations Allowed for 3 Choices.\nPlease use: .draft2**`;
     }
     for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
@@ -200,7 +200,7 @@ function draft(players, bans, drafts, max_players = 10, min_players = 2) {
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
     if (players.length > max_players || players.length < min_players){
-        return '\n**Invalid number for Draft!**\n  *draft x = 2-10 players (as with more players, the game can be less reliable).*';
+        return '\n**Error.**';
     }
     let validCivs = [];
     let loadedBans = readBanFile();
@@ -445,7 +445,8 @@ let teamsJoin = [
 '\n*Anthropomorphic Dryosaurus Dino-Gorilla (with a butterknife) Task Force*',
 '\n*MagcialSandwichMakers (MSM)*',
 '\n*One-Turn Wonders*',
-'\n*Blalallalalalallalalallala*',
+'\n*m4d*',
+'\n*Everglade Sports*',
 '\n*Damage Incorporated: The Jackals*',
 '\n*Damage Incorporated: The A Team*'
 ];
@@ -464,11 +465,11 @@ let teamsJoin = [
     }
     return teamsJoin;
   }//.draft
-  if(command==="draftTournament") {
+  if(command==="draft-Tournament") {
     let shuffleTeams = shuffle(teamsJoin);
     message.channel.sendMessage(
 "**__CivLeague <:civIconPurple:291784556489474049> Tournament Initial Drafter__**" +
-"\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
+"\n\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
 "\n\n------------------------------\n   •**Tournament Game 2**•\n------------------------------" + shuffleTeams[2] + "\n              --**vs.**--" + shuffleTeams[3] +
 "\n\n------------------------------\n   •**Tournament Game 3**•\n------------------------------" + shuffleTeams[4] + "\n              --**vs.**--" + shuffleTeams[5] +
 "\n\n------------------------------\n   •**Tournament Game 4**•\n------------------------------" + shuffleTeams[6] + "\n              --**vs.**--" + "\n*Nobody - Team has a Bye.*"
