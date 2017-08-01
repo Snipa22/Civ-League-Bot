@@ -111,9 +111,11 @@ CivLeagueHelp.on("message", message => {
     else if (command === "joinSteam") {
         //Message to Send
         message.channel.sendMessage(
-`**__Steam Group Chat Room__**
-*Click this link to always join the Steam Group Chat Room.*
-${Config.links.civLeagueSteamGroup}`
+`•**__Steam Group Website__**
+${Config.links.civLeagueSteamGroup}
+    
+•**__Entering Steam Group Chat Room__**
+${Config.links.civLeagueGroupChat}`
         );
     }/*.discord*/
     else if (command === "discord" || command === "Discord") {
