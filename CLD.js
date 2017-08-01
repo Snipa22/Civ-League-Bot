@@ -70,14 +70,14 @@ let allCivsDLC = {
     spain: '\n  • <:spain:319191162462273536> *Spain (**Philip II**)*'};
 
 let icons = {
-    one: '<:NumbOne:318828396563922955>',
-    two: '<:NumbTwo:318828407741743105>',
-    three: '<:NumbThree:318828419888578560>',
-    four: '<:NumbFour:318828429946519552>'
+    one: '<:warlord:319931261894524928>',
+    two: '<:emperor:320187485999071233>',
+    three: '<:immortal:320320496010788865>',
+    four: '<:deity:320326649654673410>'
 };
 
 let teamIcons = [icons['two'], icons['three'], icons['one'], icons['four']],
-    civsPerPlayer = {1:3, 2:6, 3:5, 4:4, 5:3, 6:3, 7:3, 8:2, 9:2, 10:2};
+    civsPerPlayer = {1:3, 2:6, 3:6, 4:5, 5:4, 6:3, 7:3, 8:2, 9:2, 10:2};
 
 let civListOP = ['-']; 
 
@@ -113,12 +113,12 @@ function validateBans(bans, drafts){
     return invalidBans;
 }
 
-function draft(players, bans, drafts, max_players = 11, min_players = 1) {
+function draft(players, bans, drafts, max_players = 10, min_players = 1) {
     // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
     if (players.length > max_players || players.length < min_players){
-        return '\n**Invalid amount of players in the current channel, please make sure there are the correct amount of people (2-10).**';
+        return '\n**Invalid amount of players in the current channel, please make sure there are the correct amount of people (1-10).**';
     }
     let validCivs = [];
     let loadedBans = readBanFile();
@@ -195,7 +195,7 @@ function validateBans(bans, drafts){
     return invalidBans;
 }
 
-function draft(players, bans, drafts, max_players = 10, min_players = 2) {
+function draft(players, bans, drafts, max_players = 10, min_players = 1) {
     // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
     // Return an object if there's no error.  If there's an error, return back a string
     let messageString = "";
@@ -465,7 +465,7 @@ let teamsJoin = [
     }
     return teamsJoin;
   }//.draft
-  if(command==="draft-Tournament") {
+  if(command==="--------------") {
     let shuffleTeams = shuffle(teamsJoin);
     message.channel.sendMessage(
 "**__CivLeague <:civIconPurple:291784556489474049> Tournament Initial Drafter__**" +
