@@ -7360,7 +7360,7 @@ message.channel.sendEmbed(p);
 .addField('Last Game Played', '1,788', true)
 .addField('Current Win Streak', '1', true)
 .addField('Longest Win Streak', '9', true)
-.addField('Win Percentage', '*83.78%*', true)
+.addField('Win Percentage', '*43.24%*', true)
 
 .addField('Chieftain', '<:chieftain:320176909927579648>', true)
 
@@ -8684,20 +8684,22 @@ message.channel.sendEmbed(p);
 //@Mormermer#2842 `Wins: 1 | Losses: 9 | Games Played: 2 | League EXP: 1/4 | Level: 1`
     if(command === 'Mormermer') {
         let p = new Discord.RichEmbed()
-            .addField('Wins', '1', true)
-            .addField('Losses', '9', true)
-            .addField('Games Played', '2', true)
-            .addField('League Experience', '1/4', true)
-            .addField('Level', '1', true)
-            .addField('Last Game Played', '981', true)
-            .addField('Current Win Streak', '1', true)
-            .addField('Longest Win Streak', '1', true)
-            .addField('Win Percentage', '*10.00%*', true)
+.addField('Wins', '1', true)
+.addField('Losses', '9', true)
+.addField('Games Played', '2', true)
+.addField('League Experience', '1/4', true)
+.addField('Level', '1', true)
+.addField('Last Game Played', '981', true)
+.addField('Current Win Streak', '1', true)
+.addField('Longest Win Streak', '1', true)
+.addField('Win Percentage', '*10.00%*', true)
 
-            .addField('Settler', '<:settler:319889887996411915>', true)
+.addField('Settler', '<:settler:319889887996411915>', true)
 
-            .setFooter('•|• Mormermer •|•')
-            .setColor(0x04771B)
+.addField('Location', ':flag_dk: • Denmark')
+
+.setFooter('•|• Mormermer •|•')
+.setColor(0x04771B)
         message.channel.sendEmbed(p);
     };
 //@Mr.B#3021 `Wins: 6 | Losses: 14 | Games Played: 4 | League EXP: 6/9 | Level: 2`
@@ -14603,6 +14605,7 @@ CivLeagueStats.login(Config.tokens.StatsBot);
 .addField('Location', ':flag_br: • Brazil')
 .addField('Location', ':flag_ca: • Canada')
 .addField('Location', ':flag_ch: • China')
+.addField('Location', ':flag_dk: • Denmark')
 .addField('Location', ':flag_eu: • Europe')
 .addField('Location', ':flag_fr: • France')
 .addField('Location', ':flag_fi: • Finland')
