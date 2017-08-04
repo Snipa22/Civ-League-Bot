@@ -10621,7 +10621,7 @@ message.channel.sendEmbed(p);
 //@Rozovici#5220 `Wins: 263 | Losses: 242 | Games Played: 104 | League EXP: 281/380 | Level: 10`
     if(command === 'Rozovici') {
         let p = new Discord.RichEmbed()
-.addField('Wins', '263' true)
+.addField('Wins', '263', true)
 .addField('Losses', '242', true)
 .addField('Games Played', '104', true)
 .addField('League Experience', '281/380', true)
