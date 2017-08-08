@@ -116,9 +116,9 @@ function draftteam (players, bans, drafts, teams, teamMembers){
     let teamCounter = 0;
 
     if (teams ==2 && teamMembers ==1 && players.length ==2){
-         messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">" + randomCivs[0]  +randomCivs[1] + randomCivs[2]+  randomCivs[3]  +  
+         messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">" + randomCivs[0] + randomCivs[1] + randomCivs[2] + randomCivs[3] +
          "\n\n**__Team 2:__**\n <@" + players[1].id+ ">" + randomCivs[0] +  randomCivs[1]+  randomCivs[2]+  randomCivs[3]; 
-         return messageString;
+        return messageString;
     }
     else if (teams ==2 && teamMembers ==2 && players.length ==4){
          messageString ="\n\n**__Tteam 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
@@ -129,9 +129,8 @@ function draftteam (players, bans, drafts, teams, teamMembers){
      }
 
      else if (teams ==2 && teamMembers ==3 && players.length ==6){
-        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+"\n <@" + players[4].id+">"+
-        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+"\n <@" + players[4].id+">"+
-        "\n\n**__Team 3:__**\n <@" + players[4].id+ ">\n <@" + players[5].id+ ">"+"\n <@" + players[4].id+">"+
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+"\n <@" + players[2].id+">"+
+        "\n\n**__Team 2:__**\n <@" + players[3].id+ ">\n <@" + players[4].id+ ">"+"\n <@" + players[5].id+">"+
         "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
         "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5]+
         "\n\n**Group Choice 3:**" + randomCivs[6] +randomCivs[7]+ randomCivs[8];
@@ -338,7 +337,7 @@ CivFFADrafter.on("message", message => {
             }//Team Draft
             let channel = CivFFADrafter.channels.find('name', '○ Staging: Teamers ○');
             if(channel.members.keyArray().length < command[2] * command[1]){
-                messageString = '\n**Failed to Execute!**\n  *Please move to: •|• **Staging: Teamers**.*';
+                messageString = '\n**Failed to Execute!**\n  *Please move to: ○ **Staging: Teamers** ○*';
                 break;
             }
             let civTeamDrafter = shuffleList(channel.members.array());
