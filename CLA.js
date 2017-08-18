@@ -1,8 +1,8 @@
-"use strict";
 /*Author: © • Song Adieu | Created: February 17th, 2017*/
 
 const Discord = require("discord.js");
 const Config = require("./config.json");
+const fs = require("fs");
 
 const CivPlayersAdmin = new Discord.Client();
 
@@ -25,6 +25,7 @@ CivPlayersAdmin.on("ready", () => {
 CivPlayersAdmin.on('message', message => {
     let args = message.content.split(/[ ]+/);
 
+    
     /*List of Commands*/
     if (cmdIS("clear", message)) {
         if (hasRole(message.member, "Admin")) {
@@ -39,6 +40,25 @@ CivPlayersAdmin.on('message', message => {
                 }
                 message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
             }
+        } else {
+            message.channel.sendMessage('You are not Authorized.');
+        }
+    }
+    if (cmdIS("gu", message)) {
+        if (hasRole(message.member, "Admin")) {
+            var data = {players: []};
+            let users = CivPlayersAdmin.users.array();
+
+            for (let user in users){
+                user = users[user];
+                var player = {
+                    id:user.id, 
+                    name:user.username,
+                    discriminator:user.discriminator};
+                data.players.push(player);
+            }
+            fs.writeFile("./users.json", JSON.stringify(data), (err) => console.error);
+                return message.reply("Finished Collecting Users!'");
         } else {
             message.channel.sendMessage('You are not Authorized.');
         }
