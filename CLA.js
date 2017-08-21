@@ -67,8 +67,8 @@ CivPlayersAdmin.on('message', message => {
 
 //Discloses the Player from the Server
 CivPlayersAdmin.on("guildMemberRemove", member => {
-    let guild = member.guild;
-    guild.channels.get("292771914295017472").sendMessage(
+    
+CivPlayersAdmin.sendMessage("292771914295017472", 
 `**__Just Left CivLeague__** •<:civIcon:291784556489474049>• **__Community!__**
     :broken_heart: ${member.user} :broken_heart: *.. oh no.. just one more turn!*`
     );
