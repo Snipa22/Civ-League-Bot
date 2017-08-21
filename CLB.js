@@ -74,13 +74,5 @@ If there is any questions, please ask our Admin | Moderator Team at any time.*
 :beers: **Cheers!** :beers:`
     );
 });
-//Discloses the Player from the Server
-CivLeagueBot.on("guildMemberRemove", member => {
-    let guild = member.guild;
-    guild.defaultChannel.sendMessage(
-`**__Just Left CivLeague__** •<:civIcon:291784556489474049>• **__Community!__**
-    :broken_heart: ${member.user} :broken_heart: *.. oh no.. just one more turn!*`
-    );
-});
 
 CivLeagueBot.login(Config.tokens.CivilizationVILeagueBot);
