@@ -64,12 +64,18 @@ CivPlayersAdmin.on('message', message => {
         }
     }
 });
-
-//Discloses the Player from the Server
+/*Discloses the Player from the Server
 CivPlayersAdmin.on("guildMemberRemove", member => {
     let guild = member.guild;
     message.guild.channels.find("name", "admin").sendMessage(
 `**__Just Left CivLeague__** •<:civIcon:291784556489474049>• **__Community!__**
+    :broken_heart: ${member.user} :broken_heart: *.. oh no.. just one more turn!*`
+    );*/
+CivPlayersAdmin.on("guildMemberRemove", member => {
+    let user = member.user;
+    var channel = client.channels.find("name", "admin");
+    channel.send(
+            `**__Just Left CivLeague__** •<:civIcon:291784556489474049>• **__Community!__**
     :broken_heart: ${member.user} :broken_heart: *.. oh no.. just one more turn!*`
     );
 });
