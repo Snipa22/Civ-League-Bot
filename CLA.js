@@ -73,7 +73,7 @@ CivPlayersAdmin.on("guildMemberRemove", member => {
     );*/
 CivPlayersAdmin.on("guildMemberRemove", member => {
     let user = member.user;
-    var channel = client.channels.find("name", "admin");
+    var channel = CivPlayersAdmin.channels.find("name", "admin");
     channel.send(
             `**__Just Left CivLeague__** •<:civIcon:291784556489474049>• **__Community!__**
     :broken_heart: ${member.user} :broken_heart: *.. oh no.. just one more turn!*`
