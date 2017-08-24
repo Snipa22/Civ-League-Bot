@@ -63,7 +63,33 @@ CivPlayersAdmin.on('message', message => {
             message.channel.sendMessage('You are not Authorized.');
         }
     }
+    if (cmdIS("createMembers", message)) {
+        if (hasRole(message.member, "Admin")) {
+            var data = {players: []};
+            let users = CivPlayersAdmin.users.array();
+    
+            for (let user in users){
+                user = users[user];
+                var player = {
+                    id:user.id, 
+                    name:user.username,
+                    discriminator:user.discriminator};
+                data.players.push(player);
+            }
+            fs.writeFile("./users.json", JSON.stringify(data, null, 4), (err) => console.error);
+            CivPlayersAdmin.user.send('hello');
+            message.channel.send('Testing message', {
+                    files: [
+                      "./users.json"
+                    ]
+                  });
+            return    message.reply("Finished Collecting Users!'");
+        } else {
+            message.channel.sendMessage('You are not Authorized.');
+        }
+    }
 });
+
 /*Discloses the Player from the Server
 CivPlayersAdmin.on("guildMemberRemove", member => {
     let guild = member.guild;
