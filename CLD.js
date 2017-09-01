@@ -371,7 +371,7 @@ let teamsJoin = [
 `\n*TeamBlazedCow*\n  @🅜🅞🅓🅢 Blazed#1055\n  @[EPIC]CowGoMoo#1228\n  @James Papadops#0944`,
 `\n*Sun Tzu\'s War Academy*\n  @-=Sunz=- HarambeV2#7259\n  @phillyboy7987[CPL]#1428\n  @BladeSe7en#7657`,
 `\n*tCL 1*\n  @Havoc#0821\n  @Totally#5987\n  @Squish#0658`,
-`\n*tCL 2*\n  @SNudel#0139\n  @@Viridios#5706\n  @czozp#8908`,
+`\n*tCL 2*\n  @SNudel#0139\n  @Viridios#5706\n  @czozp#8908`,
 `\n*tCL 3*\n  @catstronaut420#7516\n  @TaskForceFish#7213\n  @🅒🅜🅕Bloopinator#4314`
 ];
 
@@ -387,10 +387,10 @@ let teamsJoin = [
       teamsJoin[currentPass] = teamsJoin[index];
       teamsJoin[index] = temp;
     }
-    return teamsJoin.toString();
+    return teamsJoin;
   }//.draft
   if(command==="TD") {
-    let shuffleTeams = shuffle(joinTeams);
+    let shuffleTeams = shuffle(teamsJoin);
     message.channel.sendMessage(
 "**__CivLeague <:civIconPurple:291784556489474049> Tournament Initial Drafter__**" +
 "\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
