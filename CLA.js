@@ -7,7 +7,7 @@ const fs = require("fs");
 const CivPlayersAdmin = new Discord.Client();
 
 function cmdIS(str, msg) {
-    return msg.content.toLowerCase().startsWith("." + str);
+    return msg.content.toLowerCase().startsWith("*" + str);
 }
 function pluck(array) {
     return array.map(function (item) {

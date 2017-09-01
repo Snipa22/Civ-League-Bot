@@ -1,5 +1,3 @@
-/*Author(s): Snipa and © • Song Adieu | Created: February 17th, 2017*/
-
 const Discord = require("discord.js");
 const Config = require("./config.json");
 const fs = require('fs');
@@ -33,8 +31,7 @@ let commandHelp =
 `**.draft**
   •*Drafts the list of civs for each player.*
 **.shuffle**
-  •*Shuffles the list of players for teams.*`
-;
+  •*Shuffles the list of players for teams.*`;
 
 //Array of Civilizations Available 
 let allCivsDLC = {
@@ -99,7 +96,7 @@ function draftteam (players, bans, drafts, teams, teamMembers){
 
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
-        return "\nInvalid ban(s) provided: " +invalidBans.join(", ");
+        return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
     }
     for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
@@ -116,42 +113,42 @@ function draftteam (players, bans, drafts, teams, teamMembers){
     let teamCounter = 0;
 
     if (teams ==2 && teamMembers ==1 && players.length ==2){
-         messageString ="\n**__Team 1:__**\n <@" + players[0].id + ">" + randomCivs[0] + randomCivs[1] + randomCivs[2] + randomCivs[3] +
-         "\n\n**__Team 2:__**\n <@" + players[1].id + ">" + randomCivs[0] + randomCivs[1] + randomCivs[2] + randomCivs[3]; 
+         messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">" + randomCivs[0] + randomCivs[1] + randomCivs[2] + randomCivs[3] +
+         "\n\n**__Team 2:__**\n <@" + players[1].id+ ">" + randomCivs[0] +  randomCivs[1]+  randomCivs[2]+  randomCivs[3]; 
         return messageString;
     }
     else if (teams ==2 && teamMembers ==2 && players.length ==4){
-         messageString ="\n\n**__Tteam 1:__**\n <@" + players[0].id + ">\n <@" + players[1].id + ">" +
-        "\n\n**__Team 2:__**\n <@" + players[2].id + ">\n <@" + players[3].id + ">" +
-        "\n\n**Group Choice 1:**" + randomCivs[0] + randomCivs[1] + randomCivs[2] +
-        "\n\n**Group Choice 2:**" + randomCivs[3] + randomCivs[4] + randomCivs[5];
+         messageString ="\n\n**__Tteam 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
+        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5];
         return messageString;
      }
 
      else if (teams ==2 && teamMembers ==3 && players.length ==6){
-        messageString ="\n**__Team 1:__**\n <@" + players[0].id + ">\n <@" + players[1].id + ">" +"\n <@" + players[2].id +">" +
-        "\n\n**__Team 2:__**\n <@" + players[3].id + ">\n <@" + players[4].id + ">" +"\n <@" + players[5].id +">" +
-        "\n\n**Group Choice 1:**" + randomCivs[0] + randomCivs[1] + randomCivs[2] +
-        "\n\n**Group Choice 2:**" + randomCivs[3] + randomCivs[4] + randomCivs[5] +
-        "\n\n**Group Choice 3:**" + randomCivs[6] + randomCivs[7] + randomCivs[8];
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+"\n <@" + players[2].id+">"+
+        "\n\n**__Team 2:__**\n <@" + players[3].id+ ">\n <@" + players[4].id+ ">"+"\n <@" + players[5].id+">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5]+
+        "\n\n**Group Choice 3:**" + randomCivs[6] +randomCivs[7]+ randomCivs[8];
         return messageString;         
      }
     else if (teams ==3 && teamMembers ==2&& players.length ==6){
-        messageString ="\n**__Team 1:__**\n <@" + players[0].id + ">\n <@" + players[1].id + ">" +
-        "\n\n**__Team 2:__**\n <@" + players[2].id + ">\n <@" + players[3].id + ">" +
-        "\n\n**__Team 3:__**\n <@" + players[4].id + ">\n <@" + players[5].id + ">" +
-        "\n\n**Group Choice 1:**" + randomCivs[0] + randomCivs[1] + randomCivs[2] +
-        "\n\n**Group Choice 2:**" + randomCivs[3] + randomCivs[4] + randomCivs[5];
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
+        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+
+        "\n\n**__Team 3:__**\n <@" + players[4].id+ ">\n <@" + players[5].id+ ">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5];
         return messageString;
      }
 
      else if (teams ==4 && teamMembers ==2&& players.length ==8){
-        messageString ="\n**__Team 1:__**\n <@" + players[0].id + ">\n <@" + players[1].id + ">" +
-        "\n\n**__Team 2:__**\n <@" + players[2].id + ">\n <@" + players[3].id + ">" +
-        "\n\n**__Team 3:__**\n <@" + players[4].id + ">\n <@" + players[5].id + ">" +
-        "\n\n**__Team 4:__**\n <@" + players[6].id + ">\n <@" + players[7].id + ">" +
-        "\n\n**Group Choice 1:**" + randomCivs[0] + randomCivs[1] + randomCivs[2] +
-        "\n\n**Group Choice 2:**" + randomCivs[3] + randomCivs[4] + randomCivs[5];
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
+        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+
+        "\n\n**__Team 3:__**\n <@" + players[4].id+ ">\n <@" + players[5].id+ ">"+
+        "\n\n**__Team 4:__**\n <@" + players[6].id+ ">\n <@" + players[7].id+ ">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5];
         return messageString; 
 
      }
@@ -170,10 +167,11 @@ function draft(players, bans, drafts) {
 
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
-        return "\nInvalid ban(s) provided: " +invalidBans.join(", ");
+        return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
     }
     
-    if ((Object.keys(drafts).length - bans.length) < 16 ){
+    if ((Object.keys(drafts).length - bans.length) >= (players.length *3) ){
+  
          for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
             continue;
@@ -188,8 +186,8 @@ function draft(players, bans, drafts) {
     let playerCounter = 0;
     while (playerCounter < players.length){
         let civCounter = 0;
-        messageString += '\n**'+players[playerCounter] +'**';
-        while(civCounter <1 ){
+        messageString += '\n**'+players[playerCounter]+'**';
+        while(civCounter <=2 ){
             messageString += ' ' + randomCivs.pop();
             civCounter += 1;
         }
@@ -199,7 +197,8 @@ function draft(players, bans, drafts) {
 
     }
 
-    else if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
+    else if ((Object.keys(drafts).length - bans.length) >= (players.length *2) ){
+     
          for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
             continue;
@@ -214,7 +213,7 @@ function draft(players, bans, drafts) {
     let playerCounter = 0;
     while (playerCounter < players.length){
         let civCounter = 0;
-        messageString += '\n**'+players[playerCounter] +'**';
+        messageString += '\n**'+players[playerCounter]+'**';
         while(civCounter <=1 ){
             messageString += ' ' + randomCivs.pop();
             civCounter += 1;
@@ -224,6 +223,8 @@ function draft(players, bans, drafts) {
     return messageString;
 
     }
+    else if ((Object.keys(drafts).length - bans.length) > (players.length) ){
+
     for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
             continue;
@@ -238,16 +239,17 @@ function draft(players, bans, drafts) {
     let playerCounter = 0;
     while (playerCounter < players.length){
         let civCounter = 0;
-        messageString += '\n**'+players[playerCounter] +'**';
-        while(civCounter < civsPerPlayer[players.length]){
+        messageString += '\n**'+players[playerCounter]+'**';        
             messageString += ' ' + randomCivs.pop();
-            civCounter += 1;
-        }
+                  
         playerCounter += 1;
     }
     return messageString;
-}
 
+
+}
+    else {messageString = "too many bans or sometime else went wrong!"; return messageString;}
+}
 
 CivFFADrafter.on("message", message => {
     if (message.author.CivFFADrafter) {
@@ -302,7 +304,7 @@ CivFFADrafter.on("message", message => {
                             if (!channelMembers.hasOwnProperty(channelUser)){
                                 continue;
                             }
-                            players.push('<@'+channelMembers[channelUser].user.id +'>');
+                            players.push('<@'+channelMembers[channelUser].user.id+'>');
                         }
                         messageString = draft(players, bans, allCivsDLC);
                         break;
@@ -310,7 +312,7 @@ CivFFADrafter.on("message", message => {
                 }
             }
             if (messageString === ""){
-                messageString = "\nUnable to locate <@" +message.author.id +"> in a valid voice channel.";
+                messageString = "\nUnable to locate <@"+message.author.id+"> in a valid voice channel.";
             }
             break;
         case 'shuffle':
@@ -328,7 +330,7 @@ CivFFADrafter.on("message", message => {
                 messageString = '\n**Invalid Input for Team Generation.**';
                 break;
             }
-            let title = 'Teamer Draft ('+command[2] +'v'+command[2] +')', teamMembers = command[2], teams = command[1];
+            let title = 'Teamer Draft ('+command[2]+'v'+command[2]+')', teamMembers = command[2], teams = command[1];
             if (Number(teams) === 3) {
                 title = 'Teamer Draft (' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + ')';
             }
@@ -364,14 +366,14 @@ CivFFADrafter.on("message", message => {
 
 //Array of Teams to Generate to Play
 let teamsJoin = [
-'\n*Civ Team Evolution*',
-'\n*Anthropomorphic Dryosaurus Dino-Gorilla (with a butterknife) Task Force*',
-'\n*MagcialSandwichMakers (MSM)*',
-'\n*One-Turn Wonders*',
-'\n*m4d*',
-'\n*Everglade Sports*',
-'\n*Damage Incorporated: The Jackals*',
-'\n*Damage Incorporated: The A Team*'
+'\n*[🅜🅢🅜] Magcial Sandwich Makers*\n  @groove#8337\n  @ToMbraider#6882\n  @mike#3166',
+'\n*[OP] Over-Powered*\n  @ElStrecho#0984\n  @[OP]rahmj12[CPL]#4308\n  @[OP]DeathBringer#8348',
+'\n*SunZ A-Team*\n  @rolfejason#5840\n  @-=SunZ=-SourceGear#0062\n  @TheDonKillum#8936',
+'\n*TeamBlazedCow*\n  @🅜🅞🅓🅢 Blazed#1055\n  @[EPIC]CowGoMoo#1228\n  @James Papadops#0944',
+'\n*Sun Tzu\'s War Academy*\n  @-=Sunz=- HarambeV2#7259\n  @phillyboy7987[CPL]#1428\n  @BladeSe7en#7657',
+'\n*tCL 1*\n  @Havoc#0821\n  @Totally#5987\n  @Squish#0658',
+'\n*tCL 2*\n  @SNudel#0139\n  @@Viridios#5706\n  @czozp#8908',
+'\n*tCL 3*\n  @catstronaut420#7516\n  @TaskForceFish#7213\n  @🅒🅜🅕Bloopinator#4314'
 ];
 
   function shuffle(teamsJoin) {
@@ -388,18 +390,21 @@ let teamsJoin = [
     }
     return teamsJoin;
   }//.draft
-    if(message.member.hasPermission("Admin")) {
-        if(command==="tDT") {
-            let shuffleTeams = shuffle(teamsJoin);
-            message.channel.sendMessage(
+  if(command==="tDT") {
+    let shuffleTeams = shuffle(teamsJoin);
+    message.channel.sendMessage(
 "**__CivLeague <:civIconPurple:291784556489474049> Tournament Initial Drafter__**" +
 "\n------------------------------\n   •**Tournament Game 1**•\n------------------------------" + shuffleTeams[0] + "\n              --**vs.**--" + shuffleTeams[1] +
 "\n\n------------------------------\n   •**Tournament Game 2**•\n------------------------------" + shuffleTeams[2] + "\n              --**vs.**--" + shuffleTeams[3] +
 "\n\n------------------------------\n   •**Tournament Game 3**•\n------------------------------" + shuffleTeams[4] + "\n              --**vs.**--" + shuffleTeams[5] +
 "\n\n------------------------------\n   •**Tournament Game 4**•\n------------------------------" + shuffleTeams[6] + "\n              --**vs.**--" + shuffleTeams[7]
-            );
-        }
-    }
+    );
+  }
 });
 
 CivFFADrafter.login(Config.tokens.DrafterBot);
+
+
+/*
+🅐🅑🅒🅓🅔🅕🅖🅗🅘🅙🅚🅛🅜🅝🅞🅟🅠🅡🅢🅣🅤🅥🅦🅧🅨🅩
+*/
