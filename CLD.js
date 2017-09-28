@@ -152,7 +152,7 @@ function draftteam (players, bans, drafts, teams, teamMembers){
         return messageString; 
 
      }
-    else {messageString = "*Invalid amount of players in:* **○ Staging: Teamers ○**"; return messageString}
+    else {messageString = "*Invalid amount of players in:* **○ Teamers ○**"; return messageString}
 }
         
 
@@ -337,9 +337,9 @@ CivFFADrafter.on("message", message => {
             if (Number(teams) === 4) {
                 title = 'Teamer Draft (' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + ')';
             }//Team Draft
-            let channel = CivFFADrafter.channels.find('name', '○ Staging: Teamers ○');
+            let channel = CivFFADrafter.channels.find('name', '○ Teamers ○');
             if(channel.members.keyArray().length < command[2] * command[1]){
-                messageString = '\n**Failed to Execute!**\n  *Please move to: ○ **Staging: Teamers** ○*';
+                messageString = '\n**Failed to Execute!**\n  *Please move to the Staging Lobby: ○ **Teamers** ○*';
                 break;
             }
             let civTeamDrafter = shuffleList(channel.members.array());
