@@ -1,6 +1,3 @@
-"use strict";
-/*Author(s): Snipa and © • Song Adieu | Created: February 17th, 2017*/
-
 const Discord = require("discord.js");
 const Config = require("./config.json");
 const fs = require('fs');
@@ -34,18 +31,16 @@ let commandHelp =
 `**.draft**
   •*Drafts the list of civs for each player.*
 **.shuffle**
-  •*Shuffles the list of players for teams.*`
-;
+  •*Shuffles the list of players for teams.*`;
 
-/*Array of Civilizations Available 
-
-*/
+//Array of Civilizations Available 
 let allCivsDLC = {
     //Top Tier Civs
     australia: '\n  • <:australia:319172870074793984> *Australia (**John Curtin**)*',
     aztec: '\n  • <:aztec:319176447531024384> *Aztec (**Montezuma**)*',
     germany: '\n  • <:germany:319191037337665536> *Germany (**Frederick Barbarossa**)*',
     macedon: '\n  • <:macedon:319191099111505931> *Macedon (**Alexander**)*',
+    nubia: '\n  • 🔔 *Nubia (**Amanitore**)*',
     persia: '\n  • <:persia:319191114793877504> *Persia (**Cyrus**)*',
     rome: '\n  • <:rome:319191129230671873> *Rome (**Trajan**)*',
     russia: '\n  • <:russia:319191141637685248> *Russia (**Peter**)*',
@@ -72,37 +67,16 @@ let allCivsDLC = {
     spain: '\n  • <:spain:319191162462273536> *Spain (**Philip II**)*'};
 
 let icons = {
-    purple: '<:civIconPurple:291784556489474049>',
-    white: '<:civIconWhite:317154981054513152>',
-    red: '<:civIconRed:292900895094603776>',
-    green: '<:civIconGreen:292900880519397376> '
+    one: '<:warlord:319931261894524928>',
+    two: '<:emperor:320187485999071233>',
+    three: '<:immortal:320320496010788865>',
+    four: '<:deity:320326649654673410>'
 };
 
-let teamIcons = [icons['white'], icons['red'], icons['purple'], icons['green']],
-    civsPerPlayer = {2:6, 3:5, 4:4, 5:3, 6:3, 7:2, 8:2, 9:2, 10:1};
-
-let civListOP = ['-']; 
-
-function readBanFile(){
-    let loadedBans = {'OP': civListOP};
-    try{
-        loadedBans = JSON.parse(fs.readFileSync('data/bans.json', 'utf8'));
-    } catch (err) {
-        console.error("Unable to load ban file, using defaults.");
-        console.error(err);
-        writeBanFile(loadedBans);
-    }
-    return loadedBans;
-}
-
-function writeBanFile(bans){
-    try{
-        fs.writeFileSync('data/bans.json', JSON.stringify(bans));
-    } catch (err) {
-        console.error("Unable to load ban file, using defaults.");
-        console.error(err);
-    }
-}
+let teamIcons = [icons['two'], icons['three'], icons['one'], icons['four']],
+    civsPerPlayer = {1:6, 2:6, 3:6, 4:5, 5:4, 6:3, 7:3, 8:2, 9:2, 10:2};
+    civsPerPlayer2 = {1:6, 2:6, 3:6, 4:5, 5:4, 6:3, 7:3, 8:2, 9:2, 10:2};
+    
 
 function validateBans(bans, drafts){
     bans = bans.filter(onlyUnique);
@@ -115,33 +89,90 @@ function validateBans(bans, drafts){
     return invalidBans;
 }
 
-function draft(players, bans, drafts, max_players = 12, min_players = 2) {
-    // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
-    // Return an object if there's no error.  If there's an error, return back a string
-    let messageString = "";
-    if (players.length > max_players || players.length < min_players){
-        return '\n**Invalid amount of players in the current channel, please make sure there are the correct amount of people (2-10).**';
-    }
+function draftteam (players, bans, drafts, teams, teamMembers){
+ let messageString = "";
+
     let validCivs = [];
-    let loadedBans = readBanFile();
-    bans = bans.filter(onlyUnique);
-    for (let banGroup in loadedBans){
-        if(!loadedBans.hasOwnProperty(banGroup)){
-            continue;
-        }
-        if(bans.indexOf(banGroup) !== -1){
-            bans.splice(bans.indexOf(banGroup), 1);
-            bans = bans.concat(loadedBans[banGroup]);
-        }
-    }
+
     let invalidBans = validateBans(bans, drafts);
     if(invalidBans.length !== 0){
         return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
     }
-    if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
-        return '**Not enough Civilizations Allowed for 3 Choices. Please use: .draft2. Bans are provided after that command as usual. Good Luck!**';
-    }
     for (let civ in drafts){
+        if(!drafts.hasOwnProperty(civ)){
+            continue;
+        }
+        if(bans.indexOf(civ) !== -1){
+            continue;
+        }
+        validCivs.push(drafts[civ]);
+    }
+
+    var randomCivs = shuffleList(validCivs);
+    let playerCounter = 0;    
+    let teamCounter = 0;
+
+    if (teams ==2 && teamMembers ==1 && players.length ==2){
+         messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">" + randomCivs[0] + randomCivs[1] + randomCivs[2] + randomCivs[3] +
+         "\n\n**__Team 2:__**\n <@" + players[1].id+ ">" + randomCivs[0] +  randomCivs[1]+  randomCivs[2]+  randomCivs[3]; 
+        return messageString;
+    }
+    else if (teams ==2 && teamMembers ==2 && players.length ==4){
+         messageString ="\n\n**__Tteam 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
+        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5];
+        return messageString;
+     }
+
+     else if (teams ==2 && teamMembers ==3 && players.length ==6){
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+"\n <@" + players[2].id+">"+
+        "\n\n**__Team 2:__**\n <@" + players[3].id+ ">\n <@" + players[4].id+ ">"+"\n <@" + players[5].id+">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5]+
+        "\n\n**Group Choice 3:**" + randomCivs[6] +randomCivs[7]+ randomCivs[8];
+        return messageString;         
+     }
+    else if (teams ==3 && teamMembers ==2&& players.length ==6){
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
+        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+
+        "\n\n**__Team 3:__**\n <@" + players[4].id+ ">\n <@" + players[5].id+ ">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5];
+        return messageString;
+     }
+
+     else if (teams ==4 && teamMembers ==2&& players.length ==8){
+        messageString ="\n**__Team 1:__**\n <@" + players[0].id+ ">\n <@" + players[1].id+ ">"+
+        "\n\n**__Team 2:__**\n <@" + players[2].id+ ">\n <@" + players[3].id+ ">"+
+        "\n\n**__Team 3:__**\n <@" + players[4].id+ ">\n <@" + players[5].id+ ">"+
+        "\n\n**__Team 4:__**\n <@" + players[6].id+ ">\n <@" + players[7].id+ ">"+
+        "\n\n**Group Choice 1:**" + randomCivs[0] +randomCivs[1]+ randomCivs[2]+
+        "\n\n**Group Choice 2:**" + randomCivs[3] +randomCivs[4]+ randomCivs[5];
+        return messageString; 
+
+     }
+    else {messageString = "*Invalid amount of players in:* **○ Teamers ○**"; return messageString}
+}
+        
+
+function draft(players, bans, drafts) {
+    // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
+    // Return an object if there's no error.  If there's an error, return back a string
+    let messageString = "";
+    if (players.length > 10 || players.length < 1){
+        return '\n**Invalid amount of players in the current channel, please make sure there are the correct amount of people (1-10).**';
+    }
+    let validCivs = [];
+
+    let invalidBans = validateBans(bans, drafts);
+    if(invalidBans.length !== 0){
+        return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
+    }
+    
+    if ((Object.keys(drafts).length - bans.length) >= (players.length *3) ){
+  
+         for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
             continue;
         }
@@ -156,74 +187,19 @@ function draft(players, bans, drafts, max_players = 12, min_players = 2) {
     while (playerCounter < players.length){
         let civCounter = 0;
         messageString += '\n**'+players[playerCounter]+'**';
-        while(civCounter < civsPerPlayer[players.length]){
+        while(civCounter <=2 ){
             messageString += ' ' + randomCivs.pop();
             civCounter += 1;
         }
         playerCounter += 1;
     }
     return messageString;
-}
 
-function readBanFile(){
-    let loadedBans = {'OP': civListOP};
-    try{
-        loadedBans = JSON.parse(fs.readFileSync('data/bans.json', 'utf8'));
-    } catch (err) {
-        console.error("Unable to load ban file, using defaults.");
-        console.error(err);
-        writeBanFile(loadedBans);
     }
-    return loadedBans;
-}
 
-function writeBanFile(bans){
-    try{
-        fs.writeFileSync('data/bans.json', JSON.stringify(bans));
-    } catch (err) {
-        console.error("Unable to load ban file, using defaults.");
-        console.error(err);
-    }
-}
-
-function validateBans(bans, drafts){
-    bans = bans.filter(onlyUnique);
-    let invalidBans = [];
-    for (let banCheckCount = 0; banCheckCount < bans.length; banCheckCount++){
-        if(!drafts.hasOwnProperty(bans[banCheckCount])){
-            invalidBans.push(bans[banCheckCount]);
-        }
-    }
-    return invalidBans;
-}
-
-function draft(players, bans, drafts, max_players = 8, min_players = 2) {
-    // Take a list of players, a list of bans, and an object of inputs, and spit out a set of things that match.
-    // Return an object if there's no error.  If there's an error, return back a string
-    let messageString = "";
-    if (players.length > max_players || players.length < min_players){
-        return '\n**Invalid Number for Draft!\n  *draft x = 2-8 Players (As with more players, the game can be less reliable.*';
-    }
-    let validCivs = [];
-    let loadedBans = readBanFile();
-    bans = bans.filter(onlyUnique);
-    for (let banGroup in loadedBans){
-        if(!loadedBans.hasOwnProperty(banGroup)){
-            continue;
-        }
-        if(bans.indexOf(banGroup) !== -1){
-            bans.splice(bans.indexOf(banGroup), 1);
-            bans = bans.concat(loadedBans[banGroup]);
-        }
-    }
-    let invalidBans = validateBans(bans, drafts);
-    if(invalidBans.length !== 0){
-        return "\nInvalid ban(s) provided: "+invalidBans.join(", ");
-    }
-    if ((Object.keys(drafts).length - bans.length) < (civsPerPlayer[players.length] * players.length)){
-        return '\n**Excessive Amount of Bans!**\n  *Please Provide more Available Options.*';
-    }
-    for (let civ in drafts){
+    else if ((Object.keys(drafts).length - bans.length) >= (players.length *2) ){
+     
+         for (let civ in drafts){
         if(!drafts.hasOwnProperty(civ)){
             continue;
         }
@@ -238,13 +214,41 @@ function draft(players, bans, drafts, max_players = 8, min_players = 2) {
     while (playerCounter < players.length){
         let civCounter = 0;
         messageString += '\n**'+players[playerCounter]+'**';
-        while(civCounter < civsPerPlayer[players.length]){
+        while(civCounter <=1 ){
             messageString += ' ' + randomCivs.pop();
             civCounter += 1;
         }
         playerCounter += 1;
     }
     return messageString;
+
+    }
+    else if ((Object.keys(drafts).length - bans.length) > (players.length) ){
+
+    for (let civ in drafts){
+        if(!drafts.hasOwnProperty(civ)){
+            continue;
+        }
+        if(bans.indexOf(civ) !== -1){
+            continue;
+        }
+        validCivs.push(drafts[civ]);
+    }
+    let randomCivs = shuffleList(validCivs);
+    messageString += '\n•|• **__Player Choices__** •|•';
+    let playerCounter = 0;
+    while (playerCounter < players.length){
+        let civCounter = 0;
+        messageString += '\n**'+players[playerCounter]+'**';        
+            messageString += ' ' + randomCivs.pop();
+                  
+        playerCounter += 1;
+    }
+    return messageString;
+
+
+}
+    else {messageString = "too many bans or sometime else went wrong!"; return messageString;}
 }
 
 CivFFADrafter.on("message", message => {
@@ -256,13 +260,11 @@ CivFFADrafter.on("message", message => {
     }
 
     console.log(message.content);
+    message.content = message.content.toString().toLowerCase();
     let command = message.content.slice(Config.dot.length).replace(/\s+/g, ' ').split(" ");
+   
     console.log(command);
 
-    if (['draft', 'shuffle', 'civList', 'civListOP', 'banList'].indexOf(command[0]) === -1){
-        // message.channel.sendMessage('\nInvalid command layout.  Valid commands:\n' + commandHelp);
-        return;
-    }
 
     let messageString = "", bans = [], players = [], playerCount = 1, newBans=[];
 
@@ -314,10 +316,16 @@ CivFFADrafter.on("message", message => {
             }
             break;
         case 'shuffle':
-            if (command.length !== 3){
-                messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
-                break;
+           if (command.length > 2){
+               
+                bans = command.slice(3);
+                console.log (bans);
+                
             }
+         //   if (command.length !== 3){
+         //       messageString = '\n**Incorrect Command Used.**\n\n**List of Available Commands:**\n' + commandHelp;
+        //        break;
+        //    }
             if (command[2] * command[1] < 2 || command[2] * command[1] > 8){
                 messageString = '\n**Invalid Input for Team Generation.**';
                 break;
@@ -329,108 +337,22 @@ CivFFADrafter.on("message", message => {
             if (Number(teams) === 4) {
                 title = 'Teamer Draft (' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + 'v' + teamMembers + ')';
             }//Team Draft
-            let channel = CivFFADrafter.channels.find('name', '•|• Staging: Teamers');
+            let channel = CivFFADrafter.channels.find('name', '○ Teamers ○');
             if(channel.members.keyArray().length < command[2] * command[1]){
-                messageString = '\n**Failed to Execute!**\n  *Please move to: •|• **Staging: Teamers**.*';
+                messageString = '\n**Failed to Execute!**\n  *Please move to the Staging Lobby: ○ **Teamers** ○*';
                 break;
             }
             let civTeamDrafter = shuffleList(channel.members.array());
+           console.log(civTeamDrafter);
             messageString += '\n•|• **__' + title + '__** •|•';
             let teamCounter = 0;
-            while (teamCounter < teams) {
-                let teamID = teamCounter + 1, teamMemberCounter = 0;
-                messageString += '\n\n  | **Team ' + teamID + ' ' + teamIcons[teamCounter] + '** |';
-                while (teamMemberCounter < teamMembers) {
-                    messageString += '\n    • <@' + civTeamDrafter.pop().user.id+'>';
-                    teamMemberCounter += 1;
-                }
-                teamCounter += 1;
-            }
+            messageString += draftteam(civTeamDrafter, bans, allCivsDLC, teams, teamMembers);
             break;
-        case 'civList':
+        case 'civlist':
             messageString = '\n•|• **__Current Civilizations__** •|•\n  •' + Object.keys(allCivsDLC).join('\n  •');
             break;
-        case 'civListOP':
-            messageString = '\n•|• **__Current OP Civilizations__** •|•\n  •' + '**' + civListOP.join('**' + '\n  •' + '**');
-            break;
-        case 'banList':
-            if (command.length === 1 || ['delete', 'add', 'replace', 'list', 'details'].indexOf(command[1]) === -1){
-                if (message.channel.id === Config.channels.Admin){
-                    messageString = 'Invalid arguments for banList.  Valid arguments: add, list, delete, details, replace';
-                }else{
-                    messageString = 'Invalid arguments for banList.  Valid arguments: list, details';
-                }
-                break;
-            }
-            if (message.channel.id !== Config.channels.Admin && ['delete', 'add', 'replace'].indexOf(command[1]) !== -1){
-                messageString = 'Invalid argument for this channel, please try again!';
-                break;
-            }
-            bans = readBanFile();
-            switch(command[1]){
-                case 'list':
-                    messageString = 'Current Ban Lists in the system are: ' + Object.keys(bans).join(", ");
-                    break;
-                case 'details':
-                    if (typeof(command[2]) === 'undefined'){
-                        messageString = 'Need to pass in a valid ban list!';
-                    } else if (bans.hasOwnProperty(command[2])){
-                        messageString = 'Civs banned in the list: '+command[2]+' are: ' + bans[command[2]].join(", ");
-                    } else {
-                        messageString = 'Invalid ban list provided!  Please provide a valid ban list for details.';
-                    }
-                    break;
-                case 'add':
-                    if (typeof(command[2]) === 'undefined'){
-                        messageString = 'Need to pass in a valid ban list!';
-                    } else if (bans.hasOwnProperty(command[2])){
-                        messageString('Ban list: '+ command[2] + ' already exists, use replace to replace this list');
-                    } else if (allCivsDLC.hasOwnProperty(command[2])) {
-                        messageString = 'Name of banlist matches a civ.  Needs to be unique.';
-                    } else {
-                        newBans = command.slice(3);
-                        let invalidBans = validateBans(newBans, allCivsDLC);
-                        if(invalidBans.length === 0){
-                            bans[command[2]] = newBans;
-                            writeBanFile(bans);
-                            messageString = 'Added '+command[2]+' with the following bans: '+newBans.join(', ');
-                        } else {
-                            messageString = 'Invalid bans provided: '+invalidBans.join(', ');
-                        }
-                    }
-                    break;
-                case 'delete':
-                    if (typeof(command[2]) === 'undefined'){
-                        messageString = 'Need to pass in a valid ban list!';
-                    } else if (bans.hasOwnProperty(command[2])){
-                        delete bans[command[2]];
-                        writeBanFile(bans);
-                        messageString = 'Removed ban list: '+command[2];
-                    } else {
-                        messageString = 'Invalid ban list provided!  Please provide a valid ban list to remove it';
-                    }
-                    break;
-                case 'replace':
-                    newBans = command.slice(3);
-                    if (typeof(command[2]) === 'undefined'){
-                        messageString = 'Need to pass in a valid ban list!';
-                    } else if (bans.hasOwnProperty(command[2])){
-                        newBans = command.slice(3);
-                        let invalidBans = validateBans(newBans, allCivsDLC);
-                        if(invalidBans.length === 0){
-                            bans[command[2]] = newBans;
-                            writeBanFile(bans);
-                            messageString = 'Replaced '+command[2]+' with the following bans: '+newBans.join(', ');
-                        } else {
-                            messageString = 'Invalid bans provided: '+invalidBans.join(', ');
-                        }
-                    } else {
-                        messageString = 'Invalid ban list provided!  Please provide a valid ban list to replace it';
-                    }
-                    break;
-            }
     }
-    message.channel.sendMessage(messageString);
+    message.channel.send(messageString);
 });
 
 CivFFADrafter.login(Config.tokens.DrafterBot);

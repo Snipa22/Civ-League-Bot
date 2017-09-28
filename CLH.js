@@ -1,5 +1,3 @@
-"use strict";
-
 const Discord = require("discord.js");
 const Config = require("./config.json");
 const Players = require("./players.json");
@@ -23,28 +21,25 @@ CivLeagueHelp.on("message", message => {
     let args = message.content.split(" ").splice(1);
 
     //Help
-    if (command === "help" || command === "Help") {
+    if (command === "help") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Quick Help Guide__**` +
-            `\n  **.Channels** | **.channels**` +
-            `\n    *Displays all available text channels.*` +
-            `\n  **.Commands** | **.commands**` +
-            `\n    *Displays all commands.*`
+`**__Quick Help Guide__**
+**.channels**
+    *Displays all available text channels.*
+**.commands**
+    *Displays all commands.*`
         );
     }
     //Channels
-    if (command === "channels" || command === "Channels") {
+    if (command === "channels") {
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-
-•|• **__List of Channels__** •|•
+`•|• **__List of Channels__** •|•
     <#${Config.channels.channelIntroduction}>
         *Join CivLeague Everywhere (Discord/League/Steam Group).*
     <#${Config.channels.channelGuidelines}>
         *Brief guide to handling certain situations properly.*
     <#${Config.channels.channelForms}>
-        *Application to become Moderator/Reporting a Player.. and more!*
+        *Application to become Moderator/Reporting a Player.. and more.*
     <#${Config.channels.channelWorkshop}>
         *List of CivLeague Mods. As well as many other enjoyable mods!
         You will also find all the extra Civilizations Mod Pack here.*
@@ -56,14 +51,15 @@ CivLeagueHelp.on("message", message => {
         *Players who have achieved a great deal of success within the Game!*
     <#${Config.channels.channelProof}>
         *Screenshots provided from the Members of this Community.*
+    <#${Config.channels.channelReport}>
+        *Players will need to report their games in this channel to avoid bad reports.*
     <#${Config.channels.channelLeagueHistory}>
         *Shows the history of Games Played, and current Levels.*`
         );
     }//Commands
-    if (command === "commands" || command === "Commands") {
+    if (command === "commands") {
         message.channel.sendMessage(
-`${Players.roleAdmin}
-•|• **__CivLeague Link Commands__** •|•
+`•|• **__CivLeague Link Commands__** •|•
     **.joinSteam**
         *Joining the Steam Group, by entering the Chat Room.*
     **.reddit**
@@ -83,8 +79,7 @@ CivLeagueHelp.on("message", message => {
         *How to setup Push to Talk.*`
         );
         message.channel.sendMessage(
-`${Players.roleModerator}
-•|• **__Game Commands__** •|•
+`•|• **__Game Commands__** •|•
     **.allCivs | .allcivs**
         *Shows all available Civilizations.*
     **.voteSettings | .votesettings**
@@ -106,7 +101,7 @@ CivLeagueHelp.on("message", message => {
     **.setMods**
         *Shows how to enable the mods in Game Settings.*
     **.gameTypes**
-        *Shows the different game types: **FFA**, **Diplo**, and **No Diplo**.*
+        *Shows the different game types: **Diplo** and **No Diplo**.*
 
 •|• **__Alternative Screenshot Program__** •|•
     **.lightshot**
@@ -114,61 +109,52 @@ CivLeagueHelp.on("message", message => {
         );
     }/*.joinSteam*/
     else if (command === "joinSteam") {
-        //Image of Joining
-        message.channel.sendFile(
-            `${Config.images.imageJoinSteam}`
-        );//Message to Send
+        //Message to Send
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}` +
-`\n**__Steam Group (Enter Chat Room)__**
+`•**__Steam Group Website__**
 ${Config.links.civLeagueSteamGroup}
-  *Entering the Steam Group is for players who rejoin our community and play on a social basis.*
-  *Joining the Steam Group helps connect us outside the game, and Join Private Games hosted here.*
-    •**Click the URL**
-    •**Enter Chat Room (Blue Button)**
-      *Check the Taskbar, Chat Window does not Open to the Front.*`
+    
+•**__Entering Steam Group Chat Room__**
+${Config.links.civLeagueGroupChat}`
         );
     }/*.discord*/
     else if (command === "discord" || command === "Discord") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Discord Link (Share with Everyone!)__**` +
-            `\n${Config.links.discordLink}`
+`**__Discord Links (Share with Everyone!)__**
+**Use with Discord App:**
+${Config.links.discordLink}
+**Use with Website:**
+${Config.links.discordMeLink}`
         );
     }/*.reddit*/
     else if (command === "reddit" || command === "Reddit") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Reddit Links__**` +
-            `\n  *If you still have questions about how this community works..\n  You can read Hannah's Reddit's here!!*` +
-            `\n    •<https://redd.it/623w5f>` +
-            `\n    •<https://redd.it/623oza>` +
-            `\n    •<https://redd.it/623mgp>`
+`**__Reddit Links__**
+*Still learning and have questions?! We have guides here to help:
+    •<https://redd.it/623w5f>
+    •<https://redd.it/623oza>
+    •<https://redd.it/623mgp>`
         );
     }/*.joinFacebook*/
     else if(command === "facebook" || command === "Facebook") {
         message.channel.sendMessage(
-`${Players.roleAdmin} | ${Players.roleModerator}
-**__CivLeague Facebook__**
+`**__CivLeague Facebook__**
   <https://www.facebook.com/groups/civleague/>`
         );
     }
     /*.setSteam*/
     else if (command === "setSteam") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__Adding Steam to Discord__** •|•` +
-            `\n *Attach your Steam Profile to the Discord Server.*` +
-            `\n *For anyone who needs to host, your profile is **required public access**.*` +
-            `\n   •**User Settings**` +
-            `\n     *Click the User Settings bottom left of Discord (Right of Avatar|Username).*` +
-            `\n   •**Connections**` +
-            `\n     *Click the Connections tab on the left side of Discord in User Settings.*` +
-            `\n   •**Steam Icon**` +
-            `\n     *Click that Steam Icon that is displayed under **Connect Your Accounts**.*` +
-            `\n     *Follow the Guide to get you Logged and Connected.*` +
-            `\n   •**Display on Profile**` +
-            `\n     *Finally make sure to check that box **Display on Profile**.*`
+`•|• **__Adding Steam to Discord__** •|•
+*Once you have added Steam to your Discord, please notify admin, so we can give you a Solid Barbarian Role.
+*This is to help with players joining our Discord, and helps hosts connect players who have issues joining Steam.*
+  •**User Settings**
+  •**Connections**
+  •**Steam Icon**
+    *Follow the Guide to get you Logged and Connected.*
+  •**Display on Profile**
+  
+***Now remember, whoever does this, get's the Solid Barbarian Role, and is a trusted member in this community!***`
         );
         message.channel.sendFile(
             `${Config.images.imageSetSteam}`
@@ -180,6 +166,9 @@ ${Config.links.civLeagueSteamGroup}
             `\n•|• **__Auto Download Additional Content__** •|•` +
             `\n  *This is how you should set Auto Download of Mods from Workshops.*`
         );
+        message.channel.sendFile(
+            `${Config.images.imageSetMods}`
+        );
     }/*.allCivs*/
     else if (command === "allcivs" || command === "allCivs") {
         message.channel.sendMessage(
@@ -189,6 +178,7 @@ ${Config.links.civLeagueSteamGroup}
 <:aztec:319176447531024384> • *Aztec (**Montezuma**)*
 <:germany:319191037337665536> • *Germany (**Frederick Barbarossa**)*
 <:macedon:319191099111505931> • *Macedon (**Alexander**)*
+🔔 • *Nubia (**Amanitore**)* -- Temporary Icon
 <:persia:319191114793877504> • *Persia (**Cyrus**)*
 <:rome:319191129230671873> • *Rome (**Trajan**)*
 <:russia:319191141637685248> • *Russia (**Peter**)*
@@ -220,46 +210,46 @@ ${Config.links.civLeagueSteamGroup}
 •|• **__Game Types__** •|•
 *These are the available options!*
   •**Diplo:** Everything is granted.
-  •**FFA:** No Declarations of Friendships\Alliances, everything else is granted.
-  •**No Diplo:** Nothing is granted.`
+  •**No Diplo:** Nothing *(only peace)* is granted.`
         );
         message.channel.sendFile(
             `${Config.images.imageGameTypes}`
         );
     }/*.setOverlay*/
-    else if (command === "setOverlay") {
+    else if (command === "setOverlay" || command === "setoverlay") {
         message.channel.sendMessage(
-            `\n${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__Setup Discord Overlay__** •|•` +
-            `\n  *Setting up Discord Overlay, which allows the user to see who is talking, while in Game.*` +
-            `\n    •**User Settings**` +
-            `\n      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*` +
-            `\n    •**Overlay**` +
-            `\n      *Click the Overlay Tab on the left side of Discord in User Settings.*` +
-            `\n    •**Enable Overlay**` +
-            `\n      *Check the box: Enable In-Game Overlay.*` +
-            `\n    •**Games**` +
-            `\n      *Click the Games tab on the left side of Discord in User Settings.*` +
-            `\n    •**Enabled Civilization VI**` +
-            `\n      *Finally under the **Added Games** section, just enable **Sid Meier's Civilization VI** by checking box.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Setup Discord Overlay__** •|•
+*Setting up Discord Overlay, which allows the user to see who is talking, while in Game.*
+    •**User Settings**
+      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*
+    •**Overlay**
+      *Click the Overlay Tab on the left side of Discord in User Settings.*
+    •**Enable Overlay**
+      *Check the box: Enable In-Game Overlay.*
+    •**Games**
+      *Click the Games tab on the left side of Discord in User Settings.*
+    •**Enabled Civilization VI**
+      *Finally under the **Added Games** section, just enable **Sid Meier's Civilization VI** by checking box.*`
         );
         message.channel.sendFile(
             `${Config.images.imageSetOverlay}`
         );
     }/*.deleteFiles*/
-    else if (command === "deleteFiles") {
+    else if (command === "deleteFiles" || command === "deletefiles" || command === "df" || command === "DF") {
         message.channel.sendMessage(
 `${Players.roleAdmin} | ${Players.roleModerator}
 '•|•**__Receiving Errors while Connecting__** •|•
-  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder URL*
-**Documents/My Games/Sid Meier's Civilization VI**
-    ***Notes:***
-      •*This will not Delete your Game Options if you select the right files in the below photo!*
+  *If this seems to happen often, it's best to clear some files. Just copy path, and paste in folder Address Bar*
 
-•|• **__Using the CivilizationVIDeleteFiles.bat File__** •|•
-***Give Credit to: MisterT800***
-  •*All you have to do is download that file, and run it from your Desktop next to your Civilization VI Game Icon.*
-    *This will **Restart Civilization VI** > **Clean the Files** > **Restart Civilization VI** for you.*
+**Documents/My Games/Sid Meier's Civilization VI**
+                       *^ copy/paste that ^*
+***This will not Delete your Game Options if you select the right files in the below photo!***
+
+•|• **__CivilizationVIDeleteFiles.bat File__** •|•
+***Creation credit to: MisterT800***
+  •*Download the Dx11 or 12 file you run Civ with, and run it from your Desktop next to your Civilization VI Game Icon.*
+    *This will **Restart Civilization VI** > **Delete the necessary Files** > **Restart Civilization VI** for you.*
       ***Notes:***
         •*May need to change path for Steam at the beginning of the file if you have Steam installed elsewhere.*
         •*Using the .bat file, you will no longer need to follow this guide.*
@@ -269,24 +259,24 @@ ${Config.links.civLeagueSteamGroup}
             `${Config.images.imageDeleteFiles}`
         );
         message.channel.sendFile(
-            `${Config.files.fileDeleteFiles}`
+            `${Config.files.fileDeleteFilesx11}`
         );
     }/*.setPTT*/
     else if (command === "setPTT") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n**__Setup Push to Talk__**` +
-            `\n  *Setting up Push to Talk is very useful for the players that have a lot of background noise.*` +
-            `\n  *Using this Discord Feature will help maintain a better playing environment.*` +
-            `\n    | **User Settings** |` +
-            `\n      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*` +
-            `\n    | **Click Voice** |` +
-            `\n      *Click the Voice Tab on the left side of Discord in User Settings.*` +
-            `\n    | **Set Push to Talk** |` +
-            `\n      *Click the Drop Down under Input Mode, and change from Voice Acitivity to Push to Talk.*` +
-            `\n    | **Assign a Key** |` +
-            `\n      *Finally click next to Push to Talk option, and assign a key, or multiple.*` +
-            `\n      *You can assign whatever you like, I just like to use a double key.*`
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Setup Push to Talk__** •|•
+*Setting up Push to Talk is very useful for the players that have a lot of background noise.*
+*Using this Discord Feature will help maintain a better playing environment.*
+    •**User Settings**
+      *Click the User Settings bottom left of Discord (Right of Avatar|Username).*
+    •**Click Voice**
+      *Click the Voice Tab on the left side of Discord in User Settings.*
+    •**Set Push to Talk**
+      *Click the Drop Down under Input Mode, and change from Voice Acitivity to Push to Talk.*
+    •**Assign a Key**
+      *Finally click next to Push to Talk option, and assign a key, or multiple.*
+      *You can assign whatever you like, I just like to use a double key.*`
         );
         message.channel.sendFile(
             `${Config.images.imageSetPTT}`
@@ -294,168 +284,174 @@ ${Config.links.civLeagueSteamGroup}
      }/*.lightshot*/
     else if (command === "lightshot") {
         message.channel.sendMessage(
-            `${Players.roleAdmin} | ${Players.roleModerator}` +
-            `\n•|• **__How to Take a Screenshot__** •|•` +
-            `\n*Alternative Program: <http://app.prntscr.com/en/index.html>*` +
-            `\n **[Alt]** + **[Prnt Scrn]**` +
-            `\n   *Come to Discord, and **Click** in the Text Field*` +
-            `\n Then **Hold [Ctrl]** and **Tap [V]**`
+`${Players.roleAdmin} | ${Players.roleModerator}
+•|• **__Windows Screenshot Function:__** •|•
+Hold **[Alt]** + Tap **[Prnt Scrn]** (Selected Program Window)
+Hold **[Ctrl]** + Tap **[Prnt Scrn]** (Complete Display)
+*Come to Discord and **click** in the text field*
+Hold **[Ctrl]** and Tap **[V]** to paste image.
+
+•|• **__Lightshot (Alternative Program):__** •|•
+<http://app.prntscr.com/en/index.html>`
         );
     }/*.1v1Report*/
-    else if (command === "1v1report" || command === "1v1Report" || command === "1v1REPORT") {
+    else if (command === "1v1report" || command === "1v1Report") {
         message.channel.sendMessage(
-            `__**2 Player Duel Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @`
+`**__2 Player Duel Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @`
         );
     }/*.ffaReport3*/
     else if (command === "ffareport3" || command === "ffaReport3" || command === "FFAReport3" || command === "FFAREPORT3") {
         message.channel.sendMessage(
-            `__**3 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @`
+`**__3 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @`
         );
     }/*.ffaReport4*/
     else if (command === "ffareport4" || command === "ffaReport4" || command === "FFAReport4" || command === "FFAREPORT4") {
         message.channel.sendMessage(
-            `__**4 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @`
+`**__4 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @`
         );
     }/*.ffaReport5*/
     else if (command === "ffareport5" || command === "ffaReport5" || command === "FFAReport5" || command === "FFAREPORT5") {
         message.channel.sendMessage(
-            `__**5 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @`
+`**__5 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @`
         );
     }/*.ffaReport6*/
     else if (command === "ffareport6" || command === "ffaReport6" || command === "FFAReport6" || command === "FFAREPORT6") {
         message.channel.sendMessage(
-            `__**6 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @` + "\n" +
-            `6: @`
+`**__6 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @
+6: @`
         );
     }/*.ffaReport7*/
     else if (command === "ffareport7" || command === "ffaReport7" || command === "FFAReport7" || command === "FFAREPORT7") {
         message.channel.sendMessage(
-            `__**7 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @` + "\n" +
-            `6: @` + "\n" +
-            `7: @`
+`**__7 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @
+6: @
+7: @`
         );
     }/*.ffaReport8*/
     else if (command === "ffareport8" || command === "ffaReport8" || command === "FFAReport8" || command === "FFAREPORT8") {
         message.channel.sendMessage(
-            `__**8 Player FFA Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-            `1: @` + "\n" +
-            `2: @` + "\n" +
-            `3: @` + "\n" +
-            `4: @` + "\n" +
-            `5: @` + "\n" +
-            `6: @` + "\n" +
-            `7: @` + "\n" +
-            `8: @`
+`**__8 Player FFA Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+Game Type: 
+1: @
+2: @
+3: @
+4: @
+5: @
+6: @
+7: @
+8: @`
         );
     }/*.2v2Report*/
     else if (command === "2v2report" || command === "2v2Report" || command === "2v2REPORT") {
         message.channel.sendMessage(
-            `__**2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @`
+`**__2v2 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+2nd Team:
+    @
+    @`
         );
     }/*.2v2v2Report*/
     else if (command === "2v2v2report" || command === "2v2v2Report" || command === "2v2v2REPORT") {
         message.channel.sendMessage(
-            `__**2v2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `3rd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @`
+`**__2v2v2 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+2nd Team:
+    @
+    @
+3rd Team:
+    @
+    @`
         );
     }/*.2v2v2v2Report*/
     else if (command === "2v2v2v2report" || command === "2v2v2v2Report" || command === "2v2v2v2REPORT") {
         message.channel.sendMessage(
-            `__**2v2v2v2 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `3rd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `4th Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n"
+`**__2v2v2v2 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+2nd Team:
+    @
+    @
+3rd Team:
+    @
+    @
+4th Team:
+    @
+    @`
         );
     }/*.3v3Report*/
     else if (command === "3v3report" || command === "3v3Report" || command === "3v3REPORT") {
         message.channel.sendMessage(
-            `__**3v3 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: ${Players.SongAdieu} by Sending a Direct Message (DM).` + "\n" +
-
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n"
+`**__3v3 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+    @
+2nd Team:
+    @
+    @
+    @`
         );
     }/*.4v4Report*/
     else if (command === "4v4report" || command === "4v4Report" || command === "4v4REPORT") {
         message.channel.sendMessage(
-            `__**4v4 Teamer Winner Report Guide**__  ` + "\n" +
-            `Paste Results to: <#${Players.SongAdieu}> by Sending a Direct Message (DM).` + "\n" +
-            `1st Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `2nd Team:` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n" +
-            `    @` + "\n"
+`**__4v4 Teamer Winner Report Guide__**
+*Paste Results to: <#${Config.channels.channelReport}>*
+1st Team:
+    @
+    @
+    @
+    @
+2nd Team:
+    @
+    @
+    @
+    @`
         );
     }
 });
